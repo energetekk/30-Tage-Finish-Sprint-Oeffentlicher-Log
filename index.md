@@ -154,6 +154,7 @@ Kein „wir melden uns“.
 
 👉 [Sprint starten – 99 €](https://buy.stripe.com/test_5kQ8wI2ob2gBf0DeXs7g400)
 
+Hinweis: Die Start-Anleitung erhältst du aktuell manuell per E-Mail.
 
 
 
