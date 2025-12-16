@@ -137,3 +137,16 @@ Bist du bereit, dein Projekt in 30 Tagen zu beenden –
 oder dich nicht länger selbst anzulügen?
 
 👉 Dann starte den Sprint.
+
+## Teilnahme
+
+Der 30-Tage-Finish-Sprint kostet **99 €**.
+
+Kein Coaching.  
+Keine Verlängerung.  
+Kein Geld-zurück, wenn du abbrichst.
+
+👉 [Sprint starten – 99 €] (https://buy.stripe.com/test_5kQ8wI2ob2gBf0DeXs7g400)
+
+
+
