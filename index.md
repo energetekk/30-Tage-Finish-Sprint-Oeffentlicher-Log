@@ -142,11 +142,18 @@ oder dich nicht länger selbst anzulügen?
 
 Der 30-Tage-Finish-Sprint kostet **99 €**.
 
-Kein Coaching.  
-Keine Verlängerung.  
-Kein Geld-zurück, wenn du abbrichst.
+Nach der Zahlung:
+- startest du **sofort**
+- erhältst du eine kurze Start-Anleitung
+- legst dein konkretes Projekt fest
+- beginnst mit dem **täglichen Check-in**
 
-👉 [Sprint starten – 99 €] (https://buy.stripe.com/test_5kQ8wI2ob2gBf0DeXs7g400)
+Kein Warten.  
+Kein Onboarding-Call.  
+Kein „wir melden uns“.
+
+👉 [Sprint starten – 99 €](https://buy.stripe.com/test_5kQ8wI2ob2gBf0DeXs7g400)
+
 
 
 
