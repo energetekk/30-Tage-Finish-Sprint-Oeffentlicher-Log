@@ -152,7 +152,7 @@ Kein Warten.
 Kein Onboarding-Call.  
 Kein „wir melden uns“.
 
-👉 [Sprint starten – 99 €](https://buy.stripe.com/test_5kQ8wI2ob2gBf0DeXs7g400)
+👉 [Sprint starten – 99 €](https://buy.stripe.com/test_28E4gsd2P1cx19N3eK7g401)
 
 Nach der Zahlung erhältst du innerhalb von 24 Stunden deine Startanleitung.
 
