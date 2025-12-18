@@ -156,6 +156,25 @@ Kein „wir melden uns“.
 
 Nach der Zahlung erhältst du innerhalb von 24 Stunden deine Startanleitung.
 
+## Bevor du startest
+
+Dieser Sprint ist **nicht** für jeden.
+
+### Du solltest teilnehmen, wenn:
+- du ein **konkretes Projekt** hast, das beendet werden kann
+- du **täglich mindestens 25 Minuten** investieren kannst
+- du bereit bist, **30 Tage ohne Ausreden** durchzuziehen
+- du akzeptierst, dass **Abschluss wichtiger ist als Qualität**
+
+### Nimm NICHT teil, wenn:
+- dein Projekt noch unklar oder vage ist
+- du Motivation, Zuspruch oder Coaching erwartest
+- du denkst, du könntest Tage „nachholen“
+- du nicht bereit bist, dir selbst ehrlich zu begegnen
+
+**Wenn du jetzt trotzdem klickst,  
+entscheidest du dich bewusst für den Abschluss –  
+oder für ein sichtbares Scheitern.**
 
 
 
