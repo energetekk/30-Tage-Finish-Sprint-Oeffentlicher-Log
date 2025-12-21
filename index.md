@@ -93,6 +93,19 @@ kein „morgen doppelt“
 Der Sprint ist genau dafür gebaut,
 neben dem Hamsterrad zu funktionieren.
 
+Was du konkret bekommst, so interagierst du mit dem Produkt:
+
+- tägliche klare Aufgaben (25–40 Min)
+
+- ein festes tägliches Check-in-Format
+
+- ein simples Tool (z. B. Telegram / Web / E-Mail – noch offen, aber benannt)
+
+- sichtbarer Fortschritt oder sichtbares ❌
+
+- Abschluss nach 30 Tagen – egal wie
+
+
 Das Risiko (ehrlich)
 
 Du könntest nach 30 Tagen feststellen:
