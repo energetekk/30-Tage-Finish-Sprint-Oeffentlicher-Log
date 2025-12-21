@@ -101,9 +101,9 @@ Was du konkret bekommst, so interagierst du mit dem Produkt:
 
 - ein simples Tool (z. B. Telegram / Web / E-Mail – noch offen, aber benannt)
 
-- sichtbarer Fortschritt oder sichtbares ❌
+- keine Diskussion, keine Ausreden
 
-- Abschluss nach 30 Tagen – egal wie
+- Ein System, das auf Abschluss nach 30 Tagen optimiert ist – egal wie
 
 
 Das Risiko (ehrlich)
