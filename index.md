@@ -135,6 +135,29 @@ Der Sprint läuft weiter – unabhängig davon,
 ob du geliefert hast oder nicht.
 
 
+## Warum nicht einfach eine KI nutzen?
+
+Eine KI beantwortet Fragen.  
+Dieses Produkt erzwingt Ergebnisse.
+
+**KI allein:**
+- reagiert nur, wenn du fragst
+- akzeptiert Ausreden
+- optimiert, wenn du eigentlich abschließen müsstest
+- hat keine Konsequenzen
+- endet nie
+
+**Dieser Sprint:**
+- gibt dir täglich eine konkrete Aufgabe
+- akzeptiert nur „erledigt“ oder „nicht erledigt“
+- entfernt Features statt neue vorzuschlagen
+- zwingt dich, mit Konsequenzen zu leben
+- endet nach 30 Tagen – egal wie
+
+Eine KI hilft dir beim Denken.  
+Dieses System hilft dir beim **Beenden**.
+
+
 Das Risiko (ehrlich)
 
 Du könntest nach 30 Tagen feststellen:
