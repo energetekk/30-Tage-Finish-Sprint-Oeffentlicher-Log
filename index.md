@@ -105,21 +105,34 @@ Was du konkret bekommst, so interagierst du mit dem Produkt:
 
 - Ein System, das auf Abschluss nach 30 Tagen optimiert ist – egal wie
 
+## So sieht dein tägliches Check-in aus
 
-Tägliches Check-in:
+Jeder Tag folgt demselben Ablauf.  
+Kein Nachdenken. Kein Interpretieren.
 
-Jeden Tag genau ein Eintrag:
+**1. Du bekommst eine klare Tagesaufgabe**  
+– bewusst klein gehalten  
+– maximal 25–40 Minuten  
+– immer auf „Abschluss“ ausgerichtet
 
-  - eine konkrete Tagesaufgabe
+**2. Du arbeitest die Aufgabe ab**  
+Nicht perfekt. Nicht vollständig.  
+Sondern: erledigt oder nicht erledigt.
 
-  - 25–40 Minuten Arbeit
+**3. Du checkst ein**  
+Du meldest zurück:
+- ✅ erledigt  
+oder  
+- ❌ nicht erledigt
 
-  - Status: erledigt oder nicht
+**4. Wenn ❌, greift deine vorher festgelegte Konsequenz**  
+Keine Diskussion. Kein Nachholen.  
+Der Tag ist bewertet und abgeschlossen.
 
-  - klare Konsequenz bei ❌
+**5. Nächster Tag. Gleicher Ablauf.**
 
-Kein Feedback. Keine Diskussion.
-Nur Abschluss nach 30 Tagen.
+Der Sprint läuft weiter – unabhängig davon,  
+ob du geliefert hast oder nicht.
 
 
 Das Risiko (ehrlich)
