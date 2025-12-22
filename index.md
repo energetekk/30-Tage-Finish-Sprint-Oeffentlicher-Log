@@ -110,29 +110,34 @@ Was du konkret bekommst, so interagierst du mit dem Produkt:
 Jeder Tag folgt demselben Ablauf.  
 Kein Nachdenken. Kein Interpretieren.
 
-**1. Du bekommst eine klare Tagesaufgabe**  
-– bewusst klein gehalten  
-– maximal 25–40 Minuten  
-– immer auf „Abschluss“ ausgerichtet
+So läuft dein 30-Tage-Sprint ab
 
-**2. Du arbeitest die Aufgabe ab**  
-Nicht perfekt. Nicht vollständig.  
-Sondern: erledigt oder nicht erledigt.
+Tag 0 – Start
 
-**3. Du checkst ein**  
-Du meldest zurück:
-- ✅ erledigt  
-oder  
-- ❌ nicht erledigt
+Du bezahlst.
 
-**4. Wenn ❌, greift deine vorher festgelegte Konsequenz**  
-Keine Diskussion. Kein Nachholen.  
-Der Tag ist bewertet und abgeschlossen.
+Du bekommst eine klare Startnachricht.
 
-**5. Nächster Tag. Gleicher Ablauf.**
+Du legst dein Projekt verbindlich fest.
 
-Der Sprint läuft weiter – unabhängig davon,  
-ob du geliefert hast oder nicht.
+Tag 1–29 – Daily Execution
+
+Du erhältst eine klare Tagesaufgabe (25–40 Minuten).
+
+Du checkst ein: erledigt / nicht erledigt.
+
+Wenn du ausweichst, wird dein Projekt vereinfacht, nicht erweitert.
+
+Keine Diskussion. Nur Fortschritt oder Ehrlichkeit.
+
+Tag 30 – Abschluss
+
+Dein Projekt ist fertig
+oder
+du hast öffentlich dokumentiert, dass du es nicht abgeschlossen hast.
+
+Beides zählt.
+Selbstbetrug nicht.
 
 
 ## Warum nicht einfach eine KI nutzen?
