@@ -106,6 +106,22 @@ Was du konkret bekommst, so interagierst du mit dem Produkt:
 - Ein System, das auf Abschluss nach 30 Tagen optimiert ist – egal wie
 
 
+Tägliches Check-in:
+
+Jeden Tag genau ein Eintrag:
+
+  - eine konkrete Tagesaufgabe
+
+  - 25–40 Minuten Arbeit
+
+  - Status: erledigt oder nicht
+
+  - klare Konsequenz bei ❌
+
+Kein Feedback. Keine Diskussion.
+Nur Abschluss nach 30 Tagen.
+
+
 Das Risiko (ehrlich)
 
 Du könntest nach 30 Tagen feststellen:
