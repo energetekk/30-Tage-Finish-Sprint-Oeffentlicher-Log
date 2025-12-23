@@ -42,7 +42,7 @@ Abschluss statt Perfektion
 Das Ziel ist nicht ein perfektes Ergebnis.
 Das Ziel ist ein fertiges Ergebnis.
 
-Wie der Sprint funktioniert
+## Wie der Sprint funktioniert
 
 Du bringst ein klares Projekt mit
 
@@ -68,7 +68,7 @@ Du willst abschließen, nicht optimieren
 
 Du hältst direkte Sprache aus
 
-Für wen das nicht ist
+## Für wen das nicht ist
 
 Du hast keine klare Projektidee
 
@@ -93,7 +93,7 @@ kein „morgen doppelt“
 Der Sprint ist genau dafür gebaut,
 neben dem Hamsterrad zu funktionieren.
 
-Was du konkret bekommst, so interagierst du mit dem Produkt:
+## Was du konkret bekommst, so interagierst du mit dem Produkt:
 
 - tägliche klare Aufgaben (25–40 Min)
 
