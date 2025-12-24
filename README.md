@@ -99,7 +99,7 @@ neben dem Hamsterrad zu funktionieren.
 
 - ein festes tägliches Check-in-Format
 
-- ein simples Tool (z. B. Telegram / Web / E-Mail – noch offen, aber benannt)
+- ein simples Tool (z. B. Telegram / Web / E-Mail, ist noch bekannt zu geben)
 
 - keine Diskussion, keine Ausreden
 
@@ -206,7 +206,7 @@ Abschlussfrage (CTA)
 Bist du bereit, dein Projekt in 30 Tagen zu beenden –
 oder dich nicht länger selbst anzulügen?
 
-👉 Dann starte den Sprint.
+👉 [Dann starte den Sprint]((https://buy.stripe.com/test_28E4gsd2P1cx19N3eK7g401)
 
 ## Teilnahme
 
