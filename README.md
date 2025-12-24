@@ -206,8 +206,6 @@ Abschlussfrage (CTA)
 Bist du bereit, dein Projekt in 30 Tagen zu beenden –
 oder dich nicht länger selbst anzulügen?
 
-👉 [Dann starte den Sprint]((https://buy.stripe.com/test_28E4gsd2P1cx19N3eK7g401)
-
 ## Teilnahme
 
 Der 30-Tage-Finish-Sprint kostet **99 €**.
