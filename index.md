@@ -9,7 +9,7 @@ Subheadline
 Ein 30-Tage-Sprint, der dich zwingt, ein konkretes Projekt zu beenden –
 oder ehrlich zuzugeben, dass du (noch) nichts Verkaufsfertiges lieferst.
 
-Das Versprechen
+# Das Versprechen
 
 Nach 30 Tagen gilt exakt eines:
 
@@ -21,13 +21,13 @@ du hast öffentlich anerkannt, dass du es nicht geschafft hast
 Beides ist ein Ergebnis.
 Selbstbetrug ist ausgeschlossen.
 
-Was du hier bekommst
+## Was du hier bekommst
 
 Kein Coaching.
 Keine Motivation.
 Kein „Produktivitätssystem“.
 
-Sondern:
+### Sondern:
 
 tägliche, kurze Check-ins
 
@@ -37,12 +37,12 @@ radikale Vereinfachung, wenn du ausweichst
 
 keine Diskussionen, nur Entscheidungen
 
-Abschluss statt Perfektion
+### Abschluss statt Perfektion
 
 Das Ziel ist nicht ein perfektes Ergebnis.
 Das Ziel ist ein fertiges Ergebnis.
 
-Wie der Sprint funktioniert
+# Wie der Sprint funktioniert
 
 Du bringst ein klares Projekt mit
 
@@ -56,7 +56,7 @@ Der Sprint wird nicht pausiert, nicht verlängert, nicht entschuldigt
 
 Nach 30 Tagen ist Schluss. Egal wie.
 
-Für wen das ist
+# Für wen das ist
 
 Du hast mindestens ein angefangenes Projekt
 
@@ -68,7 +68,7 @@ Du willst abschließen, nicht optimieren
 
 Du hältst direkte Sprache aus
 
-Für wen das nicht ist
+# Für wen das nicht ist
 
 Du hast keine klare Projektidee
 
@@ -80,7 +80,7 @@ Du bist nicht bereit, 30 Tage durchzuziehen
 
 Du willst dich weiter selbst belügen
 
-Zeitaufwand
+# Zeitaufwand
 
 25–40 Minuten pro Tag
 
@@ -93,7 +93,7 @@ kein „morgen doppelt“
 Der Sprint ist genau dafür gebaut,
 neben dem Hamsterrad zu funktionieren.
 
-Was du konkret bekommst, so interagierst du mit dem Produkt:
+# Was du konkret bekommst, so interagierst du mit dem Produkt:
 
 - tägliche klare Aufgaben (25–40 Min)
 
@@ -110,7 +110,7 @@ Was du konkret bekommst, so interagierst du mit dem Produkt:
 Jeder Tag folgt demselben Ablauf.  
 Kein Nachdenken. Kein Interpretieren.
 
-So läuft dein 30-Tage-Sprint ab
+## So läuft dein 30-Tage-Sprint ab
 
 Tag 0 – Start
 
@@ -140,101 +140,37 @@ Beides zählt.
 Selbstbetrug nicht.
 
 
-## Warum nicht einfach ChatGPT / KI direkt nutzen?
+# Warum nicht einfach KI direkt nutzen?
 
-Weil KI dir keine Verantwortung abnimmt.
+**KI (z. B. ChatGPT):**
+- reagiert, wenn du fragst
+- optimiert, wenn du zweifelst
+- diskutiert Alternativen
+- erlaubt dir, dich endlos zu verfeinern
+- gibt dir immer „noch eine bessere Idee“
+- hat kein Ende
+- keine Konsequenzen
+- keinen Abschluss
 
-# Du bekommst von KI:
+**Dieses Produkt:**
+- fordert dich täglich aktiv
+- gibt dir **eine** Aufgabe – nicht fünf Optionen
+- verbietet Optimierung
+- erzwingt Vereinfachung
+- kennt nur Fortschritt oder ❌
+- endet nach 30 Tagen – egal wie
+- macht Selbsttäuschung sichtbar
+- optimiert auf **Abschluss**, nicht auf Qualität
 
-Ideen
+Dieses Produkt ersetzt keine KI.
+Es ersetzt Ausreden.
 
-Optionen
-
-Erklärungen
-
-endlose Alternativen
-
-# Was du nicht bekommst:
-
-Abschluss
-
-Druck
-
-Konsequenzen
-
-ein Ende
-
-## Direkte KI-Nutzung vs. 30-Tage-Finish-Sprint
-
-# KI direkt nutzen
-
-Du entscheidest selbst, was heute wichtig ist
-
-Du kannst jederzeit neu planen
-
-Du kannst Aufgaben verschieben, umformulieren, relativieren
-
-Kein klarer Abschluss-Zeitpunkt
-
-Kein Verlust, wenn du aufgibst
-
-Du bleibst im Denken
-
-# 30-Tage-Finish-Sprint
-
-Die Tagesaufgabe ist vorgegeben
-
-Die Zeit ist begrenzt (25–40 Min)
-
-Wenn du ausweichst, wird radikal vereinfacht
-
-Der Sprint endet fix nach 30 Tagen
-
-Aufgeben ist sichtbar
-
-Du wirst gezwungen zu liefern
-
-# Der entscheidende Unterschied
-KI hilft dir beim Arbeiten.
-Dieses Produkt zwingt dich zum Abschließen.
-
-Das ist kein Wissensproblem.
-Das ist ein Verhaltensproblem.
-
-# Wann KI allein reicht
-
-Du willst lernen
-
-Du willst Optionen
-
-Du willst nachdenken
-
-Du hast kein Problem mit offenen Enden
-
-👉 Dann brauchst du dieses Produkt nicht.
-
-# Wann dieses Produkt notwendig ist
-
-Du hast ein konkretes Projekt
-
-Du weißt im Grunde, was zu tun ist
-
-Du verlierst dich trotzdem
-
-Du willst ein fertiges Ergebnis, nicht mehr Input
-
-👉 Dann reicht KI nicht.
-
-# Ehrliche Zusammenfassung
-
-Dieses Produkt ist kein Ersatz für KI.
-Es ist ein Zwangsrahmen, den KI dir nicht geben kann.
-
-Du zahlst nicht für Information.
-Du zahlst dafür, dass das Projekt endet.
+Du kannst jederzeit KI nutzen – 
+aber nicht, um Entscheidungen zu vermeiden.
 
 
-# Das Risiko (ehrlich)
+
+## Das Risiko (ehrlich)
 
 Du könntest nach 30 Tagen feststellen:
 
