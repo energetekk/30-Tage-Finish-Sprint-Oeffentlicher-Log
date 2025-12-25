@@ -140,30 +140,101 @@ Beides zählt.
 Selbstbetrug nicht.
 
 
-## Warum nicht einfach eine KI nutzen?
+## Warum nicht einfach ChatGPT / KI direkt nutzen?
 
-Eine KI beantwortet Fragen.  
-Dieses Produkt erzwingt Ergebnisse.
+Weil KI dir keine Verantwortung abnimmt.
 
-**KI allein:**
-- reagiert nur, wenn du fragst
-- akzeptiert Ausreden
-- optimiert, wenn du eigentlich abschließen müsstest
-- hat keine Konsequenzen
-- endet nie
+# Du bekommst von KI:
 
-**Dieser Sprint:**
-- gibt dir täglich eine konkrete Aufgabe
-- akzeptiert nur „erledigt“ oder „nicht erledigt“
-- entfernt Features statt neue vorzuschlagen
-- zwingt dich, mit Konsequenzen zu leben
-- endet nach 30 Tagen – egal wie
+Ideen
 
-Eine KI hilft dir beim Denken.  
-Dieses System hilft dir beim **Beenden**.
+Optionen
+
+Erklärungen
+
+endlose Alternativen
+
+# Was du nicht bekommst:
+
+Abschluss
+
+Druck
+
+Konsequenzen
+
+ein Ende
+
+## Direkte KI-Nutzung vs. 30-Tage-Finish-Sprint
+
+# KI direkt nutzen
+
+Du entscheidest selbst, was heute wichtig ist
+
+Du kannst jederzeit neu planen
+
+Du kannst Aufgaben verschieben, umformulieren, relativieren
+
+Kein klarer Abschluss-Zeitpunkt
+
+Kein Verlust, wenn du aufgibst
+
+Du bleibst im Denken
+
+# 30-Tage-Finish-Sprint
+
+Die Tagesaufgabe ist vorgegeben
+
+Die Zeit ist begrenzt (25–40 Min)
+
+Wenn du ausweichst, wird radikal vereinfacht
+
+Der Sprint endet fix nach 30 Tagen
+
+Aufgeben ist sichtbar
+
+Du wirst gezwungen zu liefern
+
+# Der entscheidende Unterschied
+KI hilft dir beim Arbeiten.
+Dieses Produkt zwingt dich zum Abschließen.
+
+Das ist kein Wissensproblem.
+Das ist ein Verhaltensproblem.
+
+# Wann KI allein reicht
+
+Du willst lernen
+
+Du willst Optionen
+
+Du willst nachdenken
+
+Du hast kein Problem mit offenen Enden
+
+👉 Dann brauchst du dieses Produkt nicht.
+
+# Wann dieses Produkt notwendig ist
+
+Du hast ein konkretes Projekt
+
+Du weißt im Grunde, was zu tun ist
+
+Du verlierst dich trotzdem
+
+Du willst ein fertiges Ergebnis, nicht mehr Input
+
+👉 Dann reicht KI nicht.
+
+# Ehrliche Zusammenfassung
+
+Dieses Produkt ist kein Ersatz für KI.
+Es ist ein Zwangsrahmen, den KI dir nicht geben kann.
+
+Du zahlst nicht für Information.
+Du zahlst dafür, dass das Projekt endet.
 
 
-Das Risiko (ehrlich)
+# Das Risiko (ehrlich)
 
 Du könntest nach 30 Tagen feststellen:
 
@@ -172,7 +243,7 @@ Ich liefere aktuell keine verkaufsfertigen Ergebnisse.
 Das ist unangenehm.
 Aber es ist wahr – und damit der einzige sinnvolle Ausgangspunkt.
 
-Warum du mir trotzdem vertrauen kannst
+# Warum du mir trotzdem vertrauen kannst
 
 Ich bin Teilnehmer Nummer 1.
 
@@ -187,7 +258,7 @@ sichtbaren Fehlschlägen
 Kein System, das ich nicht selbst benutze.
 Kein Versprechen, das ich nicht einhalte.
 
-Voraussetzungen
+## Voraussetzungen
 
 Bevor du startest, musst du bereit sein:
 
@@ -201,7 +272,7 @@ ein klares Projekt zu benennen
 
 Wenn eine dieser Voraussetzungen fehlt: Nicht starten.
 
-Abschlussfrage (CTA)
+## Abschlussfrage (CTA)
 
 Bist du bereit, dein Projekt in 30 Tagen zu beenden –
 oder dich nicht länger selbst anzulügen?
