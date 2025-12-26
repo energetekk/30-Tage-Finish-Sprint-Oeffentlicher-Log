@@ -1,15 +1,11 @@
-LANDINGPAGE (FINAL)
-Headline
 
-Du brauchst kein neues System.
-Du brauchst einen Abschluss.
+# Du brauchst kein neues System.
+# Du brauchst einen Abschluss.
 
-Subheadline
+## Ein 30-Tage-Sprint, der dich zwingt, ein konkretes Projekt zu beenden –
+## oder ehrlich zuzugeben, dass du (noch) nichts Verkaufsfertiges lieferst.
 
-Ein 30-Tage-Sprint, der dich zwingt, ein konkretes Projekt zu beenden –
-oder ehrlich zuzugeben, dass du (noch) nichts Verkaufsfertiges lieferst.
-
-Das Versprechen
+### Das Versprechen
 
 Nach 30 Tagen gilt exakt eines:
 
@@ -146,24 +142,25 @@ Eine KI beantwortet Fragen.
 Dieses Produkt erzwingt Ergebnisse.
 
 **KI allein:**
-- reagiert nur, wenn du fragst
-- akzeptiert Ausreden
-- optimiert, wenn du eigentlich abschließen müsstest
-- hat keine Konsequenzen
-- endet nie
+- Du entscheidest selbst, ob du heute arbeitest
+- Du kannst Aufgaben endlos umformulieren
+- Du optimierst statt abzuschließen
+- Es gibt keine Konsequenz, wenn du abbrichst
+- Niemand sieht, ob du lieferst oder ausweichst
+- Du kannst jederzeit neu anfangen → nichts endet
 
 **Dieser Sprint:**
-- gibt dir täglich eine konkrete Aufgabe
-- akzeptiert nur „erledigt“ oder „nicht erledigt“
-- entfernt Features statt neue vorzuschlagen
-- zwingt dich, mit Konsequenzen zu leben
-- endet nach 30 Tagen – egal wie
+- Die Tagesaufgabe ist vorgegeben
+- Der Zeitrahmen ist begrenzt (25–40 Min)
+- Nicht-Erledigung ist sichtbar
+- Vereinfachung wird erzwungen, nicht diskutiert
+- Abbruch ist öffentlich dokumentiert
+- Nach 30 Tagen ist dein Projekt fertig oder ehrlich gescheitert
 
 Eine KI hilft dir beim Denken.  
 Dieses System hilft dir beim **Beenden**.
 
-
-Das Risiko (ehrlich)
+## Das Risiko (ehrlich)
 
 Du könntest nach 30 Tagen feststellen:
 
@@ -172,7 +169,7 @@ Ich liefere aktuell keine verkaufsfertigen Ergebnisse.
 Das ist unangenehm.
 Aber es ist wahr – und damit der einzige sinnvolle Ausgangspunkt.
 
-Warum du mir trotzdem vertrauen kannst
+### Warum du mir trotzdem vertrauen kannst
 
 Ich bin Teilnehmer Nummer 1.
 
@@ -187,7 +184,7 @@ sichtbaren Fehlschlägen
 Kein System, das ich nicht selbst benutze.
 Kein Versprechen, das ich nicht einhalte.
 
-Voraussetzungen
+### Voraussetzungen
 
 Bevor du startest, musst du bereit sein:
 
@@ -201,7 +198,7 @@ ein klares Projekt zu benennen
 
 Wenn eine dieser Voraussetzungen fehlt: Nicht starten.
 
-Abschlussfrage (CTA)
+### Abschlussfrage (CTA)
 
 Bist du bereit, dein Projekt in 30 Tagen zu beenden –
 oder dich nicht länger selbst anzulügen?
