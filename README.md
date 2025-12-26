@@ -52,7 +52,7 @@ Der Sprint wird nicht pausiert, nicht verlängert, nicht entschuldigt
 
 Nach 30 Tagen ist Schluss. Egal wie.
 
-Für wen das ist
+## Für wen das ist
 
 Du hast mindestens ein angefangenes Projekt
 
@@ -76,7 +76,7 @@ Du bist nicht bereit, 30 Tage durchzuziehen
 
 Du willst dich weiter selbst belügen
 
-Zeitaufwand
+### Zeitaufwand
 
 25–40 Minuten pro Tag
 
@@ -91,15 +91,22 @@ neben dem Hamsterrad zu funktionieren.
 
 ## Was du konkret bekommst, so interagierst du mit dem Produkt:
 
-- tägliche klare Aufgaben (25–40 Min)
+Du bekommst ein simples, hartes 30-Tage-System:
 
-- ein festes tägliches Check-in-Format
+- Jeden Tag eine klare Aufgabe (25–40 Minuten), die dein Projekt Richtung Abschluss zwingt
+- Ein festes tägliches Check-in, bei dem nur zählt: erledigt oder nicht
+- Ein Tool (Text-basiert), das keine Diskussion zulässt
+- Wenn du ausweichst, wird dein Projekt vereinfacht, nicht verschönert
+- Nach 30 Tagen existiert ein fertiges Ergebnis – egal wie roh
 
-- ein simples Tool (z. B. Telegram / Web / E-Mail, ist noch bekannt zu geben)
+## Was du nicht bekommst
 
-- keine Diskussion, keine Ausreden
+- Kein Coaching
+- Keine individuelle Betreuung
+- Keine Diskussion über Perfektion
+- Keine Garantie, dass dir das Ergebnis gefällt
+- Keine Verlängerung, wenn du abbrichst
 
-- Ein System, das auf Abschluss nach 30 Tagen optimiert ist – egal wie
 
 ## So sieht dein tägliches Check-in aus
 
@@ -198,7 +205,7 @@ ein klares Projekt zu benennen
 
 Wenn eine dieser Voraussetzungen fehlt: Nicht starten.
 
-### Abschlussfrage (CTA)
+### Abschlussfrage
 
 Bist du bereit, dein Projekt in 30 Tagen zu beenden –
 oder dich nicht länger selbst anzulügen?
