@@ -17,27 +17,6 @@ du hast öffentlich anerkannt, dass du es nicht geschafft hast
 Beides ist ein Ergebnis.
 Selbstbetrug ist ausgeschlossen.
 
-Was du hier bekommst
-
-Kein Coaching.
-Keine Motivation.
-Kein „Produktivitätssystem“.
-
-Sondern:
-
-tägliche, kurze Check-ins
-
-klare Tagesaufgaben (25–40 Minuten)
-
-radikale Vereinfachung, wenn du ausweichst
-
-keine Diskussionen, nur Entscheidungen
-
-Abschluss statt Perfektion
-
-Das Ziel ist nicht ein perfektes Ergebnis.
-Das Ziel ist ein fertiges Ergebnis.
-
 ## Wie der Sprint funktioniert
 
 Du bringst ein klares Projekt mit
@@ -133,8 +112,7 @@ Wenn du ausweichst, wird dein Projekt vereinfacht, nicht erweitert.
 
 Keine Diskussion. Nur Fortschritt oder Ehrlichkeit.
 
-Check-in-Format ([Notion](https://www.notion.so/30-Tage-Finish-Sprint-Daily-Check-in-2d6e3450b06980b6803ee8fd6bdfccc6?source=copy_link))
-
+Check-in-Format [Notion](https://www.notion.so/30-Tage-Finish-Sprint-Daily-Check-in-2d6e3450b06980b6803ee8fd6bdfccc6?source=copy_link)
 
 Tag 30 – Abschluss
 
