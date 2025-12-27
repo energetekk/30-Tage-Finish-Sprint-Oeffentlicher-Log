@@ -133,6 +133,9 @@ Wenn du ausweichst, wird dein Projekt vereinfacht, nicht erweitert.
 
 Keine Diskussion. Nur Fortschritt oder Ehrlichkeit.
 
+Check-in-Format ([Notion](https://www.notion.so/30-Tage-Finish-Sprint-Daily-Check-in-2d6e3450b06980b6803ee8fd6bdfccc6?source=copy_link))
+
+
 Tag 30 – Abschluss
 
 Dein Projekt ist fertig
