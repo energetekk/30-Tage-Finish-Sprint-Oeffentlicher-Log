@@ -111,9 +111,6 @@ Kein Coaching.
 Keine Verlängerung.
 Kein Geld zurück bei Abbruch.
 
-👉 Sprint starten – 99 €
-
-
 # Warum du mir trotzdem vertrauen kannst
 
 Ich bin Teilnehmer Nummer 1.
