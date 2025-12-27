@@ -9,33 +9,29 @@ Subheadline
 Ein 30-Tage-Sprint, der dich zwingt, ein konkretes Projekt zu beenden –
 oder ehrlich zuzugeben, dass du (noch) nichts Verkaufsfertiges lieferst.
 
-# Das Versprechen
+# Das Ergebnis
 
-Nach 30 Tagen gilt exakt eines:
+Nach 30 Tagen gilt genau eines:
 
 Dein Projekt ist abgeschlossen
-oder
 
-du hast öffentlich anerkannt, dass du es nicht geschafft hast
+oder du hast öffentlich anerkannt, dass es nicht abgeschlossen wurde
 
 Beides ist ein Ergebnis.
-Selbstbetrug ist ausgeschlossen.
+Selbstbetrug zählt nicht.
 
 ## Was du hier bekommst
 
-Kein Coaching.
-Keine Motivation.
-Kein „Produktivitätssystem“.
+- tägliche klare Aufgaben (25–40 Minuten)
 
-### Sondern:
+- ein festes Check-in-Format
+  Check-in-Format (https://www.notion.so/30-Tage-Finish-Sprint-Daily-Check-in-2d6e3450b06980b6803ee8fd6bdfccc6?source=copy_link)
 
-tägliche, kurze Check-ins
+- ein simples Tool (Telegram / Web / E-Mail – benannt, nicht offen)
 
-klare Tagesaufgaben (25–40 Minuten)
+- radikale Vereinfachung statt Feature-Aufbau
 
-radikale Vereinfachung, wenn du ausweichst
-
-keine Diskussionen, nur Entscheidungen
+- ein System, das auf Abschluss optimiert ist, nicht auf Perfektion
 
 ### Abschluss statt Perfektion
 
@@ -44,140 +40,79 @@ Das Ziel ist ein fertiges Ergebnis.
 
 # Wie der Sprint funktioniert
 
-Du bringst ein klares Projekt mit
+30 Kalendertage
 
-Du arbeitest täglich mindestens 25 Minuten
+1 Aufgabe pro Tag
 
-Du dokumentierst ehrlich, ob du geliefert hast
+keine Pausen
 
-Wenn du nicht lieferst, greift deine vorher definierte Konsequenz
-
-Der Sprint wird nicht pausiert, nicht verlängert, nicht entschuldigt
-
-Nach 30 Tagen ist Schluss. Egal wie.
-
-# Für wen das ist
-
-Du hast mindestens ein angefangenes Projekt
-
-Du arbeitest neben Job, Verpflichtungen, Alltag
-
-Du bist genervt davon, dich selbst immer wieder zu vertrösten
-
-Du willst abschließen, nicht optimieren
-
-Du hältst direkte Sprache aus
-
-# Für wen das nicht ist
-
-Du hast keine klare Projektidee
-
-Du suchst Motivation, Zuspruch oder Coaching
-
-Du willst „dran arbeiten“, aber nichts beenden
-
-Du bist nicht bereit, 30 Tage durchzuziehen
-
-Du willst dich weiter selbst belügen
-
-# Zeitaufwand
-
-25–40 Minuten pro Tag
+keine Verlängerung
 
 kein Nachholen
 
-kein Bündeln
+Nach Tag 30 ist Schluss.
 
-kein „morgen doppelt“
+## Warum nicht einfach ChatGPT, Notion oder To-Do-Apps?
 
-Der Sprint ist genau dafür gebaut,
-neben dem Hamsterrad zu funktionieren.
+**Kurzfassung:**  
+Diese Tools helfen dir beim Denken.  
+Dieses Produkt zwingt dich zum **Abschluss**.
 
-# Was du konkret bekommst, so interagierst du mit dem Produkt:
+### ChatGPT
+- gibt Antworten
+- denkt mit dir
+- lässt dich endlos iterieren
+❌ zwingt dich zu keinem Ergebnis  
+❌ kennt keinen Abschluss
 
-- tägliche klare Aufgaben (25–40 Min)
+### Notion / To-Do-Apps
+- organisieren Aufgaben
+- speichern Ideen
+- geben Struktur
+❌ bremsen nicht, wenn du dich verzettelst  
+❌ setzen keinen Endpunkt
 
-- ein festes tägliches Check-in-Format
+### Dieses Produkt
+- gibt **eine Aufgabe pro Tag**
+- begrenzt Zeit (25–40 Min)
+- entfernt Features statt sie hinzuzufügen
+- endet **zwangsläufig nach 30 Tagen**
 
-- ein simples Tool (z. B. Telegram / Web / E-Mail – noch offen, aber benannt)
-
-- keine Diskussion, keine Ausreden
-
-- Ein System, das auf Abschluss nach 30 Tagen optimiert ist – egal wie
-
-## So sieht dein tägliches Check-in aus
-
-Jeder Tag folgt demselben Ablauf.  
-Kein Nachdenken. Kein Interpretieren.
-
-## So läuft dein 30-Tage-Sprint ab
-
-Tag 0 – Start
-
-Du bezahlst.
-
-Du bekommst eine klare Startnachricht.
-
-Du legst dein Projekt verbindlich fest.
-
-Tag 1–29 – Daily Execution
-
-Du erhältst eine klare Tagesaufgabe (25–40 Minuten).
-
-Du checkst ein: erledigt / nicht erledigt.
-
-Wenn du ausweichst, wird dein Projekt vereinfacht, nicht erweitert.
-
-Keine Diskussion. Nur Fortschritt oder Ehrlichkeit.
-
-Tag 30 – Abschluss
-
-Dein Projekt ist fertig
-oder
-du hast öffentlich dokumentiert, dass du es nicht abgeschlossen hast.
-
-Beides zählt.
-Selbstbetrug nicht.
+👉 Kein Optimieren.  
+👉 Kein Verschieben.  
+👉 Entweder Abschluss oder ehrliches Scheitern.
 
 
-# Warum nicht einfach KI direkt nutzen?
+# Für wen das ist
 
-**KI (z. B. ChatGPT):**
-- reagiert, wenn du fragst
-- optimiert, wenn du zweifelst
-- diskutiert Alternativen
-- erlaubt dir, dich endlos zu verfeinern
-- gibt dir immer „noch eine bessere Idee“
-- hat kein Ende
-- keine Konsequenzen
-- keinen Abschluss
+du hast ein klares Projekt
 
-**Dieses Produkt:**
-- fordert dich täglich aktiv
-- gibt dir **eine** Aufgabe – nicht fünf Optionen
-- verbietet Optimierung
-- erzwingt Vereinfachung
-- kennt nur Fortschritt oder ❌
-- endet nach 30 Tagen – egal wie
-- macht Selbsttäuschung sichtbar
-- optimiert auf **Abschluss**, nicht auf Qualität
+du arbeitest neben Job / Alltag
 
-Dieses Produkt ersetzt keine KI.
-Es ersetzt Ausreden.
+du willst abschließen, nicht lernen
 
-Du kannst jederzeit KI nutzen – 
-aber nicht, um Entscheidungen zu vermeiden.
+du hältst direkte Sprache aus
 
+# Für wen nicht
 
+keine Projektidee
 
-## Das Risiko (ehrlich)
+Angst vor klaren Deadlines
 
-Du könntest nach 30 Tagen feststellen:
+Wunsch nach Motivation oder Coaching
 
-Ich liefere aktuell keine verkaufsfertigen Ergebnisse.
+Wunsch, dich weiter selbst zu belügen
 
-Das ist unangenehm.
-Aber es ist wahr – und damit der einzige sinnvolle Ausgangspunkt.
+# Teilnahme
+
+Der 30-Tage-Finish-Sprint kostet 99 €.
+
+Kein Coaching.
+Keine Verlängerung.
+Kein Geld zurück bei Abbruch.
+
+👉 Sprint starten – 99 €
+
 
 # Warum du mir trotzdem vertrauen kannst
 
@@ -194,44 +129,6 @@ sichtbaren Fehlschlägen
 Kein System, das ich nicht selbst benutze.
 Kein Versprechen, das ich nicht einhalte.
 
-## Voraussetzungen
-
-Bevor du startest, musst du bereit sein:
-
-täglich mindestens 25 Minuten zu arbeiten
-
-ein klares Projekt zu benennen
-
-30 Tage durchzuziehen
-
-öffentlich ehrlich zu sein, auch bei Fehlschlägen
-
-Wenn eine dieser Voraussetzungen fehlt: Nicht starten.
-
-## Abschlussfrage (CTA)
-
-Bist du bereit, dein Projekt in 30 Tagen zu beenden –
-oder dich nicht länger selbst anzulügen?
-
-👉 Dann starte den Sprint.
-
-## Teilnahme
-
-Der 30-Tage-Finish-Sprint kostet **99 €**.
-
-Nach der Zahlung:
-- startest du **sofort**
-- erhältst du eine kurze Start-Anleitung
-- legst dein konkretes Projekt fest
-- beginnst mit dem **täglichen Check-in**
-
-Kein Warten.  
-Kein Onboarding-Call.  
-Kein „wir melden uns“.
-
-👉 [Sprint starten – 99 €](https://buy.stripe.com/test_28E4gsd2P1cx19N3eK7g401)
-
-Nach der Zahlung erhältst du innerhalb von 24 Stunden deine Startanleitung.
 
 ## Bevor du startest
 
@@ -252,6 +149,8 @@ Dieser Sprint ist **nicht** für jeden.
 **Wenn du jetzt trotzdem klickst,  
 entscheidest du dich bewusst für den Abschluss –  
 oder für ein sichtbares Scheitern.**
+
+👉 [Sprint starten – 99 €](https://buy.stripe.com/test_28E4gsd2P1cx19N3eK7g401)
 
 
 
