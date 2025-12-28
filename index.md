@@ -25,7 +25,7 @@ Selbstbetrug zählt nicht.
 - tägliche klare Aufgaben (25–40 Minuten)
 
 - ein festes Check-in-Format
-  Check-in-Format (https://www.notion.so/30-Tage-Finish-Sprint-Daily-Check-in-2d6e3450b06980b6803ee8fd6bdfccc6?source=copy_link)
+  [Check-in-Format (Notion)] (https://www.notion.so/30-Tage-Finish-Sprint-Daily-Check-in-2d6e3450b06980b6803ee8fd6bdfccc6?source=copy_link)
 
 - ein simples Tool (Telegram / Web / E-Mail – benannt, nicht offen)
 
