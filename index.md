@@ -62,15 +62,15 @@ Dieses Produkt zwingt dich zum **Abschluss**.
 - gibt Antworten
 - denkt mit dir
 - lässt dich endlos iterieren
-❌ zwingt dich zu keinem Ergebnis  
-❌ kennt keinen Abschluss
+- ❌ zwingt dich zu keinem Ergebnis  
+- ❌ kennt keinen Abschluss
 
 ### Notion / To-Do-Apps
 - organisieren Aufgaben
 - speichern Ideen
 - geben Struktur
-❌ bremsen nicht, wenn du dich verzettelst  
-❌ setzen keinen Endpunkt
+- ❌ bremsen nicht, wenn du dich verzettelst
+- ❌ setzen keinen Endpunkt
 
 ### Dieses Produkt
 - gibt **eine Aufgabe pro Tag**
