@@ -1,8 +1,6 @@
 # Du brauchst keine neue KI.
 # Du brauchst einen Abschluss.
 
-
-
 Ein 30-Tage-Sprint, der dich zwingt, ein konkretes Projekt fertigzustellen –
 oder ehrlich zu akzeptieren, dass du es nicht tust.
 
@@ -113,3 +111,40 @@ Kein Geld zurück, wenn du abbrichst.
 
 Bist du bereit, dein Projekt in 30 Tagen abzuschließen –
 oder dich nicht länger selbst anzulügen?
+
+## So sieht eine Woche im Sprint aus
+
+### Vor dem Start (Tag 0)
+
+Bevor der Sprint beginnt, triffst du eine bewusste Entscheidung:
+
+- Du wählst **ein Projekt**
+- Du akzeptierst die **30-Tage-Regeln**
+- Du legst deine **Konsequenz** fest
+
+Kein Setup.  
+Keine Vorbereitung.  
+Nur Commitment.
+
+**Tag 1**
+- Aufgabe: Projekt brutal eingrenzen 
+- Ergebnis: Ein Satz, was am Ende der 30 Tage fertig sein MUSS
+
+**Tag 2**
+- Aufgabe: Erste öffentliche Version erstellen 
+- Ergebnis: Etwas Sichtbares ist live (auch wenn es roh ist)
+
+**Tag 3**
+- Aufgabe: Zahlungs- oder Nutzungs-Commit setzen 
+- Ergebnis: Klarer Punkt, an dem es ernst wird
+
+**Tag 4**
+- Aufgabe: Alles entfernen, was nicht zwingend nötig ist 
+- Ergebnis: Projekt halb so groß, aber realistisch abschließbar
+
+**Tag 5**
+- Aufgabe: Erste Nutzung oder Konfrontation mit echten Menschen 
+- Ergebnis: Reaktion ≠ Meinung
+
+
+
