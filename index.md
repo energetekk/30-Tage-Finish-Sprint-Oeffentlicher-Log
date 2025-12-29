@@ -26,10 +26,15 @@ Für 99 € bekommst du kein Tool-Spielzeug, sondern ein Durchzieh-System:
 
 Tägliche klare Aufgabe (25–40 Minuten, nicht verhandelbar)
 
-Ein fixes Check-in-Format (was heute geliefert wurde – ja/nein)
+Ein fixes Check-in-Format
+  Check-in-Kanal
 
-Ein simples Tool für den Ablauf
-(z. B. Telegram, Web oder E-Mail – bewusst minimal, kein Feature-Zoo)
+  Dein täglicher Check-in erfolgt per E-Mail.
+
+  Du erhältst nach Zahlung eine feste E-Mail-Adresse.
+  Dorthin sendest du jeden Tag deinen kurzen Check-in.
+
+  Keine App. Kein Login. Keine Ausreden.
 
 Zwang zur Vereinfachung, wenn du ausweichst
 
