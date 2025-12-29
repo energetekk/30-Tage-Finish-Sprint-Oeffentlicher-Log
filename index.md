@@ -1,10 +1,8 @@
 # Du brauchst kein neues System.
-## Du brauchst einen Abschluss.
+# Du brauchst einen Abschluss.
 
-Subheadline
-
-Ein 30-Tage-Sprint, der dich zwingt, ein konkretes Projekt fertigzustellen –
-oder ehrlich zu akzeptieren, dass du es (noch) nicht kannst.
+## Ein 30-Tage-Sprint, der dich zwingt, ein konkretes Projekt fertigzustellen –
+## oder ehrlich zu akzeptieren, dass du es (noch) nicht kannst.
 
 # Das Ergebnis
 
