@@ -20,22 +20,24 @@ oder du hast öffentlich anerkannt, dass es nicht abgeschlossen wurde
 Beides ist ein Ergebnis.
 Selbstbetrug zählt nicht.
 
-## Was du hier bekommst
+## Was du konkret bekommst (das hat gefehlt)
 
-- tägliche klare Aufgaben (25–40 Minuten)
+Für 99 € bekommst du kein Tool-Spielzeug, sondern ein Durchzieh-System:
 
-- ein festes Check-in-Format
-  [(Notion)](https://www.notion.so/30-Tage-Finish-Sprint-Daily-Check-in-2d6e3450b06980b6803ee8fd6bdfccc6?source=copy_link)
+Tägliche klare Aufgabe (25–40 Minuten, nicht verhandelbar)
 
-- Ein simples Tool für den Ablauf
+Ein fixes Check-in-Format (was heute geliefert wurde – ja/nein)
+
+Ein simples Tool für den Ablauf
 (z. B. Telegram, Web oder E-Mail – bewusst minimal, kein Feature-Zoo)
 
-- Zwang zur Vereinfachung, wenn du ausweichst
+Zwang zur Vereinfachung, wenn du ausweichst
 
-- Kein Diskutieren, kein Optimieren, kein „morgen besser“
+Kein Diskutieren, kein Optimieren, kein „morgen besser“
 
-- Ein System, das nur auf eines optimiert ist:
-👉 Abschluss nach 30 Tagen – egal wie unperfekt****
+Ein System, das nur auf eines optimiert ist:
+👉 Abschluss nach 30 Tagen – egal wie unperfekt
+
 
 ## So interagierst du täglich mit dem Produkt
 
@@ -54,14 +56,6 @@ Kein Nachholen. Kein Erklären.
 Das ist kein Coaching.
 Das ist Ausführung unter Zwang.
 
-
-
-
-## Warum nicht einfach ChatGPT, Notion oder To-Do-Apps?
-
-**Kurzfassung:**  
-Diese Tools helfen dir beim Denken.  
-Dieses Produkt zwingt dich zum **Abschluss**.
 
 ### Vergleich (das ist entscheidend)
 ❌ KI / ChatGPT
@@ -106,7 +100,6 @@ Du willst abschließen, nicht lernen
 Du hältst direkte Sprache aus
 
 
-
 # Für wen nicht
 
 Du hast keine klare Projektidee
@@ -116,6 +109,7 @@ Du willst Motivation oder Feedback
 Du willst perfektionieren
 
 Du willst dich weiter selbst belügen
+
 
 # Zeit & Realität
 
