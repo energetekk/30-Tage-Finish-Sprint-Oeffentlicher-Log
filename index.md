@@ -41,6 +41,7 @@ Zwang zur Vereinfachung, wenn du ausweichst
 Kein Diskutieren, kein Optimieren, kein „morgen besser“
 
 Ein System, das nur auf eines optimiert ist:
+
 👉 Abschluss nach 30 Tagen – egal wie unperfekt
 
 
