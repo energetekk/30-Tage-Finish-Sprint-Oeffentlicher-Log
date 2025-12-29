@@ -20,7 +20,7 @@ oder du hast öffentlich anerkannt, dass es nicht abgeschlossen wurde
 Beides ist ein Ergebnis.
 Selbstbetrug zählt nicht.
 
-## Was du konkret bekommst (das hat gefehlt)
+## Was du konkret bekommst
 
 Für 99 € bekommst du kein Tool-Spielzeug, sondern ein Durchzieh-System:
 
@@ -57,7 +57,7 @@ Das ist kein Coaching.
 Das ist Ausführung unter Zwang.
 
 
-### Vergleich (das ist entscheidend)
+### Vergleich
 ❌ KI / ChatGPT
 
 beantwortet Fragen
@@ -132,5 +132,8 @@ Kein Geld zurück bei Abbruch.
 
 👉 [Sprint starten – 99 €](https://buy.stripe.com/test_28E4gsd2P1cx19N3eK7g401)
 
+# Abschlussfrage (CTA)
 
+Bist du bereit, dein Projekt in 30 Tagen zu beenden –
+oder dich weiter selbst anzulügen?
 
