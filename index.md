@@ -47,20 +47,59 @@ Ein System, das nur auf eines optimiert ist:
 
 ## So interagierst du täglich mit dem Produkt
 
-Jeden Tag dasselbe, ohne Ausnahmen:
+Dein Ablauf (30 Tage, jeden Tag gleich)
 
-Du bekommst eine konkrete Tagesaufgabe
+Du erhältst täglich eine klare Aufgabe
+– per E-Mail
+– Zeitaufwand: 25–40 Minuten
+– immer nur eine Aufgabe, kein Backlog
 
-Du arbeitest 25–40 Minuten
+Du arbeitest die Aufgabe ab
+– Fokus auf Abschluss
+– Reduktion erlaubt
+– Perfektion verboten
 
-Du checkst ein: erledigt / nicht erledigt
+Du machst deinen täglichen Check-in
+– kurz
+– ehrlich
+– gleiches Format jeden Tag
+– Antwort per E-Mail
 
-Wenn nicht erledigt → vordefinierte Konsequenz
+Die KI reagiert auf deinen Check-in
+– bestätigt Abschluss oder
+– zwingt Vereinfachung oder
+– akzeptiert Scheitern ohne Ausreden
 
-Kein Nachholen. Kein Erklären.
+Am nächsten Tag: neue Aufgabe
+– unabhängig davon, ob du geliefert hast
+– kein Nachholen
+– kein Reset
 
-Das ist kein Coaching.
-Das ist Ausführung unter Zwang.
+## Was du NICHT bekommst
+
+kein Coaching-Gespräch
+
+keine Motivation
+
+keine langen Texte
+
+keine Diskussionen
+
+keine Anpassung an dein Ego
+
+Das System reagiert nur auf Taten, nicht auf Erklärungen.
+
+## Technische Umsetzung (transparent)
+
+Aufgaben: täglich per E-Mail
+
+Check-in: Antwort per E-Mail
+
+Auswertung: KI-basiert, automatisiert
+
+Tool: bewusst simpel, kein Setup nötig
+
+Du brauchst keine App, kein Konto, kein Dashboard.
 
 
 ### Vergleich
