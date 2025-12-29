@@ -1,8 +1,5 @@
-LANDINGPAGE (FINAL)
-Headline
-
-Du brauchst kein neues System.
-Du brauchst einen Abschluss.
+# Du brauchst kein neues System.
+## Du brauchst einen Abschluss.
 
 Subheadline
 
