@@ -46,6 +46,21 @@ ein System, das nur ein Ziel kennt:
 Das Ergebnis muss nicht perfekt sein.
 Es muss fertig sein.
 
+## Was am Ende von 30 Tagen existiert
+
+Nach 30 Tagen hast du:
+
+- ein klar definiertes, abgeschlossenes Projekt
+- ein sichtbares Ergebnis (live, veröffentlicht oder ausgeliefert)
+- eine dokumentierte Spur, dass du geliefert hast (oder ehrlich gescheitert bist)
+
+Beispiele für fertige Ergebnisse:
+- eine live Website / Landingpage
+- ein veröffentlichtes digitales Produkt
+- ein ausgeliefertes MVP
+- ein klar abgeschlossenes Projekt ohne offene Enden
+
+
 ## Wie du mit dem Produkt interagierst
 - Du checkst einmal täglich ein
 - Du bekommst genau eine Aufgabe
