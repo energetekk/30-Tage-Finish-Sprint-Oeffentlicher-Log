@@ -24,7 +24,7 @@ Sondern weil niemand dich zwingt, abzuschließen.
 Wenn du Inspiration suchst → falsch.
 Wenn du Zuspruch willst → falsch.
 
-## Was du für 99 € konkret bekommst
+## Was du für dein Geld konkret bekommst
 
 Du kaufst keine Software,
 du kaufst einen 30-Tage-Zwang zum Abschluss.
