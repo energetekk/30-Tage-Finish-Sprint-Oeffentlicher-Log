@@ -112,6 +112,31 @@ Mein eigener Sprint läuft öffentlich – mit Erfolgen und Fehlschlägen.
 Kein System, das ich nicht selbst benutze.
 Kein Versprechen, das ich nicht einhalte.
 
+### Warum dieser Sprint funktioniert
+
+Die meisten Projekte scheitern nicht an Talent oder Motivation.
+
+Sie scheitern, weil:
+- „fertig“ nie klar definiert ist
+- Entscheidungen zu lange offen bleiben
+- Menschen sich selbst belügen
+
+Dieser Sprint greift genau dort ein.
+
+Er zwingt:
+- eine objektive Definition von „fertig“
+- tägliche, kleine Lieferungen
+- Entscheidungen zur richtigen Zeit
+
+Es geht nicht darum, besser zu arbeiten.
+Sondern darum, **etwas abzuschließen**.
+
+Am Ende von 30 Tagen existiert ein Ergebnis –
+oder eine ehrliche Dokumentation, dass du es nicht geschafft hast.
+
+Beides ist besser als weiteres Aufschieben.
+
+
 ## Teilnahme
 
 Der 30-Tage-Finish-Sprint kostet 99 €.
