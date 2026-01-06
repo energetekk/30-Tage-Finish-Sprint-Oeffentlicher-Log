@@ -52,8 +52,8 @@ Nach 30 Tagen hast du:
 
 - ein klar definiertes, abgeschlossenes Projekt
 - ein sichtbares Ergebnis (live, veröffentlicht oder ausgeliefert)
-- ohne diesen Punkt gilt der Sprint automatisch als nicht abgeschlossen.
-    - Ein konkretes Ergebnis ist **veröffentlicht** oder **sichtbar**
+    - ohne diesen Punkt gilt der Sprint automatisch als nicht abgeschlossen.
+      -> Ein konkretes Ergebnis ist **veröffentlicht** oder **sichtbar**
 - eine dokumentierte Spur, dass du geliefert hast (oder ehrlich gescheitert bist)
 
 Beispiele für fertige Ergebnisse:
