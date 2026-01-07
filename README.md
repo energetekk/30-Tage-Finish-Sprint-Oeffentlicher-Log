@@ -100,7 +100,7 @@ Du bezahlst.
 
 Du bekommst eine klare Startnachricht.
 
-Du legst dein Projekt verbindlich fest.
+Du legst dein Projekt fest (Unsicherheit erlaubt).
 
 Tag 1–29 – Daily Execution
 
