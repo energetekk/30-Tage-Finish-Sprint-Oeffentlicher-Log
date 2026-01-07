@@ -26,6 +26,20 @@ Wenn du Zuspruch willst → falsch.
 
 ## Was du für dein Geld konkret bekommst
 
+### So startest du
+
+Ein 3-Schritte-Block reicht:
+
+Du zahlst
+
+Du füllst Tag-0-Formular aus
+
+#### Wichtig
+(Es gibt kein Dashboard. Kein Tool. Kein Interface.
+Der Sprint lebt über E-Mail und Entscheidungen.)
+
+Du bekommst täglich E-Mails mit Aufgaben
+
 Du kaufst keine Software,
 du kaufst einen 30-Tage-Zwang zum Abschluss.
 
@@ -88,7 +102,7 @@ Dieses System zwingt dich zu liefern.
 
 ## Für wen das ist
 - Du hast ein konkretes Projekt
-- Du kannst 25 Minuten täglich investieren
+- Du kannst 25-40 Minuten täglich investieren
 - Du hältst direkte Sprache aus
 - Du willst abschließen, nicht „dran arbeiten“
 
