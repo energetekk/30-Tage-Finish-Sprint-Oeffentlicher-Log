@@ -34,7 +34,7 @@ Du zahlst
 
 Du füllst Tag-0-Formular aus
 
-#### Wichtig
+### Wichtig
 (Es gibt kein Dashboard. Kein Tool. Kein Interface.
 Der Sprint lebt über E-Mail und Entscheidungen.)
 
