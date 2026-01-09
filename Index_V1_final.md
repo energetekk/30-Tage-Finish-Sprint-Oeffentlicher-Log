@@ -35,17 +35,17 @@ Du zahlst
 Du füllst Tag-0-Formular aus
 
 ### Wichtig
-(Es gibt kein Dashboard. Kein Tool. Kein Interface.
-Der Sprint lebt über E-Mail und Entscheidungen.)
 
 Du bekommst täglich E-Mails mit Aufgaben
+(Es gibt kein Dashboard. Kein Tool. Kein Interface.
+Der Sprint lebt über E-Mail und Entscheidungen.)
 
 Du kaufst keine Software,
 du kaufst einen 30-Tage-Zwang zum Abschluss.
 
 Konkret:
 
-tägliche klare Aufgaben (25–40 Minuten, nicht verhandelbar)
+tägliche klare Aufgaben (30-45 Minuten, nicht verhandelbar)
 
 ein fixes Check-in-Format (1 Eintrag pro Tag, öffentlich oder privat)
 
@@ -66,7 +66,8 @@ Nach 30 Tagen hast du:
 
 - ein klar definiertes, abgeschlossenes Projekt
 - ein sichtbares Ergebnis (live, veröffentlicht oder ausgeliefert)
-    - ohne diesen Punkt gilt der Sprint automatisch als nicht abgeschlossen.
+    - ohne diese Punkte gilt der Sprint automatisch als nicht abgeschlossen.
+    - Zahlungstestlauf erfolgreich durchgeführt
       -> Ein konkretes Ergebnis ist **veröffentlicht** oder **sichtbar**
 - eine dokumentierte Spur, dass du geliefert hast (oder ehrlich gescheitert bist)
 
@@ -80,7 +81,7 @@ Beispiele für fertige Ergebnisse:
 ## Wie du mit dem Produkt interagierst
 - Du checkst einmal täglich ein
 - Du bekommst genau eine Aufgabe
-- Du arbeitest 25–40 Minuten
+- Du arbeitest 30-45 Minuten
 - Du dokumentierst ehrlich: erledigt ❌ oder erledigt ✅
 - Verpasst du einen Tag → deine vorher definierte Konsequenz greift
 
@@ -102,7 +103,7 @@ Dieses System zwingt dich zu liefern.
 
 ## Für wen das ist
 - Du hast ein konkretes Projekt
-- Du kannst 25-40 Minuten täglich investieren
+- Du kannst 30-45 Minuten täglich investieren
 - Du hältst direkte Sprache aus
 - Du willst abschließen, nicht „dran arbeiten“
 
