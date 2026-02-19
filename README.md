@@ -227,5 +227,5 @@ Dieser Sprint ist **nicht** für jeden.
 entscheidest du dich bewusst für den Abschluss –  
 oder für ein sichtbares Scheitern.**
 
-👉 [Sprint starten – 99 €](https://buy.stripe.com/test_28E4gsd2P1cx19N3eK7g401)
+👉 [Sprint starten – €49,50 Founder-Price (Beta)](https://dub.sh/30d-Sprint-Payment)
 
