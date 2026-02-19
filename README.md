@@ -8,18 +8,18 @@ Ein Sprint-System das dich **zwingt** ein Projekt in 30 Tagen abzuschließen.
 
 📊 [Mein kompletter 30-Tage-Durchlauf]
 
-(https://github.com/energetekk/30-Tage-Finish-Sprint-Oeffentlicher-Log/blob/main/SPRINT_LOG.md))
+https://dub.sh/Sprint-Log-github
 
 🎮 [Interaktive Simulation (4 Szenarien)]
 
-(https://github.com/energetekk/30-Tage-Finish-Sprint-Oeffentlicher-Log/Simulation.html)
+https://dub.sh/Sprint-Simulation
 
 ---
 
 ## Für Beta-Tester
 
 **Alle Infos + Anmeldung:**  
-👉 **(https://www.mvpbuildr.com)**
+👉 ** https://dub.sh/MVPBuildr **
 
 ---
 
