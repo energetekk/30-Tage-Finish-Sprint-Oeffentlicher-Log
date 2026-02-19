@@ -12,7 +12,7 @@ https://dub.sh/Sprint-Log-github
 
 🎮 [Interaktive Simulation (4 Szenarien)]
 
-https://dub.sh/Sprint-Simulation
+https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/Simulation.html
 
 ---
 
