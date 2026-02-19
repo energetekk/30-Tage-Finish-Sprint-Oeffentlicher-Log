@@ -24,4 +24,4 @@ https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/Simulation.
 ---
 
 **Beta startet:** [Datum]  
-**Kosten:** €49,50 (Founder-Preis-Beta)
+**Kosten:** €39,50 (Founder-Preis-Beta)
