@@ -5,7 +5,7 @@
 Ein kleines Format für Menschen, die ein Projekt endlich zu einem klaren Ergebnis bringen wollen - "learning by doing", ohne Hype, ohne Perfektionsdruck
 
 ## Was du von mir bekommst
-- klare, tägliche KI-generierte Aufgaben (angepasst an dein Projekt)
+- klare KI-generierte Tagesaufgaben (angepasst an dein Projekt)
 - Wöchentliche Reflexionen + Kurs-Korrekturen
 - Telegram-Bot für tägliche Check-ins
 - Notion Workspace mit den nötigen Ressourcen
