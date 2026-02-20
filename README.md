@@ -4,22 +4,26 @@
 
 Ein Sprint-System das dich **zwingt** ein Projekt in 30 Tagen abzuschließen.
 
-**Beweis:** Ich habe es selbst durchlaufen.
+## Was du von mir bekommst
+- Tägliche KI-generierte Prompts (angepasst an dein Projekt)
+- Wöchentliche Reflexionen + Kurs-Korrekturen
+- Telegram-Bot für tägliche Check-ins
+- Notion Workspace mit allen Resources
+- Private Beta-Gruppe (Peer-Support)
+- Keine Garantien, nur ehrliche Begleitung
 
-📊 [Mein kompletter 30-Tage-Durchlauf]
-
-https://dub.sh/Sprint-Log-github
-
-🎮 [Interaktive Simulation (4 Szenarien)]
-
-https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/Simulation.html
+## Was ich von euch erwarte
+- 30-45 Min/Tag im Minimum an Engagement (kein nachholen oder verlängern möglich)
+- Tägliche Check-ins (auch wenn Blockade vorhanden)
+- Ehrliches Feedback (gut UND schlecht)
+- Konsequenz bei Abbruch: [100€ Charity / 1 Woche Social Media Verzicht / indviduell]
 
 ---
 
 ## Für Beta-Tester
 
-**Alle Infos + Anmeldung:**  
-👉 ** https://dub.sh/MVPBuildr **
+** Bewerbung **  
+👉 ** [https://dub.sh/MVPBuildr](https://dub.sh/Sprint-Intake) **
 
 ---
 
