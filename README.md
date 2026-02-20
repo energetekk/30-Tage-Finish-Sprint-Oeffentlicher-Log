@@ -19,6 +19,11 @@ Ein kleines Format für Menschen, die ein Projekt endlich zu einem klaren Ergebn
 - Konsequenz bei Abbruch: [Bsp: 100€ Charity-Spende / 1 Woche Social Media Verzicht / indviduell]
 
 ---
+interaktive Simulation (4 realistische Szenarien)
+
+👉 [https://dub.sh/Sprint-Simulation](https://dub.sh/Sprint-Simulation)
+
+---
 
 ## Für Beta-Tester
 
