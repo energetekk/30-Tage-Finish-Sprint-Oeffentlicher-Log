@@ -7,7 +7,7 @@ Geeignet sind klar abgrenzbare Projekte, die in 30 Tagen zu einem sichtbaren Erg
 - eine physisch fertig gebaute Vase 
 - Freemium und Open Source Projekte
 - NGOs (Non-Profit, Spenden)
-- 
+
 Nicht geeignete Projekte sind vorhaben, die strukturell länger dauern (z.B. Plattformen mit starkem Netzwerkeffet, VC-Setups,
 "Riesen-Visionen", ohne reduzierbare Sprint-Version, reine Konzept- oder Forschungsarbeit).
 
@@ -61,3 +61,4 @@ Ja, auf Anfrage. Wichtig ist: Der Sprint soll für den teilnehmenden
 Menschen wirklich passen – darum steht vorab immer ein kurzer Intake.
 
 Kontakt: energetekk@proton.me
+
