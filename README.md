@@ -21,7 +21,7 @@ Ein kleines Format für Menschen, die ein Projekt endlich zu einem klaren Ergebn
 ---
 interaktive Simulation (4 realistische Szenarien)
 
-👉 [https://dub.sh/Sprint-Simulation](https://dub.sh/Sprint-Simulation)
+👉 [Sprint-Simulation](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/Simulation.html)
 
 ---
 
