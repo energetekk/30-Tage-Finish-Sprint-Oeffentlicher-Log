@@ -36,7 +36,7 @@ Fehlerursache.
 Nein, dies ist nicht nötig. Der Sprint endet vor „großem Marketing“. Ziel ist ein fertiger, testbarer Stand – nicht Wachstum oder Umsatz.
 
 ### Was passiert an Tag 30?
-Du machst eine klare Auswertung: abgeschlossen oder nicht abgeschlossen. Wenn du willst, setzt du danach bewusst fort – aber der Sprint selbst endet dort.
+Das System macht eine klare Auswertung: abgeschlossen oder nicht abgeschlossen. Wenn du willst, setzt du danach bewusst fort – aber der Sprint selbst endet dort.
 
 ### Wann erhalte ich meine tägliche Aufgabe?
 Beim Onboarding wählst du ein fixes Zeitfenster. Deine Aufgabe kommt
@@ -63,6 +63,7 @@ Ja, auf Anfrage. Wichtig ist: Der Sprint soll für den teilnehmenden
 Menschen wirklich passen – darum steht vorab immer ein kurzer Intake.
 
 Kontakt: energetekk@proton.me
+
 
 
 
