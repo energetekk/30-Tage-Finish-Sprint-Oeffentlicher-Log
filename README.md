@@ -5,7 +5,7 @@
 Ein Sprint-System das dich **zwingt** ein Projekt in 30 Tagen abzuschließen.
 
 ## Was du von mir bekommst
-- Tägliche KI-generierte Prompts (angepasst an dein Projekt)
+- klrea tägliche KI-generierte Aufgaben (angepasst an dein Projekt)
 - Wöchentliche Reflexionen + Kurs-Korrekturen
 - Telegram-Bot für tägliche Check-ins
 - Notion Workspace mit allen Resources
