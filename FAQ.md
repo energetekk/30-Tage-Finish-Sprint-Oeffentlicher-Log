@@ -16,7 +16,8 @@ Ein Satz reicht - solange er beschreibt, was am Ende sichtbar sein soll.
 
 ### Muss ich programmieren können und Profi sein?
 Du muss nicht coden können. Das System funktioniert für Anfänger bis Fortgeschritten-Light und ist ummünzbar auf alle Projekttypen.
-Ist Teamarbeit erlaubt?
+
+### Ist Teamarbeit erlaubt?
 Der Sprint ist für Solo-Projekte gemacht. Externe Hilfe (z.B. Design-Feedback, Programmier- / Community-Support) ist okay - die Verantwortung 
 und Umsetzung liegt aber bei dir.
 
@@ -62,5 +63,6 @@ Ja, auf Anfrage. Wichtig ist: Der Sprint soll für den teilnehmenden
 Menschen wirklich passen – darum steht vorab immer ein kurzer Intake.
 
 Kontakt: energetekk@proton.me
+
 
 
