@@ -16,14 +16,14 @@ Ein Sprint-System das dich **zwingt** ein Projekt in 30 Tagen abzuschließen.
 - 30-45 Min/Tag im Minimum an Engagement (kein nachholen oder verlängern möglich)
 - Tägliche Check-ins (auch wenn Blockade vorhanden)
 - Ehrliches Feedback (gut UND schlecht)
-- Konsequenz bei Abbruch: [100€ Charity / 1 Woche Social Media Verzicht / indviduell]
+- Konsequenz bei Abbruch: [Bsp: 100€ Charity-Spende / 1 Woche Social Media Verzicht / indviduell]
 
 ---
 
 ## Für Beta-Tester
 
 ** Bewerbung **  
-👉 ** [https://dub.sh/Sprint-Intake](https://dub.sh/Sprint-Intake) **
+👉 [https://dub.sh/Sprint-Intake](https://dub.sh/Sprint-Intake)
 
 ---
 
