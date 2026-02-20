@@ -520,5 +520,15 @@ https://www.notion.so/Tag-30-Entscheidungslogik-finalisieren-intern-2e5e3450b069
 https://www.notion.so/Referral-FAQ-2e6e3450b06980a7bc8ffe28f6eb973e?source=copy_link
 
 
+---
 
+## Für Beta-Tester
+
+** Bewerbung **  
+👉 [https://dub.sh/Sprint-Intake](https://dub.sh/Sprint-Intake)
+
+---
+
+**Beta startet:** [Datum]  
+**Kosten:** €39,50 (Founder-Preis-Beta)
 
