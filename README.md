@@ -8,7 +8,7 @@ Ein kleines Format für Menschen, die ein Projekt endlich zu einem klaren Ergebn
 - klare, tägliche KI-generierte Aufgaben (angepasst an dein Projekt)
 - Wöchentliche Reflexionen + Kurs-Korrekturen
 - Telegram-Bot für tägliche Check-ins
-- Notion Workspace mit allen Resources
+- Notion Workspace mit den nötigen Ressourcen
 - Private Beta-Gruppe (Peer-Support)
 - Keine Garantien, nur ehrliche Begleitung
 
