@@ -23,7 +23,7 @@ Ein Sprint-System das dich **zwingt** ein Projekt in 30 Tagen abzuschließen.
 ## Für Beta-Tester
 
 ** Bewerbung **  
-👉 ** [https://dub.sh/MVPBuildr](https://dub.sh/Sprint-Intake) **
+👉 ** [https://dub.sh/Sprint-Intake](https://dub.sh/Sprint-Intake) **
 
 ---
 
