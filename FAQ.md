@@ -64,6 +64,17 @@ Menschen wirklich passen – darum steht vorab immer ein kurzer Intake.
 
 Kontakt: energetekk@proton.me
 
+---
+
+## Für Beta-Tester
+
+** Bewerbung **  
+👉 [https://dub.sh/Sprint-Intake](https://dub.sh/Sprint-Intake)
+
+---
+
+**Beta startet:** [Datum]  
+**Kosten:** €39,50 (Founder-Preis-Beta)
 
 
 
