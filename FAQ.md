@@ -37,8 +37,7 @@ Schau dir die Vergleichs-Sektion der Sprint-Simulation an.
 
 ### Was bedeutet die Konsequenz bei Abbruch?
 Während deiner Bewerbung hast du deine Konsequenz festgelegt. Diese greift, wenn du vor Tag 30 aufhörst. Ein Abbruch gilt nicht als valide, solange
-du täglich eincheckst (auch bei Blockaden). Ab dem 3. Tag des fehlens eines ordentlichen Checkins, entscheidet der Betreiber individuell anhand der
-glaubwürdig, nachgewiesenen Begründung seitens des betroffenen Teilnehmers.
+du täglich eincheckst (auch bei Blockaden).
 
 ### Muss ich nach 30 Tagen schon Kunden haben?
 Nein, dies ist nicht nötig. Der Sprint endet vor „großem Marketing“ und Skalierung. Ziel ist ein fertiger, testbarer Stand – nicht Wachstum oder Umsatz.
@@ -81,6 +80,7 @@ Kontakt (Support): energetekk@proton.me
 
 **Beta startet:** [tba]  
 **Kosten:** €39,50 (Founder-Preis-Beta)
+
 
 
 
