@@ -3,6 +3,7 @@
 ## Worum geht es in diesem Sprint?
 
 Ein kleines Format für Menschen, die genau ein Projekt endlich zu einem klaren Ergebnis bringen wollen - "learning by doing", ohne Hype, ohne Perfektionsdruck.
+Du willst lieber einen kleinen, echten Abschluss als ein grosses "irgendwann".
 
 Am Ende steht ein sichtbares Ergebnis – oder eine ehrliche saubere Spur, warum es in dieser Form (noch) nicht aufgegangen ist.
 
