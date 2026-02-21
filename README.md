@@ -2,7 +2,7 @@
 
 ## Was ist das?
 
-Ein kleines Format für Menschen, die ein Projekt endlich zu einem klaren Ergebnis bringen wollen - "learning by doing", ohne Hype, ohne Perfektionsdruck
+Ein kleines Format für Menschen, die genau ein Projekt endlich zu einem klaren Ergebnis bringen wollen - "learning by doing", ohne Hype, ohne Perfektionsdruck
 
 ## Was du von mir bekommst
 - klare KI-generierte Tagesaufgaben (angepasst an dein Projekt)
@@ -16,7 +16,7 @@ Ein kleines Format für Menschen, die ein Projekt endlich zu einem klaren Ergebn
 - 30-45 Min/Tag im Minimum an Engagement (kein nachholen oder verlängern möglich)
 - Tägliche Check-ins (auch wenn Blockade vorhanden)
 - Ehrliches Feedback (gut UND schlecht)
-- Konsequenz bei Abbruch: [Bsp: 100€ Charity-Spende / 1 Woche Social Media Verzicht / indviduell]
+- Konsequenz bei Abbruch: [Bsp: 100€ Charity-Spende / 1 Woche Social Media Verzicht / individuell]
 
 ---
 interaktive Simulation (4 realistische Szenarien)
@@ -32,5 +32,5 @@ interaktive Simulation (4 realistische Szenarien)
 
 ---
 
-**Beta startet:** [Datum]  
+**Beta startet:** [tba]  
 **Kosten:** €39,50 (Founder-Preis-Beta)
