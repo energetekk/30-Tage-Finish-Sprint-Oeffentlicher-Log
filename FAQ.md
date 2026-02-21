@@ -67,7 +67,7 @@ Ja, auf Anfrage. Wichtig ist: Der Sprint soll für den teilnehmenden
 Menschen wirklich passen – darum steht vorab immer ein kurzer Intake.
 
 
-Kontakt (geschäftlich): hallo@mvpbuildr.com
+Kontakt (geschäftlich): hallo@mvpbuildr.com | 
 Kontakt (Support): energetekk@proton.me
 
 ---
@@ -81,6 +81,7 @@ Kontakt (Support): energetekk@proton.me
 
 **Beta startet:** [tba]  
 **Kosten:** €39,50 (Founder-Preis-Beta)
+
 
 
 
