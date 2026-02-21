@@ -1,7 +1,7 @@
 ### Kontakt-Adresse
 
-Dejan Potocnik
-Alpsteinstr. 3
+Dejan Potocnik, 
+Alpsteinstr. 3, 
 CH - 8570 Weinfelden
 
 E-Mail:
@@ -21,9 +21,9 @@ Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortung
 
 ### Urheberrechte
 
-Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website, gehören ausschliesslich der Firma Fokushelden GmbH oder den speziell genannten Rechteinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.
+Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website, gehören ausschliesslich der vertretungsberechtigten Person: Dejan Potocnik oder den speziell genannten Rechteinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.
 
 
-Quelle: [SwissAnwalt] (https://www.swissanwalt.ch/)
+Quelle: [SwissAnwalt](https://www.swissanwalt.ch)
 
 Hinweise zum Datenschutz sind in der [Datenschutzerklärung](https://github.com/energetekk/30-Tage-Finish-Sprint-Oeffentlicher-Log/blob/main/Datenschutzerklaerung.md) ersichtlich.
