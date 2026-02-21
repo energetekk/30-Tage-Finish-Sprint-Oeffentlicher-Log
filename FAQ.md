@@ -66,7 +66,7 @@ gearbeitet hast und ein klares Ergebnis in der Hand hast – egal ob
 Ja, auf Anfrage. Wichtig ist: Der Sprint soll für den teilnehmenden
 Menschen wirklich passen – darum steht vorab immer ein kurzer Intake.
 
-Kontakt für Support: energetekk@proton.me
+Kontakt: energetekk@proton.me
 
 ---
 
@@ -79,6 +79,7 @@ Kontakt für Support: energetekk@proton.me
 
 **Beta startet:** [tba]  
 **Kosten:** €39,50 (Founder-Preis-Beta)
+
 
 
 
