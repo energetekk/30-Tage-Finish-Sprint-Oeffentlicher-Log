@@ -79,7 +79,7 @@ Kontakt (Support): energetekk@proton.me
 ---
 
 **Beta startet:** [tba]  
-**Kosten:** €39,50 (Founder-Preis-Beta)
+**Kosten:** 
 
 
 
