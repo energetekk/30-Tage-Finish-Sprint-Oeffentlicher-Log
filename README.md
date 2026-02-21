@@ -1,8 +1,12 @@
 # 30-Tage-Sprint Framework
 
-## Was ist das?
+## Worum geht es in diesem Sprint?
 
-Ein kleines Format für Menschen, die genau ein Projekt endlich zu einem klaren Ergebnis bringen wollen - "learning by doing", ohne Hype, ohne Perfektionsdruck
+Ein kleines Format für Menschen, die genau ein Projekt endlich zu einem klaren Ergebnis bringen wollen - "learning by doing", ohne Hype, ohne Perfektionsdruck.
+
+Am Ende steht ein sichtbares Ergebnis – oder eine ehrliche saubere Spur, warum es in dieser Form (noch) nicht aufgegangen ist.
+
+Beides ist wertvoll: Abschluss oder Klarheit.
 
 ## Was du von mir bekommst
 - klare KI-generierte Tagesaufgaben (angepasst an dein Projekt)
