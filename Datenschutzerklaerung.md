@@ -33,7 +33,7 @@ Wir bearbeiten – sofern und soweit die Datenschutz-Grundverordnung (DSGVO) anw
 - Art. 6 Abs. 1 lit. a DSGVO für die Bearbeitung von Personendaten mit Einwilligung der betroffenen Person.
 - Art. 6 Abs. 1 lit. d DSGVO für die erforderliche Bearbeitung von Personendaten, um lebenswichtige Interessen der betroffenen Person oder einer anderen natürlichen Person zu schützen.
 
-#### Art, Umfang und Zweck
+#### 2.3 Art, Umfang und Zweck
 Wir bearbeiten jene Personendaten, die erforderlich sind, um unser Angebot dauerhaft, nutzerfreundlich, sicher und zuverlässig bereitstellen zu können. Solche Personendaten können insbesondere in die Kategorien von Bestandes- und Kontaktdaten, Browser- und Gerätedaten, Inhaltsdaten, Meta- beziehungsweise Randdaten und Nutzungsdaten, Standortdaten, Verkaufs-, Vertrags- und Zahlungsdaten fallen.
 
 Wir bearbeiten Personendaten während jener Dauer, die für den jeweiligen Zweck beziehungsweise die jeweiligen Zwecke oder gesetzlich erforderlich ist. Personendaten, deren Bearbeitung nicht mehr erforderlich ist, werden anonymisiert oder gelöscht. Personen, deren Daten wir bearbeiten, haben grundsätzlich ein Recht auf Löschung.
