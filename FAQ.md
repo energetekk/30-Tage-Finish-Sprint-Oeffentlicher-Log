@@ -8,14 +8,14 @@ Geeignet sind klar abgrenzbare Projekte, die in 30 Tagen zu einem sichtbaren Erg
 - Freemium und Open Source Projekte
 - NGOs (Non-Profit, Spenden)
 
-Nicht geeignete Projekte sind vorhaben, die strukturell länger dauern (z.B. Plattformen mit starkem Netzwerkeffet, VC-Setups,
+Nicht geeignete Projekte sind Vorhaben, die strukturell länger dauern (z.B. Plattformen mit starkem Netzwerkeffet, VC-Setups,
 "Riesen-Visionen", ohne reduzierbare Sprint-Version, reine Konzept- oder Forschungsarbeit).
 
 ### Wie konkret muss eine Projektidee sein?
 Ein Satz reicht - solange er beschreibt, was am Ende sichtbar sein soll.
 
 ### Muss ich programmieren können und Profi sein?
-Du muss nicht coden können. Das System funktioniert für Anfänger bis Fortgeschritten-Light und ist ummünzbar auf alle Projekttypen.
+Du muss nicht coden können. Das System funktioniert für Anfänger bis Fortgeschritten-Light und ist geeignet für nahezu alle Projekttypen.
 
 ### Ist Teamarbeit erlaubt?
 Der Sprint ist für Solo-Projekte gemacht. Externe Hilfe (z.B. Design-Feedback, Programmier- / Community-Support) ist okay - die Verantwortung 
@@ -66,7 +66,7 @@ gearbeitet hast und ein klares Ergebnis in der Hand hast – egal ob
 Ja, auf Anfrage. Wichtig ist: Der Sprint soll für den teilnehmenden
 Menschen wirklich passen – darum steht vorab immer ein kurzer Intake.
 
-Kontakt: energetekk@proton.me
+Kontakt für Support: energetekk@proton.me
 
 ---
 
@@ -79,6 +79,7 @@ Kontakt: energetekk@proton.me
 
 **Beta startet:** [tba]  
 **Kosten:** €39,50 (Founder-Preis-Beta)
+
 
 
 
