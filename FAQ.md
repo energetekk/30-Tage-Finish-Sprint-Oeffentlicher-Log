@@ -24,24 +24,28 @@ und Umsetzung liegt aber bei dir.
 ### Wieviel Zeit brauche ich pro Tag?
 30–45 Minuten. Wenn du mehr Zeit hast: passt - aber im Sprint zählt Konsistenz, nicht Marathon.
 
-### Was genau ist ein "Zahlungstest"?
-Ein nachvollziehbarer Test, dass Geldfluss grundsätzlich möglich ist. 
+### Was am Ende als "abgeschlossen" zählt
+Das System bewertet binär. "Abgeschlossen" gilt nur, wenn beide Punkte erfüllt sind:
+- Ein sichtbares Ergebnis (live / veröffentlicht / ausgeliefert / fertig dokumentiert).
+- Ein Commitment-Test ist durchgeführt (z. B. Testkauf, Bezahl‑Link, echte Zahlung oder ein klar dokumentierter Commitment-Versuch).
 
-Beispiele: ein Testkauf im Checkout, ein Bezahl‑Link mit
-erfolgreichem Testbetrag, eine echte kleine Zahlung durch eine
-Person, oder ein dokumentierter Zahlungsversuch mit klarer
-Fehlerursache.
+Das sollte kein Urteil darstellen, nur eine klare Auswertung für den Teilnehmer unabhängig vom Erfolg. Damit du an Tag 30 bewusst entscheiden kannst, ob/wie du danach fortsetzen möchtest. Der Sprint selbst endet am Tag 30.
+
+Schau dir die Vergleichs-Sektion der Sprint-Simulation an.
+
+👉 [Sprint-Simulation](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/Simulation.html)
+
+### Was bedeutet die Konsequenz bei Abbruch?
+Während deiner Bewerbung hast du deine Konsequenz festgelegt. Diese greift, wenn du vor Tag 30 aufhörst. Ein Abbruch gilt nicht als valide, solange
+du täglich eincheckst (auch bei Blockaden). Ab dem 3. Tag des fehlens eines ordentlichen Checkins, entscheidet der Betreiber individuell anhand der
+glaubwürdig, nachgewiesenen Begründung seitens des betroffenen Teilnehmers.
 
 ### Muss ich nach 30 Tagen schon Kunden haben?
-Nein, dies ist nicht nötig. Der Sprint endet vor „großem Marketing“. Ziel ist ein fertiger, testbarer Stand – nicht Wachstum oder Umsatz.
+Nein, dies ist nicht nötig. Der Sprint endet vor „großem Marketing“ und Skalierung. Ziel ist ein fertiger, testbarer Stand – nicht Wachstum oder Umsatz.
 
-### Was passiert an Tag 30?
-Das System macht eine klare Auswertung: abgeschlossen oder nicht abgeschlossen. Wenn du willst, setzt du danach bewusst fort – aber der Sprint selbst endet dort.
-
-### Wann erhalte ich meine tägliche Aufgabe?
-Beim Onboarding wählst du ein fixes Zeitfenster. Deine Aufgabe kommt
-täglich einmal in diesem Fenster. Das Zeitfenster bleibt gleich,
-damit es leichter wird, dranzubleiben.
+### Wann und wie erhalte ich meine tägliche Aufgabe und wann/wie checke ich ein?
+Deine Tagesaufgabe wird dir morgens geschickt. Du arbeitest dann an deiner Tagesaufgabe, wann es dir beliebt. Spätestens am Abend checkst du ein.
+Dies geschieht über einen Telegram-Kanal. Der genaue Sprint-Flow wird dir kurz vor dem Beta-Start bekannt gegeben.
 
 ### Warum ist das eine Beta-Version?
 Weil das Format im echten Betrieb geschärft wird. Du bekommst kein
@@ -73,8 +77,9 @@ Kontakt: energetekk@proton.me
 
 ---
 
-**Beta startet:** [Datum]  
+**Beta startet:** [tba]  
 **Kosten:** €39,50 (Founder-Preis-Beta)
+
 
 
 
