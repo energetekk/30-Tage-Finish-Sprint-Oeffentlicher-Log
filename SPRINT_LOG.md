@@ -530,5 +530,5 @@ https://www.notion.so/Referral-FAQ-2e6e3450b06980a7bc8ffe28f6eb973e?source=copy_
 ---
 
 **Beta startet:** [Datum]  
-**Kosten:** €39,50 (Founder-Preis-Beta)
+**Kosten:** kostenlos
 
