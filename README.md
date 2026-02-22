@@ -38,4 +38,4 @@ interaktive Simulation (4 realistische Szenarien)
 ---
 
 **Beta startet:** [tba]  
-**Kosten:** €39,50 (Founder-Preis-Beta)
+**Kosten:** kostenlos
