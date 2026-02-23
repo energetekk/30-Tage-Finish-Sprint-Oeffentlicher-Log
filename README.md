@@ -31,6 +31,7 @@ interaktive Simulation (4 realistische Szenarien)
 ---
 
 ## Für Beta-Tester
+Teilnehmeranzahl begrenzt
 
 ** Bewerbung **  
 👉 [https://dub.sh/Sprint-Intake](https://dub.sh/Sprint-Intake)
