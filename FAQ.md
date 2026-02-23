@@ -72,6 +72,7 @@ Kontakt (Support): energetekk@proton.me
 ---
 
 ## Für Beta-Tester
+Teilnehmeranzahl begrenzt
 
 ** Bewerbung **  
 👉 [https://dub.sh/Sprint-Intake](https://dub.sh/Sprint-Intake)
@@ -79,7 +80,7 @@ Kontakt (Support): energetekk@proton.me
 ---
 
 **Beta startet:** [tba]  
-**Kosten:** 
+**Kosten:** kostenlos (Beta Cohort#1)
 
 
 
