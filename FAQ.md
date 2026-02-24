@@ -52,9 +52,12 @@ Hochglanz‑Produkt, sondern einen klaren Ablauf, der über reale
 Durchläufe verbessert wird. Beta heißt: pragmatisch, direkt, mit
 Fokus auf Wirkung.
 
-### Gibt es Rückerstattung oder Pausen?
-Nein. Das ist absichtlich so gewählt: Der Sprint soll Entscheidung
-und Abschluss fördern, nicht neue Ausweich‑Optionen.
+### Was wenn ich krank werde?
+Du hast 2 Optionen:
+1. 1-2 Tage Pause (kommunizieren)
+2. 2. Sprint abbrechen (Konsequenz greift)
+
+**Keine** Verlängerung, 30 Tage bleiben 30 Tage.
 
 ### Hinweis zur Erwartung
 Der Sprint ist bewusst klein. Wenn du am Ende 30 Tage lang konstant
@@ -81,6 +84,7 @@ Teilnehmeranzahl begrenzt
 
 **Beta startet:** [tba]  
 **Kosten:** kostenlos (Beta Cohort#1)
+
 
 
 
