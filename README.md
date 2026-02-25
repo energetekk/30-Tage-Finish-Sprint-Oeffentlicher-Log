@@ -11,7 +11,6 @@ Ein kleines Format für Menschen, die genau ein Projekt endlich zu einem klaren 
 - Telegram-Bot für tägliche Check-ins
 - Notion Workspace mit den nötigen Ressourcen
 - Private Beta-Gruppe (Peer-Support)
-- Keine Garantien, nur ehrliche Begleitung
 
 ## Was ich von euch erwarte
 - 30-45 Min/Tag im Minimum an Engagement (kein nachholen oder verlängern möglich)
