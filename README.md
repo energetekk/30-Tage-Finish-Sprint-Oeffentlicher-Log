@@ -1,4 +1,4 @@
-# 30-Tage-Sprint Framework / Beta Cohort #1
+# 30-Tage-Sprint Framework aka MVP Buildr / Beta Cohort #1
 
 ## Worum geht es in diesem Sprint?
 
