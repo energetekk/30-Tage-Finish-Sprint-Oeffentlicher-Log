@@ -21,7 +21,6 @@ Beides ist wertvoll: Abschluss oder Klarheit.
 - 30-45 Min/Tag im Minimum an Engagement (kein nachholen oder verlängern möglich)
 - Tägliche Check-ins (auch wenn Blockade vorhanden)
 - Ehrliches Feedback (gut UND schlecht)
-- Konsequenz bei Abbruch: [Bsp: 100€ Charity-Spende / 1 Woche Social Media Verzicht / individuell]
 
 ---
 interaktive Simulation (4 realistische Szenarien)
