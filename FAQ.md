@@ -29,8 +29,6 @@ Das System bewertet binär. "Abgeschlossen" gilt nur, wenn beide Punkte erfüllt
 - Ein sichtbares Ergebnis (live / veröffentlicht / ausgeliefert / fertig dokumentiert).
 - Ein Commitment-Test ist durchgeführt (z. B. Testkauf, Bezahl‑Link, echte Zahlung oder ein klar dokumentierter Commitment-Versuch).
 
-Das sollte kein Urteil darstellen, nur eine klare Auswertung für den Teilnehmer unabhängig vom Erfolg. Damit du an Tag 30 bewusst entscheiden kannst, ob/wie du danach fortsetzen möchtest. Der Sprint selbst endet am Tag 30.
-
 Schau dir die Vergleichs-Sektion der Sprint-Simulation an.
 
 👉 [Sprint-Simulation](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/Simulation.html)
@@ -59,11 +57,6 @@ Du hast 2 Optionen:
 
 **Keine** Verlängerung, 30 Tage bleiben 30 Tage.
 
-### Hinweis zur Erwartung
-Der Sprint ist bewusst klein. Wenn du am Ende 30 Tage lang konstant
-gearbeitet hast und ein klares Ergebnis in der Hand hast – egal ob
-„fertig“ oder „nicht fertig“ – dann hat er seinen Zweck erfüllt.
-
 ### Kann ich empfohlen werden / Referral?
 Ja, auf Anfrage. Wichtig ist: Der Sprint soll für den teilnehmenden
 Menschen wirklich passen – darum steht vorab immer ein kurzer Intake.
@@ -84,6 +77,7 @@ Teilnehmeranzahl begrenzt
 
 **Beta startet:** [tba]  
 **Kosten:** kostenlos (Beta Cohort#1)
+
 
 
 
