@@ -1,16 +1,12 @@
-# 30-Tage-Sprint Framework aka MVP Buildr / Beta Cohort #1
+# 30-Tage-Finish-Sprint Framework aka MVP Buildr / Beta Cohort #1
 
 ## Worum geht es in diesem Sprint?
-
+In 30 Tagen gehst du mit einem funktionierenden Minimalprodukt live – inklusive Zahlungs- oder Reaktions-Test.
 Ein kleines Format für Menschen, die genau ein Projekt endlich zu einem klaren Ergebnis bringen wollen - "learning by doing", ohne Hype, ohne Perfektionsdruck.
-Du willst lieber einen kleinen, echten Abschluss als ein grosses "irgendwann".
 
-Am Ende steht ein sichtbares Ergebnis – oder eine ehrliche saubere Spur, warum es in dieser Form (noch) nicht aufgegangen ist.
-
-Beides ist wertvoll: Abschluss oder Klarheit.
 
 ## Was du von mir bekommst
-- klare KI-generierte Tagesaufgaben (angepasst an dein Projekt)
+- klare Tagesaufgaben (angepasst an dein Projekt)
 - Wöchentliche Reflexionen + Kurs-Korrekturen
 - Telegram-Bot für tägliche Check-ins
 - Notion Workspace mit den nötigen Ressourcen
