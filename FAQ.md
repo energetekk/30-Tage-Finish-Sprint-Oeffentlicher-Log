@@ -18,7 +18,7 @@ Ein Satz reicht - solange er beschreibt, was am Ende sichtbar sein soll.
 Du muss nicht coden können. Das System funktioniert für Anfänger bis Fortgeschritten-Light und ist geeignet für nahezu alle Projekttypen.
 
 ### Ist Teamarbeit erlaubt?
-Der Sprint ist für Solo-Projekte gemacht. Externe Hilfe (z.B. Design-Feedback, Programmier- / Community-Support) ist okay - die Verantwortung 
+Der Sprint ist für Solo-Projekte, Entwickler mit Side-Projekt und Experten mit Kurs-Ideen gemacht. Externe Hilfe (z.B. Design-Feedback, Programmier- / Community-Support) ist okay - die Verantwortung 
 und Umsetzung liegt aber bei dir.
 
 ### Wieviel Zeit brauche ich pro Tag?
@@ -84,6 +84,7 @@ Teilnehmeranzahl begrenzt
 
 **Beta startet:** [tba]  
 **Kosten:** kostenlos (Beta Cohort#1)
+
 
 
 
