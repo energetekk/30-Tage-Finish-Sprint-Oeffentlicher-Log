@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprint Simulation - 4 Neue Szenarien (SaaS, NGO, Physisch, Open Source)</title>
+    <title>Sprint Simulation Tag 0-30 - 4 Szenarien</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -38,12 +38,10 @@
             display: flex;
             background: #f5f5f5;
             border-bottom: 2px solid #ddd;
-            flex-wrap: wrap;
         }
         
         .tab {
             flex: 1;
-            min-width: 150px;
             padding: 15px;
             text-align: center;
             cursor: pointer;
@@ -123,53 +121,6 @@
         
         .day-content { margin-top: 10px; }
         
-        .user-input {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 10px 0;
-            border-left: 3px solid #3498db;
-        }
-        
-        .ai-response {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 10px 0;
-            border-left: 3px solid #9b59b6;
-        }
-        
-        .label {
-            font-weight: bold;
-            font-size: 0.85em;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 5px;
-        }
-        
-        .user-label { color: #3498db; }
-        .ai-label { color: #9b59b6; }
-        
-        .progress-bar {
-            width: 100%;
-            height: 30px;
-            background: #e0e0e0;
-            border-radius: 15px;
-            overflow: hidden;
-            margin: 20px 0;
-        }
-        
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-            transition: width 1s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-        }
-        
         .scenario-card {
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             padding: 30px;
@@ -208,10 +159,6 @@
             border-left: 5px solid #3498db;
         }
         
-        .result-box.warning {
-            border-left: 5px solid #f39c12;
-        }
-        
         .comparison-table {
             width: 100%;
             border-collapse: collapse;
@@ -226,50 +173,17 @@
         }
         
         .comparison-table th {
-            background: #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+            font-weight: 600;
         }
         
         .comparison-table tr:hover {
-            background: #f5f5f5;
+            background: #f5f7fa;
         }
         
         .emoji {
             font-size: 1.2em;
-            margin-right: 5px;
-        }
-        
-        code {
-            background: #f4f4f4;
-            padding: 2px 6px;
-            border-radius: 3px;
-            font-family: 'Courier New', monospace;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
-        }
-        
-        .stat-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        
-        .stat-number {
-            font-size: 2em;
-            font-weight: bold;
-            color: #667eea;
-        }
-        
-        .stat-label {
-            color: #666;
-            font-size: 0.9em;
-            margin-top: 5px;
         }
     </style>
 </head>
@@ -277,1357 +191,591 @@
     <div class="container">
         <header>
             <h1>🚀 Sprint Simulation Tag 0-30</h1>
-            <p class="subtitle">4 Komplette Szenarien: SaaS, NGO, Physisches Produkt, Open Source</p>
+            <p class="subtitle">4 Realistische Szenarien - Von der Idee bis zum Launch</p>
         </header>
         
         <div class="tabs">
-            <button class="tab active" onclick="showTab('saas')">📱 SaaS - TaskFlow</button>
-            <button class="tab" onclick="showTab('ngo')">❤️ NGO - WarmeMahlzeit</button>
-            <button class="tab" onclick="showTab('physisch')">🎨 Physisch - Keramik</button>
-            <button class="tab" onclick="showTab('opensource')">💻 Open Source - CLI</button>
+            <button class="tab active" onclick="showTab('defi')">🪙 DeFi Buddy</button>
+            <button class="tab" onclick="showTab('iglu')">❄️ Survival Iglu</button>
+            <button class="tab" onclick="showTab('hundeheim')">🐕 Hundeheim Thailand</button>
+            <button class="tab" onclick="showTab('castmatch')">🎭 CastMatch</button>
             <button class="tab" onclick="showTab('vergleich')">📊 Vergleich</button>
         </div>
         
-        <!-- SAAS SZENARIO: TASKFLOW -->
-        <div id="saas" class="content active">
+        <!-- DEFI BUDDY -->
+        <div id="defi" class="content active">
             <div class="scenario-card">
-                <div class="scenario-title">📱 TaskFlow - Simple Task Manager</div>
+                <div class="scenario-title">🪙 DeFi Buddy - Liquidity Pool Finder</div>
                 <div>
-                    <span class="strategy-badge">No-Code: Airtable + Softr</span>
-                    <span class="strategy-badge">Freemium €9/Monat</span>
-                    <span class="strategy-badge">30-45 Min/Tag</span>
+                    <span class="strategy-badge">Strategie G: Freemium</span>
+                    <span class="strategy-badge">SaaS</span>
                 </div>
                 <p style="margin-top: 15px;">
-                    <strong>Teilnehmerin:</strong> Lisa, 29, Marketing Managerin<br>
-                    <strong>Projekt:</strong> Task Manager mit Priority-System<br>
-                    <strong>Tech Skills:</strong> Keine (nutzt No-Code)<br>
-                    <strong>Konsequenz:</strong> €300 an Tierheim
+                    <strong>Teilnehmer:</strong> Alex (28)<br>
+                    <strong>Projekt:</strong> DeFi Pool Evaluator für Anfänger<br>
+                    <strong>Geschäftsmodell:</strong> Free (10 Pools) vs Pro €9/Monat (30 Pools + Alerts)
                 </p>
             </div>
             
             <div class="result-box success">
                 <h3>Ergebnis: ✅ Sprint abgeschlossen</h3>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">5</div>
-                        <div class="stat-label">Beta-User aktiv</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">40%</div>
-                        <div class="stat-label">Conversion-Rate</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">15h</div>
-                        <div class="stat-label">Zeit investiert</div>
-                    </div>
-                </div>
-                <p><strong>Commitment-Test:</strong> 2 von 5 Beta-Usern würden €9/Monat zahlen (40%)</p>
-                <p><strong>Learning:</strong> No-Code ermöglicht extrem schnelle MVP-Entwicklung ohne Coding-Skills!</p>
+                <p><strong>Commitment-Test dokumentiert:</strong></p>
+                <ul>
+                    <li>60 Free Users registriert</li>
+                    <li>8 Personen getestet für Upgrade</li>
+                    <li>3 würden €9/Monat zahlen (38% Commitment)</li>
+                </ul>
+                <p><strong>Learning:</strong> DeFi-Anfänger lieben simple Tools, 38% Conversion ist stark!</p>
             </div>
             
-            <h3 style="margin-top: 30px;">Timeline Tag 0-30:</h3>
+            <h3 style="margin-top: 30px;">Key Milestones:</h3>
             <div class="timeline">
-                <div class="day validation">
+                <div class="day milestone">
                     <div class="day-number">0</div>
                     <div class="day-title">Warm Up</div>
                     <div class="day-content">
-                        <div class="user-input">
-                            <div class="label user-label">5 Quick Interviews</div>
-                            Frage: "Kennst du das Problem dass du bei Tasks den Überblick verlierst?"<br>
-                            Frage: "Würdest du €9/Monat für simplen Task Manager zahlen?"<br><br>
-                            <strong>Ergebnis:</strong> 4 von 5 JA zum Problem, 3 von 5 würden zahlen
-                        </div>
-                        <div class="ai-response">
-                            <div class="label ai-label">Entscheidung</div>
-                            ✅ GO! (3+ positive Antworten)
-                        </div>
+                        5 DeFi-Anfänger befragt:<br>
+                        "DeFiLlama zu komplex!", "Brauche simple Pool-Empfehlungen"<br>
+                        → Pain Point validiert!
                     </div>
                 </div>
                 
                 <div class="day milestone">
-                    <div class="day-number">1</div>
-                    <div class="day-title">Scope-Reduktion</div>
+                    <div class="day-number">7</div>
+                    <div class="day-title">MVP Live!</div>
                     <div class="day-content">
-                        <strong>Original Scope (zu groß):</strong><br>
-                        • Tasks + Priority + Filter + Dashboard + Team + Mobile + Notifications + Export<br><br>
-                        
-                        <div class="ai-response">
-                            <div class="label ai-label">KI-Reduktion</div>
-                            <strong>RAUS:</strong> Team, Mobile, Notifications, Export, Dashboard<br>
-                            <strong>BLEIBT (3 Features):</strong><br>
-                            1. Task erstellen (Text-Input)<br>
-                            2. Priority zuweisen (High/Medium/Low)<br>
-                            3. Tasks sortiert anzeigen
-                        </div>
-                        
-                        <strong>Neue Fertig-Definition:</strong><br>
-                        ✅ TaskFlow MVP läuft (Vercel/Netlify)<br>
-                        ✅ 3 Core-Features funktionieren<br>
-                        ✅ 3 Beta-User testen<br>
-                        ✅ 2+ würden €9 zahlen
+                        defibuddy.webflow.io online<br>
+                        • 5 Pools (Uniswap, Curve)<br>
+                        • Risk-Score Badges (🟢 🟡 🔴)<br>
+                        • Airtable Backend + Webflow Frontend
+                    </div>
+                </div>
+                
+                <div class="day validation">
+                    <div class="day-number">14</div>
+                    <div class="day-title">Validierung startet</div>
+                    <div class="day-content">
+                        Umfrage erstellt: "Würdest du €9/Monat zahlen?"<br>
+                        Verbreitung: r/defi, r/CryptoCurrency, Discord<br>
+                        → 18 Responses in 3 Tagen!
+                    </div>
+                </div>
+                
+                <div class="day validation">
+                    <div class="day-number">17</div>
+                    <div class="day-title">Größte Hürde identifiziert</div>
+                    <div class="day-content">
+                        <strong>Feedback-Pattern:</strong> "1× täglich Update zu langsam" (6×)<br>
+                        <strong>Mini-Anpassung geplant:</strong> Zapier Auto-Updates (alle 12h)
+                    </div>
+                </div>
+                
+                <div class="day milestone">
+                    <div class="day-number">20</div>
+                    <div class="day-title">Auto-Updates live</div>
+                    <div class="day-content">
+                        Zapier-Integration fertig!<br>
+                        CoinGecko → Airtable alle 12h<br>
+                        APY refreshed automatisch ✅
+                    </div>
+                </div>
+                
+                <div class="day commitment">
+                    <div class="day-number">22</div>
+                    <div class="day-title">Commitment-Strategie</div>
+                    <div class="day-content">
+                        <strong>Freemium-Model:</strong><br>
+                        Free: 10 Pools<br>
+                        Pro €9/Monat: 30 Pools + Email Alerts + API Access
+                    </div>
+                </div>
+                
+                <div class="day commitment">
+                    <div class="day-number">25</div>
+                    <div class="day-title">Pricing Live!</div>
+                    <div class="day-content">
+                        Pricing-Page publisht<br>
+                        Stripe Payment Link integriert<br>
+                        Reddit-Post: "I built a simple DeFi pool finder"<br>
+                        → 45 Upvotes, 60 neue Besucher!
+                    </div>
+                </div>
+                
+                <div class="day commitment">
+                    <div class="day-number">27</div>
+                    <div class="day-title">Commitment gesammelt</div>
+                    <div class="day-content">
+                        8 Free-User getestet:<br>
+                        <span class="emoji">✅</span> 3 würden €9 zahlen (38%)<br>
+                        <span class="emoji">🤔</span> 2 "Vielleicht"<br>
+                        <span class="emoji">❌</span> 3 "Nein (zu teuer)"
+                    </div>
+                </div>
+                
+                <div class="day commitment">
+                    <div class="day-number">30</div>
+                    <div class="day-title">Sprint Completion</div>
+                    <div class="day-content">
+                        <strong>✅ Sprint abgeschlossen!</strong><br>
+                        Kriterium 1: 30 Pools live, Zapier läuft ✅<br>
+                        Kriterium 2: 38% Commitment dokumentiert ✅<br><br>
+                        <strong>Entscheidung:</strong> FORTSETZEN (erste Pro-Zahlungen holen!)
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SURVIVAL IGLU -->
+        <div id="iglu" class="content">
+            <div class="scenario-card">
+                <div class="scenario-title">❄️ Survival Iglu - Überlebens-Shelter</div>
+                <div>
+                    <span class="strategy-badge">Physical Project</span>
+                    <span class="strategy-badge">Handwerk</span>
+                </div>
+                <p style="margin-top: 15px;">
+                    <strong>Teilnehmer:</strong> Nina (32)<br>
+                    <strong>Projekt:</strong> Funktionsfähiges Iglu mit 4 Bereichen<br>
+                    <strong>Commitment:</strong> 1 Nacht darin schlafen (8 Stunden)
+                </p>
+            </div>
+            
+            <div class="result-box success">
+                <h3>Ergebnis: ✅ Sprint abgeschlossen</h3>
+                <p><strong>Commitment-Test dokumentiert:</strong></p>
+                <ul>
+                    <li>Iglu komplett gebaut (120 Schneeblöcke, Ø 3m)</li>
+                    <li>8 Stunden Nacht darin geschlafen</li>
+                    <li>Temperatur: +3°C innen bei -12°C außen!</li>
+                </ul>
+                <p><strong>Learning:</strong> Iglu-Isolation funktioniert KRASS gut! Survival Skills validiert.</p>
+            </div>
+            
+            <h3 style="margin-top: 30px;">Key Milestones:</h3>
+            <div class="timeline">
+                <div class="day milestone">
+                    <div class="day-number">0</div>
+                    <div class="day-title">Warm Up</div>
+                    <div class="day-content">
+                        5 Winter-Survival-Experten befragt:<br>
+                        "Iglu-Isolation ist KRASS gut!", "Schneeblock-Größe kritisch"<br>
+                        → Machbarkeit bestätigt!
                     </div>
                 </div>
                 
                 <div class="day">
-                    <div class="day-number">2</div>
+                    <div class="day-number">3</div>
+                    <div class="day-title">Standort gewählt</div>
+                    <div class="day-content">
+                        Ebene Fläche 50m von Hütte<br>
+                        Schnee 80cm tief (perfekt!)<br>
+                        Kreis Ø 3m markiert, Windrichtung beachtet
+                    </div>
+                </div>
+                
+                <div class="day commitment">
+                    <div class="day-number">5</div>
+                    <div class="day-title">Erste Reihe eingestürzt!</div>
+                    <div class="day-content">
+                        <strong>Kritischer Fehler:</strong> 30° Neigung zu steil<br>
+                        12 Blöcke eingestürzt 😢<br>
+                        <strong>Learning:</strong> 15° Neigung nötig!
+                    </div>
+                </div>
+                
+                <div class="day milestone">
+                    <div class="day-number">7</div>
+                    <div class="day-title">Basis steht</div>
+                    <div class="day-content">
+                        Neustart mit korrekter Neigung<br>
+                        2 Reihen fertig (30 Blöcke)<br>
+                        Wände 60cm hoch, stabil!
+                    </div>
+                </div>
+                
+                <div class="day validation">
+                    <div class="day-number">14</div>
+                    <div class="day-title">Sicherheits-Tests</div>
+                    <div class="day-content">
+                        <strong>Physical Validierung:</strong><br>
+                        • Statik-Check geplant (100kg Belastung)<br>
+                        • Lüftungs-Messung (CO2-Sensor)<br>
+                        • Temperatur-Tests
+                    </div>
+                </div>
+                
+                <div class="day milestone">
+                    <div class="day-number">15</div>
+                    <div class="day-title">KUPPEL GESCHLOSSEN!</div>
+                    <div class="day-content">
+                        <span class="emoji">👑</span> Schluss-Stein eingesetzt!<br>
+                        Runde Scheibe Ø 40cm von innen<br>
+                        Iglu steht komplett! Emotionaler Moment!
+                    </div>
+                </div>
+                
+                <div class="day validation">
+                    <div class="day-number">19</div>
+                    <div class="day-title">Validierungs-Tests</div>
+                    <div class="day-content">
+                        <strong>Test-Ergebnisse:</strong><br>
+                        ✅ Statik: 100kg Belastung OK<br>
+                        ✅ Lüftung: CO2-Level gut<br>
+                        ✅ Temperatur: +2°C innen bei -8°C außen<br>
+                        → Bereit für Nacht-Test!
+                    </div>
+                </div>
+                
+                <div class="day commitment">
+                    <div class="day-number">25</div>
+                    <div class="day-title">3h Test-Sleep</div>
+                    <div class="day-content">
+                        20:00-23:00 Uhr im Iglu<br>
+                        Schlafsack warm, Qulliq-Lampe schön<br>
+                        <strong>Aber:</strong> Zu kalt → zurück zur Hütte 😅
+                    </div>
+                </div>
+                
+                <div class="day commitment">
+                    <div class="day-number">29</div>
+                    <div class="day-title">FINALE NACHT!</div>
+                    <div class="day-content">
+                        <span class="emoji">😴</span> 22:00-06:00 Uhr (8 Stunden!)<br>
+                        Schlafsack-Temp: +5°C<br>
+                        Außen: -12°C<br>
+                        Durchgeschlafen! Morgen-Tee gekocht!
+                    </div>
+                </div>
+                
+                <div class="day commitment">
+                    <div class="day-number">30</div>
+                    <div class="day-title">Sprint Completion</div>
+                    <div class="day-content">
+                        <strong>✅ Sprint abgeschlossen!</strong><br>
+                        Kriterium 1: Iglu steht mit 4 Bereichen ✅<br>
+                        Kriterium 2: 8h Nacht dokumentiert (Fotos + Video) ✅<br><br>
+                        <strong>EPIC:</strong> +3°C innen bei -12°C außen!
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- HUNDEHEIM THAILAND -->
+        <div id="hundeheim" class="content">
+            <div class="scenario-card">
+                <div class="scenario-title">🐕 Hundeheim Thailand - Paws Chiang Mai</div>
+                <div>
+                    <span class="strategy-badge">NGO</span>
+                    <span class="strategy-badge">Social Impact</span>
+                </div>
+                <p style="margin-top: 15px;">
+                    <strong>Teilnehmer:</strong> Markus (38)<br>
+                    <strong>Projekt:</strong> Shelter für herrenlose Hunde in Chiang Mai<br>
+                    <strong>Commitment:</strong> 10 Hunde aufgenommen + Community-Support
+                </p>
+            </div>
+            
+            <div class="result-box success">
+                <h3>Ergebnis: ✅ Sprint abgeschlossen</h3>
+                <p><strong>Commitment-Test dokumentiert:</strong></p>
+                <ul>
+                    <li>Foundation registriert (legal!)</li>
+                    <li>600m² Land gemietet, 3 Hütten gebaut</li>
+                    <li>10 Hunde aufgenommen (Mango, Coconut, Lucky...)</li>
+                    <li>€100 erste Spende + Community-Support</li>
+                </ul>
+                <p><strong>Learning:</strong> Community-Support ist stark, Impact ist real!</p>
+            </div>
+            
+            <h3 style="margin-top: 30px;">Key Milestones:</h3>
+            <div class="timeline">
+                <div class="day milestone">
+                    <div class="day-number">0</div>
+                    <div class="day-title">Warm Up</div>
+                    <div class="day-content">
+                        5 Tier-Aktivisten in Chiang Mai befragt:<br>
+                        "100+ Streuner in Old City", "Shelter nötig!"<br>
+                        → Problem validiert!
+                    </div>
+                </div>
+                
+                <div class="day">
+                    <div class="day-number">4</div>
+                    <div class="day-title">Thai-Anwalt gefunden</div>
+                    <div class="day-content">
+                        Herr Somchai (WhatsApp Zoom)<br>
+                        Foundation-Registrierung: ฿15,000 (~€400)<br>
+                        Brauche 2 Thai Co-Founder
+                    </div>
+                </div>
+                
+                <div class="day milestone">
+                    <div class="day-number">7</div>
+                    <div class="day-title">Foundation in Process</div>
+                    <div class="day-content">
+                        Docs submitted: "Paws Chiang Mai Foundation"<br>
+                        3 Founders: Ich + Nong + Lek<br>
+                        Purpose: "Animal Welfare & Rescue"
+                    </div>
+                </div>
+                
+                <div class="day">
+                    <div class="day-number">10</div>
+                    <div class="day-title">Partner gefunden</div>
+                    <div class="day-content">
+                        <strong>Ploy (Vet-Nurse):</strong><br>
+                        Will Part-Time helfen!<br>
+                        ฿8,000/Monat (€210)<br>
+                        Experience + Local = perfekt!
+                    </div>
+                </div>
+                
+                <div class="day validation">
+                    <div class="day-number">14</div>
+                    <div class="day-title">Community-Support testen</div>
+                    <div class="day-content">
+                        <strong>NGO Validierung:</strong><br>
+                        Facebook-Post geplant<br>
+                        Expat-Groups, Animal-Welfare-Communities<br>
+                        → Interesse + Spenden-Bereitschaft messen
+                    </div>
+                </div>
+                
+                <div class="day milestone">
+                    <div class="day-number">15</div>
+                    <div class="day-title">LAND GEMIETET!</div>
+                    <div class="day-content">
+                        <span class="emoji">✅</span> San Kamphaeng, 600m²<br>
+                        ฿4,500/Monat (€130)<br>
+                        Vertrag: 1 Jahr, monatlich kündbar
+                    </div>
+                </div>
+                
+                <div class="day milestone">
+                    <div class="day-number">19</div>
+                    <div class="day-title">BAU GESTARTET!</div>
+                    <div class="day-content">
+                        Chai (lokaler Builder) + 2 Helpers<br>
+                        3 Holz-Hütten (je 4×3m)<br>
+                        ฿30,000 (€790), fertig in 1 Woche
+                    </div>
+                </div>
+                
+                <div class="day validation">
+                    <div class="day-number">21</div>
+                    <div class="day-title">Community-Bilanz</div>
+                    <div class="day-content">
+                        <strong>Facebook-Post Ergebnis:</strong><br>
+                        200 Likes, 50 Kommentare, 15 Shares<br>
+                        30+ Messages, 5 wollen volunteer<br>
+                        3 Spenden-Zusagen!
+                    </div>
+                </div>
+                
+                <div class="day commitment">
+                    <div class="day-number">24</div>
+                    <div class="day-title">HÜTTEN FERTIG!</div>
+                    <div class="day-content">
+                        Chai done!<br>
+                        3 Hütten (je 12m²), 1 Storage<br>
+                        Zaun repariert, Site ready!
+                    </div>
+                </div>
+                
+                <div class="day commitment">
+                    <div class="day-number">25</div>
+                    <div class="day-title">ERSTE 5 HUNDE!</div>
+                    <div class="day-content">
+                        <span class="emoji">🐶</span> Ploy brachte:<br>
+                        3 Welpen: Mango, Coconut, Sticky Rice 😄<br>
+                        2 Adults: Lucky, Brave<br>
+                        Vet-Check done, alle gesund!
+                    </div>
+                </div>
+                
+                <div class="day commitment">
+                    <div class="day-number">27</div>
+                    <div class="day-title">10 HUNDE MILESTONE!</div>
+                    <div class="day-content">
+                        5 weitere Hunde aufgenommen<br>
+                        2 von Straße, 3 von Temple<br>
+                        <strong>TOTAL: 10 HUNDE! 🎉</strong>
+                    </div>
+                </div>
+                
+                <div class="day commitment">
+                    <div class="day-number">29</div>
+                    <div class="day-title">Online Presence</div>
+                    <div class="day-content">
+                        Website gebaut (Wix): "Paws Chiang Mai"<br>
+                        Facebook-Page: 50 Followers<br>
+                        <strong>Erste Spende: €100!</strong>
+                    </div>
+                </div>
+                
+                <div class="day commitment">
+                    <div class="day-number">30</div>
+                    <div class="day-title">Sprint Completion</div>
+                    <div class="day-content">
+                        <strong>✅ Sprint abgeschlossen!</strong><br>
+                        Kriterium 1: Shelter existiert (Foundation, Land, 3 Hütten) ✅<br>
+                        Kriterium 2: 10 Hunde + €100 Spende + Community ✅<br><br>
+                        <strong>Impact:</strong> 10 Hunde gerettet!
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CASTMATCH -->
+        <div id="castmatch" class="content">
+            <div class="scenario-card">
+                <div class="scenario-title">🎭 CastMatch - Auto-Match Casting Platform</div>
+                <div>
+                    <span class="strategy-badge">Strategie G: Freemium</span>
+                    <span class="strategy-badge">SaaS</span>
+                </div>
+                <p style="margin-top: 15px;">
+                    <strong>Teilnehmer:</strong> Julia (29)<br>
+                    <strong>Projekt:</strong> Künstler Casting App mit Auto-Match<br>
+                    <strong>Geschäftsmodell:</strong> Free (5 Matches/Monat) vs Pro €9/Monat (Unlimited)
+                </p>
+            </div>
+            
+            <div class="result-box success">
+                <h3>Ergebnis: ✅ Sprint abgeschlossen</h3>
+                <p><strong>Commitment-Test dokumentiert:</strong></p>
+                <ul>
+                    <li>20 Artist-Profiles registriert</li>
+                    <li>12 Auto-Matches versendet</li>
+                    <li>6 würden €9/Monat zahlen (30% Commitment)</li>
+                </ul>
+                <p><strong>Learning:</strong> Artists lieben Auto-Match, Showcase-Feature war Bonus-Hit!</p>
+            </div>
+            
+            <h3 style="margin-top: 30px;">Key Milestones:</h3>
+            <div class="timeline">
+                <div class="day milestone">
+                    <div class="day-number">0</div>
+                    <div class="day-title">Warm Up</div>
+                    <div class="day-content">
+                        5 Künstler befragt:<br>
+                        "Casting-Calls manuell suchen nervt!", "Brauche Match-System!"<br>
+                        → Pain Point validiert!
+                    </div>
+                </div>
+                
+                <div class="day">
+                    <div class="day-number">3</div>
                     <div class="day-title">Airtable Setup</div>
                     <div class="day-content">
-                        <strong>Tagesaufgabe (30-45 Min):</strong><br>
-                        1. Airtable Account erstellen<br>
-                        2. Base "TaskFlow" anlegen<br>
-                        3. Tabelle "Tasks" (Text, Priority, Created)<br>
-                        4. 3 Test-Tasks eintragen<br><br>
-                        
-                        <div class="ai-response">
-                            <div class="label ai-label">Warnung</div>
-                            ⚠️ Starte KEINE React Tutorials! Airtable JETZT öffnen!
-                        </div>
-                        
-                        <strong>Check-in:</strong> "✅ Airtable mit 3 Tasks [Screenshot]"
-                    </div>
-                </div>
-                
-                <div class="day">
-                    <div class="day-number">3</div>
-                    <div class="day-title">Softr Connection</div>
-                    <div class="day-content">
-                        <strong>Aufgabe (45 Min):</strong><br>
-                        • Softr Account → Connect Airtable<br>
-                        • Template "List" wählen<br>
-                        • Tasks sortiert nach Priority<br>
-                        • Publish → Live-Link!<br><br>
-                        
-                        <strong>Fertig:</strong> TaskFlow läuft auf softr-domain.com
-                    </div>
-                </div>
-                
-                <div class="day">
-                    <div class="day-number">4</div>
-                    <div class="day-title">Input-Formular</div>
-                    <div class="day-content">
-                        Softr Form Block → Tasks selbst erstellen<br>
-                        Test: 5 Tasks via Form → erscheinen in Liste? ✅
-                    </div>
-                </div>
-                
-                <div class="day">
-                    <div class="day-number">5</div>
-                    <div class="day-title">Styling</div>
-                    <div class="day-content">
-                        • Colors: Primary #4F46E5, Accent #10B981<br>
-                        • Typography: Inter Font<br>
-                        • Card View statt Table<br>
-                        • Priority-Tags: Farbige Badges
-                    </div>
-                </div>
-                
-                <div class="day validation">
-                    <div class="day-number">7</div>
-                    <div class="day-title">Woche 1 Review</div>
-                    <div class="day-content">
-                        <strong>Was existiert:</strong><br>
-                        ✅ Airtable Datenbank (20 Test-Tasks)<br>
-                        ✅ Softr Website (live!)<br>
-                        ✅ Task-Erstellung funktioniert<br>
-                        ✅ Priority-Sorting funktioniert<br>
-                        ✅ 1 Beta-User hat getestet<br><br>
-                        
-                        <strong>Zeit:</strong> ~5h (7× 45 Min)<br>
-                        <strong>On Track?</strong> ✅ JA - MVP Kern funktioniert!<br><br>
-                        
-                        <strong>Feedback Beta-User:</strong><br>
-                        "Cool! Aber ich will Tasks auch löschen können."<br><br>
-                        
-                        <strong>Entscheidung:</strong> Löschen = Tag 8-10
+                        4 Tabellen: Artists, Directors, Matches, History<br>
+                        Relations verknüpft<br>
+                        Erste Test-Profiles erstellt
                     </div>
                 </div>
                 
                 <div class="day milestone">
-                    <div class="day-number">14</div>
-                    <div class="day-title">Halbzeit Review</div>
+                    <div class="day-number">7</div>
+                    <div class="day-title">Match-Logic läuft!</div>
                     <div class="day-content">
-                        <strong>Was existiert:</strong><br>
-                        1. ✅ Task erstellen<br>
-                        2. ✅ Priority zuweisen<br>
-                        3. ✅ Tasks löschen<br>
-                        4. ✅ Filter nach Priority<br>
-                        5. ✅ 2 Beta-User aktiv<br><br>
-                        
-                        <strong>Kriterium 1 (Sichtbar):</strong> 70% fertig<br>
-                        <strong>Kriterium 2 (Commitment):</strong> 0% (noch nicht gefragt!)<br><br>
-                        
-                        <div class="result-box warning">
-                            <strong>KRITISCH: Zahlungstest vorbereiten!</strong><br>
-                            Plan: Tag 15-20 Stripe Integration<br>
-                            Tag 21: Frage 5 User "Würdest du €9 zahlen?"
-                        </div>
+                        IF-Formula fertig:<br>
+                        Artist.Skills CONTAINS Director.Needs<br>
+                        AND Artist.Location = Director.Location<br>
+                        → Email via Zapier: "New match!"
                     </div>
                 </div>
                 
                 <div class="day">
-                    <div class="day-number">15-17</div>
-                    <div class="day-title">Stripe Integration</div>
+                    <div class="day-number">8</div>
+                    <div class="day-title">LIVE!</div>
                     <div class="day-content">
-                        <strong>Tag 15:</strong> Stripe Account, Product "TaskFlow Pro" €9/Monat, Payment Link<br>
-                        <strong>Tag 16:</strong> Softr Pricing Table mit 2 Tiers (Free / Pro €9)<br>
-                        <strong>Tag 17:</strong> Test-Payment (Test-Mode) → Screenshot "Payment Successful"
+                        castmatch.softr.app online<br>
+                        Artists können registrieren<br>
+                        Test mit 3 Freunden erfolgreich
+                    </div>
+                </div>
+                
+                <div class="day validation">
+                    <div class="day-number">14</div>
+                    <div class="day-title">Validierung startet</div>
+                    <div class="day-content">
+                        Umfrage: "Würdest du €9/Monat zahlen?"<br>
+                        Verbreitung: Facebook "Berlin Artists", LinkedIn<br>
+                        → 10 Responses in 2h!
+                    </div>
+                </div>
+                
+                <div class="day milestone">
+                    <div class="day-number">16</div>
+                    <div class="day-title">20 ARTISTS MILESTONE!</div>
+                    <div class="day-content">
+                        8 Actors, 5 Musicians, 4 Dancers<br>
+                        2 Voice Actors, 1 Comedian<br>
+                        Cities: Berlin (10), Munich (5), Hamburg (3)
+                    </div>
+                </div>
+                
+                <div class="day validation">
+                    <div class="day-number">18</div>
+                    <div class="day-title">Pattern erkannt</div>
+                    <div class="day-content">
+                        <strong>Feedback:</strong> "Love the idea!" (8×)<br>
+                        <strong>Aber:</strong> "Need more Directors" (4×)<br>
+                        <strong>Learning:</strong> Chicken-Egg-Problem
+                    </div>
+                </div>
+                
+                <div class="day milestone">
+                    <div class="day-number">20</div>
+                    <div class="day-title">Showcase-Feature!</div>
+                    <div class="day-content">
+                        <strong>Mini-Anpassung:</strong><br>
+                        Artists können Profile als Public Link teilen<br>
+                        castmatch.softr.app/anna-schmidt<br>
+                        8 Artists nutzen sofort für Instagram Bio!
                     </div>
                 </div>
                 
                 <div class="day commitment">
-                    <div class="day-number">21</div>
-                    <div class="day-title">Commitment-Test</div>
+                    <div class="day-number">22</div>
+                    <div class="day-title">Commitment-Strategie</div>
                     <div class="day-content">
-                        <strong>Email an 5 Beta-User:</strong><br>
-                        "Du nutzt TaskFlow jetzt seit 2 Wochen.<br>
-                        Ehrliche Frage: Würdest du €9/Monat zahlen?<br>
-                        Ja/Nein/Vielleicht?"<br><br>
-                        
-                        <div class="ai-response">
-                            <div class="label ai-label">Ergebnis (Tag 24)</div>
-                            <strong>Antworten:</strong><br>
-                            • User 1: "Ja, würde zahlen"<br>
-                            • User 2: "Ja, wenn Feature X kommt"<br>
-                            • User 3: "Vielleicht, zu teuer"<br>
-                            • User 4: "Nein, nutze schon Todoist"<br>
-                            • User 5: "Keine Antwort"<br><br>
-                            
-                            <strong>→ 2 sichere JA (40%)</strong><br>
-                            <strong>→ 1 bedingtes JA (20%)</strong><br>
-                            <strong>→ 40-60% Conversion = GUT für MVP!</strong>
-                        </div>
+                        <strong>Freemium-Model:</strong><br>
+                        Free: Basic Profile + 5 Matches/Monat<br>
+                        Pro €9/Monat: Unlimited + Showcase + Analytics
+                    </div>
+                </div>
+                
+                <div class="day commitment">
+                    <div class="day-number">25</div>
+                    <div class="day-title">Pricing Live!</div>
+                    <div class="day-content">
+                        Pricing-Page + Stripe Link<br>
+                        Email an alle 20 Artists<br>
+                        LinkedIn-Post: "Built CastMatch in 30 days!"<br>
+                        → 120 Views, 15 Likes!
+                    </div>
+                </div>
+                
+                <div class="day commitment">
+                    <div class="day-number">27</div>
+                    <div class="day-title">Commitment gesammelt</div>
+                    <div class="day-content">
+                        20 Free-Users getestet:<br>
+                        <span class="emoji">✅</span> 6 würden €9 upgraden (30%)<br>
+                        <span class="emoji">🤔</span> 8 "Maybe later"<br>
+                        <span class="emoji">❌</span> 6 "No (Free reicht)"
                     </div>
                 </div>
                 
                 <div class="day commitment">
                     <div class="day-number">30</div>
-                    <div class="day-title">Finale Abrechnung</div>
+                    <div class="day-title">Sprint Completion</div>
                     <div class="day-content">
-                        <strong>KRITERIUM 1: Sichtbares Ergebnis</strong><br>
-                        ✅ JA - TaskFlow läuft auf softr-link.com<br>
-                        • Task erstellen ✅<br>
-                        • Priority zuweisen ✅<br>
-                        • Tasks sortieren ✅<br>
-                        • Tasks löschen ✅<br>
-                        • Filter ✅<br>
-                        • Stripe Payment Link ✅<br><br>
-                        
-                        <strong>KRITERIUM 2: Commitment-Test</strong><br>
-                        ✅ JA - Dokumentiert!<br>
-                        • 5 Beta-User getestet<br>
-                        • 2 würden €9 zahlen (40%)<br>
-                        • Email-Screenshots vorhanden<br><br>
-                        
-                        <div class="result-box success">
-                            <strong>🎉 SPRINT ABGESCHLOSSEN!</strong><br>
-                            €300 Tierheim-Spende VERMIEDEN!<br><br>
-                            
-                            <strong>Learnings:</strong><br>
-                            ✅ No-Code (Airtable + Softr) = schnellster Weg<br>
-                            ✅ Scope auf 3 Features = machbar in 30 Tagen<br>
-                            ✅ 40% Conversion = okay aber nicht 100%<br><br>
-                            
-                            <strong>Next Steps:</strong><br>
-                            • V2 mit Feature Requests<br>
-                            • Marketing (LinkedIn, Product Hunt)
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- NGO SZENARIO: WARMEMAHLZEIT -->
-        <div id="ngo" class="content">
-            <div class="scenario-card">
-                <div class="scenario-title">❤️ WarmeMahlzeit - Community Kitchen</div>
-                <div>
-                    <span class="strategy-badge">NGO: Spendenfinanziert</span>
-                    <span class="strategy-badge">Wöchentliche Events</span>
-                    <span class="strategy-badge">2h/Event + 3h Organisation</span>
-                </div>
-                <p style="margin-top: 15px;">
-                    <strong>Teilnehmerin:</strong> Fatima, 31, Sozialarbeiterin<br>
-                    <strong>Projekt:</strong> Wöchentliche Community-Küche für Obdachlose<br>
-                    <strong>Skills:</strong> Keine Tech, aber Organisations-Erfahrung<br>
-                    <strong>Konsequenz:</strong> €200 Spende + 10h Sozialarbeit
-                </p>
-            </div>
-            
-            <div class="result-box success">
-                <h3>Ergebnis: ✅ Sprint abgeschlossen (MASSIVER Impact!)</h3>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">109</div>
-                        <div class="stat-label">Menschen erreicht</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">4</div>
-                        <div class="stat-label">Events durchgeführt</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">€400</div>
-                        <div class="stat-label">Spenden gesammelt</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">5</div>
-                        <div class="stat-label">Volunteers (100% dabei)</div>
-                    </div>
-                </div>
-                <p><strong>Impact:</strong> 109 warme Mahlzeiten = 218% von Ziel (50 Menschen)!</p>
-                <p><strong>Learning:</strong> Einfache Ausführung (Pasta, Curry, Suppe) + Fix-Schedule = nachhaltiger Impact!</p>
-            </div>
-            
-            <h3 style="margin-top: 30px;">Timeline Tag 0-30:</h3>
-            <div class="timeline">
-                <div class="day validation">
-                    <div class="day-number">0</div>
-                    <div class="day-title">Warm Up</div>
-                    <div class="day-content">
-                        <strong>5 Quick Interviews:</strong><br><br>
-                        
-                        <strong>Person 1 (Moschee):</strong> "Räumlichkeiten bereitstellen?" → "Ja, Mittwochs ab 18 Uhr"<br>
-                        <strong>Person 2 (Freundin):</strong> "Mithelfen kochen?" → "Ja, gerne!"<br>
-                        <strong>Person 3 (Kollege):</strong> "Problem erkannt?" → "Ja, definitiv"<br>
-                        <strong>Person 4 (Nachbar):</strong> "€20 spenden?" → "Ja, wenn sichtbar"<br>
-                        <strong>Person 5 (Ex-Kollege):</strong> "Organisation helfen?" → "Ja!"<br><br>
-                        
-                        <div class="ai-response">
-                            <div class="label ai-label">Ergebnis</div>
-                            5 von 5: Problem erkannt<br>
-                            4 von 5: Würde helfen/spenden<br><br>
-                            <strong>✅ GO! (Super positive Resonanz!)</strong>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">1</div>
-                    <div class="day-title">Scope-Reduktion</div>
-                    <div class="day-content">
-                        <strong>Original Scope (zu groß):</strong><br>
-                        • Täglich warme Mahlzeit<br>
-                        • 3 Standorte<br>
-                        • 10-15 Volunteers<br>
-                        • Food Truck<br>
-                        • Multi-Channel Marketing<br><br>
-                        
-                        <div class="ai-response">
-                            <div class="label ai-label">KI-Reduktion</div>
-                            <strong>Was ist MINIMUM in 30 Tagen?</strong><br><br>
-                            
-                            REDUZIERT auf:<br>
-                            1. Mittwochs (1× pro Woche, nicht täglich!)<br>
-                            2. Ein Standort (Moschee bestätigt!)<br>
-                            3. 5 Volunteers (nicht 10-15)<br>
-                            4. 4 erfolgreiche Koch-Events<br>
-                            5. €300 Spenden gesammelt<br><br>
-                            
-                            <strong>ALLES ANDERE = SPÄTER!</strong>
-                        </div>
-                        
-                        <strong>Neue Fertig-Definition:</strong><br>
-                        ✅ 4 erfolgreiche Koch-Events (Mittwochs)<br>
-                        ✅ Mind. 50 Menschen erreicht (total)<br>
-                        ✅ 5 aktive Volunteers (committed)<br>
-                        ✅ €300 Spenden gesammelt<br>
-                        ✅ Instagram-Dokumentation
-                    </div>
-                </div>
-                
-                <div class="day">
-                    <div class="day-number">2</div>
-                    <div class="day-title">Location + Team Setup</div>
-                    <div class="day-content">
-                        <strong>Tagesaufgabe (45 Min):</strong><br>
-                        1. Moschee anrufen: "Können wir starten?" → Zusage schriftlich!<br>
-                        2. WhatsApp Gruppe "WarmeMahlzeit - Team" → 2 Volunteers einladen<br>
-                        3. To-Do Liste für Event #1:<br>
-                           • Wann? Datum fixieren<br>
-                           • Was kochen? Menü entscheiden<br>
-                           • Wer bringt was?<br><br>
-                        
-                        <div class="ai-response">
-                            <div class="label ai-label">Warnung</div>
-                            ⚠️ Fang NICHT an Website zu bauen!<br>
-                            WhatsApp + Telefonat JETZT!
-                        </div>
-                        
-                        <strong>Check-in:</strong> "✅ WhatsApp Gruppe mit 3 Leuten + Datum fixiert"
-                    </div>
-                </div>
-                
-                <div class="day">
-                    <div class="day-number">3</div>
-                    <div class="day-title">Volunteer Recruitment</div>
-                    <div class="day-content">
-                        <strong>Aufgabe:</strong> 3 weitere Volunteers finden (total 5)<br><br>
-                        
-                        Direkte Anrufe/Messages:<br>
-                        "Hey, ich starte Community-Küche. Jeden Mittwoch 18-20 Uhr.<br>
-                        Kannst du 1× pro Monat mithelfen?"<br><br>
-                        
-                        <strong>Ziel:</strong> 3 zusätzliche JA → STOPP bei 5 Leuten!
-                    </div>
-                </div>
-                
-                <div class="day">
-                    <div class="day-number">4</div>
-                    <div class="day-title">Instagram Setup</div>
-                    <div class="day-content">
-                        <strong>Social Media für Dokumentation (30 Min):</strong><br><br>
-                        
-                        1. Account: @WarmeMahlzeit_[Stadt]<br>
-                        2. Bio: "Wöchentliche Community-Küche 🍲 Jeden Mittwoch"<br>
-                        3. Erster Post: Team-Selfie (5 Volunteers)<br>
-                           Text: "Wir starten! Erstes Event: [Datum]"<br>
-                        4. Story: Behind-the-scenes Vorbereitung<br><br>
-                        
-                        <strong>Fertig:</strong> Instagram live + 1 Post
-                    </div>
-                </div>
-                
-                <div class="day validation">
-                    <div class="day-number">7</div>
-                    <div class="day-title">Woche 1 Review</div>
-                    <div class="day-content">
-                        <strong>Was existiert konkret:</strong><br>
-                        1. ✅ Location bestätigt (Moschee, €50/Monat)<br>
-                        2. ✅ 5 Volunteers recruited + WhatsApp Gruppe<br>
-                        3. ✅ Instagram (@WarmeMahlzeit, 47 Follower)<br>
-                        4. ✅ Event #1 geplant (Tag 14, Pasta)<br>
-                        5. ✅ Spenden: €70 gesammelt (7 Personen!)<br><br>
-                        
-                        <strong>Zeit investiert:</strong> ~5h (Organisation, Calls, Setup)<br>
-                        <strong>On Track?</strong> ✅ JA! Event #1 in 7 Tagen!<br><br>
-                        
-                        <strong>Nächste Schritte:</strong><br>
-                        • Restliche €30 sammeln (bis Tag 10)<br>
-                        • Einkaufsliste finalisieren<br>
-                        • Volunteers briefen
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">14</div>
-                    <div class="day-title">EVENT #1 - Pasta!</div>
-                    <div class="day-content">
-                        <strong>Ablauf:</strong><br>
-                        17:30 - Ankommen, Setup<br>
-                        18:00 - Kochen starten<br>
-                        19:00 - Essen ausgeben<br>
-                        20:00 - Cleanup<br><br>
-                        
-                        <div class="result-box success">
-                            <strong>🎉 23 MENSCHEN ERREICHT!</strong><br><br>
-                            
-                            <strong>Dokumentation:</strong><br>
-                            • 5 Instagram Stories (Live-Updates)<br>
-                            • 1 Post: "Event #1: Erfolg! 23 Menschen, 23 warme Mahlzeiten"<br>
-                            • Fotos: Kochen, Ausgeben, Menschen beim Essen<br><br>
-                            
-                            <strong>Learnings:</strong><br>
-                            ✅ Pasta war hit!<br>
-                            ⚠️ Zu wenig Besteck (nächstes Mal mehr!)<br>
-                            ✅ Location perfekt<br>
-                            ✅ Team arbeitet super zusammen
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">21</div>
-                    <div class="day-title">EVENT #2 - Curry! + Woche 3 Review</div>
-                    <div class="day-content">
-                        <strong>Review:</strong><br>
-                        • Event #1: ✅ 23 Menschen<br>
-                        • Spenden: €150 total gesammelt<br>
-                        • Volunteers: 5 aktiv (100% Retention!)<br>
-                        • Instagram: 187 Follower<br><br>
-                        
-                        <strong>EVENT #2:</strong><br>
-                        18:00 - Kochen (Gemüse-Curry + Reis)<br>
-                        19:00 - Ausgeben<br>
-                        20:00 - Cleanup<br><br>
-                        
-                        <div class="result-box success">
-                            <strong>🎉 28 MENSCHEN! (Noch besser!)</strong><br><br>
-                            
-                            Instagram: "Event #2: 28 Menschen, 28 warme Mahlzeiten.<br>
-                            Curry war der Hit! Total bis jetzt: 51 Menschen! ❤️"<br><br>
-                            
-                            <strong>Feedback:</strong><br>
-                            ✅ Curry SEHR beliebt!<br>
-                            ✅ Mehr Menschen als Event #1!<br>
-                            ⚠️ Reis war knapp (nächstes Mal 20kg)
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">28</div>
-                    <div class="day-title">EVENT #3 - Linsensuppe!</div>
-                    <div class="day-content">
-                        <strong>Ablauf:</strong><br>
-                        18:00 - Linsensuppe + Brot kochen<br>
-                        19:00 - Ausgeben<br>
-                        20:00 - Cleanup<br><br>
-                        
-                        <div class="result-box success">
-                            <strong>🏆 31 MENSCHEN! (RECORD!)</strong><br><br>
-                            
-                            Instagram: "Event #3: Record! 31 Menschen.<br>
-                            Linsensuppe + Brot = Perfect!<br>
-                            Total: 82 Menschen! ❤️"<br><br>
-                            
-                            <strong>Learnings:</strong><br>
-                            ✅ Suppe super für Winter!<br>
-                            ✅ Mehr Menschen kommen (word-of-mouth!)<br>
-                            ✅ Team routine jetzt smooth
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">30</div>
-                    <div class="day-title">EVENT #4 BONUS + Finale</div>
-                    <div class="day-content">
-                        <strong>BONUS EVENT #4:</strong><br>
-                        DOUBLE Curry (Team-Favorit!)<br>
-                        Ziel: 40 Menschen erreichen!<br><br>
-                        
-                        <strong>Ergebnis:</strong> 27 Menschen (total 109!)<br><br>
-                        
-                        <div class="result-box success">
-                            <strong>🎉 FINALE ABRECHNUNG</strong><br><br>
-                            
-                            <strong>KRITERIUM 1: 4 Events durchgeführt</strong><br>
-                            ✅ JA!<br>
-                            • Event #1: 23 Menschen<br>
-                            • Event #2: 28 Menschen<br>
-                            • Event #3: 31 Menschen<br>
-                            • Event #4: 27 Menschen<br><br>
-                            
-                            <strong>KRITERIUM 2: 50 Menschen erreicht</strong><br>
-                            ✅ JA - 109 Menschen! (218% von Ziel!)<br><br>
-                            
-                            <strong>KRITERIUM 3: 5 Volunteers committed</strong><br>
-                            ✅ JA - Alle 5 machen weiter!<br><br>
-                            
-                            <strong>KRITERIUM 4: €300 Spenden</strong><br>
-                            ✅ JA - €400 gesammelt! (133%)<br><br>
-                            
-                            <strong>🏆 SPRINT ABGESCHLOSSEN!</strong><br>
-                            €200 Spende + 10h Sozialarbeit VERMIEDEN!<br><br>
-                            
-                            <strong>30 Tage Impact:</strong><br>
-                            🍲 109 warme Mahlzeiten<br>
-                            👥 5 Volunteers (100% Retention)<br>
-                            💰 €400 Spenden (€100 Puffer übrig!)<br>
-                            📸 187 Instagram Follower<br>
-                            ⏰ ~20h Zeit investiert<br><br>
-                            
-                            <strong>Next Steps: WEITER MACHEN!</strong><br>
-                            Momentum ist da! Jeden Mittwoch weiter!
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- PHYSISCHES PRODUKT: KERAMIK -->
-        <div id="physisch" class="content">
-            <div class="scenario-card">
-                <div class="scenario-title">🎨 MorningClay - Handgemachte Keramik-Tassen</div>
-                <div>
-                    <span class="strategy-badge">Physisches Produkt</span>
-                    <span class="strategy-badge">Direktverkauf €35-45</span>
-                    <span class="strategy-badge">Overlapping Production Batches</span>
-                </div>
-                <p style="margin-top: 15px;">
-                    <strong>Teilnehmerin:</strong> Sophie, 29, Grafikdesignerin (Hobby: Töpfern)<br>
-                    <strong>Projekt:</strong> Handgemachte Keramik-Tassen<br>
-                    <strong>Skills:</strong> Pottery (2 Jahre Hobby), Grafik-Design<br>
-                    <strong>Konsequenz:</strong> €500 an Kunstschule
-                </p>
-            </div>
-            
-            <div class="result-box success">
-                <h3>Ergebnis: ✅ Sprint abgeschlossen</h3>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">23</div>
-                        <div class="stat-label">Tassen produziert</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">8</div>
-                        <div class="stat-label">Tassen verkauft</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">€136</div>
-                        <div class="stat-label">Profit (45% Margin)</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">30h</div>
-                        <div class="stat-label">Zeit investiert</div>
-                    </div>
-                </div>
-                <p><strong>Verkaufs-Kanäle:</strong> Etsy (5), Facebook (2), Pre-Orders (1)</p>
-                <p><strong>Learning:</strong> Overlapping Production Batches ermöglichen 3 Batches in 30 Tagen!</p>
-            </div>
-            
-            <h3 style="margin-top: 30px;">Wichtigste Meilensteine:</h3>
-            <div class="timeline">
-                <div class="day validation">
-                    <div class="day-number">0</div>
-                    <div class="day-title">Warm Up</div>
-                    <div class="day-content">
-                        <strong>5 Interviews:</strong><br>
-                        Frage: "Würdest du €40 für handgemachte Tasse zahlen?"<br><br>
-                        
-                        <strong>Ergebnis:</strong><br>
-                        • 3 von 5: "Ja, wenn Design cool ist"<br>
-                        • 2 von 5: "Zu teuer, max €25"<br><br>
-                        
-                        <div class="ai-response">
-                            <div class="label ai-label">Entscheidung</div>
-                            ✅ GO mit €35-40 Preispunkt
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">1</div>
-                    <div class="day-title">Scope + Produktions-Planung</div>
-                    <div class="day-content">
-                        <strong>Original Scope (zu groß):</strong><br>
-                        50 Tassen, 10 Designs, Etsy + Website + Cafés<br><br>
-                        
-                        <strong>REDUZIERT:</strong><br>
-                        • 24-30 Tassen in 30 Tagen (3 Batches)<br>
-                        • 2 Designs (schlicht + gemustert)<br>
-                        • NUR Etsy + Instagram<br>
-                        • Verkauf: 8 Tassen = Erfolg<br><br>
-                        
-                        <div class="result-box warning">
-                            <strong>⚠️ KRITISCH: Keramik-Zyklus!</strong><br><br>
-                            
-                            Produktions-Zyklus: 12 Tage!<br>
-                            Tag 1-2: Formen<br>
-                            Tag 3-5: Trocknen + Trimmen<br>
-                            Tag 8: Bisque Fire (1. Brennung)<br>
-                            Tag 9: Glasieren<br>
-                            Tag 12: Glaze Fire (2. Brennung)<br><br>
-                            
-                            <strong>Problem:</strong> 30 Tage = nur 2 Batches sequenziell!<br><br>
-                            
-                            <strong>Lösung: OVERLAPPING BATCHES!</strong><br>
-                            Batch #1: Tag 2-14<br>
-                            Batch #2: Tag 8-20 (Start während Batch #1 brennt!)<br>
-                            Batch #3: Tag 14-26<br>
-                            → 3 Batches in 30 Tagen möglich!
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="day">
-                    <div class="day-number">2-3</div>
-                    <div class="day-title">Batch #1 Formen</div>
-                    <div class="day-content">
-                        <strong>Töpferei-Workshop (2× 2h Sessions):</strong><br>
-                        • 8 Tassen formen<br>
-                        • Simple Zylinderform<br>
-                        • Konsistente Größe (300ml)<br><br>
-                        
-                        <strong>Kosten:</strong> €0 (Membership-Zugang)
-                    </div>
-                </div>
-                
-                <div class="day">
-                    <div class="day-number">4-5</div>
-                    <div class="day-title">Setup Etsy + Instagram</div>
-                    <div class="day-content">
-                        <strong>Während Batch #1 trocknet (3h total):</strong><br><br>
-                        
-                        <strong>ETSY:</strong><br>
-                        • Shop "MorningClay"<br>
-                        • Banner Design (Canva)<br>
-                        • Policies (Shipping, Returns)<br><br>
-                        
-                        <strong>INSTAGRAM:</strong><br>
-                        • @morningclay<br>
-                        • Bio: "Handmade ceramic mugs ☕"<br>
-                        • 3 Posts: Workshop Behind-Scenes
-                    </div>
-                </div>
-                
-                <div class="day validation">
-                    <div class="day-number">7</div>
-                    <div class="day-title">Woche 1 Review</div>
-                    <div class="day-content">
-                        ✅ Batch #1: 8 Tassen geformt, trimmed<br>
-                        ✅ Etsy Shop: Setup (noch keine Listings)<br>
-                        ✅ Instagram: Live mit 47 Followers<br>
-                        ⏳ Batch #1 wartet auf Bisque Fire (Tag 10)
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">8-10</div>
-                    <div class="day-title">Batch #1 Bisque + Batch #2 Start!</div>
-                    <div class="day-content">
-                        <strong>Tag 8:</strong><br>
-                        • Batch #1 in Bisque Kiln<br>
-                        • START Batch #2: 8 neue Tassen formen!<br><br>
-                        
-                        <strong>Tag 9:</strong><br>
-                        • Batch #2 weiter formen<br>
-                        • Batch #1 Bisque fertig → abkühlen<br><br>
-                        
-                        <strong>Tag 10:</strong><br>
-                        • Batch #1 glasieren (2h)<br>
-                        • Batch #2 trocknen
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">13</div>
-                    <div class="day-title">Batch #1 FERTIG + Produktfotos!</div>
-                    <div class="day-content">
-                        <strong>Batch #1 Glaze Fire FERTIG!</strong><br>
-                        • 7 von 8 perfekt (1 hatte Riss)<br><br>
-                        
-                        <strong>Produktfotos (3h):</strong><br>
-                        • Weißer Background<br>
-                        • Natural Light<br>
-                        • 3 Angles pro Tasse<br>
-                        • Detail Shots (Glasur-Textur)<br><br>
-                        
-                        <strong>Professional-quality!</strong> ✅
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">14</div>
-                    <div class="day-title">Halbzeit Review</div>
-                    <div class="day-content">
-                        <strong>Was existiert:</strong><br>
-                        ✅ Batch #1: 7 perfekte Tassen<br>
-                        ✅ Batch #2: 8 Tassen (in Trocknung)<br>
-                        ✅ Produktfotos: Professional-quality<br>
-                        ✅ Etsy Shop: Bereit für Listings<br><br>
-                        
-                        <strong>Kriterium 1 (24-30 Tassen):</strong> 29% done (7/24)<br>
-                        <strong>Kriterium 2 (8 verkauft):</strong> 0% (noch nicht gelistet!)<br><br>
-                        
-                        <div class="result-box warning">
-                            <strong>KRITISCH: JETZT Etsy Listings online!</strong><br>
-                            Gleichzeitig Batch #2 + #3 weiter!
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">15-16</div>
-                    <div class="day-title">Etsy Listings erstellen</div>
-                    <div class="day-content">
-                        <strong>7 Listings (3h, je 25 Min):</strong><br><br>
-                        
-                        • Title: "Handmade Ceramic Mug - Morning Coffee Cup"<br>
-                        • Description: 300ml, Dishwasher safe, Unique glaze<br>
-                        • Photos: 5 pro Listing<br>
-                        • Price: €35 + €5 Shipping<br>
-                        • Tags: handmade, ceramic, coffee mug<br><br>
-                        
-                        <strong>Kosten:</strong> €1.40 Listing-Fee<br><br>
-                        
-                        <div class="result-box success">
-                            🎉 ETSY SHOP LIVE!
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">17-18</div>
-                    <div class="day-title">Marketing Start</div>
-                    <div class="day-content">
-                        <strong>Multi-Channel (2h):</strong><br><br>
-                        
-                        <strong>Instagram:</strong><br>
-                        • Post: "Shop is LIVE! 🎉"<br>
-                        • Stories: Glaze Process<br>
-                        • Reel: 15sec Töpferscheibe Video<br><br>
-                        
-                        <strong>Pinterest:</strong><br>
-                        • 7 Pins (je 1 Tasse)<br>
-                        • Keywords: "handmade mug", "ceramic"<br><br>
-                        
-                        <strong>Facebook Marketplace:</strong><br>
-                        • 7 Listings (local sales)<br>
-                        • €35 pickup, €40 shipped
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">21</div>
-                    <div class="day-title">Woche 3 Review + SALES!</div>
-                    <div class="day-content">
-                        <strong>Was existiert:</strong><br>
-                        ✅ Etsy Shop: 7 Listings (560 views!)<br>
-                        ✅ Instagram: 198 Followers<br>
-                        ✅ Batch #2: In Glaze Fire<br>
-                        ✅ Batch #3: 10 Tassen geformt<br><br>
-                        
-                        <div class="result-box success">
-                            <strong>🎉 SALES: 2 Tassen verkauft!</strong><br>
-                            • 1× Etsy (€35)<br>
-                            • 1× Facebook (€35 local pickup)<br><br>
-                            
-                            <strong>Revenue: €70</strong><br>
-                            Progress: 8% von Ziel (2/8 sold)
-                        </div>
-                        
-                        <strong>COMMITMENT-TEST:</strong><br>
-                        Email an 5 Freunde: "Würdest du €35 zahlen?"<br>
-                        → 3 Pre-Orders! 🎉
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">22-27</div>
-                    <div class="day-title">Batch #2+3 fertig + Final Sales Push</div>
-                    <div class="day-content">
-                        <strong>Tag 22-24: Batch #2</strong><br>
-                        • 7/8 perfekt → Produktfotos → 7 neue Listings<br>
-                        • 2 weitere Verkäufe (Etsy)<br>
-                        • Total: 14 Listings, 4 verkauft, €140 Revenue<br><br>
-                        
-                        <strong>Tag 25-27: Marketing Push</strong><br>
-                        • Reddit (r/Pottery, r/handmade)<br>
-                        • Facebook Groups (Local artisan)<br>
-                        • Instagram Reel viral (1.2K views!)<br>
-                        • 3 weitere Verkäufe<br>
-                        • Revenue: €245
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">28-30</div>
-                    <div class="day-title">Batch #3 fertig + FINALE</div>
-                    <div class="day-content">
-                        <strong>Tag 28:</strong><br>
-                        • Batch #3 fertig: 9/10 perfekt<br>
-                        • 9 neue Listings<br>
-                        • Total: 23 Tassen (7+7+9)<br>
-                        • Total verkauft: 7<br><br>
-                        
-                        <strong>Tag 29:</strong><br>
-                        • Email an Pre-Orders<br>
-                        • Instagram: "Last Chance!"<br>
-                        • 1 Verkauf → Revenue: €280 🎉<br><br>
-                        
-                        <div class="result-box success">
-                            <strong>TAG 30 FINALE ABRECHNUNG:</strong><br><br>
-                            
-                            <strong>KRITERIUM 1: 24-30 Tassen produziert</strong><br>
-                            ✅ JA - 23 Tassen! (96% von Ziel)<br>
-                            Batch #1: 7, Batch #2: 7, Batch #3: 9<br>
-                            Fehlschläge: 3 (Risse/Glasur-Fehler = 12%)<br><br>
-                            
-                            <strong>KRITERIUM 2: 8 Tassen verkauft</strong><br>
-                            ✅ JA - 8 Tassen!<br>
-                            Etsy: 5 (€175)<br>
-                            Facebook: 2 (€70)<br>
-                            Pre-Order: 1 (€35)<br><br>
-                            
-                            <strong>🎉 SPRINT ABGESCHLOSSEN!</strong><br>
-                            €500 Kunstschule-Spende VERMIEDEN!<br><br>
-                            
-                            <strong>Finanzen:</strong><br>
-                            Kosten: €169 (Clay, Glasur, Kiln, Verpackung)<br>
-                            Revenue: €305<br>
-                            <strong>PROFIT: €136 (45% Margin)</strong><br><br>
-                            
-                            <strong>ROI:</strong> €4.50/h<br>
-                            + 15 Tassen übrig (€525 Wert!)<br><br>
-                            
-                            <strong>Kritischer Erfolgsfaktor:</strong><br>
-                            OVERLAPPING BATCHES!<br>
-                            Ohne: 16 Tassen max<br>
-                            Mit: 23 Tassen in 30 Tagen! ✅
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- OPEN SOURCE: CLI TOOL -->
-        <div id="opensource" class="content">
-            <div class="scenario-card">
-                <div class="scenario-title">💻 DevSnippets - CLI Tool für Code-Snippets</div>
-                <div>
-                    <span class="strategy-badge">Open Source</span>
-                    <span class="strategy-badge">Python + Click</span>
-                    <span class="strategy-badge">GitHub Stars + Contributors</span>
-                </div>
-                <p style="margin-top: 15px;">
-                    <strong>Teilnehmer:</strong> Marcus, 34, Full-Stack Developer<br>
-                    <strong>Projekt:</strong> CLI Tool für Code-Snippets Management<br>
-                    <strong>Skills:</strong> Expert (Python, Node.js, Git)<br>
-                    <strong>Konsequenz:</strong> €1000 an Tech-Education Charity
-                </p>
-            </div>
-            
-            <div class="result-box success">
-                <h3>Ergebnis: ✅ Sprint abgeschlossen (ACTIVE PROJECT!)</h3>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">112</div>
-                        <div class="stat-label">GitHub Stars</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">6</div>
-                        <div class="stat-label">Contributors</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">453</div>
-                        <div class="stat-label">PyPI Downloads</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">13</div>
-                        <div class="stat-label">Issues Resolved</div>
-                    </div>
-                </div>
-                <p><strong>Community:</strong> Dev.to (2.3K views), Hacker News (89 upvotes), Product Hunt (Top 10)</p>
-                <p><strong>Learning:</strong> Open Source Success = Code (30%) + Marketing (70%)!</p>
-            </div>
-            
-            <h3 style="margin-top: 30px;">Wichtigste Meilensteine:</h3>
-            <div class="timeline">
-                <div class="day validation">
-                    <div class="day-number">0</div>
-                    <div class="day-title">Warm Up</div>
-                    <div class="day-content">
-                        <strong>5 Interviews mit Dev-Kollegen:</strong><br><br>
-                        
-                        Q: "Wie managest du Code-Snippets aktuell?"<br>
-                        A1: "Notion, aber nervt"<br>
-                        A2: "Evernote, unorganisiert"<br>
-                        A3: "GitHub Gists, keine Suche"<br>
-                        A4: "Gar nicht, copy-paste Stack Overflow"<br>
-                        A5: "VS Code Snippets, nur lokal"<br><br>
-                        
-                        Q: "Würdest du CLI Tool nutzen?"<br>
-                        → 4 von 5: "Ja, wenn schnell genug"<br><br>
-                        
-                        <div class="ai-response">
-                            <div class="label ai-label">Entscheidung</div>
-                            ✅ GO!
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">1</div>
-                    <div class="day-title">Scope-Reduktion + Tech-Wahl</div>
-                    <div class="day-content">
-                        <strong>Original Scope (zu groß):</strong><br>
-                        • Multi-Language Support (10+)<br>
-                        • Cloud Sync (eigenes Backend!)<br>
-                        • Web Interface<br>
-                        • VS Code Extension<br>
-                        • AI-powered Search<br>
-                        • Team Collaboration<br><br>
-                        
-                        <div class="ai-response">
-                            <div class="label ai-label">REDUZIERT</div>
-                            • CLI only (kein Web, kein Extension)<br>
-                            • Local Storage (SQLite, kein Cloud)<br>
-                            • 3 Commands: add, search, list<br>
-                            • Syntax Highlighting (Library!)<br>
-                            • Single-User (kein Team)<br><br>
-                            
-                            <strong>ALLES ANDERE = SPÄTER!</strong>
-                        </div>
-                        
-                        <strong>Tech-Entscheidung: Python!</strong><br>
-                        • Click (CLI Framework) = easy<br>
-                        • SQLite = built-in<br>
-                        • Pygments (Syntax Highlighting)<br>
-                        • pip = package manager<br><br>
-                        
-                        <strong>Neue Fertig-Definition:</strong><br>
-                        ✅ GitHub Repo mit 50+ Stars<br>
-                        ✅ 5 Contributors (außer dir!)<br>
-                        ✅ 100+ Downloads (PyPI)<br>
-                        ✅ Dokumentation (README + Wiki)<br>
-                        ✅ 10+ Issues resolved
-                    </div>
-                </div>
-                
-                <div class="day">
-                    <div class="day-number">2</div>
-                    <div class="day-title">Core Functionality</div>
-                    <div class="day-content">
-                        <strong>3 Commands implementieren (2h):</strong><br><br>
-                        
-                        1. <code>devsnippets add</code><br>
-                           → Input: Title, Code, Language, Tags<br>
-                           → Speichert in SQLite<br><br>
-                        
-                        2. <code>devsnippets search &lt;query&gt;</code><br>
-                           → Sucht in Title + Tags + Code<br><br>
-                        
-                        3. <code>devsnippets list</code><br>
-                           → Zeigt alle Snippets<br>
-                           → Optional: --language filter<br><br>
-                        
-                        <strong>Code:</strong> ~300 Lines total (überschaubar!)
-                    </div>
-                </div>
-                
-                <div class="day">
-                    <div class="day-number">3</div>
-                    <div class="day-title">Syntax Highlighting + Tests</div>
-                    <div class="day-content">
-                        <strong>Pygments Integration (1h):</strong><br>
-                        Snippets werden colored ausgegeben!<br><br>
-                        
-                        <strong>Basic Tests (pytest) (1h):</strong><br>
-                        • test_add_snippet()<br>
-                        • test_search_snippet()<br>
-                        • test_list_snippets()<br><br>
-                        
-                        <strong>Coverage: 80%+</strong> (wichtig für Contributors!)
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">4-5</div>
-                    <div class="day-title">GitHub Setup + README</div>
-                    <div class="day-content">
-                        <strong>Tag 4: GitHub Repo</strong><br>
-                        • Name: devsnippets<br>
-                        • License: MIT<br>
-                        • .gitignore (Python)<br>
-                        • Push initial code<br><br>
-                        
-                        <strong>Tag 5: README.md (kritisch!)</strong><br>
-                        ✅ Clear description<br>
-                        ✅ Installation (1 command)<br>
-                        ✅ Quick Start (3 examples)<br>
-                        ✅ Screenshots/GIFs<br>
-                        ✅ Contributing guide<br>
-                        ✅ License<br><br>
-                        
-                        <strong>→ Good README = lower barrier to entry!</strong>
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">6</div>
-                    <div class="day-title">PyPI Package</div>
-                    <div class="day-content">
-                        <strong>Publishing (2h):</strong><br>
-                        1. setup.py schreiben<br>
-                        2. Build: <code>python setup.py sdist bdist_wheel</code><br>
-                        3. PyPI Account<br>
-                        4. Upload: <code>twine upload dist/*</code><br><br>
-                        
-                        <div class="result-box success">
-                            🎉 devsnippets installierbar via pip!<br>
-                            <code>pip install devsnippets</code>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="day validation">
-                    <div class="day-number">7</div>
-                    <div class="day-title">Woche 1 Review</div>
-                    <div class="day-content">
-                        <strong>Was existiert:</strong><br>
-                        ✅ GitHub Repo (devsnippets)<br>
-                        ✅ Core funktioniert (add, search, list)<br>
-                        ✅ PyPI Package (v0.1.0)<br>
-                        ✅ README mit Examples<br>
-                        ✅ Tests (80% Coverage)<br><br>
-                        
-                        <strong>Metriken:</strong><br>
-                        • GitHub Stars: 3 (nur Freunde noch)<br>
-                        • Downloads: 12 (eigene Tests 😅)<br>
-                        • Contributors: 1 (nur du)<br>
-                        • Issues: 0<br><br>
-                        
-                        <div class="result-box warning">
-                            <strong>On Track?</strong> ⚠️ Teilweise!<br>
-                            Problem: Noch KEINE Community!<br><br>
-                            
-                            <strong>KRITISCH für Woche 2:</strong><br>
-                            → Marketing starten!<br>
-                            → Contributors recruiten!
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">8-9</div>
-                    <div class="day-title">Dev.to Article + Reddit</div>
-                    <div class="day-content">
-                        <strong>Tag 8: Dev.to Artikel (2h)</strong><br>
-                        "I built a CLI tool for managing code snippets"<br><br>
-                        
-                        Struktur:<br>
-                        1. Problem (snippet management sucks)<br>
-                        2. Solution (devsnippets)<br>
-                        3. How it works (Code examples)<br>
-                        4. Demo GIF (asciinema!)<br>
-                        5. CTA: "Try it, contribute!"<br><br>
-                        
-                        <strong>Tag 9: Reddit Posts</strong><br>
-                        • r/Python: "Show off: DevSnippets CLI"<br>
-                        • r/programming: "Built a snippet manager"<br>
-                        • r/opensource: "New CLI tool"<br><br>
-                        
-                        <div class="result-box success">
-                            <strong>Response: 150 upvotes (r/Python) 🔥</strong>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">10</div>
-                    <div class="day-title">Product Hunt Launch</div>
-                    <div class="day-content">
-                        <strong>Product Hunt Post (1h):</strong><br>
-                        • Title: "DevSnippets - CLI for code snippets"<br>
-                        • Tagline: "Fast, local, developer-friendly"<br>
-                        • Images: Screenshots + Demo GIF<br>
-                        • Active responses in comments!<br><br>
-                        
-                        <div class="result-box success">
-                            <strong>Result: 47 Upvotes (Top 10 of day!)</strong><br><br>
-                            
-                            Traffic spike: 500 visitors<br>
-                            <strong>GitHub Stars: 3 → 38! 🎉</strong>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">11-12</div>
-                    <div class="day-title">GitHub Issues + First Contributor!</div>
-                    <div class="day-content">
-                        <strong>Tag 11: "Good First Issue" Labels</strong><br>
-                        • Issue #1: "Add export to JSON"<br>
-                        • Issue #2: "Add delete command"<br>
-                        • Issue #3: "Improve search (fuzzy match)"<br><br>
-                        
-                        Label: <code>good-first-issue</code>, <code>help-wanted</code><br><br>
-                        
-                        <strong>CONTRIBUTING.md erstellen:</strong><br>
-                        Development Setup, Code Style (Black, flake8)<br><br>
-                        
-                        <strong>Tag 12: FIRST EXTERNAL CONTRIBUTOR! 🎉</strong><br>
-                        @developer123 opened PR #1: "Add export command"<br><br>
-                        
-                        <div class="ai-response">
-                            <div class="label ai-label">Response (30 Min)</div>
-                            • Review PR<br>
-                            • Suggest minor changes<br>
-                            • MERGE!<br><br>
-                            
-                            → Invite to Contributors list in README!<br>
-                            → Twitter: "First external contribution! 🎉"
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">14</div>
-                    <div class="day-title">Halbzeit Review</div>
-                    <div class="day-content">
-                        <strong>Was existiert:</strong><br>
-                        ✅ GitHub: 52 Stars! 🎉<br>
-                        ✅ PyPI: 127 Downloads<br>
-                        ✅ Contributors: 3 (2 external!)<br>
-                        ✅ Issues: 8 (5 resolved)<br>
-                        ✅ Dev.to: 1.2K views, 150 reactions<br><br>
-                        
-                        <strong>Kriterium Check:</strong><br>
-                        • 50+ Stars: ✅ JA (52)<br>
-                        • 5 Contributors: ⚠️ Nein (3/5)<br>
-                        • 100+ Downloads: ✅ JA (127)<br>
-                        • Docs: ✅ JA (README + Wiki started)<br>
-                        • 10+ Issues resolved: ⚠️ Nein (5/10)<br><br>
-                        
-                        <div class="result-box warning">
-                            <strong>PLAN Woche 3+4:</strong><br>
-                            → 2 mehr Contributors recruiten!<br>
-                            → 5 mehr Issues resolven!<br>
-                            → Weiter Marketing (Hacker News?)
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">18-19</div>
-                    <div class="day-title">Hacker News + Twitter</div>
-                    <div class="day-content">
-                        <strong>Tag 18: Hacker News Post</strong><br>
-                        "Show HN: DevSnippets – CLI tool for code snippets"<br><br>
-                        
-                        <div class="result-box success">
-                            <strong>Result:</strong><br>
-                            • 89 upvotes<br>
-                            • 23 comments (mostly positive!)<br>
-                            • GitHub Stars: 52 → 97 🚀
-                        </div>
-                        
-                        <strong>Tag 19: Twitter Thread</strong><br>
-                        "I built DevSnippets in 18 days. Here's what I learned: [Thread]"<br><br>
-                        
-                        Result: 450 likes, 80 retweets
-                    </div>
-                </div>
-                
-                <div class="day validation">
-                    <div class="day-number">21</div>
-                    <div class="day-title">Woche 3 Review</div>
-                    <div class="day-content">
-                        <strong>Metriken:</strong><br>
-                        ✅ GitHub Stars: 103! 🎉🎉<br>
-                        ✅ Contributors: 4 (still need 1 more)<br>
-                        ✅ Downloads: 340 (PyPI)<br>
-                        ✅ Issues: 12 (8 resolved)<br>
-                        ✅ Wiki: 5 pages<br><br>
-                        
-                        <strong>Feedback Collection:</strong><br>
-                        • 3 Feature Requests<br>
-                        • 2 Bug Reports (both fixed!)<br>
-                        • 15+ "Thanks!" comments<br><br>
-                        
-                        <strong>Commitment-Test (Open Source):</strong><br>
-                        → Contributors commit to maintain?<br>
-                        • @contributor1: "Yes, I'm in!"<br>
-                        • @contributor2: "Might help occasionally"<br><br>
-                        
-                        <strong>→ Good enough! ✅</strong>
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">22-24</div>
-                    <div class="day-title">Contributor #5 + Issues</div>
-                    <div class="day-content">
-                        <strong>Tag 22: Active recruiting</strong><br>
-                        Comment on related projects:<br>
-                        "Hey, wanna contribute to DevSnippets?"<br><br>
-                        
-                        <strong>Tag 23: @contributor5 joins! 🎉</strong><br>
-                        Working on Windows support (Issue #9)<br><br>
-                        
-                        <strong>Tag 24: Resolve remaining issues</strong><br>
-                        • Issue #4: Tab completion ✅<br>
-                        • Issue #6: Better error messages ✅<br>
-                        • Issue #10: Export to Gist ✅<br><br>
-                        
-                        <strong>Total resolved: 11 (✅ over 10!)</strong>
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">25-27</div>
-                    <div class="day-title">V1.0 Release Prep</div>
-                    <div class="day-content">
-                        <strong>Tag 25: Changelog</strong><br>
-                        ## v1.0.0<br>
-                        - ✨ Fuzzy search<br>
-                        - ✨ Delete command<br>
-                        - ✨ Export to JSON/Gist<br>
-                        - ✨ Config file support<br>
-                        - 🐛 11 bug fixes<br>
-                        - 📚 Complete documentation<br><br>
-                        
-                        <strong>Tag 26: Final tests</strong><br>
-                        ✅ All tests pass<br>
-                        ✅ No breaking changes<br>
-                        ✅ README updated<br><br>
-                        
-                        <strong>Tag 27: PyPI v1.0.0 Release!</strong><br>
-                        → GitHub Release with notes<br>
-                        → Announcement everywhere!
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">28-29</div>
-                    <div class="day-title">Marketing Final Push</div>
-                    <div class="day-content">
-                        <strong>Tag 28:</strong><br>
-                        • Dev.to Update: "DevSnippets reached 1.0!"<br>
-                        • Hacker News: "DevSnippets 1.0 Released"<br><br>
-                        
-                        <strong>Tag 29: Email Contributors</strong><br>
-                        "Thanks for making v1.0 possible!<br>
-                        Your contributions: [list]<br>
-                        Next: v1.1 roadmap?"<br><br>
-                        
-                        <strong>Response: All 5 interested in continuing! ✅</strong>
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">30</div>
-                    <div class="day-title">FINALE ABRECHNUNG</div>
-                    <div class="day-content">
-                        <div class="result-box success">
-                            <strong>🎉 FINALE ABRECHNUNG</strong><br><br>
-                            
-                            <strong>KRITERIUM 1: 50+ GitHub Stars</strong><br>
-                            ✅ JA - 112 Stars! 🎉<br><br>
-                            
-                            <strong>KRITERIUM 2: 5 Contributors</strong><br>
-                            ✅ JA - 6 Contributors! (you + 5 external)<br>
-                            • @contributor1 (Export feature)<br>
-                            • @contributor2 (Fuzzy search)<br>
-                            • @contributor3 (Bug fixes)<br>
-                            • @contributor4 (Documentation)<br>
-                            • @contributor5 (Windows support)<br><br>
-                            
-                            <strong>KRITERIUM 3: 100+ Downloads</strong><br>
-                            ✅ JA - 453 Downloads (PyPI)<br><br>
-                            
-                            <strong>KRITERIUM 4: Documentation</strong><br>
-                            ✅ JA:<br>
-                            • README (comprehensive)<br>
-                            • Wiki (5 pages)<br>
-                            • Video Tutorial (YouTube)<br>
-                            • CONTRIBUTING.md<br><br>
-                            
-                            <strong>KRITERIUM 5: 10+ Issues Resolved</strong><br>
-                            ✅ JA - 13 Issues resolved!<br><br>
-                            
-                            <strong>🏆 SPRINT ABGESCHLOSSEN!</strong><br>
-                            €1000 Charity-Spende VERMIEDEN!<br><br>
-                            
-                            <strong>Community Metriken:</strong><br>
-                            ⭐ Stars: 112<br>
-                            👥 Contributors: 6<br>
-                            🍴 Forks: 18<br>
-                            📦 Downloads: 453<br>
-                            💬 Dev.to: 2.3K views<br>
-                            🐦 Twitter: 450 likes<br>
-                            🔶 Hacker News: 89 upvotes<br><br>
-                            
-                            <strong>Key Insight:</strong><br>
-                            Open Source Success = Code (30%) + Marketing (70%)!<br><br>
-                            
-                            <strong>Kritische Erfolgsfaktoren:</strong><br>
-                            1. Marketing from Day 1<br>
-                            2. "Good First Issue" Labels<br>
-                            3. Responsive Maintainer (&lt;24h PR reviews)<br>
-                            4. Comprehensive Docs<br>
-                            5. Scope Discipline
-                        </div>
+                        <strong>✅ Sprint abgeschlossen!</strong><br>
+                        Kriterium 1: 20 Artists, Auto-Match läuft ✅<br>
+                        Kriterium 2: 30% Commitment dokumentiert ✅<br><br>
+                        <strong>Entscheidung:</strong> FORTSETZEN (More Directors gewinnen!)
                     </div>
                 </div>
             </div>
@@ -1642,102 +790,66 @@
                     <tr>
                         <th>Szenario</th>
                         <th>Typ</th>
-                        <th>Zeit Investiert</th>
-                        <th>Kosten</th>
                         <th>Commitment-Test</th>
+                        <th>Ergebnis</th>
                         <th>Status</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>TaskFlow</strong><br>Task Manager</td>
-                        <td>SaaS (No-Code)</td>
-                        <td>15h (30-45 Min/Tag)</td>
-                        <td>€0</td>
-                        <td>5 Beta-User<br>2 würden €9 zahlen (40%)</td>
+                        <td><strong>DeFi Buddy</strong><br>Pool Finder</td>
+                        <td>SaaS (Freemium)</td>
+                        <td>8 Personen getestet<br>Free vs Pro €9/Monat</td>
+                        <td><strong>38% würden zahlen</strong><br>(3 von 8)</td>
                         <td>✅ Abgeschlossen</td>
                     </tr>
                     <tr>
-                        <td><strong>WarmeMahlzeit</strong><br>Community Kitchen</td>
-                        <td>NGO (Spendenfinanziert)</td>
-                        <td>20h (2h/Event + Org)</td>
-                        <td>€250 (Lebensmittel + Location)</td>
-                        <td>4 Events durchgeführt<br>109 Menschen erreicht<br>€400 Spenden</td>
+                        <td><strong>Survival Iglu</strong><br>Überlebens-Shelter</td>
+                        <td>Physical (Handwerk)</td>
+                        <td>1 Nacht schlafen<br>8 Stunden Commitment</td>
+                        <td><strong>100% erfüllt</strong><br>+3°C bei -12°C außen</td>
                         <td>✅ Abgeschlossen</td>
                     </tr>
                     <tr>
-                        <td><strong>MorningClay</strong><br>Keramik-Tassen</td>
-                        <td>Physisches Produkt</td>
-                        <td>30h (1h/Tag avg)</td>
-                        <td>€169<br>Revenue: €305<br>Profit: €136</td>
-                        <td>23 Tassen produziert<br>8 Tassen verkauft<br>Etsy + Facebook + Pre-Orders</td>
+                        <td><strong>Hundeheim Thailand</strong><br>Paws Chiang Mai</td>
+                        <td>NGO (Social Impact)</td>
+                        <td>10 Hunde aufnehmen<br>+ Community-Support</td>
+                        <td><strong>10 Hunde + €100 Spende</strong><br>Community aktiv</td>
                         <td>✅ Abgeschlossen</td>
                     </tr>
                     <tr>
-                        <td><strong>DevSnippets</strong><br>CLI Tool</td>
-                        <td>Open Source</td>
-                        <td>30h (1h/Tag)</td>
-                        <td>€0</td>
-                        <td>112 GitHub Stars<br>6 Contributors<br>453 Downloads</td>
+                        <td><strong>CastMatch</strong><br>Artist Platform</td>
+                        <td>SaaS (Freemium)</td>
+                        <td>20 Artists getestet<br>Free vs Pro €9/Monat</td>
+                        <td><strong>30% würden zahlen</strong><br>(6 von 20)</td>
                         <td>✅ Abgeschlossen</td>
                     </tr>
                 </tbody>
             </table>
             
             <div style="margin-top: 40px;">
-                <h3>🔑 Kritische Erfolgsfaktoren (Alle Szenarien):</h3>
+                <h3>⚠️ Wichtige Erkenntnisse:</h3>
                 <div class="result-box info">
-                    <p><strong>1. Scope-Reduktion ist ENTSCHEIDEND:</strong><br>
-                    Alle 4 Projekte mussten an Tag 1 MASSIV reduzieren:<br>
-                    • TaskFlow: 8 Features → 3 Features<br>
-                    • WarmeMahlzeit: Täglich 3 Standorte → 1× Woche 1 Standort<br>
-                    • MorningClay: 50 Tassen 10 Designs → 24 Tassen 2 Designs<br>
-                    • DevSnippets: Multi-Language Cloud Sync → CLI Local-only<br><br>
-                    <strong>→ Ohne Reduktion: 0 Projekte hätten finished!</strong></p>
+                    <p><strong>1. Verschiedene Projekt-Typen, gleicher Flow:</strong><br>
+                    Ob SaaS (DeFi Buddy, CastMatch), Physical (Iglu), oder NGO (Hundeheim) - der Sprint-Flow funktioniert für alle!</p>
                     
-                    <p style="margin-top: 15px;"><strong>2. "0 Verkäufe" oder "Low Numbers" = VALIDER Test:</strong><br>
-                    • TaskFlow: 40% Conversion (nicht 100%!) = OKAY!<br>
-                    • MorningClay: 8 von 23 verkauft (35%) = SUCCESS!<br>
-                    • DevSnippets: 112 Stars (nicht 1000) = GREAT!<br><br>
-                    <strong>→ Ziel ist DOKUMENTIERTER VERSUCH, nicht Perfektion!</strong></p>
+                    <p style="margin-top: 15px;"><strong>2. Commitment ≠ immer Geld:</strong><br>
+                    • SaaS: Zahlungsbereitschaft (38%, 30%)<br>
+                    • Physical: Zeit-Commitment (8h Nacht)<br>
+                    • NGO: Impact-Commitment (10 Hunde + Community)</p>
                     
-                    <p style="margin-top: 15px;"><strong>3. Commitment-Formen sind vielfältig:</strong><br>
-                    • Geld zahlen (TaskFlow, MorningClay)<br>
-                    • Spenden geben (WarmeMahlzeit)<br>
-                    • Zeit investieren (DevSnippets: Contributors)<br>
-                    • Öffentliches Signal (DevSnippets: Stars/Upvotes)<br>
-                    • Wiederkommen (WarmeMahlzeit: 5 Volunteers 100% Retention)<br><br>
-                    <strong>→ ALLE sind gleichwertig!</strong></p>
+                    <p style="margin-top: 15px;"><strong>3. Validierung ist kritisch:</strong><br>
+                    Alle 4 Projekte machten Tag 14-21 User-Validierung:<br>
+                    • DeFi Buddy: "zu langsam" → Zapier Auto-Updates<br>
+                    • Iglu: Sicherheits-Tests → Bereit für Nacht<br>
+                    • Hundeheim: Community-Support → 200 Likes<br>
+                    • CastMatch: "need Directors" → Showcase-Feature</p>
                     
-                    <p style="margin-top: 15px;"><strong>4. Verschiedene Projekttypen brauchen verschiedene Strategien:</strong><br>
-                    • SaaS: No-Code first (schnellster Weg)<br>
-                    • NGO: Einfache Ausführung + Fix-Schedule<br>
-                    • Physisch: Overlapping Production (kritisch!)<br>
-                    • Open Source: Marketing = 70% des Erfolgs<br><br>
-                    <strong>→ Eine Strategie passt NICHT für alle!</strong></p>
+                    <p style="margin-top: 15px;"><strong>4. Mini-Anpassungen entscheidend:</strong><br>
+                    Feedback führte zu konkreten Verbesserungen, die den Erfolg ermöglichten!</p>
                     
-                    <p style="margin-top: 15px;"><strong>5. Tag 0 Warm Up verhindert falsche Richtungen:</strong><br>
-                    Alle 4 machten 5 Quick Interviews an Tag 0:<br>
-                    • Wenn 3+ JA → GO!<br>
-                    • Wenn 3+ NEIN → PIVOT!<br><br>
-                    <strong>→ 1-2h Investment verhindert 30 Tage in falsche Richtung!</strong></p>
-                </div>
-            </div>
-            
-            <div style="margin-top: 40px;">
-                <h3>📈 Was nach dem Sprint passiert:</h3>
-                <div class="result-box success">
-                    <p><strong>TaskFlow (Lisa):</strong><br>
-                    Entscheidet V2 mit Feature-Requests zu bauen. Marketing auf LinkedIn startet. Nach 2 Monaten: 3 zahlende Kunden (€27/Monat MRR). Macht weiter!</p>
-                    
-                    <p style="margin-top: 15px;"><strong>WarmeMahlzeit (Fatima):</strong><br>
-                    Macht JEDEN MITTWOCH weiter! Nach 3 Monaten: 350+ Menschen erreicht. Betterplace Setup für skalierbare Spenden. Lokale Zeitung berichtet. MASSIVER Impact!</p>
-                    
-                    <p style="margin-top: 15px;"><strong>MorningClay (Sophie):</strong><br>
-                    Verkauft restliche 15 Tassen in 6 Wochen. Batch #4-6 produziert. Nach 3 Monaten: €800 Revenue, 45 Tassen verkauft. Wholesale-Anfrage von Café!</p>
-                    
-                    <p style="margin-top: 15px;"><strong>DevSnippets (Marcus):</strong><br>
-                    Contributors bleiben aktiv! v1.1, v1.2 Releases. Nach 3 Monaten: 300+ Stars, 1500 Downloads. Conference Talk akzeptiert. VS Code Extension in Planung!</p>
+                    <p style="margin-top: 15px;"><strong>5. 1h/Tag reicht:</strong><br>
+                    Alle 4 Szenarien mit ~30h total (1h/Tag × 30 Tage). Fokus > Zeit!</p>
                 </div>
             </div>
         </div>
