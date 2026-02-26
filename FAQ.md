@@ -46,13 +46,6 @@ Hochglanz‑Produkt, sondern einen klaren Ablauf, der über reale
 Durchläufe verbessert wird. Beta heißt: pragmatisch, direkt, mit
 Fokus auf Wirkung.
 
-### Was wenn ich krank werde?
-Du hast 2 Optionen:
-1. 1-2 Tage Pause (kommunizieren)
-2. 2. Sprint abbrechen (Konsequenz greift)
-
-**Keine** Verlängerung, 30 Tage bleiben 30 Tage.
-
 ### Kann ich empfohlen werden / Referral?
 Ja, auf Anfrage. Wichtig ist: Der Sprint soll für den teilnehmenden
 Menschen wirklich passen – darum steht vorab immer ein kurzer Intake.
@@ -73,6 +66,7 @@ Teilnehmeranzahl begrenzt
 
 **Beta startet:** [tba]  
 **Kosten:** kostenlos (Beta Cohort#1)
+
 
 
 
