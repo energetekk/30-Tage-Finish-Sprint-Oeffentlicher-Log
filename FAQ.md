@@ -33,10 +33,6 @@ Schau dir die Vergleichs-Sektion der Sprint-Simulation an.
 
 👉 [Sprint-Simulation](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/Simulation.html)
 
-### Was bedeutet die Konsequenz bei Abbruch?
-Während deiner Bewerbung hast du deine Konsequenz festgelegt. Diese greift, wenn du vor Tag 30 aufhörst. Ein Abbruch gilt nicht als valide, solange
-du täglich eincheckst (auch bei Blockaden).
-
 ### Muss ich nach 30 Tagen schon Kunden haben?
 Nein, dies ist nicht nötig. Der Sprint endet vor „großem Marketing“ und Skalierung. Ziel ist ein fertiger, testbarer Stand – nicht Wachstum oder Umsatz.
 
@@ -77,6 +73,7 @@ Teilnehmeranzahl begrenzt
 
 **Beta startet:** [tba]  
 **Kosten:** kostenlos (Beta Cohort#1)
+
 
 
 
