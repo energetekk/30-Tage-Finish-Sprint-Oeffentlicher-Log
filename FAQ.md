@@ -4,7 +4,7 @@ Geeignet sind klar abgrenzbare Projekte, die in 30 Tagen zu einem sichtbaren Erg
 - ein klar definiertes Service-Angebot mit erstem Testkunden (Bsp. Kurs, ebook, Newsletterformat)
 - SaaS, Apps
 - ein Newsletter- oder Content-Format mit erster Ausgabe 
-- eine physisch fertig gebaute Vase 
+- ein physisch fertig gebautes Iglu 
 - Freemium und Open Source Projekte
 - NGOs (Non-Profit, Spenden)
 
@@ -77,6 +77,7 @@ Teilnehmeranzahl begrenzt
 
 **Beta startet:** [tba]  
 **Kosten:** kostenlos (Beta Cohort#1)
+
 
 
 
