@@ -33,4 +33,4 @@ Teilnehmeranzahl begrenzt
 ---
 
 **Beta startet:** [tba]  
-**Kosten:** kostenlos
+**Kosten:** kostenlos (Beta-Cohort #1)
