@@ -1,4 +1,4 @@
-# 30-Tage-Finish-Sprint Framework aka MVP Buildr / Beta Cohort #1
+# 30-Tage-Finish-Sprint aka MVP Buildr Framework / Beta Cohort #1
 
 ## Worum geht es in diesem Sprint?
 In 30 Tagen gehst du mit einem funktionierenden Minimalprodukt live – inklusive Zahlungs- oder Reaktions-Test.
