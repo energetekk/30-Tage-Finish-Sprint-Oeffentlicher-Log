@@ -15,7 +15,7 @@ Nicht geeignete Projekte sind Vorhaben, die strukturell länger dauern (z.B. Pla
 Ein Satz reicht - solange er beschreibt, was am Ende sichtbar sein soll.
 
 ### Muss ich programmieren können und Profi sein?
-Du muss nicht coden können. Das System funktioniert für Anfänger bis Fortgeschritten-Light und ist geeignet für nahezu alle Projekttypen.
+Du muss nicht coden können. Das System funktioniert für Anfänger, Fortgeschrittene und Profis. Es ist geeignet für alle Projekttypen.
 
 ### Ist Teamarbeit erlaubt?
 Der Sprint ist für Solo-Projekte, Entwickler mit Side-Projekt und Experten mit Kurs-Ideen gemacht. Externe Hilfe (z.B. Design-Feedback, Programmier- / Community-Support) ist okay - die Verantwortung 
@@ -25,9 +25,9 @@ und Umsetzung liegt aber bei dir.
 30–45 Minuten. Wenn du mehr Zeit hast: passt - aber im Sprint zählt Konsistenz, nicht Marathon.
 
 ### Was am Ende als "abgeschlossen" zählt
-Das System bewertet binär. "Abgeschlossen" gilt nur, wenn beide Punkte erfüllt sind:
+Das System bewertet binär. "Abgeschlossen" gilt nur, wenn folgende Punkte am Ende jedes Moduls erfüllt sind:
 - Ein sichtbares Ergebnis (live / veröffentlicht / ausgeliefert / fertig dokumentiert).
-- Ein Commitment-Test ist durchgeführt (z. B. Testkauf, Bezahl‑Link, echte Zahlung oder ein klar dokumentierter Commitment-Versuch).
+- Speziell: Tag 30 zusätzlich ein Commitment-Test ist durchgeführt (z. B. Testkauf, Bezahl‑Link, echte Zahlung oder ein klar dokumentierter Commitment-Versuch).
 
 Schau dir die Vergleichs-Sektion der Sprint-Simulation an.
 
@@ -38,7 +38,7 @@ Nein, dies ist nicht nötig. Der Sprint endet vor „großem Marketing“ und Sk
 
 ### Wann und wie erhalte ich meine tägliche Aufgabe und wann/wie checke ich ein?
 Deine Tagesaufgabe wird dir morgens geschickt. Du arbeitest dann an deiner Tagesaufgabe, wann es dir beliebt. Spätestens am Abend checkst du ein.
-Dies geschieht über einen Telegram-Kanal. Der genaue Sprint-Flow wird dir kurz vor dem Beta-Start bekannt gegeben.
+Dies geschieht über einen Dashboard. Der genaue Sprint-Flow wird dir kurz vor dem Beta-Start bekannt gegeben.
 
 ### Warum ist das eine Beta-Version?
 Weil das Format im echten Betrieb geschärft wird. Du bekommst kein
@@ -65,7 +65,8 @@ Teilnehmeranzahl begrenzt
 ---
 
 **Beta startet:** [tba]  
-**Kosten:** kostenlos (Beta Cohort#1)
+**Kosten:** [Pay to Play - Earn it back](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/index.html)
+
 
 
 
