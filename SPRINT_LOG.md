@@ -525,10 +525,11 @@ https://www.notion.so/Referral-FAQ-2e6e3450b06980a7bc8ffe28f6eb973e?source=copy_
 ## Für Beta-Tester
 
 ** Bewerbung **  
-👉 [https://dub.sh/Sprint-Intake](https://dub.sh/Sprint-Intake)
+👉 [Sprint-Intake](https://dub.sh/Sprint-Intake)
 
 ---
 
 **Beta startet:** [Datum]  
-**Kosten:** kostenlos
+**Kosten:** [Pay to Play - Earn it back](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/index.html)
+
 
