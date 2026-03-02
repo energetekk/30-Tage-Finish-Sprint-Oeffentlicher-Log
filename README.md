@@ -28,9 +28,9 @@ interaktive Simulation (4 realistische Szenarien)
 Teilnehmeranzahl begrenzt
 
 ** Bewerbung **  
-👉 [https://dub.sh/Sprint-Intake](https://dub.sh/Sprint-Intake)
+👉 [Sprint-Intake](https://dub.sh/Sprint-Intake)
 
 ---
 
 **Beta startet:** [tba]  
-**Kosten:** kostenlos (Beta-Cohort #1)
+**Kosten:** [Pay to Play - Earn it back]([https://dub.sh/Sprint-Intake](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/index.html)) 
