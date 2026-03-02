@@ -6,11 +6,17 @@ Ein kleines Format für Menschen, die genau ein Projekt endlich zu einem klaren 
  Dieses System gibt dir die nötige Entscheidungs- und Umsetzungssicherheit.
 
 
-## Was du von mir bekommst
+## Was du von mir bekommst (sichtbar)
 - klare Tagesaufgaben (angepasst an dein Projekt)
 - Wöchentliche Reflexionen + Kurs-Korrekturen
 - Dashboard - Login
 - Private Beta-Gruppe (Peer-Support)
+
+## Was du noch von mir bekommst (unsichtbar)
+- Identity Shift (Builder statt Dreamer)
+- Confidence (unbezahlbar)
+- Momentum (lifetime)
+- Completion Mindset
 
 ## Was ich von euch erwarte
 - 30-45 Min/Tag im Minimum an Engagement (kein nachholen oder verlängern möglich)
