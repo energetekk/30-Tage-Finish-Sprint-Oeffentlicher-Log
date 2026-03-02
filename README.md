@@ -33,4 +33,4 @@ Teilnehmeranzahl begrenzt
 ---
 
 **Beta startet:** [tba]  
-**Kosten:** [Pay to Play - Earn it back]([https://dub.sh/Sprint-Intake](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/index.html)
+**Kosten:** [Pay to Play - Earn it back](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/index.html)
