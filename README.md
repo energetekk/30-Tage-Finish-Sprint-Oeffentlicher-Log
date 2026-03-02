@@ -9,8 +9,7 @@ Ein kleines Format für Menschen, die genau ein Projekt endlich zu einem klaren 
 ## Was du von mir bekommst
 - klare Tagesaufgaben (angepasst an dein Projekt)
 - Wöchentliche Reflexionen + Kurs-Korrekturen
-- Telegram-Bot für tägliche Check-ins
-- Notion Workspace mit den nötigen Ressourcen
+- Dashboard - Login
 - Private Beta-Gruppe (Peer-Support)
 
 ## Was ich von euch erwarte
