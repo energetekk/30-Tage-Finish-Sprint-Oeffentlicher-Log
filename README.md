@@ -2,7 +2,7 @@
 
 ## Worum geht es in diesem Sprint?
 In 30 Tagen gehst du validiert mit einem funktionierenden Minimalprodukt live – inklusive Zahlungs- und Commitment-Test.
-Ein kleines Format für Menschen, die genau ein Projekt endlich Go-Live bringen wollen - ohne Hype, ohne Perfektionsdruck.
+Ein strukturiertes Format für Menschen, die genau ein Projekt endlich Go-Live bringen wollen - ohne Hype, ohne Perfektionsdruck.
  Dieses System gibt dir die nötige Entscheidungs- und Umsetzungssicherheit.
 
 
