@@ -40,3 +40,5 @@ Teilnehmeranzahl begrenzt
 
 **Beta startet:** [tba]  
 **Kosten:** [Pay to Play - Earn it back](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/index.html)
+---
+Es ist keine Lizenz vorhanden
