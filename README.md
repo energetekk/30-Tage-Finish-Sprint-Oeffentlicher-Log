@@ -1,9 +1,9 @@
 # 30-Tage-Finish-Sprint aka MVP Buildr Framework / Beta Cohort #1
 
 ## Worum geht es in diesem Sprint?
-In 30 Tagen gehst du validiert mit einem funktionierenden Minimalprodukt live – inklusive Zahlungs- und Commitment-Test.
-Ein strukturiertes Format für Menschen, die genau ein Projekt endlich Go-Live bringen wollen - ohne Hype, ohne Perfektionsdruck.
- Dieses System gibt dir die nötige Entscheidungs- und Umsetzungssicherheit.
+In 30 Tagen gehst du validiert mit einem funktionierenden Minimalprodukt live - ohne Hype, ohne Perfektionsdruck.
+Veröffentliche es real und erhalte dein Geld zurück bei Abschluss mit substanziellen Nachweisen.
+Dieses System gibt dir die nötige Entscheidungs- und Umsetzungssicherheit.
 
 
 ## Was du von mir bekommst (sichtbar)
