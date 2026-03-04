@@ -41,4 +41,31 @@ Teilnehmeranzahl begrenzt
 **Beta startet:** [tba]  
 **Kosten:** [Pay to Play - Earn it back](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/index.html)
 ---
-Es ist keine Lizenz vorhanden
+
+## 🖥️ MVP Dashboard - Source Code
+
+Das **MVP Dashboard** ist die technische Umsetzung als Next.js + Supabase Web-Applikation.
+
+**🔗 Source Code Repository:** https://github.com/energetekk/30-tage-sprint-mvp
+
+**Domain:** mvpbuildr.com
+
+### Features (Beta MVP)
+- ✅ Onboarding Flow (7 Felder)
+- ✅ Dashboard mit Sprint-Status
+- ✅ Countdown Timer (3-Tage Warmup)
+- ✅ Quick-Validation (optional)
+- ✅ Supabase Integration + RLS
+
+### Tech Stack
+- Next.js 14 (Pages Router)
+- Supabase (PostgreSQL)
+- Inline CSS
+- Vercel (geplant)
+
+### 🔒 License
+**Source Code:** Proprietary - All Rights Reserved
+
+Das Code-Repository ist privat. Diese Dokumentation ist öffentlich.
+
+---
