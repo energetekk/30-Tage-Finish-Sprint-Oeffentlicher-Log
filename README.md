@@ -34,7 +34,7 @@ interaktive Simulation (4 realistische Szenarien)
 Teilnehmeranzahl begrenzt
 
 ** Bewerbung **  
-👉 [Sprint-Intake](https://dub.sh/Sprint-Intake)
+👉 [Sprint-Intake](https://www.mvpbuildr.com)
 
 ---
 
