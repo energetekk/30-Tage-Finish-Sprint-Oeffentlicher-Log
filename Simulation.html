@@ -1,878 +1,1167 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprint Simulation Tag 0-30 - 4 Szenarien</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            overflow: hidden;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-        
-        h1 { font-size: 2.5em; margin-bottom: 10px; }
-        .subtitle { opacity: 0.9; font-size: 1.1em; }
-        
-        .tabs {
-            display: flex;
-            background: #f5f5f5;
-            border-bottom: 2px solid #ddd;
-        }
-        
-        .tab {
-            flex: 1;
-            padding: 15px;
-            text-align: center;
-            cursor: pointer;
-            background: #f5f5f5;
-            border: none;
-            font-size: 14px;
-            transition: all 0.3s;
-        }
-        
-        .tab:hover { background: #e0e0e0; }
-        .tab.active { background: white; border-bottom: 3px solid #667eea; font-weight: bold; }
-        
-        .content { padding: 40px; display: none; }
-        .content.active { display: block; }
-        
-        .timeline {
-            position: relative;
-            padding-left: 40px;
-        }
-        
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 20px;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: linear-gradient(to bottom, #667eea, #764ba2);
-        }
-        
-        .day {
-            position: relative;
-            margin-bottom: 30px;
-            padding: 20px;
-            background: #f9f9f9;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-        }
-        
-        .day.milestone {
-            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
-            border-left-color: #fdcb6e;
-        }
-        
-        .day.validation {
-            background: linear-gradient(135deg, #a8e6cf 0%, #56ab2f 100%);
-            border-left-color: #56ab2f;
-        }
-        
-        .day.commitment {
-            background: linear-gradient(135deg, #ffa8a8 0%, #ff6b6b 100%);
-            border-left-color: #ff6b6b;
-        }
-        
-        .day-number {
-            position: absolute;
-            left: -28px;
-            top: 20px;
-            width: 36px;
-            height: 36px;
-            background: white;
-            border: 3px solid #667eea;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: #667eea;
-        }
-        
-        .day-title {
-            font-size: 1.3em;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #333;
-        }
-        
-        .day-content { margin-top: 10px; }
-        
-        .scenario-card {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-        }
-        
-        .scenario-title {
-            font-size: 1.8em;
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
-        
-        .strategy-badge {
-            display: inline-block;
-            padding: 5px 15px;
-            background: #667eea;
-            color: white;
-            border-radius: 20px;
-            font-size: 0.9em;
-            margin: 5px 5px 5px 0;
-        }
-        
-        .result-box {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-        
-        .result-box.success {
-            border-left: 5px solid #2ecc71;
-        }
-        
-        .result-box.info {
-            border-left: 5px solid #3498db;
-        }
-        
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        
-        .comparison-table th,
-        .comparison-table td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        .comparison-table th {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            font-weight: 600;
-        }
-        
-        .comparison-table tr:hover {
-            background: #f5f7fa;
-        }
-        
-        .emoji {
-            font-size: 1.2em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30-Tage Sprint Simulation - InvoiceFlow SaaS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+    }
+
+    .header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .header .subtitle {
+      font-size: 20px;
+      opacity: 0.95;
+      margin-bottom: 10px;
+    }
+
+    .header .project-name {
+      font-size: 28px;
+      font-weight: 700;
+      background: rgba(255,255,255,0.2);
+      padding: 12px 24px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      background: rgba(255,255,255,0.1);
+      padding: 10px;
+      border-radius: 12px;
+      flex-wrap: wrap;
+    }
+
+    .tab {
+      flex: 1;
+      min-width: 200px;
+      padding: 16px 24px;
+      background: rgba(255,255,255,0.2);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .tab:hover {
+      background: rgba(255,255,255,0.3);
+      transform: translateY(-2px);
+    }
+
+    .tab.active {
+      background: white;
+      color: #667eea;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .tab-content {
+      display: none;
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.3s;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .skill-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid #e5e7eb;
+    }
+
+    .skill-header h2 {
+      font-size: 32px;
+      color: #111;
+    }
+
+    .skill-badge {
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .badge-beginner {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .badge-intermediate {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+
+    .badge-expert {
+      background: #d1fae5;
+      color: #065f46;
+    }
+
+    .starting-conditions {
+      background: #f9fafb;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      border-left: 4px solid #667eea;
+    }
+
+    .starting-conditions h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #111;
+    }
+
+    .starting-conditions ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .starting-conditions li {
+      padding: 8px 0;
+      color: #374151;
+      font-size: 15px;
+    }
+
+    .starting-conditions li:before {
+      content: "→ ";
+      color: #667eea;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    .timeline {
+      position: relative;
+    }
+
+    .milestone {
+      position: relative;
+      padding-left: 40px;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      border-left: 2px solid #e5e7eb;
+    }
+
+    .milestone:last-child {
+      border-left: none;
+    }
+
+    .milestone-dot {
+      position: absolute;
+      left: -9px;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: white;
+      border: 3px solid #667eea;
+    }
+
+    .milestone.completed .milestone-dot {
+      background: #10b981;
+      border-color: #10b981;
+    }
+
+    .milestone-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .milestone-day {
+      font-weight: 700;
+      font-size: 18px;
+      color: #667eea;
+    }
+
+    .milestone-time {
+      font-size: 14px;
+      color: #6b7280;
+      font-weight: 500;
+    }
+
+    .milestone-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #111;
+    }
+
+    .milestone-desc {
+      color: #4b5563;
+      line-height: 1.6;
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    .milestone-deliverables {
+      background: #f9fafb;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 12px;
+    }
+
+    .milestone-deliverables h4 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #374151;
+    }
+
+    .milestone-deliverables ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .milestone-deliverables li {
+      padding: 4px 0;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .milestone-deliverables li:before {
+      content: "✓ ";
+      color: #10b981;
+      font-weight: bold;
+      margin-right: 6px;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .comparison-card {
+      background: #f9fafb;
+      padding: 24px;
+      border-radius: 12px;
+      border: 2px solid #e5e7eb;
+    }
+
+    .comparison-card h3 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .comparison-metric {
+      margin-bottom: 16px;
+    }
+
+    .comparison-metric-label {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 6px;
+    }
+
+    .comparison-metric-value {
+      font-size: 24px;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .comparison-bar {
+      width: 100%;
+      height: 8px;
+      background: #e5e7eb;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 8px;
+    }
+
+    .comparison-bar-fill {
+      height: 100%;
+      background: #667eea;
+      transition: width 1s ease;
+    }
+
+    .final-comparison {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+
+    .final-comparison h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .final-comparison table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .final-comparison th,
+    .final-comparison td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .final-comparison th {
+      font-weight: 600;
+      opacity: 0.9;
+    }
+
+    .controls {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      z-index: 100;
+    }
+
+    .controls button {
+      width: 100%;
+      padding: 12px 24px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .controls button:last-child {
+      margin-bottom: 0;
+    }
+
+    .btn-primary {
+      background: #667eea;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #5568d3;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: #e5e7eb;
+      color: #374151;
+    }
+
+    .btn-secondary:hover {
+      background: #d1d5db;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 32px;
+      }
+
+      .tab {
+        min-width: 100%;
+      }
+
+      .tab-content {
+        padding: 20px;
+      }
+
+      .controls {
+        bottom: 10px;
+        right: 10px;
+        left: 10px;
+      }
+
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .info-box {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 16px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    .info-box strong {
+      color: #1e40af;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🚀 Sprint Simulation Tag 0-30</h1>
-            <p class="subtitle">4 Realistische Szenarien - Von der Idee bis zum Launch</p>
-        </header>
-        
-        <div class="tabs">
-            <button class="tab active" onclick="showTab('defi')">🪙 DeFi Buddy</button>
-            <button class="tab" onclick="showTab('iglu')">❄️ Survival Iglu</button>
-            <button class="tab" onclick="showTab('hundeheim')">🐕 Hundeheim Thailand</button>
-            <button class="tab" onclick="showTab('castmatch')">🎭 CastMatch</button>
-            <button class="tab" onclick="showTab('vergleich')">📊 Vergleich</button>
-        </div>
-        
-        <!-- DEFI BUDDY -->
-        <div id="defi" class="content active">
-            <div class="scenario-card">
-                <div class="scenario-title">🪙 DeFi Buddy - Liquidity Pool Finder</div>
-                <div>
-                    <span class="strategy-badge">Strategie G: Freemium</span>
-                    <span class="strategy-badge">SaaS</span>
-                </div>
-                <p style="margin-top: 15px;">
-                    <strong>Teilnehmer:</strong> Alex (28)<br>
-                    <strong>Projekt:</strong> DeFi Pool Evaluator für Anfänger<br>
-                    <strong>Geschäftsmodell:</strong> Free (10 Pools) vs Pro €9/Monat (30 Pools + Alerts)
-                </p>
-            </div>
-            
-            <div class="result-box success">
-                <h3>Ergebnis: ✅ Sprint abgeschlossen</h3>
-                <p><strong>Commitment-Test dokumentiert:</strong></p>
-                <ul>
-                    <li>60 Free Users registriert</li>
-                    <li>8 Personen getestet für Upgrade</li>
-                    <li>3 würden €9/Monat zahlen (38% Commitment)</li>
-                </ul>
-                <p><strong>Learning:</strong> DeFi-Anfänger lieben simple Tools, 38% Conversion ist stark!</p>
-            </div>
-            
-            <h3 style="margin-top: 30px;">Key Milestones:</h3>
-            <div class="timeline">
-                <div class="day milestone">
-                    <div class="day-number">0</div>
-                    <div class="day-title">Warm Up</div>
-                    <div class="day-content">
-                        5 DeFi-Anfänger befragt:<br>
-                        "DeFiLlama zu komplex!", "Brauche simple Pool-Empfehlungen"<br>
-                        → Pain Point validiert!
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">7</div>
-                    <div class="day-title">MVP Live!</div>
-                    <div class="day-content">
-                        defibuddy.webflow.io online<br>
-                        • 5 Pools (Uniswap, Curve)<br>
-                        • Risk-Score Badges (🟢 🟡 🔴)<br>
-                        • Airtable Backend + Webflow Frontend
-                    </div>
-                </div>
-                
-                <div class="day validation">
-                    <div class="day-number">14</div>
-                    <div class="day-title">Validierung startet</div>
-                    <div class="day-content">
-                        Umfrage erstellt: "Würdest du €9/Monat zahlen?"<br>
-                        Verbreitung: r/defi, r/CryptoCurrency, Discord<br>
-                        → 18 Responses in 3 Tagen!
-                    </div>
-                </div>
-                
-                <div class="day validation">
-                    <div class="day-number">17</div>
-                    <div class="day-title">Größte Hürde identifiziert</div>
-                    <div class="day-content">
-                        <strong>Feedback-Pattern:</strong> "1× täglich Update zu langsam" (6×)<br>
-                        <strong>Mini-Anpassung geplant:</strong> Zapier Auto-Updates (alle 12h)
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">20</div>
-                    <div class="day-title">Auto-Updates live</div>
-                    <div class="day-content">
-                        Zapier-Integration fertig!<br>
-                        CoinGecko → Airtable alle 12h<br>
-                        APY refreshed automatisch ✅
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">22</div>
-                    <div class="day-title">Commitment-Strategie</div>
-                    <div class="day-content">
-                        <strong>Freemium-Model:</strong><br>
-                        Free: 10 Pools<br>
-                        Pro €9/Monat: 30 Pools + Email Alerts + API Access
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">25</div>
-                    <div class="day-title">Pricing Live!</div>
-                    <div class="day-content">
-                        Pricing-Page publisht<br>
-                        Stripe Payment Link integriert<br>
-                        Reddit-Post: "I built a simple DeFi pool finder"<br>
-                        → 45 Upvotes, 60 neue Besucher!
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">27</div>
-                    <div class="day-title">Commitment gesammelt</div>
-                    <div class="day-content">
-                        8 Free-User getestet:<br>
-                        <span class="emoji">✅</span> 3 würden €9 zahlen (38%)<br>
-                        <span class="emoji">🤔</span> 2 "Vielleicht"<br>
-                        <span class="emoji">❌</span> 3 "Nein (zu teuer)"
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">30</div>
-                    <div class="day-title">Sprint Completion</div>
-                    <div class="day-content">
-                        <strong>✅ Sprint abgeschlossen!</strong><br>
-                        Kriterium 1: 30 Pools live, Zapier läuft ✅<br>
-                        Kriterium 2: 38% Commitment dokumentiert ✅<br><br>
-                        <strong>Entscheidung:</strong> FORTSETZEN (erste Pro-Zahlungen holen!)
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- SURVIVAL IGLU -->
-        <div id="iglu" class="content">
-            <div class="scenario-card">
-                <div class="scenario-title">❄️ Survival Iglu - Überlebens-Shelter</div>
-                <div>
-                    <span class="strategy-badge">Physical Project</span>
-                    <span class="strategy-badge">Handwerk</span>
-                </div>
-                <p style="margin-top: 15px;">
-                    <strong>Teilnehmer:</strong> Nina (32)<br>
-                    <strong>Projekt:</strong> Funktionsfähiges Iglu mit 4 Bereichen<br>
-                    <strong>Commitment:</strong> 1 Nacht darin schlafen (8 Stunden)
-                </p>
-            </div>
-            
-            <div class="result-box success">
-                <h3>Ergebnis: ✅ Sprint abgeschlossen</h3>
-                <p><strong>Commitment-Test dokumentiert:</strong></p>
-                <ul>
-                    <li>Iglu komplett gebaut (120 Schneeblöcke, Ø 3m)</li>
-                    <li>8 Stunden Nacht darin geschlafen</li>
-                    <li>Temperatur: +3°C innen bei -12°C außen!</li>
-                </ul>
-                <p><strong>Learning:</strong> Iglu-Isolation funktioniert KRASS gut! Survival Skills validiert.</p>
-            </div>
-            
-            <h3 style="margin-top: 30px;">Key Milestones:</h3>
-            <div class="timeline">
-                <div class="day milestone">
-                    <div class="day-number">0</div>
-                    <div class="day-title">Warm Up</div>
-                    <div class="day-content">
-                        5 Winter-Survival-Experten befragt:<br>
-                        "Iglu-Isolation ist KRASS gut!", "Schneeblock-Größe kritisch"<br>
-                        → Machbarkeit bestätigt!
-                    </div>
-                </div>
-                
-                <div class="day">
-                    <div class="day-number">3</div>
-                    <div class="day-title">Standort gewählt</div>
-                    <div class="day-content">
-                        Ebene Fläche 50m von Hütte<br>
-                        Schnee 80cm tief (perfekt!)<br>
-                        Kreis Ø 3m markiert, Windrichtung beachtet
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">5</div>
-                    <div class="day-title">Erste Reihe eingestürzt!</div>
-                    <div class="day-content">
-                        <strong>Kritischer Fehler:</strong> 30° Neigung zu steil<br>
-                        12 Blöcke eingestürzt 😢<br>
-                        <strong>Learning:</strong> 15° Neigung nötig!
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">7</div>
-                    <div class="day-title">Basis steht</div>
-                    <div class="day-content">
-                        Neustart mit korrekter Neigung<br>
-                        2 Reihen fertig (30 Blöcke)<br>
-                        Wände 60cm hoch, stabil!
-                    </div>
-                </div>
-                
-                <div class="day validation">
-                    <div class="day-number">14</div>
-                    <div class="day-title">Sicherheits-Tests</div>
-                    <div class="day-content">
-                        <strong>Physical Validierung:</strong><br>
-                        • Statik-Check geplant (100kg Belastung)<br>
-                        • Lüftungs-Messung (CO2-Sensor)<br>
-                        • Temperatur-Tests
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">15</div>
-                    <div class="day-title">KUPPEL GESCHLOSSEN!</div>
-                    <div class="day-content">
-                        <span class="emoji">👑</span> Schluss-Stein eingesetzt!<br>
-                        Runde Scheibe Ø 40cm von innen<br>
-                        Iglu steht komplett! Emotionaler Moment!
-                    </div>
-                </div>
-                
-                <div class="day validation">
-                    <div class="day-number">19</div>
-                    <div class="day-title">Validierungs-Tests</div>
-                    <div class="day-content">
-                        <strong>Test-Ergebnisse:</strong><br>
-                        ✅ Statik: 100kg Belastung OK<br>
-                        ✅ Lüftung: CO2-Level gut<br>
-                        ✅ Temperatur: +2°C innen bei -8°C außen<br>
-                        → Bereit für Nacht-Test!
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">25</div>
-                    <div class="day-title">3h Test-Sleep</div>
-                    <div class="day-content">
-                        20:00-23:00 Uhr im Iglu<br>
-                        Schlafsack warm, Qulliq-Lampe schön<br>
-                        <strong>Aber:</strong> Zu kalt → zurück zur Hütte 😅
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">29</div>
-                    <div class="day-title">FINALE NACHT!</div>
-                    <div class="day-content">
-                        <span class="emoji">😴</span> 22:00-06:00 Uhr (8 Stunden!)<br>
-                        Schlafsack-Temp: +5°C<br>
-                        Außen: -12°C<br>
-                        Durchgeschlafen! Morgen-Tee gekocht!
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">30</div>
-                    <div class="day-title">Sprint Completion</div>
-                    <div class="day-content">
-                        <strong>✅ Sprint abgeschlossen!</strong><br>
-                        Kriterium 1: Iglu steht mit 4 Bereichen ✅<br>
-                        Kriterium 2: 8h Nacht dokumentiert (Fotos + Video) ✅<br><br>
-                        <strong>EPIC:</strong> +3°C innen bei -12°C außen!
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- HUNDEHEIM THAILAND -->
-        <div id="hundeheim" class="content">
-            <div class="scenario-card">
-                <div class="scenario-title">🐕 Hundeheim Thailand - Paws Chiang Mai</div>
-                <div>
-                    <span class="strategy-badge">NGO</span>
-                    <span class="strategy-badge">Social Impact</span>
-                </div>
-                <p style="margin-top: 15px;">
-                    <strong>Teilnehmer:</strong> Markus (38)<br>
-                    <strong>Projekt:</strong> Shelter für herrenlose Hunde in Chiang Mai<br>
-                    <strong>Commitment:</strong> 10 Hunde aufgenommen + Community-Support
-                </p>
-            </div>
-            
-            <div class="result-box success">
-                <h3>Ergebnis: ✅ Sprint abgeschlossen</h3>
-                <p><strong>Commitment-Test dokumentiert:</strong></p>
-                <ul>
-                    <li>Foundation registriert (legal!)</li>
-                    <li>600m² Land gemietet, 3 Hütten gebaut</li>
-                    <li>10 Hunde aufgenommen (Mango, Coconut, Lucky...)</li>
-                    <li>€100 erste Spende + Community-Support</li>
-                </ul>
-                <p><strong>Learning:</strong> Community-Support ist stark, Impact ist real!</p>
-            </div>
-            
-            <h3 style="margin-top: 30px;">Key Milestones:</h3>
-            <div class="timeline">
-                <div class="day milestone">
-                    <div class="day-number">0</div>
-                    <div class="day-title">Warm Up</div>
-                    <div class="day-content">
-                        5 Tier-Aktivisten in Chiang Mai befragt:<br>
-                        "100+ Streuner in Old City", "Shelter nötig!"<br>
-                        → Problem validiert!
-                    </div>
-                </div>
-                
-                <div class="day">
-                    <div class="day-number">4</div>
-                    <div class="day-title">Thai-Anwalt gefunden</div>
-                    <div class="day-content">
-                        Herr Somchai (WhatsApp Zoom)<br>
-                        Foundation-Registrierung: ฿15,000 (~€400)<br>
-                        Brauche 2 Thai Co-Founder
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">7</div>
-                    <div class="day-title">Foundation in Process</div>
-                    <div class="day-content">
-                        Docs submitted: "Paws Chiang Mai Foundation"<br>
-                        3 Founders: Ich + Nong + Lek<br>
-                        Purpose: "Animal Welfare & Rescue"
-                    </div>
-                </div>
-                
-                <div class="day">
-                    <div class="day-number">10</div>
-                    <div class="day-title">Partner gefunden</div>
-                    <div class="day-content">
-                        <strong>Ploy (Vet-Nurse):</strong><br>
-                        Will Part-Time helfen!<br>
-                        ฿8,000/Monat (€210)<br>
-                        Experience + Local = perfekt!
-                    </div>
-                </div>
-                
-                <div class="day validation">
-                    <div class="day-number">14</div>
-                    <div class="day-title">Community-Support testen</div>
-                    <div class="day-content">
-                        <strong>NGO Validierung:</strong><br>
-                        Facebook-Post geplant<br>
-                        Expat-Groups, Animal-Welfare-Communities<br>
-                        → Interesse + Spenden-Bereitschaft messen
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">15</div>
-                    <div class="day-title">LAND GEMIETET!</div>
-                    <div class="day-content">
-                        <span class="emoji">✅</span> San Kamphaeng, 600m²<br>
-                        ฿4,500/Monat (€130)<br>
-                        Vertrag: 1 Jahr, monatlich kündbar
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">19</div>
-                    <div class="day-title">BAU GESTARTET!</div>
-                    <div class="day-content">
-                        Chai (lokaler Builder) + 2 Helpers<br>
-                        3 Holz-Hütten (je 4×3m)<br>
-                        ฿30,000 (€790), fertig in 1 Woche
-                    </div>
-                </div>
-                
-                <div class="day validation">
-                    <div class="day-number">21</div>
-                    <div class="day-title">Community-Bilanz</div>
-                    <div class="day-content">
-                        <strong>Facebook-Post Ergebnis:</strong><br>
-                        200 Likes, 50 Kommentare, 15 Shares<br>
-                        30+ Messages, 5 wollen volunteer<br>
-                        3 Spenden-Zusagen!
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">24</div>
-                    <div class="day-title">HÜTTEN FERTIG!</div>
-                    <div class="day-content">
-                        Chai done!<br>
-                        3 Hütten (je 12m²), 1 Storage<br>
-                        Zaun repariert, Site ready!
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">25</div>
-                    <div class="day-title">ERSTE 5 HUNDE!</div>
-                    <div class="day-content">
-                        <span class="emoji">🐶</span> Ploy brachte:<br>
-                        3 Welpen: Mango, Coconut, Sticky Rice 😄<br>
-                        2 Adults: Lucky, Brave<br>
-                        Vet-Check done, alle gesund!
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">27</div>
-                    <div class="day-title">10 HUNDE MILESTONE!</div>
-                    <div class="day-content">
-                        5 weitere Hunde aufgenommen<br>
-                        2 von Straße, 3 von Temple<br>
-                        <strong>TOTAL: 10 HUNDE! 🎉</strong>
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">29</div>
-                    <div class="day-title">Online Presence</div>
-                    <div class="day-content">
-                        Website gebaut (Wix): "Paws Chiang Mai"<br>
-                        Facebook-Page: 50 Followers<br>
-                        <strong>Erste Spende: €100!</strong>
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">30</div>
-                    <div class="day-title">Sprint Completion</div>
-                    <div class="day-content">
-                        <strong>✅ Sprint abgeschlossen!</strong><br>
-                        Kriterium 1: Shelter existiert (Foundation, Land, 3 Hütten) ✅<br>
-                        Kriterium 2: 10 Hunde + €100 Spende + Community ✅<br><br>
-                        <strong>Impact:</strong> 10 Hunde gerettet!
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- CASTMATCH -->
-        <div id="castmatch" class="content">
-            <div class="scenario-card">
-                <div class="scenario-title">🎭 CastMatch - Auto-Match Casting Platform</div>
-                <div>
-                    <span class="strategy-badge">Strategie G: Freemium</span>
-                    <span class="strategy-badge">SaaS</span>
-                </div>
-                <p style="margin-top: 15px;">
-                    <strong>Teilnehmer:</strong> Julia (29)<br>
-                    <strong>Projekt:</strong> Künstler Casting App mit Auto-Match<br>
-                    <strong>Geschäftsmodell:</strong> Free (5 Matches/Monat) vs Pro €9/Monat (Unlimited)
-                </p>
-            </div>
-            
-            <div class="result-box success">
-                <h3>Ergebnis: ✅ Sprint abgeschlossen</h3>
-                <p><strong>Commitment-Test dokumentiert:</strong></p>
-                <ul>
-                    <li>20 Artist-Profiles registriert</li>
-                    <li>12 Auto-Matches versendet</li>
-                    <li>6 würden €9/Monat zahlen (30% Commitment)</li>
-                </ul>
-                <p><strong>Learning:</strong> Artists lieben Auto-Match, Showcase-Feature war Bonus-Hit!</p>
-            </div>
-            
-            <h3 style="margin-top: 30px;">Key Milestones:</h3>
-            <div class="timeline">
-                <div class="day milestone">
-                    <div class="day-number">0</div>
-                    <div class="day-title">Warm Up</div>
-                    <div class="day-content">
-                        5 Künstler befragt:<br>
-                        "Casting-Calls manuell suchen nervt!", "Brauche Match-System!"<br>
-                        → Pain Point validiert!
-                    </div>
-                </div>
-                
-                <div class="day">
-                    <div class="day-number">3</div>
-                    <div class="day-title">Airtable Setup</div>
-                    <div class="day-content">
-                        4 Tabellen: Artists, Directors, Matches, History<br>
-                        Relations verknüpft<br>
-                        Erste Test-Profiles erstellt
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">7</div>
-                    <div class="day-title">Match-Logic läuft!</div>
-                    <div class="day-content">
-                        IF-Formula fertig:<br>
-                        Artist.Skills CONTAINS Director.Needs<br>
-                        AND Artist.Location = Director.Location<br>
-                        → Email via Zapier: "New match!"
-                    </div>
-                </div>
-                
-                <div class="day">
-                    <div class="day-number">8</div>
-                    <div class="day-title">LIVE!</div>
-                    <div class="day-content">
-                        castmatch.softr.app online<br>
-                        Artists können registrieren<br>
-                        Test mit 3 Freunden erfolgreich
-                    </div>
-                </div>
-                
-                <div class="day validation">
-                    <div class="day-number">14</div>
-                    <div class="day-title">Validierung startet</div>
-                    <div class="day-content">
-                        Umfrage: "Würdest du €9/Monat zahlen?"<br>
-                        Verbreitung: Facebook "Berlin Artists", LinkedIn<br>
-                        → 10 Responses in 2h!
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">16</div>
-                    <div class="day-title">20 ARTISTS MILESTONE!</div>
-                    <div class="day-content">
-                        8 Actors, 5 Musicians, 4 Dancers<br>
-                        2 Voice Actors, 1 Comedian<br>
-                        Cities: Berlin (10), Munich (5), Hamburg (3)
-                    </div>
-                </div>
-                
-                <div class="day validation">
-                    <div class="day-number">18</div>
-                    <div class="day-title">Pattern erkannt</div>
-                    <div class="day-content">
-                        <strong>Feedback:</strong> "Love the idea!" (8×)<br>
-                        <strong>Aber:</strong> "Need more Directors" (4×)<br>
-                        <strong>Learning:</strong> Chicken-Egg-Problem
-                    </div>
-                </div>
-                
-                <div class="day milestone">
-                    <div class="day-number">20</div>
-                    <div class="day-title">Showcase-Feature!</div>
-                    <div class="day-content">
-                        <strong>Mini-Anpassung:</strong><br>
-                        Artists können Profile als Public Link teilen<br>
-                        castmatch.softr.app/anna-schmidt<br>
-                        8 Artists nutzen sofort für Instagram Bio!
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">22</div>
-                    <div class="day-title">Commitment-Strategie</div>
-                    <div class="day-content">
-                        <strong>Freemium-Model:</strong><br>
-                        Free: Basic Profile + 5 Matches/Monat<br>
-                        Pro €9/Monat: Unlimited + Showcase + Analytics
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">25</div>
-                    <div class="day-title">Pricing Live!</div>
-                    <div class="day-content">
-                        Pricing-Page + Stripe Link<br>
-                        Email an alle 20 Artists<br>
-                        LinkedIn-Post: "Built CastMatch in 30 days!"<br>
-                        → 120 Views, 15 Likes!
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">27</div>
-                    <div class="day-title">Commitment gesammelt</div>
-                    <div class="day-content">
-                        20 Free-Users getestet:<br>
-                        <span class="emoji">✅</span> 6 würden €9 upgraden (30%)<br>
-                        <span class="emoji">🤔</span> 8 "Maybe later"<br>
-                        <span class="emoji">❌</span> 6 "No (Free reicht)"
-                    </div>
-                </div>
-                
-                <div class="day commitment">
-                    <div class="day-number">30</div>
-                    <div class="day-title">Sprint Completion</div>
-                    <div class="day-content">
-                        <strong>✅ Sprint abgeschlossen!</strong><br>
-                        Kriterium 1: 20 Artists, Auto-Match läuft ✅<br>
-                        Kriterium 2: 30% Commitment dokumentiert ✅<br><br>
-                        <strong>Entscheidung:</strong> FORTSETZEN (More Directors gewinnen!)
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- VERGLEICH -->
-        <div id="vergleich" class="content">
-            <h2 style="margin-bottom: 30px;">📊 Vergleich aller 4 Szenarien</h2>
-            
-            <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>Szenario</th>
-                        <th>Typ</th>
-                        <th>Commitment-Test</th>
-                        <th>Ergebnis</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>DeFi Buddy</strong><br>Pool Finder</td>
-                        <td>SaaS (Freemium)</td>
-                        <td>8 Personen getestet<br>Free vs Pro €9/Monat</td>
-                        <td><strong>38% würden zahlen</strong><br>(3 von 8)</td>
-                        <td>✅ Abgeschlossen</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Survival Iglu</strong><br>Überlebens-Shelter</td>
-                        <td>Physical (Handwerk)</td>
-                        <td>1 Nacht schlafen<br>8 Stunden Commitment</td>
-                        <td><strong>100% erfüllt</strong><br>+3°C bei -12°C außen</td>
-                        <td>✅ Abgeschlossen</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Hundeheim Thailand</strong><br>Paws Chiang Mai</td>
-                        <td>NGO (Social Impact)</td>
-                        <td>10 Hunde aufnehmen<br>+ Community-Support</td>
-                        <td><strong>10 Hunde + €100 Spende</strong><br>Community aktiv</td>
-                        <td>✅ Abgeschlossen</td>
-                    </tr>
-                    <tr>
-                        <td><strong>CastMatch</strong><br>Artist Platform</td>
-                        <td>SaaS (Freemium)</td>
-                        <td>20 Artists getestet<br>Free vs Pro €9/Monat</td>
-                        <td><strong>30% würden zahlen</strong><br>(6 von 20)</td>
-                        <td>✅ Abgeschlossen</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div style="margin-top: 40px;">
-                <h3>⚠️ Wichtige Erkenntnisse:</h3>
-                <div class="result-box info">
-                    <p><strong>1. Verschiedene Projekt-Typen, gleicher Flow:</strong><br>
-                    Ob SaaS (DeFi Buddy, CastMatch), Physical (Iglu), oder NGO (Hundeheim) - der Sprint-Flow funktioniert für alle!</p>
-                    
-                    <p style="margin-top: 15px;"><strong>2. Commitment ≠ immer Geld:</strong><br>
-                    • SaaS: Zahlungsbereitschaft (38%, 30%)<br>
-                    • Physical: Zeit-Commitment (8h Nacht)<br>
-                    • NGO: Impact-Commitment (10 Hunde + Community)</p>
-                    
-                    <p style="margin-top: 15px;"><strong>3. Validierung ist kritisch:</strong><br>
-                    Alle 4 Projekte machten Tag 14-21 User-Validierung:<br>
-                    • DeFi Buddy: "zu langsam" → Zapier Auto-Updates<br>
-                    • Iglu: Sicherheits-Tests → Bereit für Nacht<br>
-                    • Hundeheim: Community-Support → 200 Likes<br>
-                    • CastMatch: "need Directors" → Showcase-Feature</p>
-                    
-                    <p style="margin-top: 15px;"><strong>4. Mini-Anpassungen entscheidend:</strong><br>
-                    Feedback führte zu konkreten Verbesserungen, die den Erfolg ermöglichten!</p>
-                    
-                    <p style="margin-top: 15px;"><strong>5. 1h/Tag reicht:</strong><br>
-                    Alle 4 Szenarien mit ~30h total (1h/Tag × 30 Tage). Fokus > Zeit!</p>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>30-Tage Sprint Simulation</h1>
+      <div class="subtitle">Realistische Szenarien für 3 Skill-Levels (Modul: Bronze -> 13 Tage Sprint)</div>
+      <div class="project-name">📊 InvoiceFlow - Micro SaaS für Freelancer</div>
     </div>
-    
-    <script>
-        function showTab(tabName) {
-            // Hide all content
-            document.querySelectorAll('.content').forEach(content => {
-                content.classList.remove('active');
-            });
-            
-            // Remove active from all tabs
-            document.querySelectorAll('.tab').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            
-            // Show selected content
-            document.getElementById(tabName).classList.add('active');
-            
-            // Add active to clicked tab
-            event.target.classList.add('active');
-        }
-    </script>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" onclick="showTab(0)">
+        🌱 Anfänger
+      </button>
+      <button class="tab" onclick="showTab(1)">
+        🚀 Fortgeschritten
+      </button>
+      <button class="tab" onclick="showTab(2)">
+        ⚡ Profi
+      </button>
+      <button class="tab" onclick="showTab(3)">
+        📊 Vergleich
+      </button>
+    </div>
+
+    <!-- Tab Content 1: Anfänger -->
+    <div class="tab-content active" id="tab-0">
+      <div class="skill-header">
+        <h2>🌱 Anfänger-Pfad</h2>
+        <span class="skill-badge badge-beginner">Learning-Focused</span>
+      </div>
+
+      <div class="starting-conditions">
+        <h3>Startbedingungen</h3>
+        <ul>
+          <li><strong>Vorwissen:</strong> Keine Programmier-Erfahrung</li>
+          <li><strong>Tools:</strong> Nutzt No-Code/Low-Code (Airtable, Zapier, Carrd)</li>
+          <li><strong>Zeitplan:</strong> ~1h/Tag (50% Learning, 50% Building)</li>
+          <li><strong>Ziel:</strong> Funktionaler Prototyp mit Kerndaten</li>
+        </ul>
+      </div>
+
+      <div class="timeline">
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 1</span>
+            <span class="milestone-time">~60 Min</span>
+          </div>
+          <div class="milestone-title">Research & Validierung</div>
+          <div class="milestone-desc">
+            Verstehen des Problems: Freelancer tracken Rechnungen manuell in Excel oder gar nicht. 
+            Recherche wie andere das lösen. 5 Freelancer interviewt (per LinkedIn DM).
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>Problem validiert (Freelancer brauchen das wirklich!)</li>
+              <li>5 Interview-Notizen in Google Docs</li>
+              <li>Liste der Kern-Features (Invoice list, Status tracking, Reminders)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 2-3</span>
+            <span class="milestone-time">~60 Min/Tag</span>
+          </div>
+          <div class="milestone-title">Airtable Setup & Datenmodell</div>
+          <div class="milestone-desc">
+            Lernt Airtable Basics (20 Min YouTube Tutorial). Erstellt Datenbank mit Tabellen: 
+            Invoices (Nummer, Kunde, Betrag, Status, Fälligkeitsdatum). Fügt erste Test-Daten ein.
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>Airtable Base mit "Invoices" Tabelle</li>
+              <li>5 Spalten: Invoice #, Client, Amount, Status, Due Date</li>
+              <li>10 Test-Einträge angelegt</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 4-5</span>
+            <span class="milestone-time">~60 Min/Tag</span>
+          </div>
+          <div class="milestone-title">Landing Page mit Carrd</div>
+          <div class="milestone-desc">
+            Erstellt simple Landing Page: "InvoiceFlow - Nie wieder Rechnungen vergessen". 
+            Erklärt das Problem, zeigt Screenshot von Airtable, Waitlist-Formular mit Typeform.
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>Landing Page live auf invoiceflow.carrd.co</li>
+              <li>Typeform für Waitlist integriert</li>
+              <li>Screenshot der Airtable-Lösung als "Demo"</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 6-7</span>
+            <span class="milestone-time">~60 Min/Tag</span>
+          </div>
+          <div class="milestone-title">Zapier Automation Setup</div>
+          <div class="milestone-desc">
+            Lernt Zapier Basics. Erstellt Zap: Neue Invoice in Airtable → Email-Reminder 2 Tage vor Fälligkeit.
+            Testet mit eigenen Test-Invoices. Funktioniert!
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>Zapier Zap: Airtable → Gmail</li>
+              <li>Email-Template für Reminders erstellt</li>
+              <li>3 Test-Emails erfolgreich verschickt</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 8-10</span>
+            <span class="milestone-time">~60 Min/Tag</span>
+          </div>
+          <div class="milestone-title">User Testing & Feedback</div>
+          <div class="milestone-desc">
+            Schickt Airtable-Link an 3 Freelancer-Freunde zum Testen. Sammelt Feedback: 
+            "Funktioniert, aber ich will mein eigenes Dashboard". Plant Version 2.0 mit richtigem Interface.
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>3 Beta-User nutzen die Airtable</li>
+              <li>Feedback dokumentiert (Google Docs)</li>
+              <li>Waitlist: 12 Sign-ups auf Landing Page</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 11-13</span>
+            <span class="milestone-time">~60 Min/Tag</span>
+          </div>
+          <div class="milestone-title">Polish & Mini-Launch</div>
+          <div class="milestone-desc">
+            Verbessert Landing Page (Testimonial von Beta-User), postet auf Reddit r/freelance 
+            und in 2 Freelancer Facebook-Gruppen. Erste zahlende User? Noch nicht - aber 45 Waitlist Sign-ups!
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>Landing Page mit User-Testimonial</li>
+              <li>Reddit Post: 23 Upvotes, 8 Comments</li>
+              <li>Waitlist: 45 Sign-ups total</li>
+              <li>3 Beta-User aktiv (alle kostenlos)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <strong>Ergebnis nach 13 Tagen:</strong> Funktionaler Prototyp mit Airtable + Zapier. 
+        45 Waitlist Sign-ups, 3 aktive Beta-User. Noch kein Bezahl-Produkt, aber Problem validiert! 
+        Nächster Schritt: Lernen zu coden oder einen Developer finden.
+      </div>
+    </div>
+
+    <!-- Tab Content 2: Fortgeschritten -->
+    <div class="tab-content" id="tab-1">
+      <div class="skill-header">
+        <h2>🚀 Fortgeschritten-Pfad</h2>
+        <span class="skill-badge badge-intermediate">Build-Focused</span>
+      </div>
+
+      <div class="starting-conditions">
+        <h3>Startbedingungen</h3>
+        <ul>
+          <li><strong>Vorwissen:</strong> Kann HTML/CSS/JavaScript, kennt React Basics</li>
+          <li><strong>Tools:</strong> Next.js + Supabase + Vercel</li>
+          <li><strong>Zeitplan:</strong> ~1h/Tag (80% Building, 20% Learning)</li>
+          <li><strong>Ziel:</strong> Web-App mit Auth, CRUD, deployed</li>
+        </ul>
+      </div>
+
+      <div class="timeline">
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 1</span>
+            <span class="milestone-time">~60 Min</span>
+          </div>
+          <div class="milestone-title">Quick Validation & Tech Stack</div>
+          <div class="milestone-desc">
+            Posted auf Twitter: "Building InvoiceFlow - simple invoice tracking for freelancers. 
+            Who'd pay $5/mo for this?" → 23 Likes, 7 "I would!" replies. Stack gewählt: Next.js + Supabase.
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>Twitter Thread mit 23 Likes</li>
+              <li>Tech Stack dokumentiert (Notion)</li>
+              <li>Supabase Projekt erstellt</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 2-3</span>
+            <span class="milestone-time">~60 Min/Tag</span>
+          </div>
+          <div class="milestone-title">Next.js Setup + Database Schema</div>
+          <div class="milestone-desc">
+            `npx create-next-app invoiceflow`. Supabase Schema: Users, Invoices (id, user_id, client_name, 
+            amount, status, due_date). RLS Policies für User-Isolation.
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>Next.js App läuft lokal</li>
+              <li>Supabase DB mit 2 Tables</li>
+              <li>RLS Policies getestet</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 4-6</span>
+            <span class="milestone-time">~60 Min/Tag</span>
+          </div>
+          <div class="milestone-title">Auth + Dashboard UI</div>
+          <div class="milestone-desc">
+            Supabase Auth (Email/Password). Dashboard Page: Liste aller Invoices, Status-Filter 
+            (Paid/Pending/Overdue), simpel mit Tailwind CSS gestylt.
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>Login/Signup funktioniert</li>
+              <li>Dashboard zeigt User's Invoices</li>
+              <li>Status-Filter funktional</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 7-9</span>
+            <span class="milestone-time">~60 Min/Tag</span>
+          </div>
+          <div class="milestone-title">CRUD Features</div>
+          <div class="milestone-desc">
+            Create Invoice Form (Client Name, Amount, Due Date). Edit/Delete Funktionen. 
+            Status Update (Mark as Paid). Alles funktioniert mit Supabase API.
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>Add Invoice Form (funktional)</li>
+              <li>Edit/Delete Buttons</li>
+              <li>Status Update funktioniert</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 10-11</span>
+            <span class="milestone-time">~60 Min/Tag</span>
+          </div>
+          <div class="milestone-title">Landing Page + Deploy</div>
+          <div class="milestone-desc">
+            Landing Page mit Next.js (Hero, Features, Demo Screenshot, Waitlist). 
+            Deploy auf Vercel (free tier). Custom Domain: invoiceflow.app ($12/year).
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>Landing Page live</li>
+              <li>App deployed auf Vercel</li>
+              <li>invoiceflow.app Domain connected</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 12-13</span>
+            <span class="milestone-time">~60 Min/Tag</span>
+          </div>
+          <div class="milestone-title">Beta Testing & First Users</div>
+          <div class="milestone-desc">
+            Schickt Link an Twitter-Follower die Interesse gezeigt haben. 8 User testen. 
+            2 Bugs gefunden und gefixt. Sammelt Testimonials. Plant Stripe Integration für nächste Woche.
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>8 Beta-User aktiv</li>
+              <li>2 kritische Bugs gefixt</li>
+              <li>3 User-Testimonials gesammelt</li>
+              <li>Roadmap: Stripe (nächste Woche), Email Reminders (Woche 3)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <strong>Ergebnis nach 13 Tagen:</strong> Funktionale Web-App live auf invoiceflow.app! 
+        8 aktive Beta-User, Auth funktioniert, CRUD komplett. Noch kostenlos, aber bereit für 
+        Stripe Integration. Nächster Schritt: Monetarisierung + Email Reminders.
+      </div>
+    </div>
+
+    <!-- Tab Content 3: Profi -->
+    <div class="tab-content" id="tab-2">
+      <div class="skill-header">
+        <h2>⚡ Profi-Pfad</h2>
+        <span class="skill-badge badge-expert">Scale-Focused</span>
+      </div>
+
+      <div class="starting-conditions">
+        <h3>Startbedingungen</h3>
+        <ul>
+          <li><strong>Vorwissen:</strong> Production-ready Developer, kennt Best Practices</li>
+          <li><strong>Tools:</strong> Next.js + Supabase + Stripe + Resend + Vercel</li>
+          <li><strong>Zeitplan:</strong> ~1h/Tag (95% Building, 5% Learning)</li>
+          <li><strong>Ziel:</strong> Revenue-generating SaaS, skalierbar</li>
+        </ul>
+      </div>
+
+      <div class="timeline">
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 1</span>
+            <span class="milestone-time">~60 Min</span>
+          </div>
+          <div class="milestone-title">Strategic Setup & Boilerplate</div>
+          <div class="milestone-desc">
+            Nutzt production-ready boilerplate (z.B. ShipFast). Konfiguriert: Next.js 14 App Router, 
+            Supabase Auth + DB, Stripe Checkout/Webhooks, Email (Resend), Analytics (Plausible). 
+            Alles in 60 Min weil Templates.
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>Next.js Boilerplate deployed (Vercel)</li>
+              <li>Stripe Test Mode konfiguriert</li>
+              <li>Supabase + Resend connected</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 2-3</span>
+            <span class="milestone-time">~60 Min/Tag</span>
+          </div>
+          <div class="milestone-title">DB Schema + Auth + Onboarding</div>
+          <div class="milestone-desc">
+            DB Schema: Users (mit subscription_status), Invoices (mit relationships), Stripe Events. 
+            Auth Flow komplett (Email/Google). Onboarding: 3-Step Form (Name, Company, First Invoice).
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>DB Schema production-ready (mit Indizes)</li>
+              <li>Multi-provider Auth (Email + Google)</li>
+              <li>Onboarding Flow funktional</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 4-6</span>
+            <span class="milestone-time">~60 Min/Tag</span>
+          </div>
+          <div class="milestone-title">Core Features + Payment</div>
+          <div class="milestone-desc">
+            Dashboard mit Invoices (Table mit Sort/Filter), CRUD, Status Management. 
+            Stripe Integration: $9/mo Subscription, Cancel Flow, Billing Portal. Webhook Handler für Events.
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>Full CRUD mit optimistischem UI</li>
+              <li>Stripe Checkout funktioniert</li>
+              <li>Webhooks handhaben subscription.created/deleted</li>
+              <li>Billing Portal Link</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 7-8</span>
+            <span class="milestone-time">~60 Min/Tag</span>
+          </div>
+          <div class="milestone-title">Email Automation + Reminders</div>
+          <div class="milestone-desc">
+            Cron Job (Vercel Cron): Täglich checken welche Invoices in 2 Tagen fällig sind → Email via Resend. 
+            Email Templates professionell designed. User kann Reminder-Settings anpassen.
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>Vercel Cron Job läuft täglich</li>
+              <li>Reminder-Emails verschickt (professionelles Template)</li>
+              <li>User kann Reminder-Einstellungen ändern</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 9-10</span>
+            <span class="milestone-time">~60 Min/Tag</span>
+          </div>
+          <div class="milestone-title">Landing Page + SEO + Analytics</div>
+          <div class="milestone-desc">
+            Production-grade Landing Page (Hero, Social Proof, Features, Pricing, FAQ). SEO optimiert 
+            (Meta Tags, Schema.org). Analytics (Plausible), Conversion Tracking. Domain: invoiceflow.com.
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>Landing Page conversion-optimiert</li>
+              <li>SEO: Meta Tags, Sitemap, robots.txt</li>
+              <li>Analytics + Conversion Funnel</li>
+              <li>invoiceflow.com live</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="milestone completed">
+          <div class="milestone-dot"></div>
+          <div class="milestone-header">
+            <span class="milestone-day">Tag 11-13</span>
+            <span class="milestone-time">~60 Min/Tag</span>
+          </div>
+          <div class="milestone-title">Launch + Marketing + First Revenue</div>
+          <div class="milestone-desc">
+            Launched auf Product Hunt (#3 Product of the Day!), Indie Hackers, Twitter, Reddit. 
+            Erste zahlende Kunden am Launch-Tag! SEO bringt erste organische Signups.
+          </div>
+          <div class="milestone-deliverables">
+            <h4>Deliverables:</h4>
+            <ul>
+              <li>Product Hunt Launch: #3 of the Day</li>
+              <li>134 Sign-ups in 3 Tagen</li>
+              <li>8 zahlende Kunden ($72 MRR)</li>
+              <li>Traffic: 450 Visitors, 15% Conversion</li>
+              <li>2 User Testimonials live auf Landing Page</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <strong>Ergebnis nach 13 Tagen:</strong> Production-ready SaaS mit $72 MRR! 
+        134 total Sign-ups, 8 zahlende Kunden, Email Automation läuft, SEO optimiert. 
+        Nächster Schritt: Growth (SEO Content, Affiliate Program, Feature Expansion).
+      </div>
+    </div>
+
+    <!-- Tab Content 4: Vergleich -->
+    <div class="tab-content" id="tab-3">
+      <div class="skill-header">
+        <h2>📊 Direkter Vergleich</h2>
+      </div>
+
+      <div class="comparison-grid">
+        <div class="comparison-card">
+          <h3>
+            🌱 Anfänger
+            <span class="skill-badge badge-beginner">Learning</span>
+          </h3>
+          
+          <div class="comparison-metric">
+            <div class="comparison-metric-label">Zeit Investment</div>
+            <div class="comparison-metric-value">13h total</div>
+            <div class="comparison-bar">
+              <div class="comparison-bar-fill" style="width: 100%"></div>
+            </div>
+          </div>
+
+          <div class="comparison-metric">
+            <div class="comparison-metric-label">Learning vs Building</div>
+            <div class="comparison-metric-value">50% / 50%</div>
+          </div>
+
+          <div class="comparison-metric">
+            <div class="comparison-metric-label">Signup Conversions</div>
+            <div class="comparison-metric-value">45 Sign-ups</div>
+            <div class="comparison-bar">
+              <div class="comparison-bar-fill" style="width: 33%"></div>
+            </div>
+          </div>
+
+          <div class="comparison-metric">
+            <div class="comparison-metric-label">Zahlende Kunden</div>
+            <div class="comparison-metric-value">0 (noch)</div>
+            <div class="comparison-bar">
+              <div class="comparison-bar-fill" style="width: 0%"></div>
+            </div>
+          </div>
+
+          <div class="comparison-metric">
+            <div class="comparison-metric-label">MRR</div>
+            <div class="comparison-metric-value">$0</div>
+          </div>
+        </div>
+
+        <div class="comparison-card">
+          <h3>
+            🚀 Fortgeschritten
+            <span class="skill-badge badge-intermediate">Building</span>
+          </h3>
+          
+          <div class="comparison-metric">
+            <div class="comparison-metric-label">Zeit Investment</div>
+            <div class="comparison-metric-value">13h total</div>
+            <div class="comparison-bar">
+              <div class="comparison-bar-fill" style="width: 100%"></div>
+            </div>
+          </div>
+
+          <div class="comparison-metric">
+            <div class="comparison-metric-label">Learning vs Building</div>
+            <div class="comparison-metric-value">20% / 80%</div>
+          </div>
+
+          <div class="comparison-metric">
+            <div class="comparison-metric-label">Signup Conversions</div>
+            <div class="comparison-metric-value">87 Sign-ups</div>
+            <div class="comparison-bar">
+              <div class="comparison-bar-fill" style="width: 65%"></div>
+            </div>
+          </div>
+
+          <div class="comparison-metric">
+            <div class="comparison-metric-label">Zahlende Kunden</div>
+            <div class="comparison-metric-value">0 (Beta)</div>
+            <div class="comparison-bar">
+              <div class="comparison-bar-fill" style="width: 0%"></div>
+            </div>
+          </div>
+
+          <div class="comparison-metric">
+            <div class="comparison-metric-label">MRR</div>
+            <div class="comparison-metric-value">$0</div>
+          </div>
+        </div>
+
+        <div class="comparison-card">
+          <h3>
+            ⚡ Profi
+            <span class="skill-badge badge-expert">Scaling</span>
+          </h3>
+          
+          <div class="comparison-metric">
+            <div class="comparison-metric-label">Zeit Investment</div>
+            <div class="comparison-metric-value">13h total</div>
+            <div class="comparison-bar">
+              <div class="comparison-bar-fill" style="width: 100%"></div>
+            </div>
+          </div>
+
+          <div class="comparison-metric">
+            <div class="comparison-metric-label">Learning vs Building</div>
+            <div class="comparison-metric-value">5% / 95%</div>
+          </div>
+
+          <div class="comparison-metric">
+            <div class="comparison-metric-label">Signup Conversions</div>
+            <div class="comparison-metric-value">134 Sign-ups</div>
+            <div class="comparison-bar">
+              <div class="comparison-bar-fill" style="width: 100%"></div>
+            </div>
+          </div>
+
+          <div class="comparison-metric">
+            <div class="comparison-metric-label">Zahlende Kunden</div>
+            <div class="comparison-metric-value">8 Customers</div>
+            <div class="comparison-bar">
+              <div class="comparison-bar-fill" style="width: 100%"></div>
+            </div>
+          </div>
+
+          <div class="comparison-metric">
+            <div class="comparison-metric-label">MRR</div>
+            <div class="comparison-metric-value">$72</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="final-comparison">
+        <h3>Was jeder erreicht hat (Tag 13):</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Aspekt</th>
+              <th>🌱 Anfänger</th>
+              <th>🚀 Fortgeschritten</th>
+              <th>⚡ Profi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Produkt-Status</strong></td>
+              <td>Airtable Prototyp</td>
+              <td>Web-App (Beta)</td>
+              <td>Production SaaS</td>
+            </tr>
+            <tr>
+              <td><strong>Tech Stack</strong></td>
+              <td>No-Code (Airtable/Zapier)</td>
+              <td>Next.js + Supabase</td>
+              <td>Full Stack + Payments</td>
+            </tr>
+            <tr>
+              <td><strong>Features</strong></td>
+              <td>Invoice Liste, Reminders</td>
+              <td>Auth, CRUD, Dashboard</td>
+              <td>Alles + Stripe + Emails</td>
+            </tr>
+            <tr>
+              <td><strong>Deployment</strong></td>
+              <td>Carrd Landing Page</td>
+              <td>Vercel (invoiceflow.app)</td>
+              <td>Vercel + Domain + SEO</td>
+            </tr>
+            <tr>
+              <td><strong>User</strong></td>
+              <td>3 Beta, 45 Waitlist</td>
+              <td>8 Beta, 87 Waitlist</td>
+              <td>8 Paid, 126 Free, 134 Total</td>
+            </tr>
+            <tr>
+              <td><strong>Revenue</strong></td>
+              <td>$0</td>
+              <td>$0 (noch)</td>
+              <td>$72 MRR</td>
+            </tr>
+            <tr>
+              <td><strong>Nächster Schritt</strong></td>
+              <td>Coden lernen / Co-Founder</td>
+              <td>Stripe Integration, Growth</td>
+              <td>Growth, SEO, Features</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-box">
+        <strong>Key Insight:</strong> Alle 3 haben in 13 Tagen (~1h/Tag) etwas Reales gebaut! 
+        Der Unterschied ist nicht "ob", sondern "wie weit". Anfänger validiert Problem, 
+        Fortgeschritten hat funktionierende App, Profi macht Revenue. 
+        Jeder Weg ist wertvoll - starte wo du bist! 🚀
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button class="btn-primary" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+      ↑ Nach oben
+    </button>
+    <button class="btn-secondary" onclick="showTab((currentTab + 1) % 4)">
+      → Nächster Tab
+    </button>
+  </div>
+
+  <script>
+    let currentTab = 0;
+
+    function showTab(index) {
+      // Hide all tabs
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.tab-content');
+      
+      tabs.forEach(tab => tab.classList.remove('active'));
+      contents.forEach(content => content.classList.remove('active'));
+      
+      // Show selected tab
+      tabs[index].classList.add('active');
+      contents[index].classList.add('active');
+      
+      currentTab = index;
+      
+      // Scroll to top
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
+    // Animate bars on load
+    window.addEventListener('load', () => {
+      const bars = document.querySelectorAll('.comparison-bar-fill');
+      bars.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0%';
+        setTimeout(() => {
+          bar.style.width = width;
+        }, 500);
+      });
+    });
+  </script>
 </body>
 </html>
