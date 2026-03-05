@@ -39,7 +39,7 @@ Teilnehmeranzahl begrenzt
 ---
 
 **Beta startet:** [tba]  
-**Kosten:** [erste 10 Beta-Tester kostenlos](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/index.html)
+**Kosten:** [erste 5-10 Beta-Tester kostenlos](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/index.html)
 ---
 
 ## 🖥️ MVP Dashboard - Source Code
