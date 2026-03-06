@@ -4,9 +4,8 @@ Geeignet sind klar abgrenzbare Projekte, die in 30 Tagen zu einem sichtbaren Erg
 - ein klar definiertes Service-Angebot mit erstem Testkunden (Bsp. Kurs, ebook, Newsletterformat)
 - SaaS, Apps
 - ein Newsletter- oder Content-Format mit erster Ausgabe 
-- ein physisch fertig gebautes Iglu 
-- Freemium und Open Source Projekte
-- NGOs (Non-Profit, Spenden)
+- API developer tool
+- ecommerce
 
 Nicht geeignete Projekte sind Vorhaben, die strukturell länger dauern (z.B. Plattformen mit starkem Netzwerkeffet, VC-Setups,
 "Riesen-Visionen", ohne reduzierbare Sprint-Version, reine Konzept- oder Forschungsarbeit).
@@ -66,6 +65,7 @@ Teilnehmeranzahl begrenzt
 
 **Beta startet:** [tba]  
 **Kosten:** [Pay to Play - Earn it back](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/index.html)
+
 
 
 
