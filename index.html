@@ -169,6 +169,148 @@
       margin-bottom: 1rem;
     }
     
+    /* Kontrolle Section */
+    .control-section {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      color: white;
+    }
+    
+    .control-section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    
+    .control-section p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+      opacity: 0.95;
+    }
+    
+    /* Audience Section */
+    .audience {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .persona {
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .persona h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .persona ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .persona ul li {
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    
+    .persona ul li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #667eea;
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+    
+    /* Skill Levels */
+    .skill-levels {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: #f3f4f6;
+      border-radius: 12px;
+    }
+    
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    
+    .skill-card {
+      padding: 1.5rem;
+      background: white;
+      border-radius: 8px;
+      border-left: 4px solid #667eea;
+    }
+    
+    .skill-card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .skill-card p {
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-bottom: 0.5rem;
+    }
+    
+    .skill-card ul {
+      list-style: none;
+      padding: 0;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    
+    .skill-card ul li {
+      padding: 0.25rem 0;
+    }
+    
+    /* FAQ Section */
+    .faq {
+      max-width: 900px;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+    
+    .faq-item {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .faq-item h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+      color: #667eea;
+    }
+    
+    .faq-item p {
+      margin-bottom: 0.5rem;
+      line-height: 1.7;
+    }
+    
+    .faq-item ul {
+      margin-top: 0.5rem;
+      margin-left: 1.5rem;
+      line-height: 1.8;
+    }
+    
+    .faq-item strong {
+      color: #667eea;
+    }
+    
     footer {
       background: #333;
       color: white;
@@ -208,6 +350,14 @@
       
       .cta-buttons {
         flex-direction: column;
+      }
+      
+      .control-section h2 {
+        font-size: 1.5rem;
+      }
+      
+      .control-section p {
+        font-size: 1rem;
       }
     }
   </style>
@@ -299,6 +449,163 @@
       <div class="feature">
         <h3>📊 Dashboard</h3>
         <p>Tracke deinen Fortschritt. Sieh wie weit du schon gekommen bist.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontrolle & Lernen Section -->
+  <section class="control-section">
+    <h2>🎯 Behalte die Kontrolle über dein Projekt</h2>
+    <p>
+      Lerne spielerisch, wie es in der Tiefe aufgebaut ist.<br>
+      Das führt zu besserem Verständnis und sauberer Skalierbarkeit.
+    </p>
+  </section>
+
+  <!-- Für wen ist das? -->
+  <section class="section">
+    <h2>Für wen ist MVP Buildr?</h2>
+    
+    <div class="audience">
+      <div class="persona">
+        <h3>✅ Du passt perfekt wenn du:</h3>
+        <ul>
+          <li>Eine MVP-Idee hast, aber sie nie fertig machst</li>
+          <li>Prokrastinierst und Struktur brauchst</li>
+          <li>Solo-Builder bist (egal ob Code oder No-Code)</li>
+          <li>Deadline-Druck brauchst um zu shippen</li>
+          <li>Bereit bist täglich 30-45 Min zu investieren</li>
+          <li><strong>Selbst bauen kannst</strong> (Code ODER No-Code Tools)</li>
+        </ul>
+      </div>
+      
+      <div class="persona">
+        <h3>❌ Das ist NICHT für dich wenn:</h3>
+        <ul>
+          <li>Du nur "Ideen-Person" bist (kein Bock zu bauen)</li>
+          <li>Du erwartest dass wir für dich bauen</li>
+          <li>Du nicht täglich Zeit hast (auch nicht 30 Min)</li>
+          <li>Du nur passiv "lernen" willst ohne zu bauen</li>
+          <li>Du dein Projekt schon fertig hast</li>
+          <li>Du 1:1 Coaching oder Hand-Holding brauchst</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Skill Levels -->
+    <div class="skill-levels">
+      <h3 style="text-align: center; margin-bottom: 1rem; font-size: 1.5rem;">
+        Welches Skill-Level passt zu dir?
+      </h3>
+      
+      <div class="skill-grid">
+        <div class="skill-card" style="border-left-color: #10b981;">
+          <h4 style="color: #10b981;">🌱 Anfänger</h4>
+          <p>Erste Schritte mit digitalen Projekten</p>
+          <ul>
+            <li>No-Code Tools: Webflow, Carrd, Notion</li>
+            <li>Kein Coding-Wissen nötig</li>
+            <li>Statische Websites, Mockups, Prototypen</li>
+            <li><strong>Beispiel:</strong> Landing Page mit Webflow</li>
+          </ul>
+        </div>
+        
+        <div class="skill-card" style="border-left-color: #2563eb;">
+          <h4 style="color: #2563eb;">⚡ Fortgeschritten</h4>
+          <p>Kann Tools kombinieren und automatisieren</p>
+          <ul>
+            <li>No-Code + Low-Code: Airtable, Zapier, Softr</li>
+            <li>Grundlegende Tech-Kenntnisse</li>
+            <li>Dynamische Apps, Automatisierung</li>
+            <li><strong>Beispiel:</strong> Airtable + Softr Directory</li>
+          </ul>
+        </div>
+        
+        <div class="skill-card" style="border-left-color: #9333ea;">
+          <h4 style="color: #9333ea;">🚀 Profi</h4>
+          <p>Kann selbstständig coden und deployen</p>
+          <ul>
+            <li>Full-Code: Next.js, React, APIs</li>
+            <li>Eigene Datenbanken, Deployment</li>
+            <li>SaaS MVPs, Mobile Apps, Services</li>
+            <li><strong>Beispiel:</strong> Next.js + Supabase SaaS</li>
+          </ul>
+        </div>
+      </div>
+      
+      <p style="text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: #6b7280;">
+        💡 <strong>Tipp:</strong> Das System wählt automatisch Bronze/Silber/Gold basierend auf deinem Skill-Level + Projektphase.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" style="background: #f8f9fa;">
+    <h2>Häufige Fragen</h2>
+    
+    <div class="faq">
+      <div class="faq-item">
+        <h3>Muss ich coden können?</h3>
+        <p><strong>Kommt auf dein Skill-Level an:</strong></p>
+        <ul>
+          <li><strong>Anfänger?</strong> No-Code Tools (Webflow, Carrd, Notion) reichen völlig.</li>
+          <li><strong>Fortgeschritten?</strong> No-Code + Low-Code (Zapier, Airtable) möglich.</li>
+          <li><strong>Profi?</strong> Full-Code (Next.js, React, APIs) erlaubt.</li>
+        </ul>
+        <p><strong>Wichtig:</strong> Du musst selbst BAUEN können. Reine "Ideen-Leute" passen nicht.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>Kostet das was?</h3>
+        <p>Cohort #1 ist <strong>komplett kostenlos</strong> (Beta-Phase). Du testest das System und gibst uns Feedback. Spätere Cohorts könnten kostenpflichtig werden ($49-99).</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>Wie viel Zeit muss ich investieren?</h3>
+        <p><strong>1-2 Stunden täglich</strong> (empfohlen). Minimum: 30-45 Minuten für Tagesaufgabe. Täglicher Progress ist wichtiger als perfekte Arbeit. Meilenstein-Checkins an Tag 7, 13/21/30 sind Pflicht.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>Wie wird mein Modul (Bronze/Silber/Gold) ausgewählt?</h3>
+        <p>Das System wählt <strong>automatisch</strong> basierend auf:</p>
+        <ul>
+          <li>Dein Skill-Level (Anfänger/Fortgeschritten/Profi)</li>
+          <li>Deine Projektphase (Nur Idee/Konzept/Begonnen/Fast fertig)</li>
+        </ul>
+        <p>Bronze = 13 Tage, Silber = 21 Tage, Gold = 30 Tage. Das Modul passt sich deinem Projekt an.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>Was wenn ich nicht fertig werde?</h3>
+        <p>Du kannst <strong>pausieren oder abbrechen</strong>. Kein Stress, kein Drama. ABER: Die besten Ergebnisse kommen von Commitment. Wenn du Meilenstein-Checkin verpasst, wird dein Sprint automatisch pausiert.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>Bekomme ich 1:1 Support?</h3>
+        <p><strong>Nein.</strong> MVP Buildr ist kein Coaching-Programm. Du bekommst:</p>
+        <ul>
+          <li>Tägliche KI-Prompts (fokussierte Tagesaufgaben)</li>
+          <li>Community-Support in Telegram-Gruppe</li>
+          <li>Strukturiertes System mit Meilensteinen</li>
+        </ul>
+        <p>Du musst selbstständig bauen können. Kein Hand-Holding.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>Wann startet der Sprint nach Zusage?</h3>
+        <p>Am <strong>Tag nach Zusage</strong> beginnt Tag 0 (Vorbereitungstag). Tag 1 startet dann am darauffolgenden Tag um 00:00 Uhr. Du hast also immer einen vollen ersten Tag (24h).</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>Was bedeutet "Proof of Work"?</h3>
+        <p>An Meilenstein-Tagen (Tag 7, 13/21/30) musst du <strong>Nachweise hochladen</strong>:</p>
+        <ul>
+          <li>Screenshots deines Projekts</li>
+          <li>Links zu Live-Demo</li>
+          <li>Code-Repo (für Profis)</li>
+          <li>Video-Walkthrough (optional)</li>
+        </ul>
+        <p>Kein Proof = Sprint pausiert. Wir wollen echte Results, nicht nur Worte.</p>
       </div>
     </div>
   </section>
