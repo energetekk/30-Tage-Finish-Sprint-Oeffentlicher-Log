@@ -1,4 +1,4 @@
-# AI Execution Control System für Ideen und Projekte aka MVP Buildr / Beta Cohort #1
+# AI Execution Control System für Ideen und Projekte aka MVP Buildr / Cohort #1
 
 ## Worum geht es in diesem Sprint?
 In 30 Tagen gehst du validiert mit einem funktionierenden Minimalprodukt live - ohne Hype, ohne Perfektionsdruck.
