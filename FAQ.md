@@ -55,16 +55,16 @@ Kontakt (Support): energetekk@proton.me
 
 ---
 
-## Für Beta-Tester
+## Für COHORT #1-Tester
 Teilnehmeranzahl begrenzt
 
 ** Bewerbung **  
-👉 [https://dub.sh/Sprint-Intake](https://dub.sh/Sprint-Intake)
+👉 [Bewerbung](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/index.html)
 
 ---
 
 **Beta startet:** [tba]  
-**Kosten:** [Pay to Play - Earn it back](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/index.html)
+**Kosten:** kostenlos für 5-10 Teilnehmer
 
 
 
