@@ -6,6 +6,7 @@ Geeignet sind klar abgrenzbare Projekte, die in 30 Tagen zu einem sichtbaren Erg
 - ein Newsletter- oder Content-Format mit erster Ausgabe 
 - API developer tool
 - ecommerce
+- Blockchain
 
 Nicht geeignete Projekte sind Vorhaben, die strukturell länger dauern (z.B. Plattformen mit starkem Netzwerkeffet, VC-Setups,
 "Riesen-Visionen", ohne reduzierbare Sprint-Version, reine Konzept- oder Forschungsarbeit).
@@ -64,6 +65,7 @@ Teilnehmeranzahl begrenzt
 
 **Beta startet:** [tba]  
 **Kosten:** kostenlos für 5-10 Teilnehmer
+
 
 
 
