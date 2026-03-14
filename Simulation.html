@@ -267,13 +267,44 @@
 
   <!-- HEADER -->
   <header>
-    <a href="https://mvpbuildr.com" class="back-link">← MVP Buildr</a>
+    <a href="https://mvpbuildr.com" class="back-link">← Zurück zur Startseite</a>
     <div style="display:block">
       <div class="header-badge">Bronze Modul · 13-Tage Sprint</div>
     </div>
     <h1>Sprint <em>Simulation</em></h1>
-    <p class="header-sub">Realistische Szenarien für 3 Skill-Levels — dasselbe Projekt, drei verschiedene Wege.</p>
+    <p class="header-sub">Realistische Szenarien für 3 Skill-Level — dasselbe Projekt, drei verschiedene Wege.</p>
     <div class="project-pill">📊 InvoiceFlow — Micro SaaS für Freelancer</div>
+
+    <!-- SVG: 3-path timeline illustration -->
+    <div style="margin-top:48px;display:flex;justify-content:center;">
+      <svg width="560" height="90" viewBox="0 0 560 90" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width:100%">
+        <!-- Base line -->
+        <line x1="40" y1="45" x2="520" y2="45" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <!-- Day markers -->
+        <circle cx="40" cy="45" r="6" fill="#1c1c1a" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+        <circle cx="220" cy="45" r="8" fill="#1c1c1a" stroke="#d97706" stroke-width="2"/>
+        <circle cx="360" cy="45" r="8" fill="#1c1c1a" stroke="#3b82f6" stroke-width="2"/>
+        <circle cx="520" cy="45" r="8" fill="#1c1c1a" stroke="#10b981" stroke-width="2"/>
+        <!-- Progress lines -->
+        <line x1="40" y1="45" x2="220" y2="45" stroke="#d97706" stroke-width="2" stroke-opacity="0.6"/>
+        <line x1="220" y1="45" x2="360" y2="45" stroke="#3b82f6" stroke-width="2" stroke-opacity="0.6"/>
+        <line x1="360" y1="45" x2="520" y2="45" stroke="#10b981" stroke-width="2" stroke-opacity="0.6"/>
+        <!-- Labels top -->
+        <text x="40" y="28" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-family="DM Sans, sans-serif" font-size="11">Start</text>
+        <text x="220" y="28" text-anchor="middle" fill="#d97706" font-family="DM Sans, sans-serif" font-size="11" font-weight="600">Tag 13</text>
+        <text x="360" y="28" text-anchor="middle" fill="#3b82f6" font-family="DM Sans, sans-serif" font-size="11" font-weight="600">Tag 21</text>
+        <text x="520" y="28" text-anchor="middle" fill="#10b981" font-family="DM Sans, sans-serif" font-size="11" font-weight="600">Tag 30</text>
+        <!-- Labels bottom -->
+        <text x="220" y="68" text-anchor="middle" fill="#d97706" font-family="DM Sans, sans-serif" font-size="10">🥉 Bronze</text>
+        <text x="360" y="68" text-anchor="middle" fill="#3b82f6" font-family="DM Sans, sans-serif" font-size="10">🥈 Silber</text>
+        <text x="520" y="68" text-anchor="middle" fill="#10b981" font-family="DM Sans, sans-serif" font-size="10">🥇 Gold</text>
+      </svg>
+    </div>
+
+    <div style="margin-top:32px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://mvpbuildr.com/pipeline" style="padding:12px 28px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;">Jetzt bewerben →</a>
+      <a href="https://mvpbuildr.com" style="padding:12px 28px;background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:10px;font-weight:500;font-size:14px;text-decoration:none;">Mehr erfahren</a>
+    </div>
   </header>
 
   <!-- TABS -->
@@ -306,6 +337,33 @@
         </ul>
       </div>
 
+      <!-- SVG: No-Code Stack Flow -->
+      <div style="margin-bottom:48px;background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:28px;overflow:hidden;">
+        <p style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:20px;">Der No-Code Stack</p>
+        <svg width="100%" viewBox="0 0 520 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Airtable box -->
+          <rect x="0" y="12" width="120" height="40" rx="8" fill="#1c1c1a" stroke="#d97706" stroke-width="1.5" stroke-opacity="0.6"/>
+          <text x="60" y="30" text-anchor="middle" fill="#f0ede6" font-family="DM Sans, sans-serif" font-size="12" font-weight="600">Airtable</text>
+          <text x="60" y="44" text-anchor="middle" fill="#79766f" font-family="DM Sans, sans-serif" font-size="10">Datenbank</text>
+          <!-- Arrow -->
+          <line x1="122" y1="32" x2="158" y2="32" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-dasharray="4,3"/>
+          <polygon points="156,28 164,32 156,36" fill="rgba(255,255,255,0.2)"/>
+          <!-- Zapier box -->
+          <rect x="165" y="12" width="120" height="40" rx="8" fill="#1c1c1a" stroke="#d97706" stroke-width="1.5" stroke-opacity="0.6"/>
+          <text x="225" y="30" text-anchor="middle" fill="#f0ede6" font-family="DM Sans, sans-serif" font-size="12" font-weight="600">Zapier</text>
+          <text x="225" y="44" text-anchor="middle" fill="#79766f" font-family="DM Sans, sans-serif" font-size="10">Automatisierung</text>
+          <!-- Arrow -->
+          <line x1="287" y1="32" x2="323" y2="32" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-dasharray="4,3"/>
+          <polygon points="321,28 329,32 321,36" fill="rgba(255,255,255,0.2)"/>
+          <!-- Carrd box -->
+          <rect x="330" y="12" width="120" height="40" rx="8" fill="#1c1c1a" stroke="#d97706" stroke-width="1.5" stroke-opacity="0.6"/>
+          <text x="390" y="30" text-anchor="middle" fill="#f0ede6" font-family="DM Sans, sans-serif" font-size="12" font-weight="600">Carrd</text>
+          <text x="390" y="44" text-anchor="middle" fill="#79766f" font-family="DM Sans, sans-serif" font-size="10">Landing Page</text>
+          <!-- Result -->
+          <text x="460" y="35" text-anchor="start" fill="#4ade80" font-family="DM Sans, sans-serif" font-size="11" font-weight="600">→ Live</text>
+        </svg>
+      </div>
+
       <div class="timeline">
         <div class="milestone done">
           <div class="milestone-dot"></div>
@@ -314,14 +372,14 @@
               <span class="milestone-day">Tag 1</span>
               <span class="milestone-time">~60 Min</span>
             </div>
-            <h3>Research & Validierung</h3>
-            <p>Verstehen des Problems: Freelancer tracken Rechnungen manuell in Excel oder gar nicht. Recherche wie andere das lösen. 5 Freelancer interviewt (per LinkedIn DM).</p>
+            <h3>Projekt definieren & Tools aufsetzen</h3>
+            <p>Sprint startet sofort. Heute: finale Projektidee festlegen, Airtable Account erstellen, erste Datenbank-Struktur anlegen. Kein Zögern — konkrete Entscheidungen treffen.</p>
             <div class="deliverables">
               <span>Deliverables</span>
               <ul>
-                <li>Problem validiert — Freelancer brauchen das wirklich</li>
-                <li>5 Interview-Notizen in Google Docs</li>
-                <li>Liste der Kern-Features (Invoice list, Status tracking, Reminders)</li>
+                <li>Projektidee in 2 Sätzen schriftlich definiert</li>
+                <li>Airtable Account + erste Base erstellt</li>
+                <li>Kern-Features auf 3 reduziert (kein Scope-Creep)</li>
               </ul>
             </div>
           </div>
@@ -665,6 +723,34 @@
         <h2>📊 Direkter Vergleich</h2>
       </div>
 
+      <!-- SVG: Outcome comparison bars -->
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:32px;margin-bottom:32px;">
+        <p style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:24px;">13 Tage · ~1h/Tag · Gleiches Projekt</p>
+        <svg width="100%" viewBox="0 0 520 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Grid lines -->
+          <line x1="120" y1="0" x2="120" y2="120" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <line x1="120" y1="120" x2="520" y2="120" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+          <!-- Anfänger bar -->
+          <text x="110" y="24" text-anchor="end" fill="#d97706" font-family="DM Sans, sans-serif" font-size="12" font-weight="600">🌱 Anfänger</text>
+          <rect x="120" y="10" width="156" height="22" rx="4" fill="#d97706" fill-opacity="0.2"/>
+          <rect x="120" y="10" width="156" height="22" rx="4" fill="none" stroke="#d97706" stroke-width="1" stroke-opacity="0.4"/>
+          <text x="284" y="25" text-anchor="start" fill="#d97706" font-family="DM Sans, sans-serif" font-size="11" dx="8">45 Sign-ups · $0</text>
+          <!-- Fortgeschritten bar -->
+          <text x="110" y="64" text-anchor="end" fill="#3b82f6" font-family="DM Sans, sans-serif" font-size="12" font-weight="600">🚀 Fortgeschr.</text>
+          <rect x="120" y="50" width="302" height="22" rx="4" fill="#3b82f6" fill-opacity="0.2"/>
+          <rect x="120" y="50" width="302" height="22" rx="4" fill="none" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.4"/>
+          <text x="430" y="65" text-anchor="start" fill="#3b82f6" font-family="DM Sans, sans-serif" font-size="11" dx="8">87 Sign-ups · $0</text>
+          <!-- Profi bar -->
+          <text x="110" y="104" text-anchor="end" fill="#10b981" font-family="DM Sans, sans-serif" font-size="12" font-weight="600">⚡ Profi</text>
+          <rect x="120" y="90" width="390" height="22" rx="4" fill="#10b981" fill-opacity="0.2"/>
+          <rect x="120" y="90" width="390" height="22" rx="4" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+          <text x="518" y="105" text-anchor="end" fill="#10b981" font-family="DM Sans, sans-serif" font-size="11">134 Sign-ups · $72 MRR</text>
+          <!-- Bottom label -->
+          <text x="120" y="138" text-anchor="start" fill="rgba(255,255,255,0.15)" font-family="DM Sans, sans-serif" font-size="10">0</text>
+          <text x="510" y="138" text-anchor="end" fill="rgba(255,255,255,0.15)" font-family="DM Sans, sans-serif" font-size="10">Max</text>
+        </svg>
+      </div>
+
       <div class="comparison-grid">
         <div class="comp-card c0">
           <h3>🌱 Anfänger <span class="skill-badge badge-beginner" style="font-size:10px">Learning</span></h3>
@@ -777,6 +863,18 @@
     </div>
 
   </div><!-- /content -->
+
+  <!-- BOTTOM CTA -->
+  <div style="border-top:1px solid var(--border);padding:64px 24px;text-align:center;position:relative;overflow:hidden;">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse 50% 80% at 50% 100%,rgba(212,160,23,0.08) 0%,transparent 70%);pointer-events:none;"></div>
+    <p style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;">Cohort #1 — jetzt offen</p>
+    <p style="font-family:'Instrument Serif',serif;font-size:clamp(28px,5vw,48px);letter-spacing:-.025em;line-height:1.1;margin-bottom:16px;">Welcher Pfad bist du?</p>
+    <p style="font-size:16px;color:var(--muted);max-width:440px;margin:0 auto 36px;">Bewirb dich jetzt — das System wählt automatisch das passende Modul für dich.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://mvpbuildr.com/pipeline" style="padding:14px 32px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;">Kostenlos bewerben →</a>
+      <a href="https://mvpbuildr.com" style="padding:14px 24px;background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:10px;font-weight:500;font-size:15px;text-decoration:none;">← Zurück zur Startseite</a>
+    </div>
+  </div>
 
   <!-- CONTROLS -->
   <div class="controls">
