@@ -34,7 +34,7 @@ interaktive Simulation (4 realistische Szenarien)
 Teilnehmeranzahl begrenzt
 
 ** Bewerbung **  
-👉 [Sprint-Intake](https://www.mvpbuildr.com)
+👉 [Sprint-Intake](https://www.mvpbuilder.io)
 
 ---
 
@@ -48,7 +48,7 @@ Das **MVP Dashboard** ist die technische Umsetzung als Next.js + Supabase Web-Ap
 
 **🔗 Source Code Repository:** https://github.com/energetekk/30-tage-sprint-mvp
 
-**Domain:** mvpbuildr.com
+**Domain:** mvpbuilder.io
 
 ### Features (Beta MVP)
 - ✅ Onboarding Flow (7 Felder)
