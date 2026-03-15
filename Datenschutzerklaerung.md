@@ -11,7 +11,7 @@ Dejan Potocnik,
 Alpsteinstr. 3, 
 CH - 8570 Weinfelden
 
-hallo@mvpbuildr.com
+energetekk@proton.me
 
 ### 2. Bearbeitung von Personendaten
 #### 2.1 Begriffe
