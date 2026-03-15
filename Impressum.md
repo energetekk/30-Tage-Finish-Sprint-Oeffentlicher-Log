@@ -5,7 +5,7 @@ Alpsteinstr. 3,
 CH - 8570 Weinfelden
 
 E-Mail:
-hallo@mvpbuildr.com
+energetekk@proton.me
 
 ### Haftungsausschluss
 
