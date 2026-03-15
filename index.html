@@ -412,7 +412,7 @@
           </div>
         </div>
         <div style="text-align:center;margin-top:32px;" class="fade">
-          <a href="https://mvpbuildr.com/simulation" style="display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border:1px solid var(--border);border-radius:10px;color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;background:var(--bg2);transition:all .2s;" onmouseover="this.style.color='var(--text)';this.style.borderColor='rgba(255,255,255,0.2)'" onmouseout="this.style.color='var(--muted)';this.style.borderColor='var(--border)'">
+          <a href="https://mvpbuildr.com/Simulation.html" style="display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border:1px solid var(--border);border-radius:10px;color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;background:var(--bg2);transition:all .2s;" onmouseover="this.style.color='var(--text)';this.style.borderColor='rgba(255,255,255,0.2)'" onmouseout="this.style.color='var(--muted)';this.style.borderColor='var(--border)'">
             Vollständige Simulation ansehen →
           </a>
         </div>
@@ -634,7 +634,7 @@
       <div class="footer-links">
         <a href="https://dub.sh/Datenschutzbeding" target="_blank">Datenschutz</a>
         <a href="https://dub.sh/Teilnahmebedingung" target="_blank">AGB</a>
-        <a href="/cdn-cgi/l/email-protection#b3dbd2dfdfdcf3dec5c3d1c6dadfd7c19dd0dcde"><span class="__cf_email__" data-cfemail="6e060f0202012e03181e0c1b07020a1c400d0103">[email&#160;protected]</span></a>
+        <a href="/cdn-cgi/l/email-protection#b3dbd2dfdfdcf3dec5c3d1c6dadfd7c19dd0dcde"><span class="__cf_email__" data-cfemail="6e060f0202012e03181e0c1b07020a1c400d0103">[energetekk@proton.me]</span></a>
       </div>
       <p class="footer-copy">© 2026 MVP Buildr</p>
     </div>
@@ -664,4 +664,10 @@
     }
 
     // Scroll fade
-    const obs = new I
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis') })
+    }, { threshold: 0.08 })
+    document.querySelectorAll('.fade').forEach(el => obs.observe(el))
+  </script>
+</body>
+</html>
