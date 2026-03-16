@@ -251,6 +251,11 @@
     .ctrl-secondary { background: var(--bg2); color: var(--muted); }
     .ctrl-secondary:hover { color: var(--text); border-color: rgba(255,255,255,0.15); }
 
+    /* ── LANG TOGGLE ── */
+    .lang-toggle { position: absolute; top: 24px; right: 24px; display: flex; gap: 4px; }
+    .lang-btn { padding: 5px 11px; border-radius: 6px; font-size: 13px; cursor: pointer; border: 1px solid var(--border); background: transparent; color: var(--muted); font-family: inherit; transition: all .2s; }
+    .lang-btn.active { background: var(--bg3); color: var(--text); border-color: rgba(255,255,255,0.18); }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       .tabs { overflow-x: auto; }
@@ -267,15 +272,34 @@
 
   <!-- HEADER -->
   <header>
-    <a href="https://mvpbuilder.io" class="back-link">← Zurück zur Startseite</a>
-    <div style="display:block">
-      <div class="header-badge">Bronze Modul · 13-Tage Sprint</div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('de')">🇩🇪 DE</button>
+      <button class="lang-btn" onclick="setLang('en')">🇬🇧 EN</button>
     </div>
-    <h1>Sprint <em>Simulation</em></h1>
-    <p class="header-sub">Realistische Szenarien für 3 Skill-Level — dasselbe Projekt, drei verschiedene Wege.</p>
-    <div class="project-pill">📊 InvoiceFlow — Micro SaaS für Freelancer</div>
 
-    <!-- SVG: 3-path timeline illustration -->
+    <!-- GERMAN CONTENT -->
+    <div id="de">
+      <a href="https://mvpbuilder.io" class="back-link">← Zurück zur Startseite</a>
+      <div style="display:block">
+        <div class="header-badge">Bronze Modul · 13-Tage Sprint</div>
+      </div>
+      <h1>Sprint <em>Simulation</em></h1>
+      <p class="header-sub">Realistische Szenarien für 3 Skill-Level — dasselbe Projekt, drei verschiedene Wege.</p>
+      <div class="project-pill">📊 InvoiceFlow — Micro SaaS für Freelancer</div>
+    </div>
+
+    <!-- ENGLISH CONTENT -->
+    <div id="en" style="display:none">
+      <a href="https://mvpbuilder.io" class="back-link">← Back to homepage</a>
+      <div style="display:block">
+        <div class="header-badge">Bronze Module · 13-Day Sprint</div>
+      </div>
+      <h1>Sprint <em>Simulation</em></h1>
+      <p class="header-sub">Realistic scenarios for 3 skill levels — same project, three different paths.</p>
+      <div class="project-pill">📊 InvoiceFlow — Micro SaaS for Freelancers</div>
+    </div>
+
+    <!-- SVG: 3-path timeline illustration (language-neutral) -->
     <div style="margin-top:48px;display:flex;justify-content:center;">
       <svg width="560" height="90" viewBox="0 0 560 90" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width:100%">
         <!-- Base line -->
@@ -291,43 +315,69 @@
         <line x1="360" y1="45" x2="520" y2="45" stroke="#10b981" stroke-width="2" stroke-opacity="0.6"/>
         <!-- Labels top -->
         <text x="40" y="28" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-family="DM Sans, sans-serif" font-size="11">Start</text>
-        <text x="220" y="28" text-anchor="middle" fill="#d97706" font-family="DM Sans, sans-serif" font-size="11" font-weight="600">Tag 13</text>
-        <text x="360" y="28" text-anchor="middle" fill="#3b82f6" font-family="DM Sans, sans-serif" font-size="11" font-weight="600">Tag 21</text>
-        <text x="520" y="28" text-anchor="middle" fill="#10b981" font-family="DM Sans, sans-serif" font-size="11" font-weight="600">Tag 30</text>
+        <text x="220" y="28" text-anchor="middle" fill="#d97706" font-family="DM Sans, sans-serif" font-size="11" font-weight="600" class="svg-day13-de">Tag 13</text>
+        <text x="220" y="28" text-anchor="middle" fill="#d97706" font-family="DM Sans, sans-serif" font-size="11" font-weight="600" class="svg-day13-en" style="display:none">Day 13</text>
+        <text x="360" y="28" text-anchor="middle" fill="#3b82f6" font-family="DM Sans, sans-serif" font-size="11" font-weight="600" class="svg-day21-de">Tag 21</text>
+        <text x="360" y="28" text-anchor="middle" fill="#3b82f6" font-family="DM Sans, sans-serif" font-size="11" font-weight="600" class="svg-day21-en" style="display:none">Day 21</text>
+        <text x="520" y="28" text-anchor="middle" fill="#10b981" font-family="DM Sans, sans-serif" font-size="11" font-weight="600" class="svg-day30-de">Tag 30</text>
+        <text x="520" y="28" text-anchor="middle" fill="#10b981" font-family="DM Sans, sans-serif" font-size="11" font-weight="600" class="svg-day30-en" style="display:none">Day 30</text>
         <!-- Labels bottom -->
         <text x="220" y="68" text-anchor="middle" fill="#d97706" font-family="DM Sans, sans-serif" font-size="10">🥉 Bronze</text>
-        <text x="360" y="68" text-anchor="middle" fill="#3b82f6" font-family="DM Sans, sans-serif" font-size="10">🥈 Silber</text>
-        <text x="520" y="68" text-anchor="middle" fill="#10b981" font-family="DM Sans, sans-serif" font-size="10">🥇 Gold</text>
+        <text x="360" y="68" text-anchor="middle" fill="#3b82f6" font-family="DM Sans, sans-serif" font-size="10" class="svg-silver-de">🥈 Silber</text>
+        <text x="360" y="68" text-anchor="middle" fill="#3b82f6" font-family="DM Sans, sans-serif" font-size="10" class="svg-silver-en" style="display:none">🥈 Silver</text>
+        <text x="520" y="68" text-anchor="middle" fill="#10b981" font-family="DM Sans, sans-serif" font-size="10" class="svg-gold-de">🥇 Gold</text>
+        <text x="520" y="68" text-anchor="middle" fill="#10b981" font-family="DM Sans, sans-serif" font-size="10" class="svg-gold-en" style="display:none">🥇 Gold</text>
       </svg>
     </div>
 
     <div style="margin-top:32px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-      <a href="https://mvpbuilder.io/pipeline" style="padding:12px 28px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;">Jetzt bewerben →</a>
-      <a href="https://mvpbuilder.io" style="padding:12px 28px;background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:10px;font-weight:500;font-size:14px;text-decoration:none;">Mehr erfahren</a>
+      <a href="https://mvpbuilder.io/pipeline" style="padding:12px 28px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;" class="btn-apply-de">Jetzt bewerben →</a>
+      <a href="https://mvpbuilder.io/pipeline" style="padding:12px 28px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;display:none" class="btn-apply-en">Apply now →</a>
+      <a href="https://mvpbuilder.io" style="padding:12px 28px;background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:10px;font-weight:500;font-size:14px;text-decoration:none;" class="btn-learn-de">Mehr erfahren</a>
+      <a href="https://mvpbuilder.io" style="padding:12px 28px;background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:10px;font-weight:500;font-size:14px;text-decoration:none;display:none" class="btn-learn-en">Learn more</a>
     </div>
   </header>
 
   <!-- TABS -->
   <div class="tabs-wrap">
     <div class="tabs">
-      <button class="tab tab-0 active" onclick="showTab(0)">🌱 Anfänger</button>
-      <button class="tab tab-1" onclick="showTab(1)">🚀 Fortgeschritten</button>
-      <button class="tab tab-2" onclick="showTab(2)">⚡ Profi</button>
-      <button class="tab tab-3" onclick="showTab(3)">📊 Vergleich</button>
+      <button class="tab tab-0 active" onclick="showTab(0)">
+        <span>🌱</span>
+        <span class="tab-label-de">Anfänger</span>
+        <span class="tab-label-en" style="display:none">Beginner</span>
+      </button>
+      <button class="tab tab-1" onclick="showTab(1)">
+        <span>🚀</span>
+        <span class="tab-label-de">Fortgeschritten</span>
+        <span class="tab-label-en" style="display:none">Intermediate</span>
+      </button>
+      <button class="tab tab-2" onclick="showTab(2)">
+        <span>⚡</span>
+        <span class="tab-label-de">Profi</span>
+        <span class="tab-label-en" style="display:none">Expert</span>
+      </button>
+      <button class="tab tab-3" onclick="showTab(3)">
+        <span>📊</span>
+        <span class="tab-label-de">Vergleich</span>
+        <span class="tab-label-en" style="display:none">Comparison</span>
+      </button>
     </div>
   </div>
 
   <!-- CONTENT -->
   <div class="content">
 
-    <!-- ═══ TAB 0: ANFÄNGER ═══ -->
+    <!-- ═══ TAB 0: ANFÄNGER / BEGINNER ═══ -->
     <div class="tab-panel active" id="panel-0">
       <div class="panel-head">
-        <h2>🌱 Anfänger-Pfad</h2>
+        <!-- DE -->
+        <h2 class="panel-h2-de">🌱 Anfänger-Pfad</h2>
+        <h2 class="panel-h2-en" style="display:none">🌱 Beginner Path</h2>
         <span class="skill-badge badge-beginner">Learning-Focused</span>
       </div>
 
-      <div class="start-card">
+      <!-- DE start card -->
+      <div class="start-card" id="start0-de">
         <h3>Startbedingungen</h3>
         <ul>
           <li><span>Vorwissen</span> Keine Programmier-Erfahrung</li>
@@ -336,151 +386,214 @@
           <li><span>Ziel</span> Funktionaler Prototyp mit Kerndaten</li>
         </ul>
       </div>
+      <!-- EN start card -->
+      <div class="start-card" id="start0-en" style="display:none">
+        <h3>Starting Conditions</h3>
+        <ul>
+          <li><span>Background</span> No coding experience</li>
+          <li><span>Tools</span> No-Code / Low-Code (Airtable, Zapier, Carrd)</li>
+          <li><span>Schedule</span> ~1h/day · 50% Learning, 50% Building</li>
+          <li><span>Goal</span> Functional prototype with core data</li>
+        </ul>
+      </div>
 
-      <!-- SVG: No-Code Stack Flow -->
+      <!-- SVG: No-Code Stack Flow (language-neutral labels) -->
       <div style="margin-bottom:48px;background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:28px;overflow:hidden;">
-        <p style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:20px;">Der No-Code Stack</p>
+        <p class="nocode-label-de" style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:20px;">Der No-Code Stack</p>
+        <p class="nocode-label-en" style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:20px;display:none">The No-Code Stack</p>
         <svg width="100%" viewBox="0 0 520 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <!-- Airtable box -->
           <rect x="0" y="12" width="120" height="40" rx="8" fill="#1c1c1a" stroke="#d97706" stroke-width="1.5" stroke-opacity="0.6"/>
           <text x="60" y="30" text-anchor="middle" fill="#f0ede6" font-family="DM Sans, sans-serif" font-size="12" font-weight="600">Airtable</text>
-          <text x="60" y="44" text-anchor="middle" fill="#79766f" font-family="DM Sans, sans-serif" font-size="10">Datenbank</text>
+          <text x="60" y="44" text-anchor="middle" fill="#79766f" font-family="DM Sans, sans-serif" font-size="10" class="svg-db-de">Datenbank</text>
+          <text x="60" y="44" text-anchor="middle" fill="#79766f" font-family="DM Sans, sans-serif" font-size="10" class="svg-db-en" style="display:none">Database</text>
           <!-- Arrow -->
           <line x1="122" y1="32" x2="158" y2="32" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-dasharray="4,3"/>
           <polygon points="156,28 164,32 156,36" fill="rgba(255,255,255,0.2)"/>
           <!-- Zapier box -->
           <rect x="165" y="12" width="120" height="40" rx="8" fill="#1c1c1a" stroke="#d97706" stroke-width="1.5" stroke-opacity="0.6"/>
           <text x="225" y="30" text-anchor="middle" fill="#f0ede6" font-family="DM Sans, sans-serif" font-size="12" font-weight="600">Zapier</text>
-          <text x="225" y="44" text-anchor="middle" fill="#79766f" font-family="DM Sans, sans-serif" font-size="10">Automatisierung</text>
+          <text x="225" y="44" text-anchor="middle" fill="#79766f" font-family="DM Sans, sans-serif" font-size="10" class="svg-auto-de">Automatisierung</text>
+          <text x="225" y="44" text-anchor="middle" fill="#79766f" font-family="DM Sans, sans-serif" font-size="10" class="svg-auto-en" style="display:none">Automation</text>
           <!-- Arrow -->
           <line x1="287" y1="32" x2="323" y2="32" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-dasharray="4,3"/>
           <polygon points="321,28 329,32 321,36" fill="rgba(255,255,255,0.2)"/>
           <!-- Carrd box -->
           <rect x="330" y="12" width="120" height="40" rx="8" fill="#1c1c1a" stroke="#d97706" stroke-width="1.5" stroke-opacity="0.6"/>
           <text x="390" y="30" text-anchor="middle" fill="#f0ede6" font-family="DM Sans, sans-serif" font-size="12" font-weight="600">Carrd</text>
-          <text x="390" y="44" text-anchor="middle" fill="#79766f" font-family="DM Sans, sans-serif" font-size="10">Landing Page</text>
+          <text x="390" y="44" text-anchor="middle" fill="#79766f" font-family="DM Sans, sans-serif" font-size="10" class="svg-lp-de">Landing Page</text>
+          <text x="390" y="44" text-anchor="middle" fill="#79766f" font-family="DM Sans, sans-serif" font-size="10" class="svg-lp-en" style="display:none">Landing Page</text>
           <!-- Result -->
           <text x="460" y="35" text-anchor="start" fill="#4ade80" font-family="DM Sans, sans-serif" font-size="11" font-weight="600">→ Live</text>
         </svg>
       </div>
 
       <div class="timeline">
+        <!-- Day 1 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
             <div class="milestone-meta">
-              <span class="milestone-day">Tag 1</span>
+              <span class="milestone-day day-label-de">Tag 1</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 1</span>
               <span class="milestone-time">~60 Min</span>
             </div>
-            <h3>Projekt definieren & Tools aufsetzen</h3>
-            <p>Sprint startet sofort. Heute: finale Projektidee festlegen, Airtable Account erstellen, erste Datenbank-Struktur anlegen. Kein Zögern — konkrete Entscheidungen treffen.</p>
+            <h3 class="ms-h3-de">Projekt definieren &amp; Tools aufsetzen</h3>
+            <h3 class="ms-h3-en" style="display:none">Define project &amp; set up tools</h3>
+            <p class="ms-p-de">Sprint startet sofort. Heute: finale Projektidee festlegen, Airtable Account erstellen, erste Datenbank-Struktur anlegen. Kein Zögern — konkrete Entscheidungen treffen.</p>
+            <p class="ms-p-en" style="display:none">Sprint starts now. Today: lock in the final project idea, create an Airtable account, set up the first database structure. No hesitation — make concrete decisions.</p>
             <div class="deliverables">
-              <span>Deliverables</span>
+              <span class="deliv-label-de">Deliverables</span>
+              <span class="deliv-label-en" style="display:none">Deliverables</span>
               <ul>
-                <li>Projektidee in 2 Sätzen schriftlich definiert</li>
-                <li>Airtable Account + erste Base erstellt</li>
-                <li>Kern-Features auf 3 reduziert (kein Scope-Creep)</li>
+                <li class="ms-li-de">Projektidee in 2 Sätzen schriftlich definiert</li>
+                <li class="ms-li-en" style="display:none">Project idea defined in 2 sentences in writing</li>
+                <li class="ms-li-de">Airtable Account + erste Base erstellt</li>
+                <li class="ms-li-en" style="display:none">Airtable account + first base created</li>
+                <li class="ms-li-de">Kern-Features auf 3 reduziert (kein Scope-Creep)</li>
+                <li class="ms-li-en" style="display:none">Core features reduced to 3 (no scope creep)</li>
               </ul>
             </div>
           </div>
         </div>
 
+        <!-- Day 2–3 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
             <div class="milestone-meta">
-              <span class="milestone-day">Tag 2–3</span>
+              <span class="milestone-day day-label-de">Tag 2–3</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 2–3</span>
               <span class="milestone-time">~60 Min/Tag</span>
             </div>
-            <h3>Airtable Setup & Datenmodell</h3>
-            <p>Lernt Airtable Basics (20 Min YouTube Tutorial). Erstellt Datenbank mit Tabellen: Invoices (Nummer, Kunde, Betrag, Status, Fälligkeitsdatum). Fügt erste Test-Daten ein.</p>
+            <h3 class="ms-h3-de">Airtable Setup &amp; Datenmodell</h3>
+            <h3 class="ms-h3-en" style="display:none">Airtable Setup &amp; Data Model</h3>
+            <p class="ms-p-de">Lernt Airtable Basics (20 Min YouTube Tutorial). Erstellt Datenbank mit Tabellen: Invoices (Nummer, Kunde, Betrag, Status, Fälligkeitsdatum). Fügt erste Test-Daten ein.</p>
+            <p class="ms-p-en" style="display:none">Learn Airtable basics (20-min YouTube tutorial). Create database with tables: Invoices (Number, Client, Amount, Status, Due Date). Add first test data.</p>
             <div class="deliverables">
-              <span>Deliverables</span>
+              <span class="deliv-label-de">Deliverables</span>
+              <span class="deliv-label-en" style="display:none">Deliverables</span>
               <ul>
-                <li>Airtable Base mit "Invoices" Tabelle</li>
-                <li>5 Spalten: Invoice #, Client, Amount, Status, Due Date</li>
-                <li>10 Test-Einträge angelegt</li>
+                <li class="ms-li-de">Airtable Base mit "Invoices" Tabelle</li>
+                <li class="ms-li-en" style="display:none">Airtable base with "Invoices" table</li>
+                <li class="ms-li-de">5 Spalten: Invoice #, Client, Amount, Status, Due Date</li>
+                <li class="ms-li-en" style="display:none">5 columns: Invoice #, Client, Amount, Status, Due Date</li>
+                <li class="ms-li-de">10 Test-Einträge angelegt</li>
+                <li class="ms-li-en" style="display:none">10 test entries created</li>
               </ul>
             </div>
           </div>
         </div>
 
+        <!-- Day 4–5 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
             <div class="milestone-meta">
-              <span class="milestone-day">Tag 4–5</span>
+              <span class="milestone-day day-label-de">Tag 4–5</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 4–5</span>
               <span class="milestone-time">~60 Min/Tag</span>
             </div>
-            <h3>Landing Page mit Carrd</h3>
-            <p>Erstellt simple Landing Page: "InvoiceFlow — Nie wieder Rechnungen vergessen". Erklärt das Problem, zeigt Screenshot von Airtable, Waitlist-Formular mit Typeform.</p>
+            <h3 class="ms-h3-de">Landing Page mit Carrd</h3>
+            <h3 class="ms-h3-en" style="display:none">Landing Page with Carrd</h3>
+            <p class="ms-p-de">Erstellt simple Landing Page: "InvoiceFlow — Nie wieder Rechnungen vergessen". Erklärt das Problem, zeigt Screenshot von Airtable, Waitlist-Formular mit Typeform.</p>
+            <p class="ms-p-en" style="display:none">Build a simple landing page: "InvoiceFlow — Never forget an invoice again". Explains the problem, shows an Airtable screenshot, waitlist form with Typeform.</p>
             <div class="deliverables">
-              <span>Deliverables</span>
+              <span class="deliv-label-de">Deliverables</span>
+              <span class="deliv-label-en" style="display:none">Deliverables</span>
               <ul>
-                <li>Landing Page live auf invoiceflow.carrd.co</li>
-                <li>Typeform für Waitlist integriert</li>
-                <li>Screenshot der Airtable-Lösung als "Demo"</li>
+                <li class="ms-li-de">Landing Page live auf invoiceflow.carrd.co</li>
+                <li class="ms-li-en" style="display:none">Landing page live at invoiceflow.carrd.co</li>
+                <li class="ms-li-de">Typeform für Waitlist integriert</li>
+                <li class="ms-li-en" style="display:none">Typeform waitlist integrated</li>
+                <li class="ms-li-de">Screenshot der Airtable-Lösung als "Demo"</li>
+                <li class="ms-li-en" style="display:none">Screenshot of the Airtable solution as "demo"</li>
               </ul>
             </div>
           </div>
         </div>
 
+        <!-- Day 6–7 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
             <div class="milestone-meta">
-              <span class="milestone-day">Tag 6–7</span>
+              <span class="milestone-day day-label-de">Tag 6–7</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 6–7</span>
               <span class="milestone-time">~60 Min/Tag</span>
             </div>
-            <h3>Zapier Automation Setup</h3>
-            <p>Lernt Zapier Basics. Erstellt Zap: Neue Invoice in Airtable → Email-Reminder 2 Tage vor Fälligkeit. Testet mit eigenen Test-Invoices. Funktioniert!</p>
+            <h3 class="ms-h3-de">Zapier Automation Setup</h3>
+            <h3 class="ms-h3-en" style="display:none">Zapier Automation Setup</h3>
+            <p class="ms-p-de">Lernt Zapier Basics. Erstellt Zap: Neue Invoice in Airtable → Email-Reminder 2 Tage vor Fälligkeit. Testet mit eigenen Test-Invoices. Funktioniert!</p>
+            <p class="ms-p-en" style="display:none">Learn Zapier basics. Create a Zap: New invoice in Airtable → email reminder 2 days before due date. Test with own invoices. It works!</p>
             <div class="deliverables">
-              <span>Deliverables</span>
+              <span class="deliv-label-de">Deliverables</span>
+              <span class="deliv-label-en" style="display:none">Deliverables</span>
               <ul>
-                <li>Zapier Zap: Airtable → Gmail</li>
-                <li>Email-Template für Reminders erstellt</li>
-                <li>3 Test-Emails erfolgreich verschickt</li>
+                <li class="ms-li-de">Zapier Zap: Airtable → Gmail</li>
+                <li class="ms-li-en" style="display:none">Zapier Zap: Airtable → Gmail</li>
+                <li class="ms-li-de">Email-Template für Reminders erstellt</li>
+                <li class="ms-li-en" style="display:none">Email template for reminders created</li>
+                <li class="ms-li-de">3 Test-Emails erfolgreich verschickt</li>
+                <li class="ms-li-en" style="display:none">3 test emails sent successfully</li>
               </ul>
             </div>
           </div>
         </div>
 
+        <!-- Day 8–10 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
             <div class="milestone-meta">
-              <span class="milestone-day">Tag 8–10</span>
+              <span class="milestone-day day-label-de">Tag 8–10</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 8–10</span>
               <span class="milestone-time">~60 Min/Tag</span>
             </div>
-            <h3>User Testing & Feedback</h3>
-            <p>Schickt Airtable-Link an 3 Freelancer-Freunde zum Testen. Sammelt Feedback: "Funktioniert, aber ich will mein eigenes Dashboard". Plant Version 2.0 mit richtigem Interface.</p>
+            <h3 class="ms-h3-de">User Testing &amp; Feedback</h3>
+            <h3 class="ms-h3-en" style="display:none">User Testing &amp; Feedback</h3>
+            <p class="ms-p-de">Schickt Airtable-Link an 3 Freelancer-Freunde zum Testen. Sammelt Feedback: "Funktioniert, aber ich will mein eigenes Dashboard". Plant Version 2.0 mit richtigem Interface.</p>
+            <p class="ms-p-en" style="display:none">Send the Airtable link to 3 freelancer friends for testing. Collect feedback: "Works, but I want my own dashboard". Plan version 2.0 with a proper interface.</p>
             <div class="deliverables">
-              <span>Deliverables</span>
+              <span class="deliv-label-de">Deliverables</span>
+              <span class="deliv-label-en" style="display:none">Deliverables</span>
               <ul>
-                <li>3 Beta-User nutzen die Airtable</li>
-                <li>Feedback dokumentiert (Google Docs)</li>
-                <li>Waitlist: 12 Sign-ups auf Landing Page</li>
+                <li class="ms-li-de">3 Beta-User nutzen die Airtable</li>
+                <li class="ms-li-en" style="display:none">3 beta users using the Airtable</li>
+                <li class="ms-li-de">Feedback dokumentiert (Google Docs)</li>
+                <li class="ms-li-en" style="display:none">Feedback documented (Google Docs)</li>
+                <li class="ms-li-de">Waitlist: 12 Sign-ups auf Landing Page</li>
+                <li class="ms-li-en" style="display:none">Waitlist: 12 sign-ups on landing page</li>
               </ul>
             </div>
           </div>
         </div>
 
+        <!-- Day 11–13 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
             <div class="milestone-meta">
-              <span class="milestone-day">Tag 11–13</span>
+              <span class="milestone-day day-label-de">Tag 11–13</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 11–13</span>
               <span class="milestone-time">~60 Min/Tag</span>
             </div>
-            <h3>Polish & Mini-Launch</h3>
-            <p>Verbessert Landing Page (Testimonial von Beta-User), postet auf Reddit r/freelance und in 2 Freelancer Facebook-Gruppen. Erste zahlende User? Noch nicht — aber 45 Waitlist Sign-ups!</p>
+            <h3 class="ms-h3-de">Polish &amp; Mini-Launch</h3>
+            <h3 class="ms-h3-en" style="display:none">Polish &amp; Mini-Launch</h3>
+            <p class="ms-p-de">Verbessert Landing Page (Testimonial von Beta-User), postet auf Reddit r/freelance und in 2 Freelancer Facebook-Gruppen. Erste zahlende User? Noch nicht — aber 45 Waitlist Sign-ups!</p>
+            <p class="ms-p-en" style="display:none">Improve landing page (testimonial from beta user), post on Reddit r/freelance and in 2 freelancer Facebook groups. First paying users? Not yet — but 45 waitlist sign-ups!</p>
             <div class="deliverables">
-              <span>Deliverables</span>
+              <span class="deliv-label-de">Deliverables</span>
+              <span class="deliv-label-en" style="display:none">Deliverables</span>
               <ul>
-                <li>Landing Page mit User-Testimonial</li>
-                <li>Reddit Post: 23 Upvotes, 8 Comments</li>
-                <li>45 Waitlist Sign-ups total</li>
-                <li>3 aktive Beta-User</li>
+                <li class="ms-li-de">Landing Page mit User-Testimonial</li>
+                <li class="ms-li-en" style="display:none">Landing page with user testimonial</li>
+                <li class="ms-li-de">Reddit Post: 23 Upvotes, 8 Comments</li>
+                <li class="ms-li-en" style="display:none">Reddit post: 23 upvotes, 8 comments</li>
+                <li class="ms-li-de">45 Waitlist Sign-ups total</li>
+                <li class="ms-li-en" style="display:none">45 waitlist sign-ups total</li>
+                <li class="ms-li-de">3 aktive Beta-User</li>
+                <li class="ms-li-en" style="display:none">3 active beta users</li>
               </ul>
             </div>
           </div>
@@ -488,18 +601,21 @@
       </div>
 
       <div class="result-box">
-        <p><strong>Ergebnis nach 13 Tagen:</strong> Problem validiert, funktionierender No-Code Prototyp, 45 Waitlist Sign-ups. Nächster Schritt: Coden lernen oder Co-Founder finden für Custom App.</p>
+        <p class="ms-p-de"><strong>Ergebnis nach 13 Tagen:</strong> Problem validiert, funktionierender No-Code Prototyp, 45 Waitlist Sign-ups. Nächster Schritt: Coden lernen oder Co-Founder finden für Custom App.</p>
+        <p class="ms-p-en" style="display:none"><strong>Result after 13 days:</strong> Problem validated, working no-code prototype, 45 waitlist sign-ups. Next step: learn to code or find a co-founder for a custom app.</p>
       </div>
     </div>
 
-    <!-- ═══ TAB 1: FORTGESCHRITTEN ═══ -->
+    <!-- ═══ TAB 1: FORTGESCHRITTEN / INTERMEDIATE ═══ -->
     <div class="tab-panel" id="panel-1">
       <div class="panel-head">
-        <h2>🚀 Fortgeschritten-Pfad</h2>
+        <h2 class="panel-h2-de">🚀 Fortgeschritten-Pfad</h2>
+        <h2 class="panel-h2-en" style="display:none">🚀 Intermediate Path</h2>
         <span class="skill-badge badge-intermediate">Building-Focused</span>
       </div>
 
-      <div class="start-card" style="border-left-color: var(--intermediate)">
+      <!-- DE start card -->
+      <div class="start-card" style="border-left-color: var(--intermediate)" id="start1-de">
         <h3>Startbedingungen</h3>
         <ul>
           <li><span>Vorwissen</span> Grundlegende Web-Kenntnisse (HTML, JavaScript basics)</li>
@@ -508,109 +624,185 @@
           <li><span>Ziel</span> Funktionierende Web-App mit echten Features</li>
         </ul>
       </div>
+      <!-- EN start card -->
+      <div class="start-card" style="border-left-color: var(--intermediate);display:none" id="start1-en">
+        <h3>Starting Conditions</h3>
+        <ul>
+          <li><span>Background</span> Basic web knowledge (HTML, JavaScript basics)</li>
+          <li><span>Tools</span> Next.js, Supabase, Vercel — all for the first time</li>
+          <li><span>Schedule</span> ~1h/day · 20% Learning, 80% Building</li>
+          <li><span>Goal</span> Working web app with real features</li>
+        </ul>
+      </div>
 
       <div class="timeline">
+        <!-- Day 1 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
-            <div class="milestone-meta"><span class="milestone-day">Tag 1</span><span class="milestone-time">~60 Min</span></div>
-            <h3>Setup & Architektur</h3>
-            <p>Next.js Projekt mit create-next-app erstellt. Supabase Account eingerichtet, Datenbank-Schema designed: Users, Invoices, Clients Tabellen. GitHub Repo angelegt, Vercel verbunden.</p>
-            <div class="deliverables"><span>Deliverables</span><ul>
-              <li>Next.js App läuft lokal</li>
-              <li>Supabase Projekt mit 3 Tabellen</li>
-              <li>Vercel Auto-Deploy aus GitHub</li>
+            <div class="milestone-meta">
+              <span class="milestone-day day-label-de">Tag 1</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 1</span>
+              <span class="milestone-time">~60 Min</span>
+            </div>
+            <h3 class="ms-h3-de">Setup &amp; Architektur</h3>
+            <h3 class="ms-h3-en" style="display:none">Setup &amp; Architecture</h3>
+            <p class="ms-p-de">Next.js Projekt mit create-next-app erstellt. Supabase Account eingerichtet, Datenbank-Schema designed: Users, Invoices, Clients Tabellen. GitHub Repo angelegt, Vercel verbunden.</p>
+            <p class="ms-p-en" style="display:none">Next.js project created with create-next-app. Supabase account set up, database schema designed: Users, Invoices, Clients tables. GitHub repo created, Vercel connected.</p>
+            <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
+              <li class="ms-li-de">Next.js App läuft lokal</li>
+              <li class="ms-li-en" style="display:none">Next.js app running locally</li>
+              <li class="ms-li-de">Supabase Projekt mit 3 Tabellen</li>
+              <li class="ms-li-en" style="display:none">Supabase project with 3 tables</li>
+              <li class="ms-li-de">Vercel Auto-Deploy aus GitHub</li>
+              <li class="ms-li-en" style="display:none">Vercel auto-deploy from GitHub</li>
             </ul></div>
           </div>
         </div>
 
+        <!-- Day 2–3 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
-            <div class="milestone-meta"><span class="milestone-day">Tag 2–3</span><span class="milestone-time">~60 Min/Tag</span></div>
-            <h3>Auth & User Management</h3>
-            <p>Supabase Auth integriert (Magic Link Login). Protected Routes eingebaut. User-Dashboard mit Supabase-Daten. RLS Policies für sichere Daten-Isolation zwischen Usern.</p>
-            <div class="deliverables"><span>Deliverables</span><ul>
-              <li>Login / Logout funktioniert</li>
-              <li>Dashboard zeigt User-spezifische Daten</li>
-              <li>RLS Policies aktiv</li>
+            <div class="milestone-meta">
+              <span class="milestone-day day-label-de">Tag 2–3</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 2–3</span>
+              <span class="milestone-time">~60 Min/Tag</span>
+            </div>
+            <h3 class="ms-h3-de">Auth &amp; User Management</h3>
+            <h3 class="ms-h3-en" style="display:none">Auth &amp; User Management</h3>
+            <p class="ms-p-de">Supabase Auth integriert (Magic Link Login). Protected Routes eingebaut. User-Dashboard mit Supabase-Daten. RLS Policies für sichere Daten-Isolation zwischen Usern.</p>
+            <p class="ms-p-en" style="display:none">Supabase Auth integrated (Magic Link login). Protected routes added. User dashboard with Supabase data. RLS policies for secure data isolation between users.</p>
+            <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
+              <li class="ms-li-de">Login / Logout funktioniert</li>
+              <li class="ms-li-en" style="display:none">Login / logout working</li>
+              <li class="ms-li-de">Dashboard zeigt User-spezifische Daten</li>
+              <li class="ms-li-en" style="display:none">Dashboard shows user-specific data</li>
+              <li class="ms-li-de">RLS Policies aktiv</li>
+              <li class="ms-li-en" style="display:none">RLS policies active</li>
             </ul></div>
           </div>
         </div>
 
+        <!-- Day 4–6 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
-            <div class="milestone-meta"><span class="milestone-day">Tag 4–6</span><span class="milestone-time">~60 Min/Tag</span></div>
-            <h3>Invoice CRUD & Dashboard</h3>
-            <p>Komplette Invoice-Verwaltung: Erstellen, Anzeigen, Status-Update, Löschen. Dashboard mit Übersicht (offene Rechnungen, überfällige, bezahlte). Responsive Design mit Tailwind CSS.</p>
-            <div class="deliverables"><span>Deliverables</span><ul>
-              <li>Invoice List mit Filter (offen / bezahlt / überfällig)</li>
-              <li>Create / Edit / Delete Flows</li>
-              <li>Dashboard KPIs (Total Outstanding, Overdue)</li>
-              <li>Mobile responsive</li>
+            <div class="milestone-meta">
+              <span class="milestone-day day-label-de">Tag 4–6</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 4–6</span>
+              <span class="milestone-time">~60 Min/Tag</span>
+            </div>
+            <h3 class="ms-h3-de">Invoice CRUD &amp; Dashboard</h3>
+            <h3 class="ms-h3-en" style="display:none">Invoice CRUD &amp; Dashboard</h3>
+            <p class="ms-p-de">Komplette Invoice-Verwaltung: Erstellen, Anzeigen, Status-Update, Löschen. Dashboard mit Übersicht (offene Rechnungen, überfällige, bezahlte). Responsive Design mit Tailwind CSS.</p>
+            <p class="ms-p-en" style="display:none">Complete invoice management: create, view, update status, delete. Dashboard overview (open invoices, overdue, paid). Responsive design with Tailwind CSS.</p>
+            <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
+              <li class="ms-li-de">Invoice List mit Filter (offen / bezahlt / überfällig)</li>
+              <li class="ms-li-en" style="display:none">Invoice list with filter (open / paid / overdue)</li>
+              <li class="ms-li-de">Create / Edit / Delete Flows</li>
+              <li class="ms-li-en" style="display:none">Create / Edit / Delete flows</li>
+              <li class="ms-li-de">Dashboard KPIs (Total Outstanding, Overdue)</li>
+              <li class="ms-li-en" style="display:none">Dashboard KPIs (Total Outstanding, Overdue)</li>
+              <li class="ms-li-de">Mobile responsive</li>
+              <li class="ms-li-en" style="display:none">Mobile responsive</li>
             </ul></div>
           </div>
         </div>
 
+        <!-- Day 7–8 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
-            <div class="milestone-meta"><span class="milestone-day">Tag 7–8</span><span class="milestone-time">~60 Min/Tag</span></div>
-            <h3>Email Reminders mit Resend</h3>
-            <p>Resend API integriert. Automatische Reminder-Emails 3 Tage vor Fälligkeit per Cron Job (Vercel). Email-Template mit Invoice-Details. Erste Test-Emails an eigene Adresse.</p>
-            <div class="deliverables"><span>Deliverables</span><ul>
-              <li>Resend Integration live</li>
-              <li>Cron Job: täglich 08:00 UTC</li>
-              <li>3 Email-Templates (Reminder, Overdue, Paid)</li>
+            <div class="milestone-meta">
+              <span class="milestone-day day-label-de">Tag 7–8</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 7–8</span>
+              <span class="milestone-time">~60 Min/Tag</span>
+            </div>
+            <h3 class="ms-h3-de">Email Reminders mit Resend</h3>
+            <h3 class="ms-h3-en" style="display:none">Email Reminders with Resend</h3>
+            <p class="ms-p-de">Resend API integriert. Automatische Reminder-Emails 3 Tage vor Fälligkeit per Cron Job (Vercel). Email-Template mit Invoice-Details. Erste Test-Emails an eigene Adresse.</p>
+            <p class="ms-p-en" style="display:none">Resend API integrated. Automatic reminder emails 3 days before due date via Cron Job (Vercel). Email template with invoice details. First test emails to own address.</p>
+            <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
+              <li class="ms-li-de">Resend Integration live</li>
+              <li class="ms-li-en" style="display:none">Resend integration live</li>
+              <li class="ms-li-de">Cron Job: täglich 08:00 UTC</li>
+              <li class="ms-li-en" style="display:none">Cron job: daily at 08:00 UTC</li>
+              <li class="ms-li-de">3 Email-Templates (Reminder, Overdue, Paid)</li>
+              <li class="ms-li-en" style="display:none">3 email templates (Reminder, Overdue, Paid)</li>
             </ul></div>
           </div>
         </div>
 
+        <!-- Day 9–10 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
-            <div class="milestone-meta"><span class="milestone-day">Tag 9–10</span><span class="milestone-time">~60 Min/Tag</span></div>
-            <h3>Beta Launch & Feedback</h3>
-            <p>App auf invoiceflow.app deployed. 8 Freelancer-Freunde eingeladen. Feedback gesammelt über Notion-Formular. Feature-Requests priorisiert: PDF Export, Client Portal, Stripe.</p>
-            <div class="deliverables"><span>Deliverables</span><ul>
-              <li>8 Beta-User aktiv in der App</li>
-              <li>17 Feature-Requests dokumentiert</li>
-              <li>3 Bugs gefixt basierend auf Feedback</li>
-              <li>87 Waitlist Sign-ups via Landing Page</li>
+            <div class="milestone-meta">
+              <span class="milestone-day day-label-de">Tag 9–10</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 9–10</span>
+              <span class="milestone-time">~60 Min/Tag</span>
+            </div>
+            <h3 class="ms-h3-de">Beta Launch &amp; Feedback</h3>
+            <h3 class="ms-h3-en" style="display:none">Beta Launch &amp; Feedback</h3>
+            <p class="ms-p-de">App auf invoiceflow.app deployed. 8 Freelancer-Freunde eingeladen. Feedback gesammelt über Notion-Formular. Feature-Requests priorisiert: PDF Export, Client Portal, Stripe.</p>
+            <p class="ms-p-en" style="display:none">App deployed to invoiceflow.app. 8 freelancer friends invited. Feedback collected via Notion form. Feature requests prioritized: PDF export, client portal, Stripe.</p>
+            <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
+              <li class="ms-li-de">8 Beta-User aktiv in der App</li>
+              <li class="ms-li-en" style="display:none">8 beta users active in the app</li>
+              <li class="ms-li-de">17 Feature-Requests dokumentiert</li>
+              <li class="ms-li-en" style="display:none">17 feature requests documented</li>
+              <li class="ms-li-de">3 Bugs gefixt basierend auf Feedback</li>
+              <li class="ms-li-en" style="display:none">3 bugs fixed based on feedback</li>
+              <li class="ms-li-de">87 Waitlist Sign-ups via Landing Page</li>
+              <li class="ms-li-en" style="display:none">87 waitlist sign-ups via landing page</li>
             </ul></div>
           </div>
         </div>
 
+        <!-- Day 11–13 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
-            <div class="milestone-meta"><span class="milestone-day">Tag 11–13</span><span class="milestone-time">~60 Min/Tag</span></div>
-            <h3>Polish & Soft Launch</h3>
-            <p>Landing Page mit echten Screenshots und Beta-Testimonials. Gepostet auf Indie Hackers ("I built InvoiceFlow in 13 days"). Stripe-Integration in Planung. App stabil, bereit für Scale.</p>
-            <div class="deliverables"><span>Deliverables</span><ul>
-              <li>Production App live und stabil</li>
-              <li>Indie Hackers Post: 43 Upvotes</li>
-              <li>87 Waitlist Sign-ups total</li>
-              <li>8 aktive Beta-User, kein Churn</li>
+            <div class="milestone-meta">
+              <span class="milestone-day day-label-de">Tag 11–13</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 11–13</span>
+              <span class="milestone-time">~60 Min/Tag</span>
+            </div>
+            <h3 class="ms-h3-de">Polish &amp; Soft Launch</h3>
+            <h3 class="ms-h3-en" style="display:none">Polish &amp; Soft Launch</h3>
+            <p class="ms-p-de">Landing Page mit echten Screenshots und Beta-Testimonials. Gepostet auf Indie Hackers ("I built InvoiceFlow in 13 days"). Stripe-Integration in Planung. App stabil, bereit für Scale.</p>
+            <p class="ms-p-en" style="display:none">Landing page with real screenshots and beta testimonials. Posted on Indie Hackers ("I built InvoiceFlow in 13 days"). Stripe integration planned. App stable, ready to scale.</p>
+            <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
+              <li class="ms-li-de">Production App live und stabil</li>
+              <li class="ms-li-en" style="display:none">Production app live and stable</li>
+              <li class="ms-li-de">Indie Hackers Post: 43 Upvotes</li>
+              <li class="ms-li-en" style="display:none">Indie Hackers post: 43 upvotes</li>
+              <li class="ms-li-de">87 Waitlist Sign-ups total</li>
+              <li class="ms-li-en" style="display:none">87 waitlist sign-ups total</li>
+              <li class="ms-li-de">8 aktive Beta-User, kein Churn</li>
+              <li class="ms-li-en" style="display:none">8 active beta users, no churn</li>
             </ul></div>
           </div>
         </div>
       </div>
 
       <div class="result-box">
-        <p><strong>Ergebnis nach 13 Tagen:</strong> Funktionierende Web-App mit Auth, CRUD, Email-Automation. 87 Waitlist Sign-ups, 8 Beta-User. Nächster Schritt: Stripe Integration → erste Revenue.</p>
+        <p class="ms-p-de"><strong>Ergebnis nach 13 Tagen:</strong> Funktionierende Web-App mit Auth, CRUD, Email-Automation. 87 Waitlist Sign-ups, 8 Beta-User. Nächster Schritt: Stripe Integration → erste Revenue.</p>
+        <p class="ms-p-en" style="display:none"><strong>Result after 13 days:</strong> Working web app with auth, CRUD, email automation. 87 waitlist sign-ups, 8 beta users. Next step: Stripe integration → first revenue.</p>
       </div>
     </div>
 
-    <!-- ═══ TAB 2: PROFI ═══ -->
+    <!-- ═══ TAB 2: PROFI / EXPERT ═══ -->
     <div class="tab-panel" id="panel-2">
       <div class="panel-head">
-        <h2>⚡ Profi-Pfad</h2>
+        <h2 class="panel-h2-de">⚡ Profi-Pfad</h2>
+        <h2 class="panel-h2-en" style="display:none">⚡ Expert Path</h2>
         <span class="skill-badge badge-expert">Scaling-Focused</span>
       </div>
 
-      <div class="start-card" style="border-left-color: var(--expert)">
+      <!-- DE start card -->
+      <div class="start-card" style="border-left-color: var(--expert)" id="start2-de">
         <h3>Startbedingungen</h3>
         <ul>
           <li><span>Vorwissen</span> Mehrere deployed Projekte, Full-Stack Erfahrung</li>
@@ -619,129 +811,211 @@
           <li><span>Ziel</span> Production-ready SaaS mit ersten zahlenden Kunden</li>
         </ul>
       </div>
+      <!-- EN start card -->
+      <div class="start-card" style="border-left-color: var(--expert);display:none" id="start2-en">
+        <h3>Starting Conditions</h3>
+        <ul>
+          <li><span>Background</span> Multiple deployed projects, full-stack experience</li>
+          <li><span>Tools</span> Next.js, Supabase, Stripe, Resend — all familiar</li>
+          <li><span>Schedule</span> ~1h/day · 5% Learning, 95% Building</li>
+          <li><span>Goal</span> Production-ready SaaS with first paying customers</li>
+        </ul>
+      </div>
 
       <div class="timeline">
+        <!-- Day 1 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
-            <div class="milestone-meta"><span class="milestone-day">Tag 1</span><span class="milestone-time">~60 Min</span></div>
-            <h3>Full Stack Boilerplate</h3>
-            <p>Next.js 14, Supabase, Tailwind, TypeScript — alles in einer Stunde aufgesetzt. Datenbank-Schema für Invoice SaaS: Users, Invoices, Clients, Payments, Subscriptions. Vercel deployed.</p>
-            <div class="deliverables"><span>Deliverables</span><ul>
-              <li>Production-ready Stack live</li>
-              <li>Vollständiges DB-Schema</li>
-              <li>CI/CD Pipeline (GitHub → Vercel)</li>
+            <div class="milestone-meta">
+              <span class="milestone-day day-label-de">Tag 1</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 1</span>
+              <span class="milestone-time">~60 Min</span>
+            </div>
+            <h3 class="ms-h3-de">Full Stack Boilerplate</h3>
+            <h3 class="ms-h3-en" style="display:none">Full Stack Boilerplate</h3>
+            <p class="ms-p-de">Next.js 14, Supabase, Tailwind, TypeScript — alles in einer Stunde aufgesetzt. Datenbank-Schema für Invoice SaaS: Users, Invoices, Clients, Payments, Subscriptions. Vercel deployed.</p>
+            <p class="ms-p-en" style="display:none">Next.js 14, Supabase, Tailwind, TypeScript — all set up in one hour. Database schema for Invoice SaaS: Users, Invoices, Clients, Payments, Subscriptions. Vercel deployed.</p>
+            <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
+              <li class="ms-li-de">Production-ready Stack live</li>
+              <li class="ms-li-en" style="display:none">Production-ready stack live</li>
+              <li class="ms-li-de">Vollständiges DB-Schema</li>
+              <li class="ms-li-en" style="display:none">Complete DB schema</li>
+              <li class="ms-li-de">CI/CD Pipeline (GitHub → Vercel)</li>
+              <li class="ms-li-en" style="display:none">CI/CD pipeline (GitHub → Vercel)</li>
             </ul></div>
           </div>
         </div>
 
+        <!-- Day 2–3 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
-            <div class="milestone-meta"><span class="milestone-day">Tag 2–3</span><span class="milestone-time">~60 Min/Tag</span></div>
-            <h3>Auth + Stripe Subscriptions</h3>
-            <p>Supabase Auth + Stripe Subscriptions gleichzeitig integriert. Webhook Handler für Payment Events. Free/Pro Tier Logic. User-Daten sicher mit RLS Policies isoliert.</p>
-            <div class="deliverables"><span>Deliverables</span><ul>
-              <li>Login / Signup / Password Reset live</li>
-              <li>Stripe Checkout: Free → Pro ($9/Monat)</li>
-              <li>Webhook Handler vollständig</li>
-              <li>RLS Policies für alle Tabellen</li>
+            <div class="milestone-meta">
+              <span class="milestone-day day-label-de">Tag 2–3</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 2–3</span>
+              <span class="milestone-time">~60 Min/Tag</span>
+            </div>
+            <h3 class="ms-h3-de">Auth + Stripe Subscriptions</h3>
+            <h3 class="ms-h3-en" style="display:none">Auth + Stripe Subscriptions</h3>
+            <p class="ms-p-de">Supabase Auth + Stripe Subscriptions gleichzeitig integriert. Webhook Handler für Payment Events. Free/Pro Tier Logic. User-Daten sicher mit RLS Policies isoliert.</p>
+            <p class="ms-p-en" style="display:none">Supabase Auth + Stripe Subscriptions integrated simultaneously. Webhook handler for payment events. Free/Pro tier logic. User data securely isolated with RLS policies.</p>
+            <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
+              <li class="ms-li-de">Login / Signup / Password Reset live</li>
+              <li class="ms-li-en" style="display:none">Login / Signup / Password Reset live</li>
+              <li class="ms-li-de">Stripe Checkout: Free → Pro ($9/Monat)</li>
+              <li class="ms-li-en" style="display:none">Stripe Checkout: Free → Pro ($9/month)</li>
+              <li class="ms-li-de">Webhook Handler vollständig</li>
+              <li class="ms-li-en" style="display:none">Webhook handler complete</li>
+              <li class="ms-li-de">RLS Policies für alle Tabellen</li>
+              <li class="ms-li-en" style="display:none">RLS policies for all tables</li>
             </ul></div>
           </div>
         </div>
 
+        <!-- Day 4–6 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
-            <div class="milestone-meta"><span class="milestone-day">Tag 4–6</span><span class="milestone-time">~60 Min/Tag</span></div>
-            <h3>Vollständige Invoice-Features</h3>
-            <p>Complete Invoice CRUD + PDF Generation (Puppeteer). Client-Portal für Kunden-Zahlungen. Bulk-Import aus CSV. Dashboard mit Revenue-Analytics. Dark/Light Mode.</p>
-            <div class="deliverables"><span>Deliverables</span><ul>
-              <li>Invoice PDF Generation & Download</li>
-              <li>Client-Portal (Public Link für Zahlung)</li>
-              <li>CSV Import für Bestandsdaten</li>
-              <li>Revenue Dashboard mit Charts</li>
+            <div class="milestone-meta">
+              <span class="milestone-day day-label-de">Tag 4–6</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 4–6</span>
+              <span class="milestone-time">~60 Min/Tag</span>
+            </div>
+            <h3 class="ms-h3-de">Vollständige Invoice-Features</h3>
+            <h3 class="ms-h3-en" style="display:none">Complete Invoice Features</h3>
+            <p class="ms-p-de">Complete Invoice CRUD + PDF Generation (Puppeteer). Client-Portal für Kunden-Zahlungen. Bulk-Import aus CSV. Dashboard mit Revenue-Analytics. Dark/Light Mode.</p>
+            <p class="ms-p-en" style="display:none">Complete Invoice CRUD + PDF generation (Puppeteer). Client portal for customer payments. Bulk import from CSV. Dashboard with revenue analytics. Dark/Light mode.</p>
+            <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
+              <li class="ms-li-de">Invoice PDF Generation &amp; Download</li>
+              <li class="ms-li-en" style="display:none">Invoice PDF generation &amp; download</li>
+              <li class="ms-li-de">Client-Portal (Public Link für Zahlung)</li>
+              <li class="ms-li-en" style="display:none">Client portal (public link for payment)</li>
+              <li class="ms-li-de">CSV Import für Bestandsdaten</li>
+              <li class="ms-li-en" style="display:none">CSV import for existing data</li>
+              <li class="ms-li-de">Revenue Dashboard mit Charts</li>
+              <li class="ms-li-en" style="display:none">Revenue dashboard with charts</li>
             </ul></div>
           </div>
         </div>
 
+        <!-- Day 7–8 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
-            <div class="milestone-meta"><span class="milestone-day">Tag 7–8</span><span class="milestone-time">~60 Min/Tag</span></div>
-            <h3>Email Automation Suite</h3>
-            <p>Resend Integration mit reaktiven Transaktions-Emails: Reminder (3 Tage vor Fälligkeit), Overdue Notice, Payment Confirmation, Welcome Flow. Eigenes Email-Template-System.</p>
-            <div class="deliverables"><span>Deliverables</span><ul>
-              <li>6 Email-Templates (branded)</li>
-              <li>Cron: täglich + Event-based Trigger</li>
-              <li>Email-Log im Dashboard</li>
-              <li>Unsubscribe / Preferences Center</li>
+            <div class="milestone-meta">
+              <span class="milestone-day day-label-de">Tag 7–8</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 7–8</span>
+              <span class="milestone-time">~60 Min/Tag</span>
+            </div>
+            <h3 class="ms-h3-de">Email Automation Suite</h3>
+            <h3 class="ms-h3-en" style="display:none">Email Automation Suite</h3>
+            <p class="ms-p-de">Resend Integration mit reaktiven Transaktions-Emails: Reminder (3 Tage vor Fälligkeit), Overdue Notice, Payment Confirmation, Welcome Flow. Eigenes Email-Template-System.</p>
+            <p class="ms-p-en" style="display:none">Resend integration with reactive transactional emails: Reminder (3 days before due), Overdue Notice, Payment Confirmation, Welcome Flow. Custom email template system.</p>
+            <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
+              <li class="ms-li-de">6 Email-Templates (branded)</li>
+              <li class="ms-li-en" style="display:none">6 email templates (branded)</li>
+              <li class="ms-li-de">Cron: täglich + Event-based Trigger</li>
+              <li class="ms-li-en" style="display:none">Cron: daily + event-based trigger</li>
+              <li class="ms-li-de">Email-Log im Dashboard</li>
+              <li class="ms-li-en" style="display:none">Email log in dashboard</li>
+              <li class="ms-li-de">Unsubscribe / Preferences Center</li>
+              <li class="ms-li-en" style="display:none">Unsubscribe / preferences center</li>
             </ul></div>
           </div>
         </div>
 
+        <!-- Day 9–10 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
-            <div class="milestone-meta"><span class="milestone-day">Tag 9–10</span><span class="milestone-time">~60 Min/Tag</span></div>
-            <h3>Landing Page & SEO</h3>
-            <p>Production-grade Landing Page (Hero, Social Proof, Features, Pricing, FAQ). SEO optimiert (Meta Tags, Schema.org). Analytics (Plausible), Conversion Tracking. Domain: invoiceflow.com.</p>
-            <div class="deliverables"><span>Deliverables</span><ul>
-              <li>Landing Page conversion-optimiert</li>
-              <li>SEO: Meta Tags, Sitemap, robots.txt</li>
-              <li>Analytics + Conversion Funnel</li>
-              <li>invoiceflow.com live</li>
+            <div class="milestone-meta">
+              <span class="milestone-day day-label-de">Tag 9–10</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 9–10</span>
+              <span class="milestone-time">~60 Min/Tag</span>
+            </div>
+            <h3 class="ms-h3-de">Landing Page &amp; SEO</h3>
+            <h3 class="ms-h3-en" style="display:none">Landing Page &amp; SEO</h3>
+            <p class="ms-p-de">Production-grade Landing Page (Hero, Social Proof, Features, Pricing, FAQ). SEO optimiert (Meta Tags, Schema.org). Analytics (Plausible), Conversion Tracking. Domain: invoiceflow.com.</p>
+            <p class="ms-p-en" style="display:none">Production-grade landing page (Hero, Social Proof, Features, Pricing, FAQ). SEO optimized (meta tags, Schema.org). Analytics (Plausible), conversion tracking. Domain: invoiceflow.com.</p>
+            <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
+              <li class="ms-li-de">Landing Page conversion-optimiert</li>
+              <li class="ms-li-en" style="display:none">Landing page conversion-optimized</li>
+              <li class="ms-li-de">SEO: Meta Tags, Sitemap, robots.txt</li>
+              <li class="ms-li-en" style="display:none">SEO: Meta tags, sitemap, robots.txt</li>
+              <li class="ms-li-de">Analytics + Conversion Funnel</li>
+              <li class="ms-li-en" style="display:none">Analytics + conversion funnel</li>
+              <li class="ms-li-de">invoiceflow.com live</li>
+              <li class="ms-li-en" style="display:none">invoiceflow.com live</li>
             </ul></div>
           </div>
         </div>
 
+        <!-- Day 11–13 -->
         <div class="milestone done">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
-            <div class="milestone-meta"><span class="milestone-day">Tag 11–13</span><span class="milestone-time">~60 Min/Tag</span></div>
-            <h3>Launch + Marketing + First Revenue</h3>
-            <p>Launched auf Product Hunt (#3 Product of the Day!), Indie Hackers, Twitter, Reddit. Erste zahlende Kunden am Launch-Tag! SEO bringt erste organische Signups.</p>
-            <div class="deliverables"><span>Deliverables</span><ul>
-              <li>Product Hunt Launch: #3 of the Day</li>
-              <li>134 Sign-ups in 3 Tagen</li>
-              <li>8 zahlende Kunden ($72 MRR)</li>
-              <li>Traffic: 450 Visitors, 15% Conversion</li>
-              <li>2 User-Testimonials live auf Landing Page</li>
+            <div class="milestone-meta">
+              <span class="milestone-day day-label-de">Tag 11–13</span>
+              <span class="milestone-day day-label-en" style="display:none">Day 11–13</span>
+              <span class="milestone-time">~60 Min/Tag</span>
+            </div>
+            <h3 class="ms-h3-de">Launch + Marketing + First Revenue</h3>
+            <h3 class="ms-h3-en" style="display:none">Launch + Marketing + First Revenue</h3>
+            <p class="ms-p-de">Launched auf Product Hunt (#3 Product of the Day!), Indie Hackers, Twitter, Reddit. Erste zahlende Kunden am Launch-Tag! SEO bringt erste organische Signups.</p>
+            <p class="ms-p-en" style="display:none">Launched on Product Hunt (#3 Product of the Day!), Indie Hackers, Twitter, Reddit. First paying customers on launch day! SEO bringing first organic signups.</p>
+            <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
+              <li class="ms-li-de">Product Hunt Launch: #3 of the Day</li>
+              <li class="ms-li-en" style="display:none">Product Hunt Launch: #3 of the Day</li>
+              <li class="ms-li-de">134 Sign-ups in 3 Tagen</li>
+              <li class="ms-li-en" style="display:none">134 sign-ups in 3 days</li>
+              <li class="ms-li-de">8 zahlende Kunden ($72 MRR)</li>
+              <li class="ms-li-en" style="display:none">8 paying customers ($72 MRR)</li>
+              <li class="ms-li-de">Traffic: 450 Visitors, 15% Conversion</li>
+              <li class="ms-li-en" style="display:none">Traffic: 450 visitors, 15% conversion</li>
+              <li class="ms-li-de">2 User-Testimonials live auf Landing Page</li>
+              <li class="ms-li-en" style="display:none">2 user testimonials live on landing page</li>
             </ul></div>
           </div>
         </div>
       </div>
 
       <div class="result-box">
-        <p><strong>Ergebnis nach 13 Tagen:</strong> Production-ready SaaS mit <strong>$72 MRR</strong>. 134 total Sign-ups, 8 zahlende Kunden, Email-Automation läuft, SEO optimiert. Nächster Schritt: Growth.</p>
+        <p class="ms-p-de"><strong>Ergebnis nach 13 Tagen:</strong> Production-ready SaaS mit <strong>$72 MRR</strong>. 134 total Sign-ups, 8 zahlende Kunden, Email-Automation läuft, SEO optimiert. Nächster Schritt: Growth.</p>
+        <p class="ms-p-en" style="display:none"><strong>Result after 13 days:</strong> Production-ready SaaS with <strong>$72 MRR</strong>. 134 total sign-ups, 8 paying customers, email automation running, SEO optimized. Next step: growth.</p>
       </div>
     </div>
 
-    <!-- ═══ TAB 3: VERGLEICH ═══ -->
+    <!-- ═══ TAB 3: VERGLEICH / COMPARISON ═══ -->
     <div class="tab-panel" id="panel-3">
       <div class="panel-head">
-        <h2>📊 Direkter Vergleich</h2>
+        <h2 class="panel-h2-de">📊 Direkter Vergleich</h2>
+        <h2 class="panel-h2-en" style="display:none">📊 Direct Comparison</h2>
       </div>
 
       <!-- SVG: Outcome comparison bars -->
       <div style="background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:32px;margin-bottom:32px;">
-        <p style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:24px;">13 Tage · ~1h/Tag · Gleiches Projekt</p>
+        <p class="comp-chart-label-de" style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:24px;">13 Tage · ~1h/Tag · Gleiches Projekt</p>
+        <p class="comp-chart-label-en" style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:24px;display:none">13 Days · ~1h/Day · Same Project</p>
         <svg width="100%" viewBox="0 0 520 140" fill="none" xmlns="http://www.w3.org/2000/svg">
           <!-- Grid lines -->
           <line x1="120" y1="0" x2="120" y2="120" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
           <line x1="120" y1="120" x2="520" y2="120" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-          <!-- Anfänger bar -->
-          <text x="110" y="24" text-anchor="end" fill="#d97706" font-family="DM Sans, sans-serif" font-size="12" font-weight="600">🌱 Anfänger</text>
+          <!-- Anfänger / Beginner bar -->
+          <text x="110" y="24" text-anchor="end" fill="#d97706" font-family="DM Sans, sans-serif" font-size="12" font-weight="600" class="svg-beginner-de">🌱 Anfänger</text>
+          <text x="110" y="24" text-anchor="end" fill="#d97706" font-family="DM Sans, sans-serif" font-size="12" font-weight="600" class="svg-beginner-en" style="display:none">🌱 Beginner</text>
           <rect x="120" y="10" width="156" height="22" rx="4" fill="#d97706" fill-opacity="0.2"/>
           <rect x="120" y="10" width="156" height="22" rx="4" fill="none" stroke="#d97706" stroke-width="1" stroke-opacity="0.4"/>
           <text x="284" y="25" text-anchor="start" fill="#d97706" font-family="DM Sans, sans-serif" font-size="11" dx="8">45 Sign-ups · $0</text>
-          <!-- Fortgeschritten bar -->
-          <text x="110" y="64" text-anchor="end" fill="#3b82f6" font-family="DM Sans, sans-serif" font-size="12" font-weight="600">🚀 Fortgeschr.</text>
+          <!-- Fortgeschritten / Intermediate bar -->
+          <text x="110" y="64" text-anchor="end" fill="#3b82f6" font-family="DM Sans, sans-serif" font-size="12" font-weight="600" class="svg-inter-de">🚀 Fortgeschr.</text>
+          <text x="110" y="64" text-anchor="end" fill="#3b82f6" font-family="DM Sans, sans-serif" font-size="12" font-weight="600" class="svg-inter-en" style="display:none">🚀 Intermediate</text>
           <rect x="120" y="50" width="302" height="22" rx="4" fill="#3b82f6" fill-opacity="0.2"/>
           <rect x="120" y="50" width="302" height="22" rx="4" fill="none" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.4"/>
           <text x="430" y="65" text-anchor="start" fill="#3b82f6" font-family="DM Sans, sans-serif" font-size="11" dx="8">87 Sign-ups · $0</text>
-          <!-- Profi bar -->
-          <text x="110" y="104" text-anchor="end" fill="#10b981" font-family="DM Sans, sans-serif" font-size="12" font-weight="600">⚡ Profi</text>
+          <!-- Profi / Expert bar -->
+          <text x="110" y="104" text-anchor="end" fill="#10b981" font-family="DM Sans, sans-serif" font-size="12" font-weight="600" class="svg-expert-de">⚡ Profi</text>
+          <text x="110" y="104" text-anchor="end" fill="#10b981" font-family="DM Sans, sans-serif" font-size="12" font-weight="600" class="svg-expert-en" style="display:none">⚡ Expert</text>
           <rect x="120" y="90" width="390" height="22" rx="4" fill="#10b981" fill-opacity="0.2"/>
           <rect x="120" y="90" width="390" height="22" rx="4" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
           <text x="518" y="105" text-anchor="end" fill="#10b981" font-family="DM Sans, sans-serif" font-size="11">134 Sign-ups · $72 MRR</text>
@@ -753,14 +1027,20 @@
 
       <div class="comparison-grid">
         <div class="comp-card c0">
-          <h3>🌱 Anfänger <span class="skill-badge badge-beginner" style="font-size:10px">Learning</span></h3>
+          <h3>🌱
+            <span class="comp-card-title-de">Anfänger</span>
+            <span class="comp-card-title-en" style="display:none">Beginner</span>
+            <span class="skill-badge badge-beginner" style="font-size:10px">Learning</span>
+          </h3>
           <div class="metric">
-            <div class="metric-label">Zeit Investment</div>
+            <div class="metric-label metric-label-de">Zeit Investment</div>
+            <div class="metric-label metric-label-en" style="display:none">Time Investment</div>
             <div class="metric-value">13h</div>
             <div class="bar-track"><div class="bar-fill" data-w="100"></div></div>
           </div>
           <div class="metric">
-            <div class="metric-label">Learning vs Building</div>
+            <div class="metric-label metric-label-de">Learning vs Building</div>
+            <div class="metric-label metric-label-en" style="display:none">Learning vs Building</div>
             <div class="metric-value" style="font-size:22px">50% / 50%</div>
           </div>
           <div class="metric">
@@ -769,7 +1049,8 @@
             <div class="bar-track"><div class="bar-fill" data-w="33"></div></div>
           </div>
           <div class="metric">
-            <div class="metric-label">Zahlende Kunden</div>
+            <div class="metric-label metric-label-de">Zahlende Kunden</div>
+            <div class="metric-label metric-label-en" style="display:none">Paying Customers</div>
             <div class="metric-value">0</div>
             <div class="bar-track"><div class="bar-fill" data-w="0"></div></div>
           </div>
@@ -780,14 +1061,20 @@
         </div>
 
         <div class="comp-card c1">
-          <h3>🚀 Fortgeschritten <span class="skill-badge badge-intermediate" style="font-size:10px">Building</span></h3>
+          <h3>🚀
+            <span class="comp-card-title-de">Fortgeschritten</span>
+            <span class="comp-card-title-en" style="display:none">Intermediate</span>
+            <span class="skill-badge badge-intermediate" style="font-size:10px">Building</span>
+          </h3>
           <div class="metric">
-            <div class="metric-label">Zeit Investment</div>
+            <div class="metric-label metric-label-de">Zeit Investment</div>
+            <div class="metric-label metric-label-en" style="display:none">Time Investment</div>
             <div class="metric-value">13h</div>
             <div class="bar-track"><div class="bar-fill" data-w="100"></div></div>
           </div>
           <div class="metric">
-            <div class="metric-label">Learning vs Building</div>
+            <div class="metric-label metric-label-de">Learning vs Building</div>
+            <div class="metric-label metric-label-en" style="display:none">Learning vs Building</div>
             <div class="metric-value" style="font-size:22px">20% / 80%</div>
           </div>
           <div class="metric">
@@ -796,7 +1083,8 @@
             <div class="bar-track"><div class="bar-fill" data-w="65"></div></div>
           </div>
           <div class="metric">
-            <div class="metric-label">Zahlende Kunden</div>
+            <div class="metric-label metric-label-de">Zahlende Kunden</div>
+            <div class="metric-label metric-label-en" style="display:none">Paying Customers</div>
             <div class="metric-value">0 <span style="font-size:14px;color:var(--muted)">(Beta)</span></div>
             <div class="bar-track"><div class="bar-fill" data-w="0"></div></div>
           </div>
@@ -807,14 +1095,20 @@
         </div>
 
         <div class="comp-card c2">
-          <h3>⚡ Profi <span class="skill-badge badge-expert" style="font-size:10px">Scaling</span></h3>
+          <h3>⚡
+            <span class="comp-card-title-de">Profi</span>
+            <span class="comp-card-title-en" style="display:none">Expert</span>
+            <span class="skill-badge badge-expert" style="font-size:10px">Scaling</span>
+          </h3>
           <div class="metric">
-            <div class="metric-label">Zeit Investment</div>
+            <div class="metric-label metric-label-de">Zeit Investment</div>
+            <div class="metric-label metric-label-en" style="display:none">Time Investment</div>
             <div class="metric-value">13h</div>
             <div class="bar-track"><div class="bar-fill" data-w="100"></div></div>
           </div>
           <div class="metric">
-            <div class="metric-label">Learning vs Building</div>
+            <div class="metric-label metric-label-de">Learning vs Building</div>
+            <div class="metric-label metric-label-en" style="display:none">Learning vs Building</div>
             <div class="metric-value" style="font-size:22px">5% / 95%</div>
           </div>
           <div class="metric">
@@ -823,7 +1117,8 @@
             <div class="bar-track"><div class="bar-fill" data-w="100"></div></div>
           </div>
           <div class="metric">
-            <div class="metric-label">Zahlende Kunden</div>
+            <div class="metric-label metric-label-de">Zahlende Kunden</div>
+            <div class="metric-label metric-label-en" style="display:none">Paying Customers</div>
             <div class="metric-value">8</div>
             <div class="bar-track"><div class="bar-fill" data-w="100"></div></div>
           </div>
@@ -835,30 +1130,77 @@
       </div>
 
       <div class="table-wrap">
-        <h3>Was jeder nach 13 Tagen erreicht hat</h3>
+        <h3 class="ms-h3-de">Was jeder nach 13 Tagen erreicht hat</h3>
+        <h3 class="ms-h3-en" style="display:none">What each level achieved after 13 days</h3>
         <table>
           <thead>
             <tr>
-              <th>Aspekt</th>
-              <th>🌱 Anfänger</th>
-              <th>🚀 Fortgeschritten</th>
-              <th>⚡ Profi</th>
+              <th class="th-de">Aspekt</th>
+              <th class="th-en" style="display:none">Aspect</th>
+              <th>🌱
+                <span class="th-de">Anfänger</span>
+                <span class="th-en" style="display:none">Beginner</span>
+              </th>
+              <th>🚀
+                <span class="th-de">Fortgeschritten</span>
+                <span class="th-en" style="display:none">Intermediate</span>
+              </th>
+              <th>⚡
+                <span class="th-de">Profi</span>
+                <span class="th-en" style="display:none">Expert</span>
+              </th>
             </tr>
           </thead>
           <tbody>
-            <tr><td>Produkt-Status</td><td>Airtable Prototyp</td><td>Web-App (Beta)</td><td>Production SaaS</td></tr>
-            <tr><td>Tech Stack</td><td>No-Code (Airtable/Zapier)</td><td>Next.js + Supabase</td><td>Full Stack + Payments</td></tr>
-            <tr><td>Features</td><td>Invoice Liste, Reminders</td><td>Auth, CRUD, Dashboard</td><td>Alles + Stripe + Emails</td></tr>
-            <tr><td>Deployment</td><td>Carrd Landing Page</td><td>Vercel (invoiceflow.app)</td><td>Vercel + Domain + SEO</td></tr>
-            <tr><td>User</td><td>3 Beta, 45 Waitlist</td><td>8 Beta, 87 Waitlist</td><td>8 Paid, 126 Free, 134 Total</td></tr>
-            <tr><td>Revenue</td><td>$0</td><td>$0 (noch)</td><td>$72 MRR</td></tr>
-            <tr><td>Nächster Schritt</td><td>Coden lernen / Co-Founder</td><td>Stripe, Growth</td><td>Growth, SEO, Features</td></tr>
+            <tr>
+              <td><span class="td-de">Produkt-Status</span><span class="td-en" style="display:none">Product Status</span></td>
+              <td><span class="td-de">Airtable Prototyp</span><span class="td-en" style="display:none">Airtable prototype</span></td>
+              <td><span class="td-de">Web-App (Beta)</span><span class="td-en" style="display:none">Web app (Beta)</span></td>
+              <td>Production SaaS</td>
+            </tr>
+            <tr>
+              <td>Tech Stack</td>
+              <td><span class="td-de">No-Code (Airtable/Zapier)</span><span class="td-en" style="display:none">No-Code (Airtable/Zapier)</span></td>
+              <td>Next.js + Supabase</td>
+              <td>Full Stack + Payments</td>
+            </tr>
+            <tr>
+              <td>Features</td>
+              <td><span class="td-de">Invoice Liste, Reminders</span><span class="td-en" style="display:none">Invoice list, reminders</span></td>
+              <td><span class="td-de">Auth, CRUD, Dashboard</span><span class="td-en" style="display:none">Auth, CRUD, dashboard</span></td>
+              <td><span class="td-de">Alles + Stripe + Emails</span><span class="td-en" style="display:none">Everything + Stripe + Emails</span></td>
+            </tr>
+            <tr>
+              <td>Deployment</td>
+              <td><span class="td-de">Carrd Landing Page</span><span class="td-en" style="display:none">Carrd landing page</span></td>
+              <td>Vercel (invoiceflow.app)</td>
+              <td>Vercel + Domain + SEO</td>
+            </tr>
+            <tr>
+              <td>User</td>
+              <td><span class="td-de">3 Beta, 45 Waitlist</span><span class="td-en" style="display:none">3 beta, 45 waitlist</span></td>
+              <td><span class="td-de">8 Beta, 87 Waitlist</span><span class="td-en" style="display:none">8 beta, 87 waitlist</span></td>
+              <td><span class="td-de">8 Paid, 126 Free, 134 Total</span><span class="td-en" style="display:none">8 paid, 126 free, 134 total</span></td>
+            </tr>
+            <tr>
+              <td>Revenue</td>
+              <td>$0</td>
+              <td><span class="td-de">$0 (noch)</span><span class="td-en" style="display:none">$0 (yet)</span></td>
+              <td>$72 MRR</td>
+            </tr>
+            <tr>
+              <td><span class="td-de">Nächster Schritt</span><span class="td-en" style="display:none">Next Step</span></td>
+              <td><span class="td-de">Coden lernen / Co-Founder</span><span class="td-en" style="display:none">Learn to code / co-founder</span></td>
+              <td><span class="td-de">Stripe, Growth</span><span class="td-en" style="display:none">Stripe, growth</span></td>
+              <td><span class="td-de">Growth, SEO, Features</span><span class="td-en" style="display:none">Growth, SEO, features</span></td>
+            </tr>
           </tbody>
         </table>
       </div>
 
       <div class="insight">
-        <p><strong>Key Insight:</strong> Alle 3 haben in 13 Tagen (~1h/Tag) etwas Reales gebaut. Der Unterschied ist nicht "ob", sondern "wie weit". Anfänger validiert das Problem, Fortgeschrittene haben eine funktionierende App, Profis machen Revenue. Jeder Weg ist wertvoll — starte wo du bist. 🚀</p>
+        <p class="ms-p-de"><strong>Key Insight:</strong> Alle 3 haben in 13 Tagen (~1h/Tag) etwas Reales gebaut. Der Unterschied ist nicht "ob", sondern "wie weit". Anfänger validiert das Problem, Fortgeschrittene haben eine funktionierende App, Profis machen Revenue. Jeder Weg ist wertvoll — starte wo du bist. 🚀</p>
+        <p class="ms-p-en" style="display:none"><strong>Key Insight:</strong> All 3 built something real in 13 days (~1h/day). The difference isn't "whether", but "how far". Beginners validate the problem, intermediates have a working app, experts make revenue. Every path is valuable — start where you are. 🚀</p>
       </div>
     </div>
 
@@ -867,19 +1209,30 @@
   <!-- BOTTOM CTA -->
   <div style="border-top:1px solid var(--border);padding:64px 24px;text-align:center;position:relative;overflow:hidden;">
     <div style="position:absolute;inset:0;background:radial-gradient(ellipse 50% 80% at 50% 100%,rgba(212,160,23,0.08) 0%,transparent 70%);pointer-events:none;"></div>
-    <p style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;">Cohort #1 — jetzt offen</p>
-    <p style="font-family:'Instrument Serif',serif;font-size:clamp(28px,5vw,48px);letter-spacing:-.025em;line-height:1.1;margin-bottom:16px;">Welcher Pfad bist du?</p>
-    <p style="font-size:16px;color:var(--muted);max-width:440px;margin:0 auto 36px;">Bewirb dich jetzt — das System wählt automatisch das passende Modul für dich.</p>
+    <p style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;" class="cta-eyebrow-de">Cohort #1 — jetzt offen</p>
+    <p style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;display:none" class="cta-eyebrow-en">Cohort #1 — now open</p>
+    <p style="font-family:'Instrument Serif',serif;font-size:clamp(28px,5vw,48px);letter-spacing:-.025em;line-height:1.1;margin-bottom:16px;" class="cta-title-de">Welcher Pfad bist du?</p>
+    <p style="font-family:'Instrument Serif',serif;font-size:clamp(28px,5vw,48px);letter-spacing:-.025em;line-height:1.1;margin-bottom:16px;display:none" class="cta-title-en">Which path are you?</p>
+    <p style="font-size:16px;color:var(--muted);max-width:440px;margin:0 auto 36px;" class="cta-sub-de">Bewirb dich jetzt — das System wählt automatisch das passende Modul für dich.</p>
+    <p style="font-size:16px;color:var(--muted);max-width:440px;margin:0 auto 36px;display:none" class="cta-sub-en">Apply now — the system automatically picks the right module for you.</p>
     <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-      <a href="https://mvpbuilder.io/pipeline" style="padding:14px 32px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;">Kostenlos bewerben →</a>
-      <a href="https://mvpbuilder.io" style="padding:14px 24px;background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:10px;font-weight:500;font-size:15px;text-decoration:none;">← Zurück zur Startseite</a>
+      <a href="https://mvpbuilder.io/pipeline" style="padding:14px 32px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;" class="cta-btn-primary-de">Kostenlos bewerben →</a>
+      <a href="https://mvpbuilder.io/pipeline" style="padding:14px 32px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;display:none" class="cta-btn-primary-en">Apply for free →</a>
+      <a href="https://mvpbuilder.io" style="padding:14px 24px;background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:10px;font-weight:500;font-size:15px;text-decoration:none;" class="cta-btn-sec-de">← Zurück zur Startseite</a>
+      <a href="https://mvpbuilder.io" style="padding:14px 24px;background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:10px;font-weight:500;font-size:15px;text-decoration:none;display:none" class="cta-btn-sec-en">← Back to homepage</a>
     </div>
   </div>
 
   <!-- CONTROLS -->
   <div class="controls">
-    <button class="ctrl-btn ctrl-secondary" onclick="showTab((currentTab + 1) % 4)">Nächster Tab →</button>
-    <button class="ctrl-btn ctrl-primary" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Oben</button>
+    <button class="ctrl-btn ctrl-secondary" onclick="showTab((currentTab + 1) % 4)">
+      <span class="ctrl-next-de">Nächster Tab →</span>
+      <span class="ctrl-next-en" style="display:none">Next Tab →</span>
+    </button>
+    <button class="ctrl-btn ctrl-primary" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑
+      <span class="ctrl-top-de">Oben</span>
+      <span class="ctrl-top-en" style="display:none">Top</span>
+    </button>
   </div>
 
   <script>
@@ -901,6 +1254,70 @@
         setTimeout(() => { bar.style.width = w + '%' }, 100)
       })
     }
+
+    function setLang(l) {
+      const isDE = l === 'de'
+      // Toggle lang divs in header
+      document.getElementById('de').style.display = isDE ? '' : 'none'
+      document.getElementById('en').style.display = isDE ? 'none' : ''
+      // Toggle all de/en class pairs
+      const pairs = [
+        ['day-label-de','day-label-en'],
+        ['ms-h3-de','ms-h3-en'],
+        ['ms-p-de','ms-p-en'],
+        ['ms-li-de','ms-li-en'],
+        ['deliv-label-de','deliv-label-en'],
+        ['panel-h2-de','panel-h2-en'],
+        ['nocode-label-de','nocode-label-en'],
+        ['tab-label-de','tab-label-en'],
+        ['comp-chart-label-de','comp-chart-label-en'],
+        ['comp-card-title-de','comp-card-title-en'],
+        ['metric-label-de','metric-label-en'],
+        ['th-de','th-en'],
+        ['td-de','td-en'],
+        ['cta-eyebrow-de','cta-eyebrow-en'],
+        ['cta-title-de','cta-title-en'],
+        ['cta-sub-de','cta-sub-en'],
+        ['cta-btn-primary-de','cta-btn-primary-en'],
+        ['cta-btn-sec-de','cta-btn-sec-en'],
+        ['ctrl-next-de','ctrl-next-en'],
+        ['ctrl-top-de','ctrl-top-en'],
+        ['btn-apply-de','btn-apply-en'],
+        ['btn-learn-de','btn-learn-en'],
+        // start cards
+        ['start0-de','start0-en'],
+        ['start1-de','start1-en'],
+        ['start2-de','start2-en'],
+        // SVG text elements
+        ['svg-day13-de','svg-day13-en'],
+        ['svg-day21-de','svg-day21-en'],
+        ['svg-day30-de','svg-day30-en'],
+        ['svg-silver-de','svg-silver-en'],
+        ['svg-gold-de','svg-gold-en'],
+        ['svg-db-de','svg-db-en'],
+        ['svg-auto-de','svg-auto-en'],
+        ['svg-lp-de','svg-lp-en'],
+        ['svg-beginner-de','svg-beginner-en'],
+        ['svg-inter-de','svg-inter-en'],
+        ['svg-expert-de','svg-expert-en'],
+      ]
+      pairs.forEach(([deClass, enClass]) => {
+        document.querySelectorAll('.' + deClass).forEach(el => el.style.display = isDE ? '' : 'none')
+        document.querySelectorAll('.' + enClass).forEach(el => el.style.display = isDE ? 'none' : '')
+      })
+      // Update toggle buttons
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'))
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        if ((isDE && btn.textContent.includes('DE')) || (!isDE && btn.textContent.includes('EN'))) {
+          btn.classList.add('active')
+        }
+      })
+      // Update html lang attribute
+      document.documentElement.lang = l
+    }
+
+    // Auto-detect language on load
+    if (!navigator.language?.toLowerCase().startsWith('de')) setLang('en')
   </script>
 </body>
 </html>
