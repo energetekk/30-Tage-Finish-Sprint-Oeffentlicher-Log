@@ -84,6 +84,42 @@
     .btn-ghost:hover { color: var(--text); border-color: rgba(255,255,255,0.2); background: var(--bg2); }
     .hero-note { margin-top: 24px; font-size: 13px; color: var(--muted); }
 
+    /* HERO NOTE ACCORDION */
+    .hero-accordion { margin-top: 24px; display: flex; flex-direction: column; align-items: center; }
+    .hero-accordion-btn {
+      background: none; border: none; cursor: pointer;
+      font-family: inherit; font-size: 13px; color: var(--muted);
+      padding: 0; transition: color .2s;
+    }
+    .hero-accordion-btn:hover { color: var(--text); }
+    .hero-accordion-body {
+      max-height: 0; overflow: hidden;
+      transition: max-height .4s ease;
+      max-width: 520px; text-align: left;
+    }
+    .hero-accordion-body.open { max-height: 600px; }
+    .hero-accordion-body p {
+      font-size: 14px; color: var(--muted); line-height: 1.75;
+      margin-top: 16px; padding: 16px 20px;
+      border: 1px solid var(--border); border-radius: 10px;
+      background: var(--bg2);
+    }
+
+    /* FOUNDER SIGNAL */
+    .founder-signal {
+      display: flex; align-items: center; gap: 12px;
+      justify-content: center; margin-top: 24px;
+    }
+    .founder-avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      object-fit: cover; border: 2px solid var(--border);
+      flex-shrink: 0;
+    }
+    .founder-text {
+      font-size: 13px; color: var(--muted);
+      font-style: italic; max-width: 360px; text-align: left;
+    }
+
     /* TICKER */
     .ticker-wrap { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 13px 0; overflow: hidden; background: var(--bg2); }
     .ticker { display: flex; gap: 60px; animation: ticker 28s linear infinite; width: max-content; }
@@ -216,14 +252,27 @@
   <div id="de">
 
     <section class="hero">
-      <div class="badge"><span class="badge-dot"></span> Cohort #1 — Bewerbungen offen</div>
+      <div class="badge"><span class="badge-dot"></span> 10 Plätze. Keine öffentliche Anmeldung.</div>
       <h1>Dein MVP.<br>In <em>13 bis 30</em> Tagen.</h1>
       <p class="hero-sub">Kein endloser Side-Project-Friedhof mehr. Ein strukturierter Sprint — tägliche KI-Prompts, klare Meilensteine, echtes Ergebnis.</p>
       <div class="actions">
         <a href="https://mvpbuilder.io/pipeline" class="btn btn-primary">Kostenlos bewerben →</a>
         <a href="#wie" class="btn btn-ghost">Wie es funktioniert</a>
       </div>
-      <p class="hero-note">Kostenlos · Keine Kreditkarte · Beta</p>
+      <div class="hero-accordion">
+        <button class="hero-accordion-btn" onclick="toggleAccordion(this, 'Warum eine Bewerbung? ↓', 'Warum eine Bewerbung? ↑')">Warum eine Bewerbung? ↓</button>
+        <div class="hero-accordion-body">
+          <p>Weil die meisten Sprints scheitern — nicht am Können, sondern an der falschen Erwartungshaltung.<br><br>
+          Ich lese jede Bewerbung selbst. Nicht um zu filtern, wer "gut genug" ist — sondern um sicherzustellen, dass der Sprint wirklich zu deinem Projekt und deiner Phase passt.<br><br>
+          10 Plätze bedeuten: Ich kann auf jeden Teilnehmer eingehen. KI-Prompts, die wirklich auf dein Projekt zugeschnitten sind. Meilensteine, die Sinn ergeben.<br><br>
+          Eine öffentliche Anmeldung würde das zerstören. Deshalb Bewerbung.<br><br>
+          Es dauert 5 Minuten. Du bekommst in 48h eine Antwort.</p>
+        </div>
+      </div>
+      <div class="founder-signal">
+        <img src="About_me.jpg" alt="Founder" class="founder-avatar">
+        <p class="founder-text">Ich lese jede Bewerbung selbst — und entscheide in 48h.</p>
+      </div>
     </section>
 
     <div class="ticker-wrap"><div class="ticker">
@@ -426,7 +475,7 @@
     <section class="cta-section">
       <p class="label">Cohort #1 — jetzt offen</p>
       <h2 class="section-title">Bereit zu shippen?</h2>
-      <p class="section-sub">Bewerbungen sind offen. Kostenlos. Limitierte Plätze.</p>
+      <p class="section-sub">Bewerbungen sind offen. Kostenlos. 10 Plätze.</p>
       <a href="https://mvpbuilder.io/pipeline" class="btn btn-primary" style="font-size:16px;padding:15px 36px;">Jetzt kostenlos bewerben →</a>
       <p class="hero-note" style="margin-top:18px;">Kein Risiko · Kein Spam · Kein Bullshit</p>
     </section>
@@ -438,14 +487,27 @@
   <div id="en" style="display:none">
 
     <section class="hero">
-      <div class="badge"><span class="badge-dot"></span> Cohort #1 — Applications open</div>
+      <div class="badge"><span class="badge-dot"></span> 10 spots only. Application required.</div>
       <h1>Your MVP.<br>In <em>13 to 30</em> days.</h1>
       <p class="hero-sub">No more endless side-project graveyard. A structured sprint — daily AI prompts, clear milestones, real results.</p>
       <div class="actions">
         <a href="https://mvpbuilder.io/pipeline" class="btn btn-primary">Apply for free →</a>
         <a href="#how" class="btn btn-ghost">How it works</a>
       </div>
-      <p class="hero-note">Free · No credit card · Beta</p>
+      <div class="hero-accordion">
+        <button class="hero-accordion-btn" onclick="toggleAccordion(this, 'Why an application? ↓', 'Why an application? ↑')">Why an application? ↓</button>
+        <div class="hero-accordion-body">
+          <p>Because most sprints fail — not from lack of skill, but from misaligned expectations.<br><br>
+          I personally read every application. Not to filter who's "good enough" — but to make sure the sprint actually fits your project and phase.<br><br>
+          10 spots means I can give each participant real attention. AI prompts that are genuinely tailored to your project. Milestones that make sense.<br><br>
+          A public sign-up would destroy that. Hence the application.<br><br>
+          It takes 5 minutes. You'll get a reply within 48 hours.</p>
+        </div>
+      </div>
+      <div class="founder-signal">
+        <img src="About_me.jpg" alt="Founder" class="founder-avatar">
+        <p class="founder-text">I read every application personally — and decide within 48h.</p>
+      </div>
     </section>
 
     <div class="ticker-wrap"><div class="ticker">
@@ -629,7 +691,7 @@
     <section class="cta-section">
       <p class="label">Cohort #1 — now open</p>
       <h2 class="section-title">Ready to ship?</h2>
-      <p class="section-sub">Applications are open. Free. Limited spots.</p>
+      <p class="section-sub">Applications are open. Free. 10 spots.</p>
       <a href="https://mvpbuilder.io/pipeline" class="btn btn-primary" style="font-size:16px;padding:15px 36px;">Apply for free →</a>
       <p class="hero-note" style="margin-top:18px;">No risk · No spam · No BS</p>
     </section>
@@ -642,13 +704,13 @@
       <div class="footer-links">
         <a href="https://dub.sh/Datenschutzbeding" target="_blank">Datenschutz</a>
         <a href="https://dub.sh/Teilnahmebedingung" target="_blank">AGB</a>
-        <a href="/cdn-cgi/l/email-protection#b3dbd2dfdfdcf3dec5c3d1c6dadfd7c19dd0dcde"><span class="__cf_email__" data-cfemail="6e060f0202012e03181e0c1b07020a1c400d0103">[energetekk@proton.me]</span></a>
+        <a href="mailto:energetekk@proton.me">energetekk@proton.me</a>
       </div>
       <p class="footer-copy">© 2026 MVP Builder</p>
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     function setLang(l) {
       const isDE = l === 'de'
       document.getElementById('de').style.display = isDE ? 'block' : 'none'
@@ -669,6 +731,15 @@
       const open = item.classList.contains('open')
       document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'))
       if (!open) item.classList.add('open')
+    }
+
+    // Hero accordion
+    function toggleAccordion(btn, textCollapsed, textExpanded) {
+      const wrapper = btn.closest('.hero-accordion')
+      const body = wrapper.querySelector('.hero-accordion-body')
+      const isOpen = body.classList.contains('open')
+      body.classList.toggle('open', !isOpen)
+      btn.textContent = isOpen ? textCollapsed : textExpanded
     }
 
     // Scroll fade
