@@ -202,6 +202,54 @@
     .cta-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 55% 55% at 50% 100%, rgba(212,160,23,0.09) 0%, transparent 70%); pointer-events: none; }
     .cta-section .section-sub { margin: 0 auto 44px; text-align: center; }
 
+    /* AGENCY PRICE ANCHOR */
+    .spot-counter {
+      font-size: 13px;
+      color: var(--gold);
+      opacity: 0.85;
+      margin-top: 10px;
+      letter-spacing: 0.02em;
+    }
+
+    .price-anchor {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 14px 22px;
+      border: 1px solid rgba(212,160,23,0.25);
+      border-radius: 10px;
+      background: rgba(212,160,23,0.06);
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.65;
+      max-width: 540px;
+      text-align: left;
+    }
+    .price-anchor strong { color: var(--text); }
+    .price-anchor .anchor-price {
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    /* HOW IT WORKS — AI PROMPT NOTE */
+    .prompt-note {
+      margin-top: 14px;
+      padding: 14px 18px;
+      border-left: 2px solid rgba(212,160,23,0.35);
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.7;
+      background: rgba(212,160,23,0.04);
+      border-radius: 0 8px 8px 0;
+    }
+
+    /* PRICING SUBTEXT */
+    .pricing-subtext {
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--muted);
+      font-style: italic;
+    }
+
     /* FADE */
     .fade { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s ease; }
     .fade.vis { opacity: 1; transform: translateY(0); }
@@ -256,10 +304,12 @@
       <div class="badge"><span class="badge-dot"></span> 10 Plätze. Keine öffentliche Anmeldung.</div>
       <h1>Dein MVP.<br>In <em>13 bis 30</em> Tagen.</h1>
       <p class="hero-sub">Kein endloser Side-Project-Friedhof mehr. Ein strukturierter Sprint — tägliche KI-Prompts, klare Meilensteine, echtes Ergebnis.</p>
+      <p class="price-anchor">Eine Schweizer Agentur verlangt <span class="anchor-price">CHF 9.000 pro Monat</span> um dein MVP zu bauen. Ich baue die strukturierte Alternative.<br><strong>Cohort #1 ist kostenlos</strong> — 8 Plätze, nur auf Bewerbung, gegen ehrliches Feedback. Ich brauche 8 Builder, die beweisen, dass das System funktioniert. Ab Cohort #2: <strong>CHF 97</strong>.</p>
       <div class="actions">
-        <a href="https://mvpbuilder.io/pipeline" class="btn btn-primary">Kostenlos bewerben →</a>
+        <a href="https://mvpbuilder.io/pipeline" class="btn btn-primary">Für Cohort #1 bewerben (kostenlos) →</a>
         <a href="#wie" class="btn btn-ghost">Wie es funktioniert</a>
       </div>
+      <p class="spot-counter">⚡ 8 Plätze · Cohort #2 beginnt mit CHF 97 · Bewerbungen offen</p>
       <div class="hero-accordion">
         <button class="hero-accordion-btn" onclick="toggleAccordion(this, 'Warum eine Bewerbung? ↓', 'Warum eine Bewerbung? ↑')">Warum eine Bewerbung? ↓</button>
         <div class="hero-accordion-body">
@@ -298,7 +348,7 @@
         <p class="section-sub fade">Drei Schritte von der Bewerbung zum fertigen MVP.</p>
         <div class="steps fade">
           <div class="step"><span class="step-num">01</span><div class="step-icon">📋</div><h3>Bewerbung</h3><p>Beschreib deine Idee, dein Skill-Level und deine Projektphase. Das System wählt automatisch Bronze, Silber oder Gold.</p></div>
-          <div class="step"><span class="step-num">02</span><div class="step-icon">🚀</div><h3>Sprint starten</h3><p>Nach Annahme startet dein Sprint. Jeden Morgen ein KI-Prompt — maßgeschneidert auf dein Projekt und deinen Fortschritt.</p></div>
+          <div class="step"><span class="step-num">02</span><div class="step-icon">🚀</div><h3>Sprint starten</h3><p>Nach Annahme startet dein Sprint. Jeden Morgen ein KI-Prompt — maßgeschneidert auf dein Projekt und deinen Fortschritt.</p><p class="prompt-note">Jeder Prompt wird von Claude generiert: auf Basis deines Tiers, deines aktuellen Sprint-Tags und deines Projekts. Kein Template. Kein Kurs-Modul. Ein täglicher Push von einem Modell, das dein Projekt kennt.</p></div>
           <div class="step"><span class="step-num">03</span><div class="step-icon">🏁</div><h3>MVP shippen</h3><p>Meilenstein-Checkins an Tag 13, 21 oder 30. Nachweis hochladen, Admin-Review, und dann: upgraden oder abschließen.</p></div>
         </div>
       </div>
@@ -408,7 +458,7 @@
         <div class="faq fade">
           <div class="faq-item">
             <button class="faq-q" onclick="toggleFaq(this)">Was kostet das? <span class="arr">+</span></button>
-            <div class="faq-a"><p><strong>Cohort #1 ist komplett kostenlos</strong> — wir sind in der Beta-Phase. Spätere Cohorts könnten kostenpflichtig werden.</p></div>
+            <div class="faq-a"><p><strong>Cohort #1 ist komplett kostenlos</strong> — wir sind in der Beta-Phase. Spätere Cohorts könnten kostenpflichtig werden.</p><p class="pricing-subtext">Zum Vergleich: Für den Preis einer einzigen Agentur-Beratungsstunde bekommst du den kompletten 30-Tage Sprint.</p></div>
           </div>
           <div class="faq-item">
             <button class="faq-q" onclick="toggleFaq(this)">Wie viel Zeit brauche ich täglich? <span class="arr">+</span></button>
@@ -491,10 +541,12 @@
       <div class="badge"><span class="badge-dot"></span> 10 spots only. Application required.</div>
       <h1>Your MVP.<br>In <em>13 to 30</em> days.</h1>
       <p class="hero-sub">No more endless side-project graveyard. A structured sprint — daily AI prompts, clear milestones, real results.</p>
+      <p class="price-anchor">A Swiss agency charges <span class="anchor-price">CHF 9,000 per month</span> to build your MVP. I built the structured alternative.<br><strong>Cohort #1 is free</strong> — 8 spots, application-only, in exchange for honest feedback. I need 8 builders to prove the model works. Cohort #2 starts at <strong>CHF 97</strong>.</p>
       <div class="actions">
-        <a href="https://mvpbuilder.io/pipeline" class="btn btn-primary">Apply for free →</a>
+        <a href="https://mvpbuilder.io/pipeline" class="btn btn-primary">Apply for Cohort #1 (free) →</a>
         <a href="#how" class="btn btn-ghost">How it works</a>
       </div>
+      <p class="spot-counter">⚡ 8 spots · Cohort #2 starts at CHF 97 · Applications open</p>
       <div class="hero-accordion">
         <button class="hero-accordion-btn" onclick="toggleAccordion(this, 'Why an application? ↓', 'Why an application? ↑')">Why an application? ↓</button>
         <div class="hero-accordion-body">
@@ -533,7 +585,7 @@
         <p class="section-sub">Three steps from application to shipped MVP.</p>
         <div class="steps">
           <div class="step"><span class="step-num">01</span><div class="step-icon">📋</div><h3>Apply</h3><p>Describe your idea, skill level, and project phase. The system auto-assigns Bronze, Silver, or Gold.</p></div>
-          <div class="step"><span class="step-num">02</span><div class="step-icon">🚀</div><h3>Start Sprint</h3><p>Once accepted, your sprint begins. Every morning an AI prompt — tailored to your project and progress.</p></div>
+          <div class="step"><span class="step-num">02</span><div class="step-icon">🚀</div><h3>Start Sprint</h3><p>Once accepted, your sprint begins. Every morning an AI prompt — tailored to your project and progress.</p><p class="prompt-note">Each day, Claude reads your project context — your tier, your day in the sprint, and what you're building — and writes a prompt calibrated to exactly where you are. Not a template. Not a course module. A daily push from a model that knows your project.</p></div>
           <div class="step"><span class="step-num">03</span><div class="step-icon">🏁</div><h3>Ship It</h3><p>Milestone check-ins at day 13, 21, or 30. Upload proof, admin review, then upgrade or complete.</p></div>
         </div>
       </div>
@@ -624,7 +676,7 @@
         <div class="faq">
           <div class="faq-item">
             <button class="faq-q" onclick="toggleFaq(this)">How much does it cost? <span class="arr">+</span></button>
-            <div class="faq-a"><p><strong>Cohort #1 is completely free</strong> — we're in beta. Future cohorts may be paid.</p></div>
+            <div class="faq-a"><p><strong>Cohort #1 is completely free</strong> — we're in beta. Future cohorts may be paid.</p><p class="pricing-subtext">For context: for the price of one agency consulting hour, you get your full 30-day sprint.</p></div>
           </div>
           <div class="faq-item">
             <button class="faq-q" onclick="toggleFaq(this)">How much time do I need daily? <span class="arr">+</span></button>
