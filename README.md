@@ -34,7 +34,7 @@ interaktive Simulation (4 realistische Szenarien)
 Teilnehmeranzahl begrenzt
 
 ** Bewerbung **  
-👉 [Sprint-Intake](https://www.mvpbuilder.io)
+👉 [Sprint-Intake](https://www.mvpbuilder.io/pipeline)
 
 ---
 
