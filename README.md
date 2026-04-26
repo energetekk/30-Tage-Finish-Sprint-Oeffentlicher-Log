@@ -56,7 +56,7 @@ Daily entries from the first cohort. Raw. No retrospective polish.
 
 See what the first 4 days actually look like before applying.
 
-👉 [Run the simulation](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/Simulation.html)
+👉 [Run the simulation](https://mvpbuilder.io/Simulation.html)
 
 ---
 
