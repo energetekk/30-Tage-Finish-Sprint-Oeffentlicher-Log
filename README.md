@@ -1,10 +1,10 @@
 # 30-Day Sprint — Public Build Log
 
-**MVP Builder · Cohort #1 · Public accountability log**
+**MVP Builder · Cohort #1 complete · Cohort #2 open**
 
-This repository is the public record of an ongoing 30-day sprint. One developer. One project. Daily check-ins.
+This repository is the public record of the first 30-day sprint cohort. One developer. One project. Daily check-ins.
 
-The product being built here: [mvpbuilder.io/pipeline](https://mvpbuilder.io/pipeline)
+The product: [mvpbuilder.io](https://mvpbuilder.io)
 
 ---
 
@@ -12,9 +12,9 @@ The product being built here: [mvpbuilder.io/pipeline](https://mvpbuilder.io/pip
 
 MVP Builder is a structured 30-day sprint for developers with full-time jobs who want to ship a side project they've been working on — or not working on — for months.
 
-Not a course. Not a template generator. A daily prompt system with milestone gates and a human coach watching the clock.
+Not a course. Not a template generator. A daily prompt system with milestone gates and a human founder watching the clock.
 
-Cohort #1 is free. 5–8 spots. Application required.
+Cohort #1 is complete. **Cohort #2 is now open — 5 spots, Founder Price.**
 
 👉 [Apply at mvpbuilder.io/pipeline](https://mvpbuilder.io/pipeline)
 
@@ -62,7 +62,15 @@ See what the first 4 days actually look like before applying.
 
 ## Apply
 
-**Cohort #1** · Free · Application required · 5–8 spots
+**Cohort #2** · Founder Price · Application required · 5 spots
+
+| Tier | Duration | DACH | International |
+|------|----------|------|---------------|
+| Bronze | 13 days | CHF 67 | $67 |
+| Silver | 21 days | CHF 117 | $117 |
+| Gold | 30 days | CHF 179 | $179 |
+
+One-time · 7-day money-back guarantee · You pay only after your application is accepted.
 
 👉 [mvpbuilder.io/pipeline](https://mvpbuilder.io/pipeline)
 
