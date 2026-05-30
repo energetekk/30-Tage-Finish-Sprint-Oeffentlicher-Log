@@ -6,6 +6,7 @@
   <link rel="canonical" href="https://mvpbuilder.io/Simulation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sprint Simulation — InvoiceFlow · MVP Builder</title>
+  <meta name="description" content="See what a sprint day looks like. Real prompt. Real task. 5-minute interactive walkthrough — no signup needed." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
   <style>
@@ -64,13 +65,13 @@
       padding: 5px 14px; border: 1px solid var(--border); border-radius: 99px;
       font-size: 12px; color: var(--muted); margin-bottom: 24px; background: var(--bg2);
     }
-    header h1 {
+    header h1, header h2.sim-h1-styled {
       font-family: 'Instrument Serif', serif;
       font-size: clamp(36px, 6vw, 68px);
       line-height: 1.05; letter-spacing: -0.03em;
       margin-bottom: 16px;
     }
-    header h1 em { font-style: italic; color: var(--gold); }
+    header h1 em, header h2.sim-h1-styled em { font-style: italic; color: var(--gold); }
     .header-sub {
       font-size: 16px; color: var(--muted); max-width: 500px; margin: 0 auto 28px;
     }
@@ -237,6 +238,26 @@
     .insight strong { color: var(--gold); }
     .insight p { font-size: 15px; color: var(--muted); line-height: 1.75; }
 
+    /* ── VORARBEIT ── */
+    .milestone.vorarbeit { opacity: 0.45; }
+    .milestone.vorarbeit .milestone-dot {
+      background: rgba(255,255,255,0.08) !important;
+      border-color: rgba(255,255,255,0.14) !important;
+      box-shadow: none !important;
+    }
+
+    /* ── SPRINT ENTRY MARKER ── */
+    .sprint-entry {
+      display: flex; align-items: center; gap: 12px;
+      padding: 20px 0 28px 0;
+    }
+    .sprint-entry-line { flex: 1; height: 1px; }
+    .sprint-entry-pill {
+      padding: 5px 14px; border-radius: 99px;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+      white-space: nowrap; flex-shrink: 0;
+    }
+
     /* ── CONTROLS ── */
     .controls {
       position: fixed; bottom: 28px; right: 28px; z-index: 100;
@@ -283,7 +304,7 @@
     <div id="de">
       <a href="https://mvpbuilder.io" class="back-link">← Zurück zur Startseite</a>
       <div style="display:block">
-        <div class="header-badge">Bronze Modul · 13-Tage Sprint</div>
+        <div class="header-badge">Bronze · Silber · Gold Sprint</div>
       </div>
       <h1>Sprint <em>Simulation</em></h1>
       <p class="header-sub">Realistische Szenarien für 3 Skill-Level — dasselbe Projekt, drei verschiedene Wege.</p>
@@ -294,9 +315,9 @@
     <div id="en" style="display:none">
       <a href="https://mvpbuilder.io" class="back-link">← Back to homepage</a>
       <div style="display:block">
-        <div class="header-badge">Bronze Module · 13-Day Sprint</div>
+        <div class="header-badge">Bronze · Silver · Gold Sprint</div>
       </div>
-      <h1>Sprint <em>Simulation</em></h1>
+      <h2 class="sim-h1-styled">Sprint <em>Simulation</em></h2>
       <p class="header-sub">Realistic scenarios for 3 skill levels — same project, three different paths.</p>
       <div class="project-pill">📊 InvoiceFlow — Micro SaaS for Freelancers</div>
     </div>
@@ -333,8 +354,8 @@
     </div>
 
     <div style="margin-top:32px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-      <a href="https://mvpbuilder.io/pipeline" style="padding:12px 28px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;" class="btn-apply-de">Jetzt bewerben →</a>
-      <a href="https://mvpbuilder.io/pipeline" style="padding:12px 28px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;display:none" class="btn-apply-en">Apply now →</a>
+      <a href="https://mvpbuilder.io/pipeline?utm_source=simulation&utm_medium=html&utm_campaign=cohort1&utm_content=sim-header-cta" style="padding:12px 28px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;" class="btn-apply-de">Platz anfragen →</a>
+      <a href="https://mvpbuilder.io/pipeline?utm_source=simulation&utm_medium=html&utm_campaign=cohort1&utm_content=sim-header-cta" style="padding:12px 28px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;display:none" class="btn-apply-en">Request your spot →</a>
       <a href="https://mvpbuilder.io" style="padding:12px 28px;background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:10px;font-weight:500;font-size:14px;text-decoration:none;" class="btn-learn-de">Mehr erfahren</a>
       <a href="https://mvpbuilder.io" style="padding:12px 28px;background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:10px;font-weight:500;font-size:14px;text-decoration:none;display:none" class="btn-learn-en">Learn more</a>
     </div>
@@ -345,18 +366,18 @@
     <div class="tabs">
       <button class="tab tab-0 active" onclick="showTab(0)">
         <span>🌱</span>
-        <span class="tab-label-de">Anfänger</span>
-        <span class="tab-label-en" style="display:none">Beginner</span>
+        <span class="tab-label-de">Anfänger <small style="font-weight:400;opacity:.6">· 13T</small></span>
+        <span class="tab-label-en" style="display:none">Beginner <small style="font-weight:400;opacity:.6">· 13d</small></span>
       </button>
       <button class="tab tab-1" onclick="showTab(1)">
         <span>🚀</span>
-        <span class="tab-label-de">Fortgeschritten</span>
-        <span class="tab-label-en" style="display:none">Intermediate</span>
+        <span class="tab-label-de">Fortgeschritten <small style="font-weight:400;opacity:.6">· 21T</small></span>
+        <span class="tab-label-en" style="display:none">Intermediate <small style="font-weight:400;opacity:.6">· 21d</small></span>
       </button>
       <button class="tab tab-2" onclick="showTab(2)">
         <span>⚡</span>
-        <span class="tab-label-de">Profi</span>
-        <span class="tab-label-en" style="display:none">Expert</span>
+        <span class="tab-label-de">Profi <small style="font-weight:400;opacity:.6">· 30T</small></span>
+        <span class="tab-label-en" style="display:none">Expert <small style="font-weight:400;opacity:.6">· 30d</small></span>
       </button>
       <button class="tab tab-3" onclick="showTab(3)">
         <span>📊</span>
@@ -373,29 +394,29 @@
     <div class="tab-panel active" id="panel-0">
       <div class="panel-head">
         <!-- DE -->
-        <h2 class="panel-h2-de" style="display:none">🌱 Anfänger-Pfad</h2>
-        <h2 class="panel-h2-en">🌱 Beginner Path</h2>
+        <h2 class="panel-h2-de">🌱 Anfänger-Pfad</h2>
+        <h2 class="panel-h2-en" style="display:none">🌱 Beginner Path</h2>
         <span class="skill-badge badge-beginner">Learning-Focused</span>
       </div>
 
       <!-- DE start card -->
-      <div class="start-card" id="start0-de" style="display:none">
+      <div class="start-card start0-de" id="start0-de">
         <h3>Startbedingungen</h3>
         <ul>
           <li><span>Vorwissen</span> Keine Programmier-Erfahrung</li>
           <li><span>Tools</span> No-Code / Low-Code (Airtable, Zapier, Carrd)</li>
           <li><span>Zeitplan</span> ~1h/Tag · 50% Learning, 50% Building</li>
-          <li><span>Ziel</span> Funktionaler Prototyp mit Kerndaten</li>
+          <li><span>Ziel</span> Funktionierender MVP-Kern mit Kerndaten</li>
         </ul>
       </div>
       <!-- EN start card -->
-      <div class="start-card" id="start0-en">
+      <div class="start-card start0-en" id="start0-en" style="display:none">
         <h3>Starting Conditions</h3>
         <ul>
           <li><span>Background</span> No coding experience</li>
           <li><span>Tools</span> No-Code / Low-Code (Airtable, Zapier, Carrd)</li>
           <li><span>Schedule</span> ~1h/day · 50% Learning, 50% Building</li>
-          <li><span>Goal</span> Functional prototype with core data</li>
+          <li><span>Goal</span> Functional MVP core with core data</li>
         </ul>
       </div>
 
@@ -603,21 +624,28 @@
       </div>
 
       <div class="result-box">
-        <p class="ms-p-de"><strong>Ergebnis nach 13 Tagen:</strong> Problem validiert, funktionierender No-Code Prototyp, 45 Waitlist Sign-ups. Nächster Schritt: Coden lernen oder Co-Founder finden für Custom App.</p>
-        <p class="ms-p-en" style="display:none"><strong>Result after 13 days:</strong> Problem validated, working no-code prototype, 45 waitlist sign-ups. Next step: learn to code or find a co-founder for a custom app.</p>
+        <p class="ms-p-de"><strong>Ergebnis nach 13 Tagen:</strong> Problem validiert, funktionierender No-Code MVP-Kern, 45 Waitlist-Anmeldungen. Nächster Schritt: Coden lernen oder Co-Founder finden für Custom App.</p>
+        <p class="ms-p-en" style="display:none"><strong>Result after 13 days:</strong> Problem validated, working no-code MVP core, 45 waitlist sign-ups. Next step: learn to code or find a co-founder for a custom app.</p>
+      </div>
+
+      <div style="margin-top:24px;background:var(--bg2);border:1px solid rgba(212,160,23,0.2);border-radius:14px;padding:24px 28px;text-align:center;">
+        <p style="font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:16px;" class="ms-p-de">Das klingt machbar — weil es machbar ist.<br>Cohort #2 · ab CHF 67 · Zahlung erst nach Annahme.</p>
+        <p style="font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:16px;display:none" class="ms-p-en">This sounds doable — because it is.<br>Cohort #2 · from $67 · you pay only if accepted.</p>
+        <a href="https://mvpbuilder.io/pipeline?utm_source=simulation&utm_medium=html&utm_campaign=cohort1&utm_content=sim-tab-0-day13" class="btn-apply-de" style="display:inline-block;padding:12px 28px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;">Platz anfragen →</a>
+        <a href="https://mvpbuilder.io/pipeline?utm_source=simulation&utm_medium=html&utm_campaign=cohort1&utm_content=sim-tab-0-day13" class="btn-apply-en" style="display:none;padding:12px 28px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;">Request your spot →</a>
       </div>
     </div>
 
     <!-- ═══ TAB 1: FORTGESCHRITTEN / INTERMEDIATE ═══ -->
     <div class="tab-panel" id="panel-1">
       <div class="panel-head">
-        <h2 class="panel-h2-de" style="display:none">🚀 Fortgeschritten-Pfad</h2>
-        <h2 class="panel-h2-en">🚀 Intermediate Path</h2>
+        <h2 class="panel-h2-de">🚀 Fortgeschritten-Pfad <small style="font-size:16px;font-weight:400;opacity:.55">· 21 Tage · 🥈 Silber</small></h2>
+        <h2 class="panel-h2-en" style="display:none">🚀 Intermediate Path <small style="font-size:16px;font-weight:400;opacity:.55">· 21 days · 🥈 Silver</small></h2>
         <span class="skill-badge badge-intermediate">Building-Focused</span>
       </div>
 
       <!-- DE start card -->
-      <div class="start-card" style="border-left-color: var(--intermediate);display:none" id="start1-de">
+      <div class="start-card start1-de" style="border-left-color: var(--intermediate)" id="start1-de">
         <h3>Startbedingungen</h3>
         <ul>
           <li><span>Vorwissen</span> Grundlegende Web-Kenntnisse (HTML, JavaScript basics)</li>
@@ -627,7 +655,7 @@
         </ul>
       </div>
       <!-- EN start card -->
-      <div class="start-card" style="border-left-color: var(--intermediate)" id="start1-en">
+      <div class="start-card start1-en" style="border-left-color: var(--intermediate);display:none" id="start1-en">
         <h3>Starting Conditions</h3>
         <ul>
           <li><span>Background</span> Basic web knowledge (HTML, JavaScript basics)</li>
@@ -638,8 +666,8 @@
       </div>
 
       <div class="timeline">
-        <!-- Day 1 -->
-        <div class="milestone done">
+        <!-- Day 1 — Vorarbeit -->
+        <div class="milestone done vorarbeit">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
             <div class="milestone-meta">
@@ -662,8 +690,8 @@
           </div>
         </div>
 
-        <!-- Day 2–3 -->
-        <div class="milestone done">
+        <!-- Day 2–3 — Vorarbeit -->
+        <div class="milestone done vorarbeit">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
             <div class="milestone-meta">
@@ -684,6 +712,16 @@
               <li class="ms-li-en" style="display:none">RLS policies active</li>
             </ul></div>
           </div>
+        </div>
+
+        <!-- Sprint-Entry Marker -->
+        <div class="sprint-entry">
+          <div class="sprint-entry-line" style="background:rgba(59,130,246,0.25)"></div>
+          <div class="sprint-entry-pill" style="background:rgba(59,130,246,0.1);color:#3b82f6;border:1px solid rgba(59,130,246,0.3)">
+            <span class="ms-p-de">Sprint greift hier ein ↓</span>
+            <span class="ms-p-en" style="display:none">Sprint starts here ↓</span>
+          </div>
+          <div class="sprint-entry-line" style="background:rgba(59,130,246,0.25)"></div>
         </div>
 
         <!-- Day 4–6 -->
@@ -773,8 +811,8 @@
             </div>
             <h3 class="ms-h3-de">Polish &amp; Soft Launch</h3>
             <h3 class="ms-h3-en" style="display:none">Polish &amp; Soft Launch</h3>
-            <p class="ms-p-de">Landing Page mit echten Screenshots und Beta-Testimonials. Gepostet auf Indie Hackers ("I built InvoiceFlow in 13 days"). Stripe-Integration in Planung. App stabil, bereit für Scale.</p>
-            <p class="ms-p-en" style="display:none">Landing page with real screenshots and beta testimonials. Posted on Indie Hackers ("I built InvoiceFlow in 13 days"). Stripe integration planned. App stable, ready to scale.</p>
+            <p class="ms-p-de">Landing Page mit echten Screenshots und Beta-Testimonials. Gepostet auf Indie Hackers ("I built InvoiceFlow in 21 days"). App stabil, bereit für Scale.</p>
+            <p class="ms-p-en" style="display:none">Landing page with real screenshots and beta testimonials. Posted on Indie Hackers ("I built InvoiceFlow in 21 days"). App stable, ready to scale.</p>
             <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
               <li class="ms-li-de">Production App live und stabil</li>
               <li class="ms-li-en" style="display:none">Production app live and stable</li>
@@ -787,24 +825,57 @@
             </ul></div>
           </div>
         </div>
+
+        <!-- Day 14–21: Validation Phase (Silver only) -->
+        <div class="milestone done" style="border-left:2px solid rgba(59,130,246,0.35)">
+          <div class="milestone-dot" style="background:rgba(59,130,246,0.5);box-shadow:0 0 0 3px rgba(59,130,246,0.15)"></div>
+          <div class="milestone-inner">
+            <div class="milestone-meta">
+              <span class="milestone-day day-label-de" style="color:#3b82f6">Tag 14–21 · Validierung</span>
+              <span class="milestone-day day-label-en" style="display:none;color:#3b82f6">Day 14–21 · Validation</span>
+              <span class="milestone-time">~30 Min/Tag</span>
+            </div>
+            <h3 class="ms-h3-de">Bauen + Validieren (parallel)</h3>
+            <h3 class="ms-h3-en" style="display:none">Build + Validate (parallel)</h3>
+            <p class="ms-p-de">Ab Tag 14: Umfrage erstellt (Tally), über Reddit + LinkedIn + 5 DMs verbreitet. Parallel: 3 UX-Fixes auf Basis von echtem Nutzer-Feedback. Validierungs-Bilanz an Tag 21.</p>
+            <p class="ms-p-en" style="display:none">From Day 14: Survey created (Tally), distributed via Reddit + LinkedIn + 5 DMs. In parallel: 3 UX fixes based on real user feedback. Validation summary on Day 21.</p>
+            <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
+              <li class="ms-li-de">25 Survey-Responses (Tally)</li>
+              <li class="ms-li-en" style="display:none">25 survey responses (Tally)</li>
+              <li class="ms-li-de">Top-3-Schmerzpunkte identifiziert</li>
+              <li class="ms-li-en" style="display:none">Top 3 pain points identified</li>
+              <li class="ms-li-de">3 UX-Fixes implementiert</li>
+              <li class="ms-li-en" style="display:none">3 UX fixes implemented</li>
+              <li class="ms-li-de">Validierungs-Bilanz: Zielgruppe bestätigt</li>
+              <li class="ms-li-en" style="display:none">Validation summary: target audience confirmed</li>
+            </ul></div>
+          </div>
+        </div>
       </div>
 
       <div class="result-box">
-        <p class="ms-p-de"><strong>Ergebnis nach 13 Tagen:</strong> Funktionierende Web-App mit Auth, CRUD, Email-Automation. 87 Waitlist Sign-ups, 8 Beta-User. Nächster Schritt: Stripe Integration → erste Revenue.</p>
-        <p class="ms-p-en" style="display:none"><strong>Result after 13 days:</strong> Working web app with auth, CRUD, email automation. 87 waitlist sign-ups, 8 beta users. Next step: Stripe integration → first revenue.</p>
+        <p class="ms-p-de"><strong>Ergebnis nach 21 Tagen (Silber):</strong> Web-App live mit Auth, CRUD, Email-Automation. 87 Waitlist Sign-ups, 8 Beta-User. 25 Validierungs-Responses, 3 UX-Fixes. Sprint abgeschlossen — Silber-Nachweis erbracht.</p>
+        <p class="ms-p-en" style="display:none"><strong>Result after 21 days (Silver):</strong> Web app live with auth, CRUD, email automation. 87 waitlist sign-ups, 8 beta users. 25 validation responses, 3 UX fixes. Sprint completed — Silver milestone delivered.</p>
+      </div>
+
+      <div style="margin-top:24px;background:var(--bg2);border:1px solid rgba(212,160,23,0.2);border-radius:14px;padding:24px 28px;text-align:center;">
+        <p style="font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:16px;" class="ms-p-de">Das klingt machbar — weil es machbar ist.<br>Cohort #2 · ab CHF 67 · Zahlung erst nach Annahme.</p>
+        <p style="font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:16px;display:none" class="ms-p-en">This sounds doable — because it is.<br>Cohort #2 · from $67 · you pay only if accepted.</p>
+        <a href="https://mvpbuilder.io/pipeline?utm_source=simulation&utm_medium=html&utm_campaign=cohort1&utm_content=sim-tab-1-day21" class="btn-apply-de" style="display:inline-block;padding:12px 28px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;">Platz anfragen →</a>
+        <a href="https://mvpbuilder.io/pipeline?utm_source=simulation&utm_medium=html&utm_campaign=cohort1&utm_content=sim-tab-1-day21" class="btn-apply-en" style="display:none;padding:12px 28px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;">Request your spot →</a>
       </div>
     </div>
 
     <!-- ═══ TAB 2: PROFI / EXPERT ═══ -->
     <div class="tab-panel" id="panel-2">
       <div class="panel-head">
-        <h2 class="panel-h2-de" style="display:none">⚡ Profi-Pfad</h2>
-        <h2 class="panel-h2-en">⚡ Expert Path</h2>
+        <h2 class="panel-h2-de">⚡ Profi-Pfad <small style="font-size:16px;font-weight:400;opacity:.55">· 30 Tage · 🥇 Gold</small></h2>
+        <h2 class="panel-h2-en" style="display:none">⚡ Expert Path <small style="font-size:16px;font-weight:400;opacity:.55">· 30 days · 🥇 Gold</small></h2>
         <span class="skill-badge badge-expert">Scaling-Focused</span>
       </div>
 
       <!-- DE start card -->
-      <div class="start-card" style="border-left-color: var(--expert);display:none" id="start2-de">
+      <div class="start-card start2-de" style="border-left-color: var(--expert)" id="start2-de">
         <h3>Startbedingungen</h3>
         <ul>
           <li><span>Vorwissen</span> Mehrere deployed Projekte, Full-Stack Erfahrung</li>
@@ -814,7 +885,7 @@
         </ul>
       </div>
       <!-- EN start card -->
-      <div class="start-card" style="border-left-color: var(--expert)" id="start2-en">
+      <div class="start-card start2-en" style="border-left-color: var(--expert);display:none" id="start2-en">
         <h3>Starting Conditions</h3>
         <ul>
           <li><span>Background</span> Multiple deployed projects, full-stack experience</li>
@@ -825,8 +896,8 @@
       </div>
 
       <div class="timeline">
-        <!-- Day 1 -->
-        <div class="milestone done">
+        <!-- Day 1 — Vorarbeit -->
+        <div class="milestone done vorarbeit">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
             <div class="milestone-meta">
@@ -849,8 +920,8 @@
           </div>
         </div>
 
-        <!-- Day 2–3 -->
-        <div class="milestone done">
+        <!-- Day 2–3 — Vorarbeit -->
+        <div class="milestone done vorarbeit">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
             <div class="milestone-meta">
@@ -875,8 +946,8 @@
           </div>
         </div>
 
-        <!-- Day 4–6 -->
-        <div class="milestone done">
+        <!-- Day 4–6 — Vorarbeit -->
+        <div class="milestone done vorarbeit">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
             <div class="milestone-meta">
@@ -901,8 +972,8 @@
           </div>
         </div>
 
-        <!-- Day 7–8 -->
-        <div class="milestone done">
+        <!-- Day 7–8 — Vorarbeit -->
+        <div class="milestone done vorarbeit">
           <div class="milestone-dot"></div>
           <div class="milestone-inner">
             <div class="milestone-meta">
@@ -925,6 +996,16 @@
               <li class="ms-li-en" style="display:none">Unsubscribe / preferences center</li>
             </ul></div>
           </div>
+        </div>
+
+        <!-- Sprint-Entry Marker -->
+        <div class="sprint-entry">
+          <div class="sprint-entry-line" style="background:rgba(16,185,129,0.25)"></div>
+          <div class="sprint-entry-pill" style="background:rgba(16,185,129,0.1);color:#10b981;border:1px solid rgba(16,185,129,0.3)">
+            <span class="ms-p-de">Sprint greift hier ein ↓</span>
+            <span class="ms-p-en" style="display:none">Sprint starts here ↓</span>
+          </div>
+          <div class="sprint-entry-line" style="background:rgba(16,185,129,0.25)"></div>
         </div>
 
         <!-- Day 9–10 -->
@@ -962,43 +1043,100 @@
               <span class="milestone-day day-label-en" style="display:none">Day 11–13</span>
               <span class="milestone-time">~60 Min/Tag</span>
             </div>
-            <h3 class="ms-h3-de">Launch + Marketing + First Revenue</h3>
-            <h3 class="ms-h3-en" style="display:none">Launch + Marketing + First Revenue</h3>
-            <p class="ms-p-de">Launched auf Product Hunt (#3 Product of the Day!), Indie Hackers, Twitter, Reddit. Erste zahlende Kunden am Launch-Tag! SEO bringt erste organische Signups.</p>
-            <p class="ms-p-en" style="display:none">Launched on Product Hunt (#3 Product of the Day!), Indie Hackers, Twitter, Reddit. First paying customers on launch day! SEO bringing first organic signups.</p>
+            <h3 class="ms-h3-de">Soft Launch + First Customers</h3>
+            <h3 class="ms-h3-en" style="display:none">Soft Launch + First Customers</h3>
+            <p class="ms-p-de">Launched auf Indie Hackers, Twitter, Reddit. Erste zahlende Kunden am Launch-Tag. SEO bringt organische Signups. MVP deployed und stabil.</p>
+            <p class="ms-p-en" style="display:none">Launched on Indie Hackers, Twitter, Reddit. First paying customers on launch day. SEO bringing organic signups. MVP deployed and stable.</p>
             <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
-              <li class="ms-li-de">Product Hunt Launch: #3 of the Day</li>
-              <li class="ms-li-en" style="display:none">Product Hunt Launch: #3 of the Day</li>
               <li class="ms-li-de">134 Sign-ups in 3 Tagen</li>
               <li class="ms-li-en" style="display:none">134 sign-ups in 3 days</li>
               <li class="ms-li-de">8 zahlende Kunden ($72 MRR)</li>
               <li class="ms-li-en" style="display:none">8 paying customers ($72 MRR)</li>
               <li class="ms-li-de">Traffic: 450 Visitors, 15% Conversion</li>
               <li class="ms-li-en" style="display:none">Traffic: 450 visitors, 15% conversion</li>
-              <li class="ms-li-de">2 User-Testimonials live auf Landing Page</li>
-              <li class="ms-li-en" style="display:none">2 user testimonials live on landing page</li>
+              <li class="ms-li-de">2 User-Testimonials live</li>
+              <li class="ms-li-en" style="display:none">2 user testimonials live</li>
+            </ul></div>
+          </div>
+        </div>
+
+        <!-- Day 14–21: Validation Phase (Gold) -->
+        <div class="milestone done" style="border-left:2px solid rgba(59,130,246,0.35)">
+          <div class="milestone-dot" style="background:rgba(59,130,246,0.5);box-shadow:0 0 0 3px rgba(59,130,246,0.15)"></div>
+          <div class="milestone-inner">
+            <div class="milestone-meta">
+              <span class="milestone-day day-label-de" style="color:#3b82f6">Tag 14–21 · Validierung</span>
+              <span class="milestone-day day-label-en" style="display:none;color:#3b82f6">Day 14–21 · Validation</span>
+              <span class="milestone-time">~45 Min/Tag</span>
+            </div>
+            <h3 class="ms-h3-de">Bauen + Validieren (parallel)</h3>
+            <h3 class="ms-h3-en" style="display:none">Build + Validate (parallel)</h3>
+            <p class="ms-p-de">Multi-Channel Validierung: Reddit, ProductHunt, HackerNews, LinkedIn, Twitter Thread + Direct Outreach (20 personalisiert). Parallel: Onboarding-Flow verbessert, Top-2-Painpoints adressiert.</p>
+            <p class="ms-p-en" style="display:none">Multi-channel validation: Reddit, ProductHunt, HackerNews, LinkedIn, Twitter thread + direct outreach (20 personalized). In parallel: onboarding flow improved, top 2 pain points addressed.</p>
+            <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
+              <li class="ms-li-de">52 Survey-Responses (Tally + Analytics)</li>
+              <li class="ms-li-en" style="display:none">52 survey responses (Tally + Analytics)</li>
+              <li class="ms-li-de">Pain Point Ranking dokumentiert</li>
+              <li class="ms-li-en" style="display:none">Pain point ranking documented</li>
+              <li class="ms-li-de">Onboarding-Flow: Drop-off -40%</li>
+              <li class="ms-li-en" style="display:none">Onboarding flow: drop-off -40%</li>
+              <li class="ms-li-de">Pivot-Entscheidung getroffen (Feature-Priorisierung)</li>
+              <li class="ms-li-en" style="display:none">Pivot decision made (feature prioritization)</li>
+            </ul></div>
+          </div>
+        </div>
+
+        <!-- Day 22–30: Finalization + Commitment Test (Gold) -->
+        <div class="milestone done" style="border-left:2px solid rgba(212,160,23,0.45)">
+          <div class="milestone-dot" style="background:rgba(212,160,23,0.6);box-shadow:0 0 0 3px rgba(212,160,23,0.15)"></div>
+          <div class="milestone-inner">
+            <div class="milestone-meta">
+              <span class="milestone-day day-label-de" style="color:var(--gold)">Tag 22–30 · Commitment-Test</span>
+              <span class="milestone-day day-label-en" style="display:none;color:var(--gold)">Day 22–30 · Commitment Test</span>
+              <span class="milestone-time">~45 Min/Tag</span>
+            </div>
+            <h3 class="ms-h3-de">Finalisieren + Marktinteresse belegen</h3>
+            <h3 class="ms-h3-en" style="display:none">Finalize + Prove Market Interest</h3>
+            <p class="ms-p-de">30 Kontakte direkt angeschrieben: Zahlungsbereitschaft getestet (Stripe Payment Link). Ergebnis dokumentiert — auch "0 Conversions" ist valide wenn belegt. Product Hunt Launch vorbereitet.</p>
+            <p class="ms-p-en" style="display:none">30 contacts reached directly: willingness to pay tested (Stripe payment link). Outcome documented — even "0 conversions" is valid if proven. Product Hunt launch prepared.</p>
+            <div class="deliverables"><span class="deliv-label-de">Deliverables</span><span class="deliv-label-en" style="display:none">Deliverables</span><ul>
+              <li class="ms-li-de">Commitment-Test: 8 von 30 konvertiert</li>
+              <li class="ms-li-en" style="display:none">Commitment test: 8 of 30 converted</li>
+              <li class="ms-li-de">$72 MRR dokumentiert und belegt</li>
+              <li class="ms-li-en" style="display:none">$72 MRR documented and proven</li>
+              <li class="ms-li-de">Product Hunt Launch: #3 of the Day</li>
+              <li class="ms-li-en" style="display:none">Product Hunt launch: #3 of the Day</li>
+              <li class="ms-li-de">Sprint abgeschlossen: Ergebnis + Commitment ✅</li>
+              <li class="ms-li-en" style="display:none">Sprint completed: result + commitment ✅</li>
             </ul></div>
           </div>
         </div>
       </div>
 
       <div class="result-box">
-        <p class="ms-p-de"><strong>Ergebnis nach 13 Tagen:</strong> Production-ready SaaS mit <strong>$72 MRR</strong>. 134 total Sign-ups, 8 zahlende Kunden, Email-Automation läuft, SEO optimiert. Nächster Schritt: Growth.</p>
-        <p class="ms-p-en" style="display:none"><strong>Result after 13 days:</strong> Production-ready SaaS with <strong>$72 MRR</strong>. 134 total sign-ups, 8 paying customers, email automation running, SEO optimized. Next step: growth.</p>
+        <p class="ms-p-de"><strong>Ergebnis nach 30 Tagen (Gold):</strong> Production-ready SaaS mit <strong>$72 MRR</strong>. 52 Validierungs-Responses, Commitment-Test bestanden (8/30 Conversions). Sprint abgeschlossen — Gold-Nachweis erbracht.</p>
+        <p class="ms-p-en" style="display:none"><strong>Result after 30 days (Gold):</strong> Production-ready SaaS with <strong>$72 MRR</strong>. 52 validation responses, commitment test passed (8/30 conversions). Sprint completed — Gold milestone delivered.</p>
+      </div>
+
+      <div style="margin-top:24px;background:var(--bg2);border:1px solid rgba(212,160,23,0.2);border-radius:14px;padding:24px 28px;text-align:center;">
+        <p style="font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:16px;" class="ms-p-de">Das klingt machbar — weil es machbar ist.<br>Cohort #2 · ab CHF 67 · Zahlung erst nach Annahme.</p>
+        <p style="font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:16px;display:none" class="ms-p-en">This sounds doable — because it is.<br>Cohort #2 · from $67 · you pay only if accepted.</p>
+        <a href="https://mvpbuilder.io/pipeline?utm_source=simulation&utm_medium=html&utm_campaign=cohort1&utm_content=sim-tab-2-day30" class="btn-apply-de" style="display:inline-block;padding:12px 28px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;">Platz anfragen →</a>
+        <a href="https://mvpbuilder.io/pipeline?utm_source=simulation&utm_medium=html&utm_campaign=cohort1&utm_content=sim-tab-2-day30" class="btn-apply-en" style="display:none;padding:12px 28px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;">Request your spot →</a>
       </div>
     </div>
 
     <!-- ═══ TAB 3: VERGLEICH / COMPARISON ═══ -->
     <div class="tab-panel" id="panel-3">
       <div class="panel-head">
-        <h2 class="panel-h2-de" style="display:none">📊 Direkter Vergleich</h2>
-        <h2 class="panel-h2-en">📊 Direct Comparison</h2>
+        <h2 class="panel-h2-de">📊 Direkter Vergleich</h2>
+        <h2 class="panel-h2-en" style="display:none">📊 Direct Comparison</h2>
       </div>
 
       <!-- SVG: Outcome comparison bars -->
       <div style="background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:32px;margin-bottom:32px;">
-        <p class="comp-chart-label-de" style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:24px;">13 Tage · ~1h/Tag · Gleiches Projekt</p>
-        <p class="comp-chart-label-en" style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:24px;display:none">13 Days · ~1h/Day · Same Project</p>
+        <p class="comp-chart-label-de" style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:24px;">Bronze 13T · Silber 21T · Gold 30T · ~1h/Tag · Gleiches Projekt</p>
+        <p class="comp-chart-label-en" style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:24px;display:none">Bronze 13d · Silver 21d · Gold 30d · ~1h/Day · Same Project</p>
         <svg width="100%" viewBox="0 0 520 140" fill="none" xmlns="http://www.w3.org/2000/svg">
           <!-- Grid lines -->
           <line x1="120" y1="0" x2="120" y2="120" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
@@ -1071,7 +1209,7 @@
           <div class="metric">
             <div class="metric-label metric-label-de">Zeit Investment</div>
             <div class="metric-label metric-label-en" style="display:none">Time Investment</div>
-            <div class="metric-value">13h</div>
+            <div class="metric-value">21h</div>
             <div class="bar-track"><div class="bar-fill" data-w="100"></div></div>
           </div>
           <div class="metric">
@@ -1105,7 +1243,7 @@
           <div class="metric">
             <div class="metric-label metric-label-de">Zeit Investment</div>
             <div class="metric-label metric-label-en" style="display:none">Time Investment</div>
-            <div class="metric-value">13h</div>
+            <div class="metric-value">30h</div>
             <div class="bar-track"><div class="bar-fill" data-w="100"></div></div>
           </div>
           <div class="metric">
@@ -1132,8 +1270,8 @@
       </div>
 
       <div class="table-wrap">
-        <h3 class="ms-h3-de">Was jeder nach 13 Tagen erreicht hat</h3>
-        <h3 class="ms-h3-en" style="display:none">What each level achieved after 13 days</h3>
+        <h3 class="ms-h3-de">Was jeder nach abgeschlossenem Sprint erreicht hat</h3>
+        <h3 class="ms-h3-en" style="display:none">What each level achieved after completing their sprint</h3>
         <table>
           <thead>
             <tr>
@@ -1156,7 +1294,7 @@
           <tbody>
             <tr>
               <td><span class="td-de">Produkt-Status</span><span class="td-en" style="display:none">Product Status</span></td>
-              <td><span class="td-de">Airtable Prototyp</span><span class="td-en" style="display:none">Airtable prototype</span></td>
+              <td><span class="td-de">Airtable MVP</span><span class="td-en" style="display:none">Airtable MVP</span></td>
               <td><span class="td-de">Web-App (Beta)</span><span class="td-en" style="display:none">Web app (Beta)</span></td>
               <td>Production SaaS</td>
             </tr>
@@ -1201,8 +1339,8 @@
       </div>
 
       <div class="insight">
-        <p class="ms-p-de"><strong>Key Insight:</strong> Alle 3 haben in 13 Tagen (~1h/Tag) etwas Reales gebaut. Der Unterschied ist nicht "ob", sondern "wie weit". Anfänger validiert das Problem, Fortgeschrittene haben eine funktionierende App, Profis machen Revenue. Jeder Weg ist wertvoll — starte wo du bist. 🚀</p>
-        <p class="ms-p-en" style="display:none"><strong>Key Insight:</strong> All 3 built something real in 13 days (~1h/day). The difference isn't "whether", but "how far". Beginners validate the problem, intermediates have a working app, experts make revenue. Every path is valuable — start where you are. 🚀</p>
+        <p class="ms-p-de"><strong>Key Insight:</strong> Alle 3 haben in 13 bis 30 Tagen (~1h/Tag) etwas Reales gebaut. Der Unterschied ist nicht "ob", sondern "wie weit". Anfänger validiert das Problem, Fortgeschrittene haben eine validierte App, Profis machen Revenue mit dokumentiertem Commitment-Test. Jeder Weg ist wertvoll — starte wo du bist. 🚀</p>
+        <p class="ms-p-en" style="display:none"><strong>Key Insight:</strong> All 3 built something real in 13 to 30 days (~1h/day). The difference isn't "whether", but "how far". Beginners validate the problem, intermediates have a validated app, experts make revenue with a documented commitment test. Every path is valuable — start where you are. 🚀</p>
       </div>
     </div>
 
@@ -1211,15 +1349,15 @@
   <!-- BOTTOM CTA -->
   <div style="border-top:1px solid var(--border);padding:64px 24px;text-align:center;position:relative;overflow:hidden;">
     <div style="position:absolute;inset:0;background:radial-gradient(ellipse 50% 80% at 50% 100%,rgba(212,160,23,0.08) 0%,transparent 70%);pointer-events:none;"></div>
-    <p style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;" class="cta-eyebrow-de">Cohort #1 — jetzt offen</p>
-    <p style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;display:none" class="cta-eyebrow-en">Cohort #1 — now open</p>
+    <p style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;" class="cta-eyebrow-de">Cohort #2 — jetzt offen</p>
+    <p style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;display:none" class="cta-eyebrow-en">Cohort #2 — now open</p>
     <p style="font-family:'Instrument Serif',serif;font-size:clamp(28px,5vw,48px);letter-spacing:-.025em;line-height:1.1;margin-bottom:16px;" class="cta-title-de">Welcher Pfad bist du?</p>
     <p style="font-family:'Instrument Serif',serif;font-size:clamp(28px,5vw,48px);letter-spacing:-.025em;line-height:1.1;margin-bottom:16px;display:none" class="cta-title-en">Which path are you?</p>
-    <p style="font-size:16px;color:var(--muted);max-width:440px;margin:0 auto 36px;" class="cta-sub-de">Bewirb dich jetzt — das System wählt automatisch das passende Modul für dich.</p>
-    <p style="font-size:16px;color:var(--muted);max-width:440px;margin:0 auto 36px;display:none" class="cta-sub-en">Apply now — the system automatically picks the right module for you.</p>
+    <p style="font-size:16px;color:var(--muted);max-width:440px;margin:0 auto 36px;" class="cta-sub-de">Frag jetzt deinen Platz an — das System wählt automatisch das passende Modul für dich.</p>
+    <p style="font-size:16px;color:var(--muted);max-width:440px;margin:0 auto 36px;display:none" class="cta-sub-en">Request your spot — the system automatically picks the right module for you.</p>
     <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-      <a href="https://mvpbuilder.io/pipeline" style="padding:14px 32px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;" class="cta-btn-primary-de">Kostenlos bewerben →</a>
-      <a href="https://mvpbuilder.io/pipeline" style="padding:14px 32px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;display:none" class="cta-btn-primary-en">Apply for free →</a>
+      <a href="https://mvpbuilder.io/pipeline?utm_source=simulation&utm_medium=html&utm_campaign=cohort1&utm_content=sim-bottom-cta" style="padding:14px 32px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;" class="cta-btn-primary-de">Platz anfragen →</a>
+      <a href="https://mvpbuilder.io/pipeline?utm_source=simulation&utm_medium=html&utm_campaign=cohort1&utm_content=sim-bottom-cta" style="padding:14px 32px;background:var(--text);color:var(--bg);border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;display:none" class="cta-btn-primary-en">Request your spot →</a>
       <a href="https://mvpbuilder.io" style="padding:14px 24px;background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:10px;font-weight:500;font-size:15px;text-decoration:none;" class="cta-btn-sec-de">← Zurück zur Startseite</a>
       <a href="https://mvpbuilder.io" style="padding:14px 24px;background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:10px;font-weight:500;font-size:15px;text-decoration:none;display:none" class="cta-btn-sec-en">← Back to homepage</a>
     </div>
