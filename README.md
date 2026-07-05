@@ -1,5 +1,7 @@
 # 30-Day Sprint — Public Build Log
 
+Sprint #2 läuft (seit 05.07.2026): Der Founder durchläuft das eigene Live-Produkt als User → [SPRINT_LOG_2.md]
+
 **MVP Builder · Cohort #1 complete · Cohort #2 open**
 
 This repository is the public record of the first 30-day sprint cohort. One developer. One project. Daily check-ins.
