@@ -1,6 +1,6 @@
 # 30-Day Sprint — Public Build Log
 
-Sprint #2 is running (since 05.07.2026): The founder goes through the live product as a user → [SPRINT_LOG_2.md]
+**🟢 Sprint #2 is running** (since July 5, 2026): The founder goes through his own live product as a regular user — building a curated beta-tester circle in 21 days, real milestone enforcement included. Follow along → **[SPRINT_LOG_2.md](SPRINT_LOG_2.md)**
 
 **MVP Builder · Cohort #1 complete · Cohort #2 open**
 
