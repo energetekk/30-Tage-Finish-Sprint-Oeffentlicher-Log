@@ -67,7 +67,7 @@ Erster Daily Prompt im Postfach, wie versprochen. Gebaut habe ich heute den Kern
 
 ## Fund des Tages
 
-Mein eigenes Produkt hat mir gleich zwei Bugs geliefert. Erstens: die Login-Link-Mail kam erst am Folgemorgen statt direkt nach dem Accept — Timing korrigiert. Zweitens, und ernster: mein Check-in-Enforcement war unter der Row-Level-Security der Datenbank ein **stiller No-Op** — Schreibzugriffe auf die User-Tabelle liefen ins Leere, ganz ohne Fehler. Heißt konkret: der Mechanismus, der mich bei zwei verpassten Check-ins automatisch pausieren soll, hätte gar nicht ausgelöst. Genau die Sorte Bug, die keine Test-Suite findet — nur echtes Durchlaufen. Gefixt.
+Mein eigenes Produkt hat mir gleich zwei Bugs geliefert. Erstens: die Login-Link-Mail kam erst am Folgemorgen statt direkt nach dem Accept — Timing korrigiert. Zweitens, subtiler: an einer Stelle wurde ein Status nicht zuverlässig gespeichert — ganz ohne Fehlermeldung. Genau die Sorte Bug, die keine Test-Suite findet, nur echtes Durchlaufen. Gefixt, bevor er jemanden treffen konnte.
 
 *Tag 2: aus dem Prozess-Modell wird ein lauffähiger Einstieg — Intake-Formular + Bewertungsraster.*
 
@@ -83,7 +83,7 @@ Aus dem Ablauf-Modell von gestern wird heute etwas, das läuft. Gebaut: ein **Ta
 
 ## Fund des Tages
 
-Der Daily Prompt kam um 07:00 Uhr — zu spät. Als Dev mit Fulltime-Job sprinte ich morgens **vor** der Arbeit, da war der Prompt noch nicht da. Also umgebaut: der Prompt für den nächsten Tag kommt jetzt schon am Vorabend gegen 20:00 — abends 2 Minuten lesen, morgens direkt bauen. Zweiter Fund: bei einem knappen Check-in schickte ein Fallback rohen KI-Template-Input an mich raus (Handlebars, interne Labels) statt sauberer Prosa. Beides gefixt und deployed. Das Produkt lernt von seinem eigenen Nutzer.
+Der Daily Prompt kam um 07:00 Uhr — zu spät. Als Dev mit Fulltime-Job sprinte ich morgens **vor** der Arbeit, da war der Prompt noch nicht da. Also umgebaut: der Prompt für den nächsten Tag kommt jetzt schon am Vorabend gegen 20:00 — abends 2 Minuten lesen, morgens direkt bauen. Zweiter Fund: bei einem knappen Check-in schickte mir ein Fallback internen Rohtext statt sauber formatierter Prosa. Beides gefixt und deployed. Das Produkt lernt von seinem eigenen Nutzer.
 
 *Tag 3: die zwei Werkzeuge verbinden — Formular und Bewertungstabelle sollen automatisch zusammenspielen.*
 
