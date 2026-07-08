@@ -102,3 +102,19 @@ Zur „Referenzen"-Frage von gestern: bewusst **weggelassen**. Ich habe noch kei
 Extern: das Email-Feld landete zuerst nicht in Notion — ein Typ-Mismatch (Notion-Email-Property vs. Text-Property des Connectors). Behoben, jetzt schreiben alle Felder. Am eigenen Produkt: der heutige Daily Prompt kam **ohne konkrete Tagesaufgabe**, nur mit einer generischen Frage. Ursache: mein knapper — aber täglicher! — Check-in von gestern (19 Wörter) löste ein „Confidence Gate" aus, das auf Wortzahl filterte und den echten, personalisierten Prompt unterdrückte. Ein kurzer Check-in ist aber hohes Engagement, kein „low signal" — das ist exakt das Goodhart-Problem, gegen das MVP Builder positioniert, im eigenen Code. Wortzahl-Filter raus; der Fallback trägt jetzt zusätzlich die echte Aufgabe statt einer Floskel. Same-day gefixt.
 
 *Tag 4–7: die eigentliche Menschen-Aufgabe beginnt — erste Tester wirklich sourcen (persönliche DMs, kein Spam). Dazwischen der Perfektionismus-Check. Die Scope-Entscheidung Warteliste bleibt bewusst offen, bis ein echter Tester durch den Prozess ist.*
+
+---
+
+# Tag 4 — Was der Tester tatsächlich in die Hand bekommt
+
+**Datum:** Mittwoch, 08.07.2026 · Silber, Tag 4/21
+
+Die letzten drei Tage bauten die Supply-Seite: Intake-Formular, Bewertungsraster, Automation dazwischen. Heute die andere Hälfte, ohne die der ganze Circle wertlos ist — **der Test-Auftrag selbst.** Ich habe den ersten standardisierten Test-Brief geschrieben und ihn im Trockenlauf durch einen Test-Empfänger geschickt, bevor ich einen echten Menschen damit behellige.
+
+Der Brief ist bewusst ein fokussierter Einzel-Flow („finde für dieses konkrete Paar den besten Pool"), kein „schau dich mal um" — plus feste Rückgabe-Felder statt der Bitte um „strukturiertes Feedback". Genau da lag der Denkfehler, den ich zuerst selbst gemacht hatte: Wer „schick mir strukturiertes Feedback" schreibt und keine Struktur mitliefert, bekommt Fließtext. Also: geschafft ja/nein, wo hängengeblieben (mit Schritt-Nummer), Bug mit Screenshot, was war unklar und warum, und — beim Produkttyp entscheidend — würdest du dem Ergebnis echtes Geld anvertrauen. Feste Felder, 48-Stunden-Fenster.
+
+## Fund des Tages
+
+Der ehrlichere Befund kam nicht aus dem Brief, sondern über mich selbst. Der Brief war in einer Stunde fertig — und ich merkte, wie mich ein Teil lieber noch die Notion-Tabelle hübscher gemacht, ein weiteres Feld ergänzt, das Formular verfeinert hätte. Alles Arbeit auf der **bequemen Seite.** Die unbequeme Seite von Tag 4 ist eine einzige Sache: einen echten Menschen anschreiben und fragen, ob er testet. Kein Tooling der Welt ersetzt diese eine Bewegung, und genau deshalb ist sie so leicht zu umgehen. Das ist Perfektionismus als Prokrastination — Feilen am Prozess, um dem Sourcing auszuweichen. Notiert, benannt, damit es nicht die ganze Woche frisst. Der Brief steht; jetzt braucht er einen Empfänger, der kein Testkonto ist.
+
+*Tag 5: die erste echte Ansprache — persönlich, ein Mensch, kein Verteiler.*
