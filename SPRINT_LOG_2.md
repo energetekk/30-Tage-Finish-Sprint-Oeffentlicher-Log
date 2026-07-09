@@ -118,3 +118,21 @@ Der Brief ist bewusst ein fokussierter Einzel-Flow („finde für dieses konkret
 Der ehrlichere Befund kam nicht aus dem Brief, sondern über mich selbst. Der Brief war in einer Stunde fertig — und ich merkte, wie mich ein Teil lieber noch die Notion-Tabelle hübscher gemacht, ein weiteres Feld ergänzt, das Formular verfeinert hätte. Alles Arbeit auf der **bequemen Seite.** Die unbequeme Seite von Tag 4 ist eine einzige Sache: einen echten Menschen anschreiben und fragen, ob er testet. Kein Tooling der Welt ersetzt diese eine Bewegung, und genau deshalb ist sie so leicht zu umgehen. Das ist Perfektionismus als Prokrastination — Feilen am Prozess, um dem Sourcing auszuweichen. Notiert, benannt, damit es nicht die ganze Woche frisst. Der Brief steht; jetzt braucht er einen Empfänger, der kein Testkonto ist.
 
 *Tag 5: die erste echte Ansprache — persönlich, ein Mensch, kein Verteiler.*
+
+---
+
+# Tag 5 — Fertig ist nicht verschickt
+
+**Datum:** Donnerstag, 09.07.2026 · Silber, Tag 5/21
+
+Gestern stand der generische Test-Brief. Heute habe ich ihn scharf gestellt: aus „schau dir das mal an" wurde ein konkreter, sofort versendbarer Auftrag für einen einzelnen realen Flow — den Wallet-Connect-Flow eines live DeFi-Produkts. Copy-pasteable, verständlich ohne dass ich je mit dem Empfänger gesprochen haben muss: Ziel, URL, eine Aufgabenbeschreibung in vier Sätzen, 48-Stunden-Fenster, feste Rückgabe-Felder (verbunden ja/nein, welche Wallets probiert, wo gezögert und was unklar war, Bug mit Screenshot, welche Wallet sich am reibungslosesten anfühlte — mit einem Satz Begründung). Der Auftrag ist an dem Punkt, an dem nichts mehr fehlt. Man könnte ihn jetzt abschicken.
+
+Man könnte.
+
+**Verschickt: 0.** Keinen einzigen echten Menschen heute angeschrieben.
+
+## Fund des Tages
+
+Gestern habe ich Perfektionismus als Prokrastination benannt — Feilen am Tooling, um dem Sourcing auszuweichen. Ich dachte, Benennen reicht. Tut es nicht. Heute trug dieselbe Vermeidung nur ein besseres Kostüm: statt die Tabelle hübscher zu machen, habe ich den Auftrag *produktspezifisch* gemacht — und das fühlte sich wie Fortschritt an, weil es tatsächlich besser ist. Genau das macht es gefährlicher. Ein vager Brief, an dem man endlos feilt, ist offensichtlich Ausweichen. Ein exzellenter, versandfertiger Auftrag, den man nicht verschickt, sieht aus wie Arbeit — ist es aber nicht. „Versandfertig" ist der Zustand direkt vor der einzigen Bewegung, die zählt, und heute bin ich genau dort stehen geblieben. Die ehrliche Zahl von Tag 5 ist eine 0, und sie steht hier, weil dieser Log der Zeuge ist. Ein fertiger Auftrag ohne Empfänger ist am Ende dasselbe wie kein Auftrag.
+
+*Tag 6: keine neue Vorbereitung, kein weiteres Feld. Der Auftrag geht an echte Namen raus — oder das Muster gewinnt.*
