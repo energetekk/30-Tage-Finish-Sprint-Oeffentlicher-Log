@@ -136,3 +136,21 @@ Man könnte.
 Gestern habe ich Perfektionismus als Prokrastination benannt — Feilen am Tooling, um dem Sourcing auszuweichen. Ich dachte, Benennen reicht. Tut es nicht. Heute trug dieselbe Vermeidung nur ein besseres Kostüm: statt die Tabelle hübscher zu machen, habe ich den Auftrag *produktspezifisch* gemacht — und das fühlte sich wie Fortschritt an, weil es tatsächlich besser ist. Genau das macht es gefährlicher. Ein vager Brief, an dem man endlos feilt, ist offensichtlich Ausweichen. Ein exzellenter, versandfertiger Auftrag, den man nicht verschickt, sieht aus wie Arbeit — ist es aber nicht. „Versandfertig" ist der Zustand direkt vor der einzigen Bewegung, die zählt, und heute bin ich genau dort stehen geblieben. Die ehrliche Zahl von Tag 5 ist eine 0, und sie steht hier, weil dieser Log der Zeuge ist. Ein fertiger Auftrag ohne Empfänger ist am Ende dasselbe wie kein Auftrag.
 
 *Tag 6: keine neue Vorbereitung, kein weiteres Feld. Der Auftrag geht an echte Namen raus — oder das Muster gewinnt.*
+
+---
+
+# Tag 6 — Es hat das Gebäude verlassen
+
+**Datum:** Freitag, 10.07.2026 · Silber, Tag 6/21
+
+Gestern endete mit einer 0 und einem Versprechen: keine neue Vorbereitung, der Auftrag geht raus. Heute ist er raus. Kein weiteres Feld, keine hübschere Tabelle — stattdessen habe ich die Anfrage tatsächlich in die Welt gestellt: ein Kommentar unter einem Web3-UX-Artikel und ein Post in einer Ethereum-Dev-Community, in dem ich Devs suche, die den Wallet-Connect-Flow eines live DeFi-Produkts durchspielen. Öffentlich, mit meinem Namen dran, an einem Ort, an dem die Bitte ignoriert oder abgelehnt werden kann. Genau das ist heute auch passiert — und darin lag der Fund.
+
+## Fund des Tages
+
+Mein erster Post wurde vom Automod der Community sofort geflaggt: „Das hier ist kein Job Board." Erster Reflex: Unsinn, ich zahle doch gar nichts. Aber der Bot hatte recht über die *Form*. Ich hatte geschrieben: „Ich suche jemanden, der für mich testet — das bekommst du dafür." Eine einseitige Bitte um die Zeit eines Fremden, mit einer Belohnungsliste garniert, liest sich wie eine ausgeschriebene Gig — auch wenn kein Geld fließt. Es fühlt sich für den Empfänger nach Extraktion an.
+
+Der Fix war nicht kosmetisch. Ich habe die Anfrage umgedreht: aus „teste meins" wurde „lass uns tauschen — ich laufe einen 30-Minuten-Durchgang durch deinen Connect-Flow, du durch meinen, gleiches Format in beide Richtungen." Damit war es kein Aushang mehr, sondern ein Austausch unter Gleichrangigen — und ging durch. Die Lektion, die über Reddit-Regeln hinausgeht: Wenn ich einen Fremden um seine Zeit bitte, ist Gegenseitigkeit keine nette Geste, sondern das, was die Bitte überhaupt legitim macht. Genau der Reflex, den ich fünf Tage lang vermieden habe — jemanden ansprechen — wird leichter, sobald ich nicht *nehme*, sondern *tausche*.
+
+Und die ehrliche Einordnung, weil dieser Log der Zeuge ist: Die 0 ist gebrochen, aber ein öffentlicher Post ist ein *Angebot*, kein Abschluss. Verschickt heißt noch nicht: jemand hat zugesagt. Die Tür ist auf — durchgegangen ist noch niemand. Das ist der Unterschied zwischen Tag 6 und Tag 7.
+
+*Tag 7: Ende der ersten Woche. Kommt eine erste Antwort — und was zeigt der ehrliche Wochenrückblick, wenn ich Gebautes gegen Verschicktes halte?*
