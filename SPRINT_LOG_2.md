@@ -154,3 +154,25 @@ Der Fix war nicht kosmetisch. Ich habe die Anfrage umgedreht: aus „teste meins
 Und die ehrliche Einordnung, weil dieser Log der Zeuge ist: Die 0 ist gebrochen, aber ein öffentlicher Post ist ein *Angebot*, kein Abschluss. Verschickt heißt noch nicht: jemand hat zugesagt. Die Tür ist auf — durchgegangen ist noch niemand. Das ist der Unterschied zwischen Tag 6 und Tag 7.
 
 *Tag 7: Ende der ersten Woche. Kommt eine erste Antwort — und was zeigt der ehrliche Wochenrückblick, wenn ich Gebautes gegen Verschicktes halte?*
+
+---
+
+# Tag 7 — Wochenbilanz: Das Ziel war zu leicht
+
+**Datum:** Samstag, 11.07.2026 · Silber, Tag 7/21
+
+Ende der ersten Woche, also erst die nackte Bilanz — Gebautes gegen Verschicktes: **sechs Bausteine gebaut** (Matching-Prozess, Intake mit Bewertungsraster, Automation, Test-Brief, versandfertiger Auftrag, Feedback-Template in zwei Sprachen), **zwei Anfragen öffentlich**, **null Antworten, null echte Durchläufe.** Die Bau-Seite dieser Woche war stark, die Menschen-Seite hat erst am sechsten Tag begonnen. Das ist die ehrliche Form von „Woche 1 geschafft".
+
+Dann kam der Wochen-Checkpoint meines eigenen Produkts — und lag einmal falsch und einmal richtig.
+
+**Falsch lag er hier:** „Kein Stack, kein Prozess, keine technische Grundlage." Sechs Tage Aufbauarbeit, und der Prompt behauptete, es gebe nichts davon. Ursache gefunden: Die tägliche KI sah immer nur den *letzten* Check-in — der handelte von Outreach, also existierte für sie nur Outreach. Eine Wochen-Bilanz, die über sieben Tage urteilt und dabei einen Tag Daten hat, halluziniert nicht aus Böswilligkeit, sondern aus Datenmangel. Same-day gefixt: Die KI bekommt jetzt den kumulativen Verlauf aller Check-ins, und Bilanz-Tage müssen über die vollständige Liste urteilen statt über den jüngsten Eintrag.
+
+**Richtig lag er hier:** bei der Scope-Frage. Nur hatte sie zwei Antwortrichtungen — Kurs halten oder reduzieren. Meine ehrliche Antwort war die dritte, die es nicht gab: **Das Ziel war zu leicht.** Ich hatte an Tag 0 die „kleinste lauffähige Version" definiert — und dann genau diesen Mindestumfang als 21-Tage-Ziel eingefroren. Ein Ziel, das der Prozess an Tag 7 faktisch erfüllt hätte, wenn ein einziger Mensch geantwortet hätte. Es lag sogar unter dem, was mein eigenes Tag-13-Enforcement verlangt hätte.
+
+## Fund des Tages
+
+Systeme korrigieren nach unten. Jeder Anpassungsmechanismus in meinem Produkt — und, ehrlich, in meinem Kopf — zeigte in dieselbe Richtung: kürzen, reduzieren, absichern. Ein vorsichtig gesetztes Ziel plus ein System, das nur Runter-Korrektur kennt, produziert die gefährlichste Form von Erfolg: **man schließt erfolgreich ab, ohne dass sich etwas verändert hat.** Das Häkchen stimmt, die Transformation fehlt. Deshalb heute die Korrektur nach oben, offiziell und verbindlich: Landing + Waitlist live, mindestens 15 Tester kontaktiert und bewertet, mindestens 3 echte Matches mit 48h-Feedback — und einmal echt nach Geld fragen. Ein dokumentiertes Nein zählt als Ergebnis; die Frage nicht zu stellen zählt nicht. Ein Rauf-Pfad für den Wochen-Checkpoint steht jetzt auf der Produkt-Liste.
+
+Und weil Tag 7 auch der Upgrade-Entscheid war: Gold (mehr Laufzeit) geprüft und verneint. Null Antworten sind keine Traktion, und mehr Zeit wäre nur die eleganteste Form des Ausweichens.
+
+*Tag 8: Landing + Waitlist. Die Tür ist offen — jetzt bekommt sie eine Adresse.*
