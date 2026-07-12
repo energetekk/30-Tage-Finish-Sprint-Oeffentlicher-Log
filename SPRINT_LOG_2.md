@@ -176,3 +176,21 @@ Systeme korrigieren nach unten. Jeder Anpassungsmechanismus in meinem Produkt �
 Und weil Tag 7 auch der Upgrade-Entscheid war: Gold (mehr Laufzeit) geprüft und verneint. Null Antworten sind keine Traktion, und mehr Zeit wäre nur die eleganteste Form des Ausweichens.
 
 *Tag 8: Landing + Waitlist. Die Tür ist offen — jetzt bekommt sie eine Adresse.*
+
+---
+
+# Tag 8 — Die Adresse
+
+**Datum:** Sonntag, 12.07.2026 · Silber, Tag 8/21
+
+Gestern endete mit einem Versprechen: Die Tür ist offen, heute bekommt sie eine Adresse. Hat sie. Die Landing mit Warteliste steht live — das erste Ziel, das mein eigenes 21-Tage-Enforcement erst an Tag 13 verlangt, ist an Tag 8 abgehakt.
+
+Konkret: Das Ding hat jetzt einen Namen — **BetaPair** — und eine Adresse: **betapair.dev**. Eine schlichte, zweisprachige Seite (deutsch/englisch, ein Klick), kein Marketing-Lärm, der ehrliche Satz oben drüber: du hast es gebaut, getestet hat es bisher nur du selbst. Zwei Wege rein — einer für Leute, die vor dem Launch echtes Feedback auf ihr Produkt wollen, einer für die, die testen. Beide Formulare laufen, in beiden Sprachen, Probe-Eintrag durch. Die Liste sammelt.
+
+Und die ehrliche Zahl, weil dieser Log der Zeuge ist: **0 Anmeldungen.** Die Seite ist seit ein paar Stunden live.
+
+## Fund des Tages
+
+Diese Landing ist das *fertigste* Ding, das ich diese Woche gebaut habe — und genau das macht sie gefährlich. Eine echte URL, ein Name, ein Schloss-Symbol davor: das *fühlt* sich nach Ankunft an. Ist es nicht. Eine Warteliste ist ein leerer Raum, und die URL ist die Adresse eines Hauses, das noch niemand betreten hat. Die ganze Woche hat dieser Log dieselbe Linie gezogen — fertig ist nicht verschickt, die Tür auf ist nicht durchgegangen, abschließen ist nicht sich verändern. Heute die nächste Variante desselben Satzes: **live ist nicht besucht.** Die Zahl, die zählt, ist gerade umgesprungen — nicht mehr „gebaut", sondern „jemand, der nicht ich bin, hat sich eingetragen". Und die kippt nicht durch mehr Code. Ab hier ist das ganze Spiel Reichweite: die Adresse dahin tragen, wo echte Builder und Tester sind. Der Bau-Teil ist vorbei — das war heute die eigentliche Zäsur, nicht das Deployment.
+
+*Tag 9: die Adresse rausgetragen. Kommt der erste echte Name auf die Liste — oder bleibt der Raum leer?*
