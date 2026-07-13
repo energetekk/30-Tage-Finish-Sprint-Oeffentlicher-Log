@@ -194,3 +194,21 @@ Und die ehrliche Zahl, weil dieser Log der Zeuge ist: **0 Anmeldungen.** Die Sei
 Diese Landing ist das *fertigste* Ding, das ich diese Woche gebaut habe — und genau das macht sie gefährlich. Eine echte URL, ein Name, ein Schloss-Symbol davor: das *fühlt* sich nach Ankunft an. Ist es nicht. Eine Warteliste ist ein leerer Raum, und die URL ist die Adresse eines Hauses, das noch niemand betreten hat. Die ganze Woche hat dieser Log dieselbe Linie gezogen — fertig ist nicht verschickt, die Tür auf ist nicht durchgegangen, abschließen ist nicht sich verändern. Heute die nächste Variante desselben Satzes: **live ist nicht besucht.** Die Zahl, die zählt, ist gerade umgesprungen — nicht mehr „gebaut", sondern „jemand, der nicht ich bin, hat sich eingetragen". Und die kippt nicht durch mehr Code. Ab hier ist das ganze Spiel Reichweite: die Adresse dahin tragen, wo echte Builder und Tester sind. Der Bau-Teil ist vorbei — das war heute die eigentliche Zäsur, nicht das Deployment.
 
 *Tag 9: die Adresse rausgetragen. Kommt der erste echte Name auf die Liste — oder bleibt der Raum leer?*
+
+---
+
+# Tag 9 — Eine Adresse ist noch keine Landkarte
+
+**Datum:** Montag, 13.07.2026 · Silber, Tag 9/21
+
+Gestern endete mit der Frage, ob der erste echte Name auf die Liste kommt. Kurze, ehrliche Antwort zuerst: **nein.** Immer noch 0 Anmeldungen, und die ersten Swap-Anfragen, die ich heute rausgeschickt habe, sind zu frisch für eine Antwort. Die längere Antwort ist interessanter, weil der Tag einen Haken hatte, den ich nicht kommen sah.
+
+Ich wollte die Adresse raustragen — dorthin, wo echte Builder sind. Den einen Zug, der wirklich Reichweite gehabt hätte — die Adresse in eine große öffentliche Community stellen —, habe ich am Ende *nicht* gemacht. Nicht aus Zögern, sondern weil ich beim Gegencheck gemerkt habe: **betapair.dev löst für den Großteil der Welt noch gar nicht auf.** Die Domain ist frisch, die Namensserver-Umstellung propagiert noch durchs Netz — bei mir selbst kam „Seite nicht erreichbar". Jemanden auf eine Adresse zu schicken, die im Browser ins Leere läuft, ist schlechter, als gar nicht zu schicken: den ersten Eindruck verbrennt man nur einmal.
+
+Was ich konnte, habe ich getan: die ersten echten Swap-Anfragen an Leute, die öffentlich um Feedback zu ihrem Produkt gebeten haben. Kein „test bitte meins", sondern der Tausch, den Tag 6 mir beigebracht hat — *ich gehe zuerst durch deins, du durch meins, gleiches Format in beide Richtungen.* Der Reflex, doch nur einseitig um Tester zu bitten, kam übrigens wieder hoch. Er kommt jeden Tag wieder. Gegenseitigkeit ist keine Haltung, die man einmal einnimmt, sondern eine Entscheidung, die man jeden Morgen neu trifft.
+
+## Fund des Tages
+
+Die ganze Woche hat dieser Log denselben Satz variiert: fertig ist nicht verschickt, Tür auf ist nicht durchgegangen, live ist nicht besucht. Heute die nächste Schicht, und sie sitzt tief: **eine Adresse zu haben ist nicht dasselbe wie auffindbar zu sein.** Gestern war ich stolz auf die URL — heute gilt die Domain beim Hoster als korrekt konfiguriert, aber die Straße dorthin ist auf den Landkarten der meisten Menschen noch nicht eingezeichnet. Das Unbequeme: Es gibt nichts zu bauen. Kein Commit behebt DNS-Propagation, kein cleverer Fix beschleunigt sie — der einzig richtige Zug ist warten und nichts anfassen, was sich gerade setzt. Für jemanden, dessen erster Reflex bei jedem Blocker „ich fix das" ist, ist Nicht-Handeln die schwerste Disziplin. Manche Türen gehen nicht auf, weil man drückt, sondern weil man aufhört zu drücken und der Mechanik ihre Zeit lässt.
+
+*Tag 10: Die Adresse ist — hoffentlich — auf der Karte. Dann zählt nur noch eins: sie an den lautesten Ort tragen, an dem echte Builder sind, und sehen, ob der Raum sich füllt.*
