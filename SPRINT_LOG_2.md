@@ -212,3 +212,39 @@ Was ich konnte, habe ich getan: die ersten echten Swap-Anfragen an Leute, die ö
 Die ganze Woche hat dieser Log denselben Satz variiert: fertig ist nicht verschickt, Tür auf ist nicht durchgegangen, live ist nicht besucht. Heute die nächste Schicht, und sie sitzt tief: **eine Adresse zu haben ist nicht dasselbe wie auffindbar zu sein.** Gestern war ich stolz auf die URL — heute gilt die Domain beim Hoster als korrekt konfiguriert, aber die Straße dorthin ist auf den Landkarten der meisten Menschen noch nicht eingezeichnet. Das Unbequeme: Es gibt nichts zu bauen. Kein Commit behebt DNS-Propagation, kein cleverer Fix beschleunigt sie — der einzig richtige Zug ist warten und nichts anfassen, was sich gerade setzt. Für jemanden, dessen erster Reflex bei jedem Blocker „ich fix das" ist, ist Nicht-Handeln die schwerste Disziplin. Manche Türen gehen nicht auf, weil man drückt, sondern weil man aufhört zu drücken und der Mechanik ihre Zeit lässt.
 
 *Tag 10: Die Adresse ist — hoffentlich — auf der Karte. Dann zählt nur noch eins: sie an den lautesten Ort tragen, an dem echte Builder sind, und sehen, ob der Raum sich füllt.*
+
+---
+
+# Tag 10 — Der grüne Haken hat gelogen
+
+**Datum:** Dienstag, 14.07.2026 · Silber, Tag 10/21
+
+Gestern endete mit der Hoffnung, die Adresse sei auf der Karte, und dem Vorsatz, sie an den lautesten Ort zu tragen, an dem echte Builder sind. Gestern habe ich mir außerdem selbst beigebracht, die schwerste Disziplin sei, nicht zu drücken — der Mechanik ihre Zeit zu lassen. Heute stellte sich heraus: Warten wäre nie durchgekommen. Die Domain hat nicht langsam propagiert. Sie war schlicht falsch verdrahtet.
+
+Der Haken war, dass mein eigenes Hoster-Dashboard die ganze Zeit einen grünen Haken zeigte — „korrekt konfiguriert". Für mich sah alles fertig aus. Nur erreichte die Seite den Großteil der Welt trotzdem nicht. Die Wahrheit kam nicht von meinem Bildschirm, sondern von einem Werkzeug, das von außen prüft — von dort, wo alle anderen stehen. Erst dieser Blick von außen zeigte: die Straße zu meinem Haus war nie eingezeichnet, egal wie grün es bei mir aussah. Also nicht warten, sondern reparieren. Eine halbe Stunde später löste die Adresse auf, weltweit, mit Schloss davor.
+
+Und dann, endlich, der Zug, den ich gestern zurückgehalten hatte: die Adresse an den lauten Ort getragen. Öffentlich, mit dem ehrlichen Satz — Tag 10, immer noch null Anmeldungen, kein „schließ dich 5.000 Buildern an", nur der echte Stand. Innerhalb von Minuten das, worauf ich zehn Tage gewartet habe: der erste fremde Mensch, der reagiert. Jemand, der selbst ein sehr nischiges Tool baut, schrieb, es treffe ihn genau — er habe gemerkt, dass außer ihm nie jemand durch sein eigenes Produkt geklickt hat — und meldete sich an. Parallel, zum ersten Mal, eine eingehende Nachricht von jemandem, der von sich aus nach einem Tausch fragte. Der Raum ist nicht voll. Aber zum ersten Mal steht ein Fußabdruck darin, der nicht meiner ist.
+
+## Fund des Tages
+
+Der grüne Haken hat gelogen — und die Lüge war präzise die, gegen die mein ganzes Produkt gebaut ist. Ich war der Letzte, der sehen konnte, dass meine Seite nicht erreichbar ist, weil ich von innen draufschaute, und von innen war alles grün. Erst ein Blick von außen deckte auf, was ich selbst unmöglich sehen konnte. Genau das ist der Satz, mit dem BetaPair oben auf der Landing steht: du hast es gebaut, du kennst jeden Handgriff, deshalb bist du der Einzige, der nicht mehr sieht, wo es klemmt. Heute ist mir mein eigenes Produktversprechen als DNS-Fehler passiert. Und es korrigiert die Lektion von gestern: Die Disziplin ist nicht, immer zu warten — sie ist, sich einen Blick von außen zu holen, bevor man entscheidet, ob Warten oder Handeln richtig ist. Ich hätte auf etwas, das schlicht kaputt war, unbegrenzt „geduldig" gewartet, weil mein eigener Bildschirm grün blieb. Von innen sieht man seinen eigenen toten Link nicht.
+
+*Tag 11: Der erste Fußabdruck im Raum ist da — ein Kommentar, ein „ich melde mich an", eine eingehende Frage. Wird daraus ein echter Durchlauf: der erste Mensch, der nicht nur die Tür sieht, sondern tatsächlich durch mein Produkt geht?*
+
+---
+
+# Tag 11 — Der Handschlag und das Nein
+
+**Datum:** Mittwoch, 15.07.2026 · Silber, Tag 11/21
+
+Die Frage von gestern hat heute eine halbe Antwort bekommen: Der Mensch, der von sich aus nach einem Tausch gefragt hatte, hat zugesagt. Der erste echte Durchlauf hat jetzt einen Termin — am Wochenende, und ich gehe zuerst: Sein Produkt bekommt bis Sonntagabend strukturiertes Feedback von mir, feste Felder, keine Höflichkeitsprosa. Danach geht er durch meins. Noch kein Durchlauf also, aber der erste Handschlag. Und weil dieser Log der Zeuge ist, auch die andere Zahl: Die Warteliste steht weiterhin bei null bestätigten Einträgen. Der Fußabdruck von gestern ist bislang ein Versprechen.
+
+Das Interessantere am Handschlag war aber ein Nebensatz. Er bot an, mich für meinen Test in Credits seines Produkts zu bezahlen. Freundlich gemeint, ehrlich verlockend — bei null Umsatz fühlt sich jede angebotene Währung wie Bestätigung an. Ich habe abgelehnt. Nicht aus Prinzipienreiterei, sondern weil bezahltes Feedback ein anderes Feedback ist: Wer bezahlt wird, liefert, was der Auftrag verlangt. Wer tauscht, liefert, was er selbst gern zurückbekäme. Der Tausch ist nicht die Gratis-Stufe von etwas — er ist das andere Medium, und genau daraus kommt die Qualität, für die das hier überhaupt existiert.
+
+Der Rest des Tages war Volumen-Arbeit, wie der Plan es verlangte: vier neue persönliche Swap-Anfragen, jede mit einer konkreten Beobachtung zum jeweiligen Projekt — der eine Satz, der eine Anfrage von Spam unterscheidet, kostet pro Person die meiste Zeit und ist nicht verhandelbar. Zwei Kandidaten habe ich nach dem Hinschauen bewusst *nicht* angeschrieben: einer hätte verlangt, eine unbekannte ausführbare Datei auf meinem Rechner zu starten — nein aus Sicherheitsgründen, und nebenbei hätte ich auf meinem System meine Hälfte des Tauschs gar nicht liefern können. Der andere hat schlicht noch nichts Testbares. Und der ehrliche Miss des Tages: Das Ziel waren zehn Kontakte, es wurden acht — und alle vier Neuen kamen wieder aus demselben Kanal, der geplante neue blieb unberührt. Notiert. Morgen zuerst.
+
+## Fund des Tages
+
+Heute war der Tag der Neins — drei Stück, und alle drei schützen dasselbe. Nein zur Bezahlung, nein zur unbekannten Binary, nein zum Projekt ohne Testgegenstand: Jedes einzelne hat mich heute etwas gekostet, das ich dringend brauche — eine Währung, eine Tracker-Zeile, Tempo Richtung Zählziel. Genau daran habe ich gemerkt, dass Kuratierung kein Feature ist, sondern eine Ausgabe: Sie bezahlt Qualität mit Volumen, und sie tut am meisten weh an Tagen, an denen Volumen das Tagesziel ist. Am aufschlussreichsten bleibt das erste Nein: Am ersten Tag, an dem dieses Modell einen echten Menschen berührte, versuchte es sofort, sich in eine Transaktion zu verwandeln. Wenn der Tausch eine Währung bekommt, wird er ein Marktplatz — und Marktplätze für Feedback gibt es schon; ihre Ergebnisqualität war der Grund, das hier anzufangen. Nein zu Geld sagen an Tag elf von null Umsatz fühlt sich falsch an und war trotzdem die klarste Produktentscheidung der Woche.
+
+*Tag 12: der unberührte Kanal zuerst, Nachfassen bei den Stillen — und übermorgen ist Pflicht-Meilenstein. Sieben Kontakte und drei Matches fehlen. Der Handschlag muss ein Durchlauf werden.*
