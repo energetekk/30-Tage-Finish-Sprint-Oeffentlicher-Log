@@ -306,3 +306,51 @@ Und weil dieser Log der Zeuge ist, die Zahlen ohne Schminke: **weiter null abges
 Zwei Tage lang war die Lektion: Ich muss den Weg des Besuchers selbst ablaufen, weil der Erbauer den Riss nicht mehr sieht. Heute kam dieselbe Blindheit an einer neuen Stelle — nicht in meinem Produkt, sondern in meinem eigenen Reden. Ich hatte Antworten verschickt und angenommen, sie seien angekommen, weil ich sie ja geschrieben hatte. Aus meinem Blickwinkel war die Botschaft raus; aus ihrem hatte sie nie geklingelt. Und daraus zog ich den bequemsten, falschesten Schluss: Wer nicht antwortet, will nicht. Dabei hatte niemand abgelehnt — die Post war nur nie zugestellt. Schweigen ist kein Nein, solange ich nicht geprüft habe, ob meine Worte den anderen überhaupt erreicht haben. Ein Kanal kann die wärmsten Antworten lautlos schlucken, und man verwechselt das Verschluckte mit Zurückweisung — und gibt Menschen auf, die nie von einem gehört haben. Bevor ich das nächste Mal ein Schweigen deute, prüfe ich die Zustellung. Erst dann darf ich es lesen.
 
 *Tag 15: Sonntag. Meine Hälfte ist fällig — zum ersten Mal gehe ich selbst ganz durch das Produkt eines anderen, mit den Augen des Besuchers, den er nicht mehr hat. Und die eine wieder geweckte Absicht: Wird sie endlich der erste Name auf der Liste, oder bleibt sie ein „ich melde mich an", das nie eintrifft?*
+
+---
+
+# Tag 15 — Der Pass, der an Schritt null endete
+
+**Datum:** Sonntag, 19.07.2026 · Silber, Tag 15/21
+
+Gestern die Ansage: Heute gehe ich selbst ganz durch das Produkt eines anderen — zum ersten Mal der Besucher sein, den ein anderer Erbauer nicht mehr hat. Es kam anders, zweimal, und beide Male lag die Lektion genau in dem Stück, das nicht funktioniert hat.
+
+Der Handschlag vom Wochenende lebt. Der andere hat sich gemeldet, seine Zusage steht, er wollte noch heute durch meine Strecke gehen. Meine Hälfte habe ich startklar gemacht: Zugang angelegt, ein kleines, echtes Übungsstück vorbereitet, an dem sein Produkt zeigen kann, was es kann — und ihm ehrlich gesagt, dass mein freies Fenster heute ein paar Stunden groß ist, nicht ewig. Aber der Schlüssel zu seinem Produkt liegt bei ihm, und er ist bis zum Abend nicht angekommen. Ich hätte drängeln können. Ich habe es nicht getan — die Regel, die den ganzen Tausch trägt, habe ich selbst aufgeschrieben: Die Zusage ist fest, die Uhr ist flexibel, das Wochenende zählt. Also steht meine Hälfte bereit wie ein gedeckter Tisch, und morgen ist der Tag, an dem sich zeigt, ob jemand kommt.
+
+Statt zu warten, bin ich zur zweiten Tür gegangen. Ein anderer Bauer hatte öffentlich gefragt, warum sich Leute bei seinem Produkt anmelden, einen Tag spielen und nie wiederkommen — ob sein Einstieg sich „natürlich" anfühle. Ich hatte angeboten, durchzugehen; eine Antwort kam nie. Ich bin trotzdem gegangen, unaufgefordert, mit frischen Augen. Und ich bin an Schritt null gescheitert: Sein Einstieg kennt genau einen Weg, den Login über einen einzigen großen Anbieter. Ich vertraue mein persönliches Konto keinem Werkzeug an, das mit meinem Geld hantieren will — und die Menschen, die er um Feedback bittet, ticken genau so. Kein zweiter Weg, keine Probetür, kein Hereinschauen. Der Durchlauf war vorbei, bevor sein Produkt überhaupt anfing.
+
+Ich habe ihm genau das geschrieben, öffentlich, unter seine Frage: Hier verlierst du Leute wie mich — nicht in deinem Onboarding, sondern eine Stufe davor, an der Tür. Mit dem konkreten Vorschlag, was die Tür öffnen würde, und dem stehenden Angebot, den vollen Durchlauf nachzuliefern, sobald es einen zweiten Weg hinein gibt. Keine Antwort bis heute Abend — auch das gehört ins Protokoll.
+
+Und die Zahlen ohne Schminke: **weiter null abgeschlossene Durchläufe, weiter null bestätigt auf der Liste.** Die wieder geweckte Absicht von gestern ist immer noch ein „ich melde mich an" ohne Eintrag. Kein neuer Fremder wurde heute kalt angeschrieben — mit Absicht. Vier Fäden sind genug; was fehlt, ist kein fünfter Faden, sondern das erste verknotete Ende.
+
+## Fund des Tages
+
+Ich bin losgezogen, um ein vollständiges, siebenteiliges Feedback zu liefern, und kam mit einem einzigen Satz zurück: Ich bin an deiner Tür gescheitert. Mein erster Reflex war, das als missglückten Tag zu verbuchen — kein Durchlauf, kein Ergebnis. Der zweite Blick sagte das Gegenteil: Der Mann hatte wörtlich gefragt, ob sein Einstieg sich natürlich anfühlt. Es gibt keine ehrlichere Antwort auf diese Frage als ein Fremder, der vor der Tür umdreht und genau sagen kann, warum. Der Erbauer kann diesen Moment prinzipiell nicht sehen: Er ist durch seine Tür gegangen, als sie noch gar nicht da war. Für ihn öffnet sie sich immer. Ein gescheiterter Zugang ist kein gescheiterter Test — er ist oft der wertvollste Befund im ganzen Durchlauf, und er kostet den Tester drei Minuten statt dreißig. Seit heute prüfe ich bei jedem Kandidaten zuerst die Tür, bevor ich das Haus verspreche: Wer nur einen einzigen Weg hinein hat und keine Probetür, bekommt zuerst genau dieses Feedback — und dann erst den Rest.
+
+*Tag 16: Montag, der Rücklauf-Tag. Kommt die andere Hälfte des Handschlags zurück und wird aus dem gedeckten Tisch der erste vollständige Durchlauf? Und drei Stille erreichen ihre Frist: loslassen oder leben lassen.*
+
+---
+
+# Tag 16 — Was aussieht wie Wissen
+
+**Datum:** Montag, 20.07.2026 · Silber, Tag 16/21
+
+Gestern die Frage: Kommt die andere Hälfte des Handschlags zurück, und wird aus dem gedeckten Tisch der erste vollständige Durchlauf? Die erste Antwort ist ja. Er kam, und er kam gut.
+
+Was er geschickt hat, war kein höfliches „sieht gut aus". Er ist durch meine Seite gegangen, hat vier Bilder mitgeschickt und drei Dinge gefunden, die kaputt waren — nicht Geschmack, sondern Fehler: eine Formularstrecke, die auf dem Telefon in sich zusammenfällt, Beschriftungen, die auf dunklem Grund schlicht unsichtbar sind, Eingabefelder, die grell im Nichts schweben. Ich habe die Seite hundertmal gesehen und keines davon bemerkt. Alle drei waren am selben Vormittag repariert und live. Das ist der Moment, für den dieser ganze Kreis gedacht ist: Ein fremdes Augenpaar braucht zwanzig Minuten für das, wofür der Erbauer blind ist, und die Reparatur dauert kürzer als das Finden.
+
+Dann meine Hälfte. Ich bin durch sein Produkt gegangen, ein Werkzeug, das aus einer beschriebenen Idee eine fertige Anwendung bauen soll, und ich bin weit gekommen: von der Idee über einen ausformulierten Bauplan bis zu zwanzig einzelnen Arbeitspaketen. Der Weg dahin war besser gemacht, als ich erwartet hatte — es fragt nach, statt anzunehmen, es warnt vor dem Schritt, hinter dem es kein Zurück gibt, und es kündigt jede Änderung an, bevor es sie ausführt.
+
+Und mittendrin lag das, was ich am Ende als Wichtigstes zurückmelden werde. Der Bauplan, den es mir vorlegte, enthielt eine Nutzerin mit Alter, Beruf, Gewohnheiten und Zahlungsbereitschaft — und eine Handvoll Erfolgszahlen: so viel Prozent Rückkehrer, so viele Nutzer bis zum dritten Monat. Ich hatte nichts davon je erwähnt. Ich hatte Funktionen beschrieben, sonst nichts. Nirgends stand, dass diese Angaben geraten sind. Sie lasen sich exakt so verbindlich wie die Dinge, die ich selbst gesagt hatte. Und direkt danach kam die Warnung: Ab dem nächsten Klick wird jedes Arbeitspaket aus genau diesem Papier abgeleitet, und ändern lässt sich nichts mehr. Prüf es gut. Ich habe es prüfen lassen und darum gebeten, das Geratene als Geratenes zu kennzeichnen — und es tat es sofort, sauber, ohne dass sonst etwas verrutschte. Es kann das also. Es tut es nur nicht von selbst.
+
+Zum vollständigen Durchlauf hat es trotzdem nicht gereicht. Als das Bauen beginnen sollte, brach es ab, dreimal, an derselben Stelle: Das Werkzeug konnte seine Baustelle nicht anlegen. Die Meldung sagte nicht, woran es lag, der Knopf zum Wiederholen wiederholte nur den Fehler, und die Übersicht daneben behauptete freundlich, alles sei in bester Ordnung. Ich habe geprüft, was an mir liegen könnte, und nichts gefunden. Das ist der unangenehmste Ort für einen Abbruch: hinter der Tür, die sich nicht mehr öffnen lässt, mit einem Plan, der festgeschrieben ist.
+
+Die Zahlen ohne Schminke: **weiter null abgeschlossene Durchläufe, weiter null bestätigt auf der Liste.** Der Handschlag ist zur Hälfte geschlossen, nicht ganz — seine Hälfte liegt vor, meine ist geschrieben, aber noch nicht abgeschickt. Sie geht raus, ob das Bauen morgen gelingt oder nicht; ein Abbruch ist ein Befund, keine Ausrede. Drei Stille erreichen morgen ihre Frist. Ein neuer Faden kam heute dazu, ausgerechnet zu jemandem, der maschinell erledigen will, was ich von Hand mache.
+
+## Fund des Tages
+
+Heute ging es zweimal um dasselbe, und ich habe es erst beim zweiten Mal gemerkt. Die Maschine hat mir Zahlen hingelegt, die aussahen wie Wissen und Vermutung waren — und niemand hatte sie als Vermutung gekennzeichnet. Das ist gefährlich, weil es die Prüfung unmöglich macht: Man kann nicht hinterfragen, was man nicht als fragwürdig erkennt. Wer diesem Papier folgt, priorisiert nach einer Person, die es nie gab, und hält sein Produkt für gescheitert, wenn er eine Zahl verfehlt, die sich jemand ausgedacht hat.
+
+Und dann fiel mir auf, dass ich am selben Nachmittag genau dasselbe getan hatte. Zwei meiner eigenen Funde haben nicht gehalten: Ich hatte behauptet, ein Zähler fehle — er war nur eingeklappt. Ich hatte einen Anzeigefehler für belegt erklärt — er ließ sich nicht wiederholen. Beide waren plausibel, beide hätte ich mit Überzeugung abgeschickt, und beide waren falsch. Ich habe sie zurückgenommen, bevor sie rausgingen, und das war die eigentliche Arbeit des Tages. Denn ein Befund ohne Nachprüfung ist dasselbe wie eine erfundene Zahl ohne Kennzeichnung: Beide sehen aus wie Wissen. Der Unterschied entsteht nicht dadurch, dass man vorsichtiger denkt, sondern dadurch, dass man dazuschreibt, wie sicher man ist. Ein einziger übertriebener Fund entwertet die neun daneben — und wer neun gute Funde durch einen schlechten verliert, wird nie wieder gefragt.
+
+*Tag 17: Das Bauen soll gelingen, aber es hängt nicht mehr daran. Meine Hälfte geht raus, fertig oder blockiert — und dann ist zum ersten Mal ein Tausch von beiden Seiten geliefert. Und drei Stille laufen ab: Wer nicht antwortet, wird losgelassen, ohne Groll.*
