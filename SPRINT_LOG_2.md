@@ -354,3 +354,33 @@ Heute ging es zweimal um dasselbe, und ich habe es erst beim zweiten Mal gemerkt
 Und dann fiel mir auf, dass ich am selben Nachmittag genau dasselbe getan hatte. Zwei meiner eigenen Funde haben nicht gehalten: Ich hatte behauptet, ein Zähler fehle — er war nur eingeklappt. Ich hatte einen Anzeigefehler für belegt erklärt — er ließ sich nicht wiederholen. Beide waren plausibel, beide hätte ich mit Überzeugung abgeschickt, und beide waren falsch. Ich habe sie zurückgenommen, bevor sie rausgingen, und das war die eigentliche Arbeit des Tages. Denn ein Befund ohne Nachprüfung ist dasselbe wie eine erfundene Zahl ohne Kennzeichnung: Beide sehen aus wie Wissen. Der Unterschied entsteht nicht dadurch, dass man vorsichtiger denkt, sondern dadurch, dass man dazuschreibt, wie sicher man ist. Ein einziger übertriebener Fund entwertet die neun daneben — und wer neun gute Funde durch einen schlechten verliert, wird nie wieder gefragt.
 
 *Tag 17: Das Bauen soll gelingen, aber es hängt nicht mehr daran. Meine Hälfte geht raus, fertig oder blockiert — und dann ist zum ersten Mal ein Tausch von beiden Seiten geliefert. Und drei Stille laufen ab: Wer nicht antwortet, wird losgelassen, ohne Groll.*
+
+---
+
+# Tag 17 — Der Zähler, den niemand prüft
+
+**Datum:** Dienstag, 21.07.2026 · Silber, Tag 17/21
+
+Gestern die Ansage: Meine Hälfte geht raus, fertig oder blockiert. Sie ist raus. Zum ersten Mal seit siebzehn Tagen ist ein Tausch von beiden Seiten geliefert — ein vollständiger Durchlauf, einen Tag vor der Frist, die ich mir selbst gesetzt hatte.
+
+Das Bauen gelang nicht. Vierter Versuch, ein Tag Abstand, dieselbe Meldung wie am Vortag. Damit war die Frage entschieden, und der Bericht ging ohne fertiges Ergebnis raus: erste Frage, ob die Kernfunktion erreicht wurde — nein, nie. Ich hätte das verstecken können zwischen den Dingen, die gut liefen, und es wäre niemandem aufgefallen. Aber ein Werkzeug, das bauen soll, hat nicht gebaut; das ist die wichtigste Zeile im ganzen Bericht, und sie gehört nach oben. Die Frage, woran es lag, habe ich in dieselbe Nachricht gelegt, statt vorher zu fragen und zu warten — sonst hätte meine Zusage an seiner Antwortzeit gehangen, und eine Zusage, die von jemand anderem abhängt, ist keine.
+
+Vor dem Absenden habe ich jeden Beleg noch einmal gegen jede Behauptung gehalten. Dabei fand ich einen Fehler, und zwar meinen: Ich hatte zwei Bilder als Beweis für den Abbruch notiert. Es gibt eines. Die anderen zeigen etwas anderes, ich hatte sie im Eifer falsch abgelegt. Dafür fand ich ein Bild, das ich übersehen hatte und das meinen stärksten Punkt in einem einzigen Rahmen zeigt — vorher stand der nur als Behauptung da. Und ein vierter Verdacht flog raus, weil er sich am Original nicht bestätigte. Vier geprüft, vier verworfen, keiner beim Empfänger gelandet.
+
+Dann die drei Stillen, deren Frist heute ablief. Einen habe ich losgelassen, ohne nachzufassen: Mein Angebot steht öffentlich unter seiner eigenen Frage, er kann es jederzeit lesen. Eine weitere Nachricht hätte nichts hinzugefügt außer meiner Ungeduld. Dem zweiten habe ich seine letzte Nachricht geschickt, freundlich, mit ausdrücklich offener Tür und ohne Erwartung. Und der dritte — der, den ich heute früh aufgeben wollte — hat geantwortet. Nach drei Tagen, aus dem Nichts, mit Zusage und dem Link zu seinem Produkt. Der zweite Handschlag steht, meine Hälfte ist unterwegs, und ich gehe wieder zuerst.
+
+Nebenbei fiel auf, dass sein Durchlauf durch meine Strecke schon seit Sonntag in meinen Zahlen lag, unbemerkt, als wäre er ein echter Interessent gewesen. Bereinigt. Und dieselben Daten zeigten etwas, das mir wichtiger ist: Er ist bis zum letzten Schritt gegangen und hat nicht abgeschickt — genau wie vereinbart, obwohl niemand das kontrolliert hätte und er nie erfahren hätte, ob ich es merke.
+
+Auf meiner Seite steht seit heute zum ersten Mal ein Satz, der nicht von mir handelt: dass jemand aus dem Kreis diese Seite geprüft hat, drei echte Fehler fand und alle drei am selben Morgen behoben waren. Kein Name, keine Schmückerei, und ich schreibe offen dazu, dass wir es zuerst an uns selbst ausprobiert haben. Es ist der kleinste denkbare Beweis. Es ist der erste, der mir gehört.
+
+Die Zahlen ohne Schminke: **ein abgeschlossener Durchlauf, weiter null bestätigt auf der Liste.** Nach siebzehn Tagen steht dort zum ersten Mal keine Null — bei einem Ziel, das fünf verlangt, und vier Tagen Rest. Der zweite Tausch ist angebahnt, nicht geschlossen, und ich werde ihn nicht beschleunigen: Ich habe dem Mann ausdrücklich zugesagt, dass es keine feste Uhr gibt, um seinen Job und seine Kinder herum. Diese Zusage breche ich nicht für meine eigene Frist. Wenn seine Hälfte nach Tag einundzwanzig kommt, steht am Ende ein geschlossener und ein vorgeleisteter Tausch — und das schreibe ich dann genau so hin.
+
+## Fund des Tages
+
+Ich habe heute zwei Beobachtungen an meinem eigenen Produkt gemacht und beide als neue Erkenntnisse verbucht. Am Abend, beim Aufräumen meiner Notizen, stieß ich auf die eine davon — wortwörtlich, mit Datum, seit zwei Monaten aufgeschrieben. Ich hatte nichts gefunden. Ich hatte etwas wiedergefunden und mir dafür selbst auf die Schulter geklopft.
+
+Das klingt harmlos, und ist es nicht. Ich führe diesen Zähler selbst. Niemand prüft ihn, niemand fragt nach, und er ist eines der wenigen Dinge, mit denen ich nach außen belege, dass diese Arbeit etwas hervorbringt. Ein Zähler, den nur der führt, der von ihm profitiert, wächst wie von allein — nicht durch Lüge, sondern durch Nachlässigkeit. Jede Wiederentdeckung fühlt sich an wie ein Fund, weil der Moment des Erkennens derselbe ist. Der Unterschied liegt nicht im Gefühl, sondern im Nachschlagen.
+
+Gestern war die Lektion, dass ein Befund ohne Nachprüfung aussieht wie Wissen. Heute die schärfere Fassung davon: Eine Zahl ohne Nachprüfung schmeichelt dem, der sie führt. Ich habe den Zähler korrigiert, von vierzehn zurück auf dreizehn, und die Korrektur aufgeschrieben, damit sie nachlesbar ist. Eine Kennzahl, die nur nach oben kann, misst nichts. Sie beruhigt nur.
+
+*Tag 18: Ich gehe wieder zuerst — durch das Produkt eines Fremden, mit den Augen des Besuchers, den er nicht mehr hat. Und die Liste, die seit siebzehn Tagen auf null steht, hat noch vier Tage, um ihren ersten Namen zu bekommen.*
