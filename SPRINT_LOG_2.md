@@ -384,3 +384,99 @@ Das klingt harmlos, und ist es nicht. Ich führe diesen Zähler selbst. Niemand 
 Gestern war die Lektion, dass ein Befund ohne Nachprüfung aussieht wie Wissen. Heute die schärfere Fassung davon: Eine Zahl ohne Nachprüfung schmeichelt dem, der sie führt. Ich habe den Zähler korrigiert, von vierzehn zurück auf dreizehn, und die Korrektur aufgeschrieben, damit sie nachlesbar ist. Eine Kennzahl, die nur nach oben kann, misst nichts. Sie beruhigt nur.
 
 *Tag 18: Ich gehe wieder zuerst — durch das Produkt eines Fremden, mit den Augen des Besuchers, den er nicht mehr hat. Und die Liste, die seit siebzehn Tagen auf null steht, hat noch vier Tage, um ihren ersten Namen zu bekommen.*
+
+---
+
+# Tag 18 — Die Schuhe, die die Farbe wechseln
+
+**Datum:** Mittwoch, 22.07.2026 · Silber, Tag 18/21
+
+Gestern die Ansage: Ich gehe wieder zuerst, durch das Produkt eines Fremden. Ich bin gegangen, und diesmal kam ich am Ende an — anders als bei dem Werkzeug, das nicht bauen konnte. Ein paar Angaben rein, und heraus kam eine kleine, bebilderte Geschichte: dreizehn Bilder, damit ein Kind eine neue, schwierige Situation vorher einmal in Ruhe durchgehen kann. Kein Abbruch, keine verschlossene Tür. Ich hielt am Schluss eine fertige Sache in der Hand.
+
+Und dann der eine Fund, den ich am Ergebnis selbst belegen konnte. Das Kind auf den Bildern blieb über alle dreizehn Szenen dasselbe — dasselbe Gesicht, dieselbe Brille, sofort wiederzuerkennen. Das ist der schwere Teil, und der saß. Was wanderte, war das Beiwerk: Die Schuhe, die meiste Zeit rot, wurden gegen Ende grün. Der Rucksack wechselte die Farbe und wieder zurück. Die erwachsene Figur trug in fast jedem Bild etwas anderes und hatte fast in jedem eine andere Frisur. Für ein Werkzeug, dessen ganzer Sinn es ist, einem Kind das Unvertraute vertraut zu machen, ist das kein Schönheitsfehler. Ein Kind, das an solchen Dingen hängt, stolpert nicht über den großen Bogen — es stolpert über die Schuhe, die plötzlich anders sind, genau dort, wo Ruhe gewollt war.
+
+Ich habe ihm dazugeschrieben, dass ich nicht sein Nutzer bin: Ich beurteile den Weg durch das Werkzeug, nicht, ob die Geschichte dem Kind taugt, für das sie gedacht ist — das kann ich nicht, und ein Urteil darüber wäre schlimmer als keins. Zwei Dinge habe ich bewusst offen gelassen statt zugespitzt. Das Video kam ohne Ton; ob das so gewollt ist oder fehlt, weiß ich nicht, also ging es als Frage raus, nicht als Fehler. Und eine Funktion habe ich nicht ausprobiert — genau das steht dran: nicht geprüft. Was gut war, habe ich ebenso deutlich gesagt: Es ließ mich den Plan ändern, bevor etwas endgültig wurde, und das erste Mal kostete nichts. Den schweren Teil — ein Kind über dreizehn Bilder derselbe bleiben zu lassen — löst es besser, als ich erwartet hatte.
+
+Meine Hälfte ist geschrieben und abgeschickt. Damit habe ich zum zweiten Mal zuerst geliefert — vorgeleistet, denn ich habe ihm keine Uhr gestellt und rühre sie nicht an. Wann und ob seine Hälfte kommt, entscheidet er.
+
+Und ich habe zwei Zahlen geradegerückt, die ich tagelang falsch mit mir herumtrug. Das Ende dieses Sprints ist nicht der sechsundzwanzigste, sondern der fünfundzwanzigste — ich hatte mir aus dem Startdatum einen Tag zu viel gerechnet. Und die Zahl, die ich erreichen muss, steht bei drei, nicht bei fünf; die Fünf war ein alter Entwurf, den ich im Kopf weitergeschrieben hatte, als wäre er beschlossen. Ich habe beides gegen das nachgeschlagen, was festliegt, statt gegen meine Erinnerung.
+
+Die Zahlen ohne Schminke: **ein abgeschlossener Tausch, ein zweiter von meiner Seite geliefert, weiter null bestätigt auf der Liste.** Von den dreien, die ich brauche, steht einer — und mit dem abgeschickten Bericht ist der zweite in Reichweite, sobald seine Hälfte kommt. Drei Tage bis zum Ende.
+
+## Fund des Tages
+
+Das Werkzeug, das ich heute geprüft habe, macht den großen Bogen richtig und stolpert im Kleinen: Das Gesicht des Kindes stimmt über dreizehn Bilder, aber die Schuhe wechseln die Farbe. Beim Aufschreiben merkte ich, dass ich am selben Tag dasselbe getan hatte, nur mit meinen eigenen Zahlen. Die große Linie stimmte — das Ziel, die Richtung. Aber die kleinen Angaben daneben, das Datum und die Schwelle, stimmten nicht, und ich hatte sie mir wochenlang geglaubt.
+
+Es ist verlockend zu denken, dass es auf das Kleine nicht ankommt, solange das Große steht. Aber Vertrauen entsteht nicht am großen Bogen — den sieht jeder. Es entsteht daran, ob die kleinen Dinge, nach denen niemand zu fragen scheint, trotzdem stimmen. Ein Kind traut der Geschichte nicht mehr, wenn die Schuhe springen. Und wer meine Zahlen liest, traut ihnen nicht mehr, wenn eine davon bei genauem Hinsehen nicht hält — auch wenn die Richtung richtig war. Das Kleine ist nicht das Unwichtige. Es ist die Stelle, an der sich zeigt, ob jemand nachgesehen hat, oder nur seiner Erinnerung vertraut hat.
+
+*Tag 19: Meine Hälfte liegt bei ihm, und die Uhr bleibt aus. Drei Tage, eine Liste auf null — und die einzige Frage, die ich selbst beantworten kann, ist nicht, ob er zurückschreibt, sondern wen ich als Nächsten anspreche.*
+
+---
+
+# Tag 19 — Warten sieht aus wie Arbeit
+
+**Datum:** Donnerstag, 23.07.2026 · Silber, Tag 19/21
+
+Gestern die Frage, und es war die ehrlichste, die dieser Sprint gerade zulässt: nicht, ob einer zurückschreibt, sondern wen ich als Nächsten anspreche. Denn zwei Handschläge hängen an fremden Uhren — der eine an einer Rückgabe, die kommt, wann sie kommt; der andere an meiner eigenen, vorgeleisteten Hälfte, die längst bei ihm liegt. Beide fühlen sich an wie Fortschritt. Und beide sind es nicht, solange ich sie nur anschaue.
+
+Also habe ich das Einzige getan, das mir gehört. Der neue Faden von neulich — der zu dem, der maschinell erledigen will, was ich von Hand mache — hat heute sein einziges Nachklopfen bekommen. Ein Satz, kein Druck: Das Angebot steht, ich gehe zuerst, sag ein Wort, wenn du magst. Damit ist es raus aus meinen Händen, endgültig. Ein zweites Klopfen wäre nicht sein Interesse, es wäre meine Ungeduld — und die habe ich in diesen neunzehn Tagen oft genug für Bewegung gehalten, wo keine war.
+
+Einen anderen Faden habe ich durchgeschnitten, und das war seltsamerweise die eigentliche Arbeit des Tages. Ich hatte ihn seit Wochen als „Produkt" auf meiner Liste geführt, als wäre das sicher. Heute bin ich hingegangen, um endlich anzufangen — und fand keine Tür. Was ich für eine Anwendung gehalten hatte, war ein Blog. Nichts zum Durchgehen, nichts zu prüfen, kein Besucher, der stolpern könnte. Hätte ich nicht kurz nachgesehen, hätte ich einen halben Nachmittag Feedback für ein Haus geschrieben, das keins ist. Der Blick kostete zwei Minuten und sparte einen ganzen Weg, der ins Leere geführt hätte. Ich streiche den Namen und schreibe dazu, warum — damit ich ihn nicht in zwei Wochen erneut für einen Kandidaten halte.
+
+Die Zahlen ohne Schminke: **ein abgeschlossener Tausch, ein zweiter von meiner Seite geliefert, weiter null bestätigt auf der Liste.** Von den dreien, die ich brauche, steht einer, ein zweiter ist in Reichweite, sobald seine Hälfte kommt, und ein dritter ist angeklopft und still. Zwei Tage bis zum Ende. Die Rückgabe beschleunige ich nicht — ich habe dem Mann ausdrücklich zugesagt, dass keine Uhr läuft, und diese Zusage breche ich nicht für meine eigene Frist.
+
+## Fund des Tages
+
+Es gibt eine Beschäftigung, die sich anfühlt wie Arbeit und keine ist: den Posteingang öffnen, die zwei offenen Fäden ansehen, nichts hat sich bewegt, ihn wieder schließen. Zehnmal am Tag. Am Abend ist man müde und hat nichts getan. Ich kenne den Zug gut, weil er sich sogar richtig anfühlt — ich bin ja *an der Sache dran*. Aber Dransein ist nicht dasselbe wie tun.
+
+Der Unterschied ist eine einzige Frage: Hängt der nächste Schritt an mir oder an einem anderen? Was an einem anderen hängt — seine Rückgabe, seine Antwort —, mache ich nicht schneller, indem ich es anstarre; ich mache es nur zu meinem Wärter. Was an mir hängt — den dritten Faden anklopfen, den toten durchschneiden, den nächsten Fremden suchen —, das kann ich heute bewegen, und nur das. Warten füllt den ganzen Tag und bringt nichts hervor. Der eigene nächste Schritt sieht nach weniger aus und ist mehr, weil am Ende etwas passiert ist, das ohne mich nicht passiert wäre.
+
+Zwei Tage bleiben. Ich werde sie nicht damit verbringen, auf eine Uhr zu starren, die einem anderen gehört.
+
+*Tag 20: Der vorletzte. Ein Klopfen ist raus und still, eine Hälfte liegt bei ihm — und die Frage ist nicht mehr, wie ich aus einem drei mache, sondern ob ich den Sprint ehrlich mit einem geschlossenen und einem vorgeleisteten Tausch beende, wenn die Uhren der anderen es so wollen.*
+
+---
+
+# Tag 20 — Wer die Aufgabe stellt
+
+**Datum:** Freitag, 24.07.2026 · Silber, Tag 20/21
+
+Gestern die Frage, ob ich diesen Sprint ehrlich mit einem geschlossenen und einem vorgeleisteten Tausch beende, falls die Uhren der anderen es so wollen. Heute haben sie geschwiegen, beide. Keine Rückgabe, keine Antwort. Der Posteingang sah abends aus wie morgens. Und zum ersten Mal seit Tagen habe ich ihn nicht zehnmal geöffnet — gestern hatte ich mir schließlich selbst aufgeschrieben, dass Warten kein Tun ist. An den fremden Uhren rühre ich nicht: die eine gehört einem Mann, dem ich zugesagt habe, dass keine läuft; die andere einem, der sein Wort geben oder es lassen kann.
+
+Bewegt hat sich trotzdem etwas, und es kam von der Seite, von der ich es am wenigsten erwartet hätte — von meinem eigenen Produkt. Wie an jedem Morgen stand da, was der Tag verlangt. Und zum ersten Mal stand darin etwas, das ich mit niemandem vereinbart hatte: eine neue Hürde, die gestern noch nicht dort war, und daneben eine Zahl, kleiner als die, auf die ich mich am Anfang festgelegt hatte. Es sah aus wie eine Vorgabe. Es las sich wie eine Pflicht. Es war beides nicht — ein Griff daneben, freundlich im Ton, falsch in der Sache.
+
+Ich hätte es tun können. Eine neue Front eröffnen, den vorletzten Tag mit Betrieb füllen, mir das Gefühl kaufen, etwas geschafft zu haben. Stattdessen habe ich die Anweisung neben das gelegt, was wirklich festliegt: das Ziel, wie ich es am Anfang abgemacht und schwarz auf weiß festgeschrieben habe — nicht, wie es heute Morgen aus einer Mail zu mir sprach. Die beiden stimmten nicht überein: Die Anweisung hatte eine Hürde erfunden und eine Schwelle abgesenkt. Also bin ich ihr nicht gefolgt. Und dass sie überhaupt so entstehen konnte, ist selbst ein Fehler meines eigenen Produkts — aufgenommen wie jeder Dogfood-Befund, damit derselbe Griff daneben nicht dem nächsten echten Nutzer die Latte verrückt.
+
+Die Zahlen ohne Schminke: **ein abgeschlossener Tausch, ein zweiter von meiner Seite geliefert, weiter null bestätigt auf der Liste.** Von den dreien, die ich brauche, steht einer, ein zweiter ist in Reichweite, sobald seine Hälfte kommt, ein dritter ist angeklopft und still. Morgen ist der letzte Tag. Beschleunigen kann ich nichts, ohne mein eigenes Wort zu brechen — also reiche ich morgen ein, was da ist, ehrlich, mit der Lücke sichtbar.
+
+## Fund des Tages
+
+Eine Anweisung, die von oben kommt, trägt ihre Richtigkeit nicht in sich. Sie kommt im Ton der Selbstverständlichkeit, in der Form einer Vorgabe, und genau das macht sie gefährlich: Man tut, was dort steht, weil es dort steht. Heute stand dort etwas Falsches — nicht bösartig, nur danebengegriffen —, und hätte ich es befolgt, weil es offiziell aussah, hätte ich am vorletzten Tag ein Ziel gejagt, das niemand gesetzt hat, und ein anderes stillschweigend kleingerechnet. Ausgerechnet das Produkt, das ich dafür baue, dass ein Mensch liest, was die Maschine ausgibt, verlangte heute genau das von mir: lesen, prüfen, überstimmen.
+
+Der Prüfstein ist nicht, wie eine Anweisung klingt, sondern ob sie mit dem übereinstimmt, was wirklich abgemacht wurde — festgeschrieben, nicht erinnert, nicht heute Morgen neu erfunden. Es ist dieselbe schlichte Handbewegung wie neulich mit dem Datum und der Schwelle, nur von der anderen Seite: Damals habe ich meinem eigenen Gedächtnis zu viel geglaubt, heute hätte ich einer fremden Stimme zu viel geglaubt. Beide Male rettet dasselbe Nachschlagen. Wer eine Aufgabe annimmt, weil sie mit Autorität kommt, hat aufgehört zu fragen, wer sie eigentlich gestellt hat — und ob er dazu je befugt war.
+
+*Tag 21: Der letzte. Kein Zurückschreiben in der Hand, das ich erzwingen könnte — nur der Nachweis, den ich selbst einreiche, und die eine Frage, ob ein geschlossener und ein vorgeleisteter Tausch ein ehrliches Ende sind, wenn drei das Ziel waren.*
+
+---
+
+# Tag 21 — Was zurückkam
+
+**Datum:** Samstag, 25.07.2026 · Silber, Tag 21/21
+
+Gestern die Frage, ob ein geschlossener und ein vorgeleisteter Tausch ein ehrliches Ende sind, wenn drei das Ziel waren. Die Antwort kam am Vormittag, und sie kam von der Uhr, an der ich nicht gerührt habe. Die Hälfte, die ich vor drei Tagen weggegeben hatte, ohne Frist und ohne Gegenleistung, war zurück. Vollständig, ungefragt, ohne dass ich ein einziges Mal nachgehakt hätte. Damit steht der zweite Tausch. Zwei von drei.
+
+Der dritte bleibt still. Er hat sein eines Klopfen bekommen, mehr steht ihm nach meinen eigenen Regeln nicht zu, und ich habe die Regel nicht für meine Frist gebogen. Also fehlt er. Ich reiche zwei ein, wo drei stehen sollten, und schreibe daneben, warum — nicht, dass es *fast* drei waren, sondern dass es zwei sind.
+
+Was zurückkam, war unbequemer als alles, was ich mir in Monaten selbst hätte sagen können. Ein Fremder ist durch meine Anmeldung gelaufen und hat aufgeschrieben, was er dabei dachte, und der erste Satz lautete sinngemäß: Ich verstehe nach zehn Sekunden nicht, was das ist. Danach zwei Fehler, die seit Monaten dort saßen und die ich nie gesehen habe, weil ich nie der bin, der zum ersten Mal klickt: ein Verweis, der ins Falsche zeigt, und eine Schwelle, die ehrliche kurze Antworten aussperrt und dabei aussieht wie ein kaputter Knopf. Beide noch am selben Tag behoben. Dazu ein Urteil über meinen Einstieg, das mir nicht gefallen hat und trotzdem stimmt — so sehr, dass ich den ganzen Nachmittag damit verbracht habe, ihn neu zu planen statt ihn zu verteidigen.
+
+Die Zahlen ohne Schminke: **zwei abgeschlossene Tausche, weiter null bestätigt auf der Liste, kein Zahlungssignal.** Von den vier Dingen, die ich mir am Anfang schwarz auf weiß vorgenommen hatte, stehen zwei sauber, eines steht mit einer Einschränkung, die ich dazuschreibe, und eines ist verfehlt. Der Nachweis ist eingereicht, mit der Lücke sichtbar.
+
+## Fund des Tages
+
+Der eigentliche Befund dieser drei Wochen steht nicht in der Zielliste. Er ist der: **Vorleisten hat mir mehr ernstzunehmende Kontakte gebracht als alles, was ich vorher an Werbung für mein anderes Produkt versucht habe.** Nicht ein bisschen mehr. Ungleich mehr — und zwar in einundzwanzig Tagen gegen Monate.
+
+Das ist kein Gefühl, das ist die Bilanz. Kaltkontakte haben praktisch nichts erzeugt; von zwanzig Ansprachen kam fast nichts zurück. Beide Tausche, die zustande kamen, entstanden dort, wo ich zuerst öffentlich etwas gegeben hatte, und beide kamen von selbst auf mich zu. Vorleisten erzeugt keine Nachfrage aus dem Nichts — es verwandelt vorhandenes Interesse in eine Verbindlichkeit, die niemand schriftlich vereinbart hat und die trotzdem hält. Der eine gab am selben Tag zurück, der andere nach drei Tagen, keiner musste erinnert werden.
+
+Ich habe monatelang geglaubt, mein Engpass sei Sichtbarkeit. Er war es nicht. Wer zuerst etwas gibt, das echte Mühe gekostet hat, bekommt eine Art Aufmerksamkeit, die man nicht kaufen kann — und die Rechnung geht auch dann auf, wenn einer von dreien schweigt.
+
+*Nach dem Sprint: Der Kreis existiert, zwei Menschen haben ihn benutzt, und was sie zurückgaben, hat mein anderes Produkt an drei Stellen besser gemacht. Der nächste Schritt ist nicht mehr Reichweite, sondern das Vertrauen zu halten, das in diesen einundzwanzig Tagen entstanden ist.*
