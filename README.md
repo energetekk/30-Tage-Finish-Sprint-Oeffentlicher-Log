@@ -1,6 +1,6 @@
 # 30-Day Sprint — Public Build Log
 
-**🟢 Sprint #2 is running** (since July 5, 2026): The founder goes through his own live product as a regular user — building a curated beta-tester circle in 21 days, real milestone enforcement included. Follow along → **[SPRINT_LOG_2.md](SPRINT_LOG_2.md)**
+**✅ Sprint #2 is complete** (July 5–25, 2026, closed July 26): The founder went through the live product as a regular user — building a curated beta-tester circle in 21 days, real milestone enforcement included. One of four goal criteria was missed and recorded as missed. Read the log → **[SPRINT_LOG_2.md](SPRINT_LOG_2.md)** · Write-up → **[What the sprint found](https://mvpbuilder.io/blog/founder-sprint-self-test)**
 
 **MVP Builder · Cohort #1 complete · Cohort #2 open**
 
@@ -16,9 +16,9 @@ MVP Builder is a structured 30-day sprint for developers with full-time jobs who
 
 Not a course. Not a template generator. A daily prompt system with milestone gates and a human founder watching the clock.
 
-Cohort #1 is complete. **Cohort #2 is now open — 5 spots, Founder Price.**
+Cohort #1 is complete. **Cohort #2 is open at Founder Price.**
 
-👉 [Apply at mvpbuilder.io/pipeline](https://mvpbuilder.io/pipeline)
+👉 [Start at mvpbuilder.io/go](https://mvpbuilder.io/go) — five click questions, then a free 30-minute intro call.
 
 ---
 
@@ -72,9 +72,9 @@ See what the first 4 days actually look like before applying.
 | Silver | 21 days | CHF 117 | $117 |
 | Gold | 30 days | CHF 179 | $179 |
 
-One-time · 7-day money-back guarantee · You pay only after your application is accepted.
+One-time payment · 7 days free: you add a card at the start and are charged from sprint day 8 · You only pay after you've been accepted into the cohort.
 
-👉 [mvpbuilder.io/pipeline](https://mvpbuilder.io/pipeline)
+👉 [mvpbuilder.io/go](https://mvpbuilder.io/go)
 
 ---
 
