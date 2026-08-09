@@ -4,7 +4,7 @@
 
 **MVP Builder · Cohort #1 complete · Cohort #2 open**
 
-This repository is the public record of the first 30-day sprint cohort. One developer. One project. Daily check-ins.
+This repository is the public record of the sprints run so far — cohort #1, and the founder going through the live product as a regular user. One project at a time. Daily check-ins.
 
 The product: [mvpbuilder.io](https://mvpbuilder.io)
 
@@ -18,7 +18,7 @@ Not a course. Not a template generator. A daily prompt system with milestone gat
 
 Cohort #1 is complete. **Cohort #2 is open at Founder Price.**
 
-👉 [Start at mvpbuilder.io/go](https://mvpbuilder.io/go) — five click questions, then a free 30-minute intro call.
+👉 [Start at mvpbuilder.io/go](https://mvpbuilder.io/go) — five click questions, then a free 30-minute intro call. If a call with a stranger is too much, there is a message box on the same page instead.
 
 ---
 
@@ -46,25 +46,26 @@ MVP Builder is the structure layer that AI doesn't provide.
 
 ---
 
-## The sprint log
+## The sprint logs
 
-→ [SPRINT_LOG.md](./SPRINT_LOG.md)
+- → [SPRINT_LOG.md](./SPRINT_LOG.md) — cohort #1
+- → [SPRINT_LOG_2.md](./SPRINT_LOG_2.md) — the founder's own sprint through the live product, July 5–25, 2026
 
-Daily entries from the first cohort. Raw. No retrospective polish.
+Daily entries. Raw. No retrospective polish.
 
 ---
 
 ## Interactive sprint simulation
 
-See what the first 4 days actually look like before applying.
+See what the first 4 days actually look like before you book a call.
 
 👉 [Run the simulation](https://mvpbuilder.io/Simulation.html)
 
 ---
 
-## Apply
+## Take part
 
-**Cohort #2** · Founder Price · Application required · 5 spots
+**Cohort #2** · Founder Price · Every sprint starts with a free 30-minute call — there is no application form
 
 | Tier | Duration | DACH | International |
 |------|----------|------|---------------|
@@ -72,7 +73,7 @@ See what the first 4 days actually look like before applying.
 | Silver | 21 days | CHF 117 | $117 |
 | Gold | 30 days | CHF 179 | $179 |
 
-One-time payment · 7 days free: you add a card at the start and are charged from sprint day 8 · You only pay after you've been accepted into the cohort.
+One-time payment · Your first sprint week is free: you add a card after the call, once you've been accepted into the cohort, and the charge happens from sprint day 8. Leaving before that costs nothing.
 
 👉 [mvpbuilder.io/go](https://mvpbuilder.io/go)
 

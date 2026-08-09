@@ -59,7 +59,7 @@ Kontakt (Support): energetekk@proton.me
 ## Für COHORT #1-Tester
 Teilnehmeranzahl begrenzt
  
-👉 [Bewerbung](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/index.html)
+👉 Bewerbung (Link entfernt — die damalige Bewerbungsseite existiert nicht mehr)
 
 ---
 

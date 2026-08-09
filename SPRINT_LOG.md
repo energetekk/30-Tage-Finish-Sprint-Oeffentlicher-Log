@@ -530,6 +530,6 @@ https://www.notion.so/Referral-FAQ-2e6e3450b06980a7bc8ffe28f6eb973e?source=copy_
 ---
 
 **Beta startet:** [Datum]  
-**Kosten:** [kostenlos für die ersten 5-10 Bewerber](https://energetekk.github.io/30-Tage-Finish-Sprint-Oeffentlicher-Log/index.html)
+**Kosten:** kostenlos für die ersten 5-10 Bewerber
 
 
